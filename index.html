@@ -1,0 +1,2131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sparkti</title>
+    <!--  -->
+    <link href="https://fonts.googleapis.com/css?family=Assistant:400,700|Rubik:400,500&display=swap" rel="stylesheet">
+    <!--  -->
+    <link rel="stylesheet" href="assets/css/line-awesome.min.css">
+    <!--  -->
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <!--  -->
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <!--  -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!--  -->
+    <header>
+        <!--  -->
+        <div class="sparkti_toolbar">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="sparkti_toolbar__left">
+                            <span class="sparkti_toolbar__currency sparkti_toolbar__item">
+                                <select name="sparkti_currency" class="sparkti_select" id="">
+                                    <option value="Us Dollar">Us Dollar</option>
+                                    <option value="Pound">Pound</option>
+                                    <option value="Taka">Taka</option>
+                                    <option value="Euro">Euro</option>
+                                </select>
+                            </span>
+                            <span class="sparkti_toolbar__language sparkti_toolbar__item">
+                                <select name="sparkti_currency" class="sparkti_select" id="">
+                                    <option value="English">English</option>
+                                    <option value="Spanish">Spanish</option>
+                                    <option value="Chinese">Chinese</option>
+                                </select>
+                            </span>
+                            <span class="sparkti_toolbar__hotline sparkti_toolbar__item">
+                                <span class="sparkti_toolbar__hotline_label">
+                                    <i class="las la-phone"></i>
+                                    Toll Free:
+                                </span>
+                                <a href="#">
+                                    1-800-333-6868
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="sparkti_toolbar__right">
+                            <span class="sparkti_toolbar__item sparkti_toolbar__order_tracking sparkti_has_dropdown">
+                                <a href="#">
+                                    Trach your order
+                                </a>
+                                <div class="sparkti_dropdown">
+                                    <div class="form-group">
+                                        <input type="text" placeholder="Order No:" class="form-control">
+                                        <div class="sparkti_toolbar_order_phone">
+                                            <span>
+                                                +880
+                                            </span>
+                                            <input type="text" class="form-control" placeholder="Your Mobile Number">
+                                        </div>
+                                    </div>
+                                </div>
+                            </span>
+                            <span class="sparkti_toolbar__item sparkti_toolbar__help sparkti_has_dropdown">
+                                <a href="#">
+                                    Help & Contact
+                                </a>
+                            </span>
+                            <span class="sparkti_toolbar__item sparkti_toolbar_products">
+                                <a href="#">
+                                    Shop All Products On Deals!
+                                    <i class="las la-arrow-right"></i>
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--  -->
+        <div class="sparkti_navigation   ">
+            <div class="container-fluid">
+                <div class="navbar sparkti_navigation__content">
+                    <a class="navbar-brand" href="#">
+                        <img src="assets/images/logo.png" alt="sparkti">
+                    </a>
+                    <div class="sparkti_navigation__content_center ml-auto">
+                        <form action="#">
+                            <div class="input-group-prepend">
+                                <button class="sparkti_offcanvas_btn">
+                                    <i class="las la-bars"></i>
+                                </button>
+                            </div>
+                            <div class="input-group">
+
+                                <input type="email" class="form-control" placeholder="Search on Martel..."
+                                    id="exampleInputEmail1" aria-describedby="emailHelp">
+                                <div class="input-group-append">
+                                    <!-- <button class="sparkti_categories_btn">
+                                        All
+                                        <i class="las la-angle-down"></i>
+                                    </button> -->
+                                    <select name="sparkti_currency" class="sparkti_select" id="">
+                                        <option value="All">All</option>
+                                        <option value="cat-1">cat-1</option>
+                                        <option value="cat-2">cat-2</option>
+                                    </select>
+                                </div>
+                                <div class="input-group-append">
+                                    <button class="sparkti_navigation_search" type="submit">
+                                        <i class="las la-search"></i>
+                                        Search
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="sparkti_navigation__content_right ml-auto">
+                        <div class="sparkti_navigation_login_signup">
+                            <a href="#" class="sparkti_navigation_signup">
+                                <i class="lar la-user"></i>
+                                Sign up
+                            </a>
+
+                            <a href="#" class="sparkti_navigation_login">
+                                <i>or</i>
+                                Log in
+                            </a>
+                        </div>
+                        <div class="sparkti_navigation_cart">
+                            <a href="#" class="sparkti_cart_compare">
+                                <i class="las la-random"></i>
+                            </a>
+                            <a href="#" class="sparkti_cart_wishlist">
+                                <i class="las la-heart"></i>
+                            </a>
+                            <a href="#" class="sparkti_cart_container">
+                                Cart
+                                <span class="sparkti_cart_container__item">
+                                    12
+                                </span>
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--  -->
+
+    <!--  -->
+    <section class="sparkti_banner">
+        <div class="container-fluid">
+            <div class="row no-gutters">
+                <div class="col-md-2">
+                    <div class="sparkti_banner__categories">
+                        <div class="sparkti_categories_marker">
+                            <i class="lab la-stack-overflow"></i>
+                            Shop Department
+                        </div>
+                        <nav class="sparkti_categories_nav">
+                            <ul>
+                                <li>
+                                    <a href="#">Electronics</a>
+                                </li>
+                                <li class="has_sparkti_dropdown">
+                                    <a href="#">Fashion & Clothing</a>
+                                    <ul class="sparkti_dropdown">
+                                        <li>
+                                            <a href="#">
+                                                Men
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Women
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Children
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="has_sparkti_dropdown">
+                                    <a href="#">Healthy & Beauty</a>
+                                    <ul class="sparkti_dropdown">
+                                        <li>
+                                            <a href="#">
+                                                Men
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Women
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Children
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="has_sparkti_dropdown">
+                                    <a href="#">Home, Garden & Kitchen</a>
+                                    <ul class="sparkti_dropdown">
+                                        <li>
+                                            <a href="#">
+                                                Men
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Women
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Children
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="has_sparkti_dropdown">
+                                    <a href="#">Toys & Hobbies</a>
+                                    <ul class="sparkti_dropdown">
+                                        <li>
+                                            <a href="#">
+                                                Men
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Women
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Children
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="has_sparkti_dropdown">
+                                    <a href="#">Sports & Entertainment</a>
+                                    <ul class="sparkti_dropdown">
+                                        <li>
+                                            <a href="#">
+                                                Men
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Women
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Children
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="has_sparkti_dropdown">
+                                    <a href="#">Food & Beverage</a>
+                                    <ul class="sparkti_dropdown">
+                                        <li>
+                                            <a href="#">
+                                                Men
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Women
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Children
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="has_sparkti_dropdown">
+                                    <a href="#">Baby & Mom</a>
+                                    <ul class="sparkti_dropdown">
+                                        <li>
+                                            <a href="#">
+                                                Men
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Women
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Children
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Gifts & Crafts</a>
+                                </li>
+                                <li>
+                                    <a href="#">Movies, Music & Books</a>
+                                </li>
+                                <li>
+                                    <a href="#">Accessories</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="sparkti_banner__content">
+                        <img src="assets/images/cloud.png" class="sparkti_banner_cloud" alt="sparkti_cloud">
+                        <h6>Martel exclusive</h6>
+                        <h2>
+                            Introducing
+                            <br>
+                            Hello Bello
+                        </h2>
+                        <p>
+                            Kristen & Dax's premium baby care
+                            <br>
+                            for happy babies, happy planet.
+                        </p>
+                        <a href="#" class="sparkti_btn shop_btn">
+                            Shop Now
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="sparkti_banner__adds">
+                        <!--  -->
+                        <div class="sparkti_banner__adds_container adds_container_one">
+                            <h6>
+                                Top Selling Women
+                                Shoes
+                            </h6>
+                            <p>
+                                Current price: $89.90
+                            </p>
+                            <a href="#" class="sparkti_btn shop_btn btn_sm">
+                                Shop Now
+                            </a>
+                        </div>
+                        <!--  -->
+                        <!--  -->
+                        <div class="sparkti_banner__adds_container adds_container_two">
+                            <h6>
+                                Martel Gaming House
+                                starting from $20
+                            </h6>
+                            <br>
+                            <br>
+                            <p>
+                                Enter Coupon:
+                            </p>
+                            <h6>
+                                KEYBOARD2019
+                            </h6>
+                        </div>
+                        <!--  -->
+                        <!--  -->
+                        <div class="sparkti_banner__adds_container adds_container_three">
+                            <h6>
+                                Hans j Wegner
+                            </h6>
+                            <p>
+                                J16 New 2019 Design
+                            </p>
+                            <a href="#" class="sparkti_btn shop_btn btn_sm">
+                                Shop Now
+                            </a>
+                        </div>
+                        <!--  -->
+                        <!--  -->
+                        <div class="sparkti_banner__adds_container adds_container_four">
+                            <h6>
+                                New product
+                                from innisfree
+                            </h6>
+                            <p>
+                                Ready in Store
+                            </p>
+                            <a href="#" class="sparkti_btn shop_btn btn_sm">
+                                Shop Now
+                            </a>
+                        </div>
+                        <!--  -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--  -->
+
+    <!--  -->
+    <section class="sparkti_add_section">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="sparkti_add_section__add add_one">
+                        <span class="add_section_text">
+                            Save
+                            Up
+                            To
+                        </span>
+                        <span class="add_section_number">
+                            50%
+                        </span>
+                        <span class="add_section_coupon">
+                            COUPON1908
+                        </span>
+                        <span class="add_section_image">
+                            <img src="assets/images/sale-img1.png" alt="">
+                        </span>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="col-md-3">
+                    <div class="sparkti_add_section__add add_two">
+                        <h6>
+                            <span>
+                                Sound It!
+                            </span>
+                            Enjoy your moment
+                        </h6>
+
+                    </div>
+                </div>
+                <!--  -->
+                <!--  -->
+                <div class="col-md-3">
+                    <div class="sparkti_add_section__add add_two">
+                        <h6>
+                            <span>
+                                Sound It!
+                            </span>
+                            Enjoy your moment
+                        </h6>
+
+                    </div>
+                </div>
+                <!--  -->
+            </div>
+        </div>
+    </section>
+    <!--  -->
+
+    <!--  -->
+    <section class="sparkti_section sparkti_popular_products section_padding_top section_padding_bottom">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <div class="sparkti_section_title">
+                        <h4>Popular Right Now</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="sparkti_popular_products__carousel">
+                        <!--  -->
+                        <div class="popular_products_item">
+                            <div class="popular_products_image">
+                                <img src="assets/images/sparkti-popular-products-01.jpg" alt="Product Image">
+                            </div>
+                            <div class="popular_product_body">
+                                <div class="popular_product_body__pricing_cart">
+                                    <div class="popular_product_pricing">
+                                        <span>$329.10 </span>
+                                        <del>$329.10 </del>
+                                    </div>
+                                    <div class="popular_product_cart">
+                                        <a href="#">
+                                            <i class="las la-cart-arrow-down"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <a href="#" class="popular_product_title">
+                                    Apple iPad mini 4 Wi-Fi 128GB Silver
+                                </a>
+                                <a href="#" class="product_vendors">
+                                    <span>By</span>
+                                    Krazy Frog
+                                </a>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <!--  -->
+                        <div class="popular_products_item">
+                            <div class="popular_products_image">
+                                <img src="assets/images/sparkti-popular-products-01.jpg" alt="Product Image">
+                            </div>
+                            <div class="popular_product_body">
+                                <div class="popular_product_body__pricing_cart">
+                                    <div class="popular_product_pricing">
+                                        <span>$329.10 </span>
+                                        <del>$329.10 </del>
+                                    </div>
+                                    <div class="popular_product_cart">
+                                        <a href="#">
+                                            <i class="las la-cart-arrow-down"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <a href="#" class="popular_product_title">
+                                    Apple iPad mini 4 Wi-Fi 128GB Silver
+                                </a>
+                                <a href="#" class="product_vendors">
+                                    <span>By</span>
+                                    Krazy Frog
+                                </a>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <!--  -->
+                        <div class="popular_products_item">
+                            <div class="popular_products_image">
+                                <img src="assets/images/sparkti-popular-products-01.jpg" alt="Product Image">
+                            </div>
+                            <div class="popular_product_body">
+                                <div class="popular_product_body__pricing_cart">
+                                    <div class="popular_product_pricing">
+                                        <span>$329.10 </span>
+                                        <del>$329.10 </del>
+                                    </div>
+                                    <div class="popular_product_cart">
+                                        <a href="#">
+                                            <i class="las la-cart-arrow-down"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <a href="#" class="popular_product_title">
+                                    Apple iPad mini 4 Wi-Fi 128GB Silver
+                                </a>
+                                <a href="#" class="product_vendors">
+                                    <span>By</span>
+                                    Krazy Frog
+                                </a>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <!--  -->
+                        <div class="popular_products_item">
+                            <div class="popular_products_image">
+                                <img src="assets/images/sparkti-popular-products-01.jpg" alt="Product Image">
+                            </div>
+                            <div class="popular_product_body">
+                                <div class="popular_product_body__pricing_cart">
+                                    <div class="popular_product_pricing">
+                                        <span>$329.10 </span>
+                                        <del>$329.10 </del>
+                                    </div>
+                                    <div class="popular_product_cart">
+                                        <a href="#">
+                                            <i class="las la-cart-arrow-down"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <a href="#" class="popular_product_title">
+                                    Apple iPad mini 4 Wi-Fi 128GB Silver
+                                </a>
+                                <a href="#" class="product_vendors">
+                                    <span>By</span>
+                                    Krazy Frog
+                                </a>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <!--  -->
+                        <div class="popular_products_item">
+                            <div class="popular_products_image">
+                                <img src="assets/images/sparkti-popular-products-01.jpg" alt="Product Image">
+                            </div>
+                            <div class="popular_product_body">
+                                <div class="popular_product_body__pricing_cart">
+                                    <div class="popular_product_pricing">
+                                        <span>$329.10 </span>
+                                        <del>$329.10 </del>
+                                    </div>
+                                    <div class="popular_product_cart">
+                                        <a href="#">
+                                            <i class="las la-cart-arrow-down"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <a href="#" class="popular_product_title">
+                                    Apple iPad mini 4 Wi-Fi 128GB Silver
+                                </a>
+                                <a href="#" class="product_vendors">
+                                    <span>By</span>
+                                    Krazy Frog
+                                </a>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <!--  -->
+                        <div class="popular_products_item">
+                            <div class="popular_products_image">
+                                <img src="assets/images/sparkti-popular-products-01.jpg" alt="Product Image">
+                            </div>
+                            <div class="popular_product_body">
+                                <div class="popular_product_body__pricing_cart">
+                                    <div class="popular_product_pricing">
+                                        <span>$329.10 </span>
+                                        <del>$329.10 </del>
+                                    </div>
+                                    <div class="popular_product_cart">
+                                        <a href="#">
+                                            <i class="las la-cart-arrow-down"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <a href="#" class="popular_product_title">
+                                    Apple iPad mini 4 Wi-Fi 128GB Silver
+                                </a>
+                                <a href="#" class="product_vendors">
+                                    <span>By</span>
+                                    Krazy Frog
+                                </a>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <!--  -->
+                        <div class="popular_products_item">
+                            <div class="popular_products_image">
+                                <img src="assets/images/sparkti-popular-products-01.jpg" alt="Product Image">
+                            </div>
+                            <div class="popular_product_body">
+                                <div class="popular_product_body__pricing_cart">
+                                    <div class="popular_product_pricing">
+                                        <span>$329.10 </span>
+                                        <del>$329.10 </del>
+                                    </div>
+                                    <div class="popular_product_cart">
+                                        <a href="#">
+                                            <i class="las la-cart-arrow-down"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <a href="#" class="popular_product_title">
+                                    Apple iPad mini 4 Wi-Fi 128GB Silver
+                                </a>
+                                <a href="#" class="product_vendors">
+                                    <span>By</span>
+                                    Krazy Frog
+                                </a>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <!--  -->
+                        <div class="popular_products_item">
+                            <div class="popular_products_image">
+                                <img src="assets/images/sparkti-popular-products-01.jpg" alt="Product Image">
+                            </div>
+                            <div class="popular_product_body">
+                                <div class="popular_product_body__pricing_cart">
+                                    <div class="popular_product_pricing">
+                                        <span>$329.10 </span>
+                                        <del>$329.10 </del>
+                                    </div>
+                                    <div class="popular_product_cart">
+                                        <a href="#">
+                                            <i class="las la-cart-arrow-down"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <a href="#" class="popular_product_title">
+                                    Apple iPad mini 4 Wi-Fi 128GB Silver
+                                </a>
+                                <a href="#" class="product_vendors">
+                                    <span>By</span>
+                                    Krazy Frog
+                                </a>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <!--  -->
+                        <div class="popular_products_item">
+                            <div class="popular_products_image">
+                                <img src="assets/images/sparkti-popular-products-01.jpg" alt="Product Image">
+                            </div>
+                            <div class="popular_product_body">
+                                <div class="popular_product_body__pricing_cart">
+                                    <div class="popular_product_pricing">
+                                        <span>$329.10 </span>
+                                        <del>$329.10 </del>
+                                    </div>
+                                    <div class="popular_product_cart">
+                                        <a href="#">
+                                            <i class="las la-cart-arrow-down"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <a href="#" class="popular_product_title">
+                                    Apple iPad mini 4 Wi-Fi 128GB Silver
+                                </a>
+                                <a href="#" class="product_vendors">
+                                    <span>By</span>
+                                    Krazy Frog
+                                </a>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <!--  -->
+                        <div class="popular_products_item">
+                            <div class="popular_products_image">
+                                <img src="assets/images/sparkti-popular-products-01.jpg" alt="Product Image">
+                            </div>
+                            <div class="popular_product_body">
+                                <div class="popular_product_body__pricing_cart">
+                                    <div class="popular_product_pricing">
+                                        <span>$329.10 </span>
+                                        <del>$329.10 </del>
+                                    </div>
+                                    <div class="popular_product_cart">
+                                        <a href="#">
+                                            <i class="las la-cart-arrow-down"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <a href="#" class="popular_product_title">
+                                    Apple iPad mini 4 Wi-Fi 128GB Silver
+                                </a>
+                                <a href="#" class="product_vendors">
+                                    <span>By</span>
+                                    Krazy Frog
+                                </a>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <!--  -->
+                        <div class="popular_products_item">
+                            <div class="popular_products_image">
+                                <img src="assets/images/sparkti-popular-products-01.jpg" alt="Product Image">
+                            </div>
+                            <div class="popular_product_body">
+                                <div class="popular_product_body__pricing_cart">
+                                    <div class="popular_product_pricing">
+                                        <span>$329.10 </span>
+                                        <del>$329.10 </del>
+                                    </div>
+                                    <div class="popular_product_cart">
+                                        <a href="#">
+                                            <i class="las la-cart-arrow-down"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <a href="#" class="popular_product_title">
+                                    Apple iPad mini 4 Wi-Fi 128GB Silver
+                                </a>
+                                <a href="#" class="product_vendors">
+                                    <span>By</span>
+                                    Krazy Frog
+                                </a>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <!--  -->
+                        <div class="popular_products_item">
+                            <div class="popular_products_image">
+                                <img src="assets/images/sparkti-popular-products-01.jpg" alt="Product Image">
+                            </div>
+                            <div class="popular_product_body">
+                                <div class="popular_product_body__pricing_cart">
+                                    <div class="popular_product_pricing">
+                                        <span>$329.10 </span>
+                                        <del>$329.10 </del>
+                                    </div>
+                                    <div class="popular_product_cart">
+                                        <a href="#">
+                                            <i class="las la-cart-arrow-down"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <a href="#" class="popular_product_title">
+                                    Apple iPad mini 4 Wi-Fi 128GB Silver
+                                </a>
+                                <a href="#" class="product_vendors">
+                                    <span>By</span>
+                                    Krazy Frog
+                                </a>
+                            </div>
+                        </div>
+                        <!--  -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--  -->
+
+    <!--  -->
+    <section class="sparkti_section sparkti_available_products">
+        <div class="container-fluid">
+            <div class="row">
+                <!--  -->
+                <div class="col-md-6">
+                    <div class="sparkti_available_products_container">
+                        <!--  -->
+                        <div class="sparkti_section_heading">
+                            <div class="sparkti_section_heading__content">
+                                <i class="las la-camera-retro"></i>
+                                Electronics
+                            </div>
+                            <div class="sparkti_section_heading__categories">
+                                <ul>
+                                    <li>
+                                        <a href='#'>Computer </a>
+                                    </li>
+                                    <li>
+                                        <a href='#'>Smartphone & Tablet </a>
+                                    </li>
+                                    <li>
+                                        <a href='#'>Headphones </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--  -->
+
+                        <!-- sparkti_brand_carousel -->
+                        <div class="sparkti_brand_carousel">
+                            <!--  -->
+                            <div class="sparkti_brand_carousel_item">
+                                <img src="assets/images/brand-item-01.jpg" alt="Brand item">
+                            </div>
+                            <!--  -->
+                            <!--  -->
+                            <div class="sparkti_brand_carousel_item">
+                                <img src="assets/images/brand-item-02.jpg" alt="Brand item">
+                            </div>
+                            <!--  -->
+                            <!--  -->
+                            <div class="sparkti_brand_carousel_item">
+                                <img src="assets/images/brand-item-03.jpg" alt="Brand item">
+                            </div>
+                            <!--  -->
+                            <!--  -->
+                            <div class="sparkti_brand_carousel_item">
+                                <img src="assets/images/brand-item-04.jpg" alt="Brand item">
+                            </div>
+                            <!--  -->
+                            <!--  -->
+                            <div class="sparkti_brand_carousel_item">
+                                <img src="assets/images/brand-item-05.jpg" alt="Brand item">
+                            </div>
+                            <!--  -->
+                            <!--  -->
+                            <div class="sparkti_brand_carousel_item">
+                                <img src="assets/images/brand-item-06.jpg" alt="Brand item">
+                            </div>
+                            <!--  -->
+                            <!--  -->
+                            <div class="sparkti_brand_carousel_item">
+                                <img src="assets/images/brand-item-07.jpg" alt="Brand item">
+                            </div>
+                            <!--  -->
+                            <!--  -->
+                            <div class="sparkti_brand_carousel_item">
+                                <img src="assets/images/brand-item-08.jpg" alt="Brand item">
+                            </div>
+                            <!--  -->
+                        </div>
+                        <!-- ./sparkti_brand_carousel -->
+                        <!-- product -->
+                        <div class="row">
+                            <!--  -->
+                            <div class="col-md-6">
+                                <div class="sparkti_available_products_item">
+                                    <h5>iQOS 2.4 Plus</h5>
+                                    <p>Holder & Charger</p>
+                                    <a href="#" class="sparkti_btn shop_btn btn_sm">
+                                        Shop Now
+                                    </a>
+                                    <img src="assets/images/product-img1.png" alt="">
+                                </div>
+                            </div>
+                            <!--  -->
+                            <!--  -->
+                            <div class="col-md-6">
+                                <div class="sparkti_available_products_item">
+                                    <h5>iQOS 2.4 Plus</h5>
+                                    <p>Holder & Charger</p>
+                                    <a href="#" class="sparkti_btn shop_btn btn_sm">
+                                        Shop Now
+                                    </a>
+                                    <img src="assets/images/product-img1.png" alt="">
+                                </div>
+                            </div>
+                            <!--  -->
+                        </div>
+                        <!-- product -->
+
+                        <!-- Nav -->
+                        <div class="sparkti_popular_products_tab">
+                            <div class="sparkti_section_title">
+                                <ul class="nav" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home"
+                                            role="tab" aria-controls="home" aria-selected="true">New Arrivals</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile"
+                                            role="tab" aria-controls="profile" aria-selected="false">Featured Products
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact"
+                                            role="tab" aria-controls="contact" aria-selected="false">Best Sellers</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="home" role="tabpanel"
+                                    aria-labelledby="home-tab">
+                                    <div class="row">
+                                        <!--  -->
+                                        <div class="col-md-4">
+                                            <div class="popular_products_item">
+                                                <div class="popular_products_image">
+                                                    <img src="assets/images/sparkti-popular-products-01.jpg"
+                                                        alt="Product Image">
+                                                </div>
+                                                <div class="popular_product_body">
+                                                    <div class="popular_product_body__pricing_cart">
+                                                        <div class="popular_product_pricing">
+                                                            <span>$329.10 </span>
+                                                            <del>$329.10 </del>
+                                                        </div>
+                                                        <div class="popular_product_cart">
+                                                            <a href="#">
+                                                                <i class="las la-cart-arrow-down"></i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <a href="#" class="popular_product_title">
+                                                        Apple iPad mini 4 Wi-Fi 128GB Silver
+                                                    </a>
+                                                    <a href="#" class="product_vendors">
+                                                        <span>By</span>
+                                                        Krazy Frog
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--  -->
+                                        <!--  -->
+                                        <div class="col-md-4">
+                                            <div class="popular_products_item">
+                                                <div class="popular_products_image">
+                                                    <img src="assets/images/sparkti-popular-products-01.jpg"
+                                                        alt="Product Image">
+                                                </div>
+                                                <div class="popular_product_body">
+                                                    <div class="popular_product_body__pricing_cart">
+                                                        <div class="popular_product_pricing">
+                                                            <span>$329.10 </span>
+                                                            <del>$329.10 </del>
+                                                        </div>
+                                                        <div class="popular_product_cart">
+                                                            <a href="#">
+                                                                <i class="las la-cart-arrow-down"></i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <a href="#" class="popular_product_title">
+                                                        Apple iPad mini 4 Wi-Fi 128GB Silver
+                                                    </a>
+                                                    <a href="#" class="product_vendors">
+                                                        <span>By</span>
+                                                        Krazy Frog
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--  -->
+                                        <!--  -->
+                                        <div class="col-md-4">
+                                            <div class="popular_products_item">
+                                                <div class="popular_products_image">
+                                                    <img src="assets/images/sparkti-popular-products-01.jpg"
+                                                        alt="Product Image">
+                                                </div>
+                                                <div class="popular_product_body">
+                                                    <div class="popular_product_body__pricing_cart">
+                                                        <div class="popular_product_pricing">
+                                                            <span>$329.10 </span>
+                                                            <del>$329.10 </del>
+                                                        </div>
+                                                        <div class="popular_product_cart">
+                                                            <a href="#">
+                                                                <i class="las la-cart-arrow-down"></i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <a href="#" class="popular_product_title">
+                                                        Apple iPad mini 4 Wi-Fi 128GB Silver
+                                                    </a>
+                                                    <a href="#" class="product_vendors">
+                                                        <span>By</span>
+                                                        Krazy Frog
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--  -->
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                    <div class="row">
+                                        <!--  -->
+                                        <div class="col-md-4">
+                                            <div class="popular_products_item">
+                                                <div class="popular_products_image">
+                                                    <img src="assets/images/sparkti-popular-products-01.jpg"
+                                                        alt="Product Image">
+                                                </div>
+                                                <div class="popular_product_body">
+                                                    <div class="popular_product_body__pricing_cart">
+                                                        <div class="popular_product_pricing">
+                                                            <span>$329.10 </span>
+                                                            <del>$329.10 </del>
+                                                        </div>
+                                                        <div class="popular_product_cart">
+                                                            <a href="#">
+                                                                <i class="las la-cart-arrow-down"></i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <a href="#" class="popular_product_title">
+                                                        Apple iPad mini 4 Wi-Fi 128GB Silver
+                                                    </a>
+                                                    <a href="#" class="product_vendors">
+                                                        <span>By</span>
+                                                        Krazy Frog
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--  -->
+                                        <!--  -->
+                                        <div class="col-md-4">
+                                            <div class="popular_products_item">
+                                                <div class="popular_products_image">
+                                                    <img src="assets/images/sparkti-popular-products-01.jpg"
+                                                        alt="Product Image">
+                                                </div>
+                                                <div class="popular_product_body">
+                                                    <div class="popular_product_body__pricing_cart">
+                                                        <div class="popular_product_pricing">
+                                                            <span>$329.10 </span>
+                                                            <del>$329.10 </del>
+                                                        </div>
+                                                        <div class="popular_product_cart">
+                                                            <a href="#">
+                                                                <i class="las la-cart-arrow-down"></i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <a href="#" class="popular_product_title">
+                                                        Apple iPad mini 4 Wi-Fi 128GB Silver
+                                                    </a>
+                                                    <a href="#" class="product_vendors">
+                                                        <span>By</span>
+                                                        Krazy Frog
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--  -->
+                                        <!--  -->
+                                        <div class="col-md-4">
+                                            <div class="popular_products_item">
+                                                <div class="popular_products_image">
+                                                    <img src="assets/images/sparkti-popular-products-01.jpg"
+                                                        alt="Product Image">
+                                                </div>
+                                                <div class="popular_product_body">
+                                                    <div class="popular_product_body__pricing_cart">
+                                                        <div class="popular_product_pricing">
+                                                            <span>$329.10 </span>
+                                                            <del>$329.10 </del>
+                                                        </div>
+                                                        <div class="popular_product_cart">
+                                                            <a href="#">
+                                                                <i class="las la-cart-arrow-down"></i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <a href="#" class="popular_product_title">
+                                                        Apple iPad mini 4 Wi-Fi 128GB Silver
+                                                    </a>
+                                                    <a href="#" class="product_vendors">
+                                                        <span>By</span>
+                                                        Krazy Frog
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--  -->
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                                    <div class="row">
+                                        <!--  -->
+                                        <div class="col-md-4">
+                                            <div class="popular_products_item">
+                                                <div class="popular_products_image">
+                                                    <img src="assets/images/sparkti-popular-products-01.jpg"
+                                                        alt="Product Image">
+                                                </div>
+                                                <div class="popular_product_body">
+                                                    <div class="popular_product_body__pricing_cart">
+                                                        <div class="popular_product_pricing">
+                                                            <span>$329.10 </span>
+                                                            <del>$329.10 </del>
+                                                        </div>
+                                                        <div class="popular_product_cart">
+                                                            <a href="#">
+                                                                <i class="las la-cart-arrow-down"></i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <a href="#" class="popular_product_title">
+                                                        Apple iPad mini 4 Wi-Fi 128GB Silver
+                                                    </a>
+                                                    <a href="#" class="product_vendors">
+                                                        <span>By</span>
+                                                        Krazy Frog
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--  -->
+                                        <!--  -->
+                                        <div class="col-md-4">
+                                            <div class="popular_products_item">
+                                                <div class="popular_products_image">
+                                                    <img src="assets/images/sparkti-popular-products-01.jpg"
+                                                        alt="Product Image">
+                                                </div>
+                                                <div class="popular_product_body">
+                                                    <div class="popular_product_body__pricing_cart">
+                                                        <div class="popular_product_pricing">
+                                                            <span>$329.10 </span>
+                                                            <del>$329.10 </del>
+                                                        </div>
+                                                        <div class="popular_product_cart">
+                                                            <a href="#">
+                                                                <i class="las la-cart-arrow-down"></i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <a href="#" class="popular_product_title">
+                                                        Apple iPad mini 4 Wi-Fi 128GB Silver
+                                                    </a>
+                                                    <a href="#" class="product_vendors">
+                                                        <span>By</span>
+                                                        Krazy Frog
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--  -->
+                                        <!--  -->
+                                        <div class="col-md-4">
+                                            <div class="popular_products_item">
+                                                <div class="popular_products_image">
+                                                    <img src="assets/images/sparkti-popular-products-01.jpg"
+                                                        alt="Product Image">
+                                                </div>
+                                                <div class="popular_product_body">
+                                                    <div class="popular_product_body__pricing_cart">
+                                                        <div class="popular_product_pricing">
+                                                            <span>$329.10 </span>
+                                                            <del>$329.10 </del>
+                                                        </div>
+                                                        <div class="popular_product_cart">
+                                                            <a href="#">
+                                                                <i class="las la-cart-arrow-down"></i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <a href="#" class="popular_product_title">
+                                                        Apple iPad mini 4 Wi-Fi 128GB Silver
+                                                    </a>
+                                                    <a href="#" class="product_vendors">
+                                                        <span>By</span>
+                                                        Krazy Frog
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--  -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Nav -->
+                    </div>
+                </div>
+                <!--  -->
+                <!--  -->
+                <div class="col-md-6">
+                    <div class="sparkti_available_products_container">
+                        <!--  -->
+                        <div class="sparkti_section_heading">
+                            <div class="sparkti_section_heading__content">
+                                <i class="las la-tshirt"></i>
+                                Fashion
+                            </div>
+                            <div class="sparkti_section_heading__categories">
+                                <ul>
+                                    <li>
+                                        <a href='#'>Computer </a>
+                                    </li>
+                                    <li>
+                                        <a href='#'>Smartphone & Tablet </a>
+                                    </li>
+                                    <li>
+                                        <a href='#'>Headphones </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--  -->
+
+                        <!-- sparkti_brand_carousel -->
+                        <div class="sparkti_brand_carousel">
+                            <!--  -->
+                            <div class="sparkti_brand_carousel_item">
+                                <img src="assets/images/brand-item-01.jpg" alt="Brand item">
+                            </div>
+                            <!--  -->
+                            <!--  -->
+                            <div class="sparkti_brand_carousel_item">
+                                <img src="assets/images/brand-item-02.jpg" alt="Brand item">
+                            </div>
+                            <!--  -->
+                            <!--  -->
+                            <div class="sparkti_brand_carousel_item">
+                                <img src="assets/images/brand-item-03.jpg" alt="Brand item">
+                            </div>
+                            <!--  -->
+                            <!--  -->
+                            <div class="sparkti_brand_carousel_item">
+                                <img src="assets/images/brand-item-04.jpg" alt="Brand item">
+                            </div>
+                            <!--  -->
+                            <!--  -->
+                            <div class="sparkti_brand_carousel_item">
+                                <img src="assets/images/brand-item-05.jpg" alt="Brand item">
+                            </div>
+                            <!--  -->
+                            <!--  -->
+                            <div class="sparkti_brand_carousel_item">
+                                <img src="assets/images/brand-item-06.jpg" alt="Brand item">
+                            </div>
+                            <!--  -->
+                            <!--  -->
+                            <div class="sparkti_brand_carousel_item">
+                                <img src="assets/images/brand-item-07.jpg" alt="Brand item">
+                            </div>
+                            <!--  -->
+                            <!--  -->
+                            <div class="sparkti_brand_carousel_item">
+                                <img src="assets/images/brand-item-08.jpg" alt="Brand item">
+                            </div>
+                            <!--  -->
+                        </div>
+                        <!-- ./sparkti_brand_carousel -->
+                        <!-- product -->
+                        <div class="row">
+                            <!--  -->
+                            <div class="col-md-6">
+                                <div class="sparkti_available_products_item cloath_item">
+                                    <h5>iQOS 2.4 Plus</h5>
+                                    <p>Holder & Charger</p>
+                                    <a href="#" class="sparkti_btn shop_btn btn_sm">
+                                        Shop Now
+                                    </a>
+                                </div>
+                            </div>
+                            <!--  -->
+                            <!--  -->
+                            <div class="col-md-6">
+                                <div class="sparkti_available_products_item">
+                                    <h5>iQOS 2.4 Plus</h5>
+                                    <p>Holder & Charger</p>
+                                    <a href="#" class="sparkti_btn shop_btn btn_sm">
+                                        Shop Now
+                                    </a>
+                                    <img src="assets/images/product-img1.png" alt="">
+                                </div>
+                            </div>
+                            <!--  -->
+                        </div>
+                        <!-- product -->
+                        <!-- Nav -->
+                        <div class="sparkti_popular_products_tab">
+                            <div class="sparkti_section_title">
+                                <ul class="nav" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home"
+                                            role="tab" aria-controls="home" aria-selected="true">New Arrivals</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile"
+                                            role="tab" aria-controls="profile" aria-selected="false">Featured Products
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact"
+                                            role="tab" aria-controls="contact" aria-selected="false">Best Sellers</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="home" role="tabpanel"
+                                    aria-labelledby="home-tab">
+                                    <div class="row">
+                                        <!--  -->
+                                        <div class="col-md-4">
+                                            <div class="popular_products_item">
+                                                <div class="popular_products_image">
+                                                    <img src="assets/images/sparkti-popular-products-01.jpg"
+                                                        alt="Product Image">
+                                                </div>
+                                                <div class="popular_product_body">
+                                                    <div class="popular_product_body__pricing_cart">
+                                                        <div class="popular_product_pricing">
+                                                            <span>$329.10 </span>
+                                                            <del>$329.10 </del>
+                                                        </div>
+                                                        <div class="popular_product_cart">
+                                                            <a href="#">
+                                                                <i class="las la-cart-arrow-down"></i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <a href="#" class="popular_product_title">
+                                                        Apple iPad mini 4 Wi-Fi 128GB Silver
+                                                    </a>
+                                                    <a href="#" class="product_vendors">
+                                                        <span>By</span>
+                                                        Krazy Frog
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--  -->
+                                        <!--  -->
+                                        <div class="col-md-4">
+                                            <div class="popular_products_item">
+                                                <div class="popular_products_image">
+                                                    <img src="assets/images/sparkti-popular-products-01.jpg"
+                                                        alt="Product Image">
+                                                </div>
+                                                <div class="popular_product_body">
+                                                    <div class="popular_product_body__pricing_cart">
+                                                        <div class="popular_product_pricing">
+                                                            <span>$329.10 </span>
+                                                            <del>$329.10 </del>
+                                                        </div>
+                                                        <div class="popular_product_cart">
+                                                            <a href="#">
+                                                                <i class="las la-cart-arrow-down"></i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <a href="#" class="popular_product_title">
+                                                        Apple iPad mini 4 Wi-Fi 128GB Silver
+                                                    </a>
+                                                    <a href="#" class="product_vendors">
+                                                        <span>By</span>
+                                                        Krazy Frog
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--  -->
+                                        <!--  -->
+                                        <div class="col-md-4">
+                                            <div class="popular_products_item">
+                                                <div class="popular_products_image">
+                                                    <img src="assets/images/sparkti-popular-products-01.jpg"
+                                                        alt="Product Image">
+                                                </div>
+                                                <div class="popular_product_body">
+                                                    <div class="popular_product_body__pricing_cart">
+                                                        <div class="popular_product_pricing">
+                                                            <span>$329.10 </span>
+                                                            <del>$329.10 </del>
+                                                        </div>
+                                                        <div class="popular_product_cart">
+                                                            <a href="#">
+                                                                <i class="las la-cart-arrow-down"></i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <a href="#" class="popular_product_title">
+                                                        Apple iPad mini 4 Wi-Fi 128GB Silver
+                                                    </a>
+                                                    <a href="#" class="product_vendors">
+                                                        <span>By</span>
+                                                        Krazy Frog
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--  -->
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                    <div class="row">
+                                        <!--  -->
+                                        <div class="col-md-4">
+                                            <div class="popular_products_item">
+                                                <div class="popular_products_image">
+                                                    <img src="assets/images/sparkti-popular-products-01.jpg"
+                                                        alt="Product Image">
+                                                </div>
+                                                <div class="popular_product_body">
+                                                    <div class="popular_product_body__pricing_cart">
+                                                        <div class="popular_product_pricing">
+                                                            <span>$329.10 </span>
+                                                            <del>$329.10 </del>
+                                                        </div>
+                                                        <div class="popular_product_cart">
+                                                            <a href="#">
+                                                                <i class="las la-cart-arrow-down"></i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <a href="#" class="popular_product_title">
+                                                        Apple iPad mini 4 Wi-Fi 128GB Silver
+                                                    </a>
+                                                    <a href="#" class="product_vendors">
+                                                        <span>By</span>
+                                                        Krazy Frog
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--  -->
+                                        <!--  -->
+                                        <div class="col-md-4">
+                                            <div class="popular_products_item">
+                                                <div class="popular_products_image">
+                                                    <img src="assets/images/sparkti-popular-products-01.jpg"
+                                                        alt="Product Image">
+                                                </div>
+                                                <div class="popular_product_body">
+                                                    <div class="popular_product_body__pricing_cart">
+                                                        <div class="popular_product_pricing">
+                                                            <span>$329.10 </span>
+                                                            <del>$329.10 </del>
+                                                        </div>
+                                                        <div class="popular_product_cart">
+                                                            <a href="#">
+                                                                <i class="las la-cart-arrow-down"></i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <a href="#" class="popular_product_title">
+                                                        Apple iPad mini 4 Wi-Fi 128GB Silver
+                                                    </a>
+                                                    <a href="#" class="product_vendors">
+                                                        <span>By</span>
+                                                        Krazy Frog
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--  -->
+                                        <!--  -->
+                                        <div class="col-md-4">
+                                            <div class="popular_products_item">
+                                                <div class="popular_products_image">
+                                                    <img src="assets/images/sparkti-popular-products-01.jpg"
+                                                        alt="Product Image">
+                                                </div>
+                                                <div class="popular_product_body">
+                                                    <div class="popular_product_body__pricing_cart">
+                                                        <div class="popular_product_pricing">
+                                                            <span>$329.10 </span>
+                                                            <del>$329.10 </del>
+                                                        </div>
+                                                        <div class="popular_product_cart">
+                                                            <a href="#">
+                                                                <i class="las la-cart-arrow-down"></i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <a href="#" class="popular_product_title">
+                                                        Apple iPad mini 4 Wi-Fi 128GB Silver
+                                                    </a>
+                                                    <a href="#" class="product_vendors">
+                                                        <span>By</span>
+                                                        Krazy Frog
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--  -->
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                                    <div class="row">
+                                        <!--  -->
+                                        <div class="col-md-4">
+                                            <div class="popular_products_item">
+                                                <div class="popular_products_image">
+                                                    <img src="assets/images/sparkti-popular-products-01.jpg"
+                                                        alt="Product Image">
+                                                </div>
+                                                <div class="popular_product_body">
+                                                    <div class="popular_product_body__pricing_cart">
+                                                        <div class="popular_product_pricing">
+                                                            <span>$329.10 </span>
+                                                            <del>$329.10 </del>
+                                                        </div>
+                                                        <div class="popular_product_cart">
+                                                            <a href="#">
+                                                                <i class="las la-cart-arrow-down"></i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <a href="#" class="popular_product_title">
+                                                        Apple iPad mini 4 Wi-Fi 128GB Silver
+                                                    </a>
+                                                    <a href="#" class="product_vendors">
+                                                        <span>By</span>
+                                                        Krazy Frog
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--  -->
+                                        <!--  -->
+                                        <div class="col-md-4">
+                                            <div class="popular_products_item">
+                                                <div class="popular_products_image">
+                                                    <img src="assets/images/sparkti-popular-products-01.jpg"
+                                                        alt="Product Image">
+                                                </div>
+                                                <div class="popular_product_body">
+                                                    <div class="popular_product_body__pricing_cart">
+                                                        <div class="popular_product_pricing">
+                                                            <span>$329.10 </span>
+                                                            <del>$329.10 </del>
+                                                        </div>
+                                                        <div class="popular_product_cart">
+                                                            <a href="#">
+                                                                <i class="las la-cart-arrow-down"></i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <a href="#" class="popular_product_title">
+                                                        Apple iPad mini 4 Wi-Fi 128GB Silver
+                                                    </a>
+                                                    <a href="#" class="product_vendors">
+                                                        <span>By</span>
+                                                        Krazy Frog
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--  -->
+                                        <!--  -->
+                                        <div class="col-md-4">
+                                            <div class="popular_products_item">
+                                                <div class="popular_products_image">
+                                                    <img src="assets/images/sparkti-popular-products-01.jpg"
+                                                        alt="Product Image">
+                                                </div>
+                                                <div class="popular_product_body">
+                                                    <div class="popular_product_body__pricing_cart">
+                                                        <div class="popular_product_pricing">
+                                                            <span>$329.10 </span>
+                                                            <del>$329.10 </del>
+                                                        </div>
+                                                        <div class="popular_product_cart">
+                                                            <a href="#">
+                                                                <i class="las la-cart-arrow-down"></i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <a href="#" class="popular_product_title">
+                                                        Apple iPad mini 4 Wi-Fi 128GB Silver
+                                                    </a>
+                                                    <a href="#" class="product_vendors">
+                                                        <span>By</span>
+                                                        Krazy Frog
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--  -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Nav -->
+                    </div>
+                </div>
+                <!--  -->
+            </div>
+        </div>
+    </section>
+    <!--  -->
+
+    <!--  -->
+    <div class="sparkti_section sparkti_vertical_product">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <div class="sparkti_section_title sparkti_throughline_title">
+                        <h4>Home, Garden & Kitchen</h4>
+                        <ul>
+                            <li><a href='#'>Living Room</a></li>
+                            <li><a href='#'>Bathroom </a></li>
+                            <li><a href='#'>Bedroom </a></li>
+                            <li><a href='#'>Dinning Room </a></li>
+                            <li><a href='#'>Kitchen </a></li>
+                            <li><a href='#'>Kids’ Room </a></li>
+                            <li><a href='#'>Garden </a></li>
+                            <li><a href='#'>Garage </a></li>
+                            <li><a href='#'>Office </a></li>
+                            <li><a href='#'>Decorations</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-11 offset-md-1">
+                    <div class="sparkti_vartical_tab_container">
+                        <div class="row no-gutters">
+                            <div class="col-2">
+                                <div class="nav flex-column " id="v-pills-tab" role="tablist"
+                                    aria-orientation="vertical">
+                                    <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill"
+                                        href="#v-pills-home" role="tab" aria-controls="v-pills-home"
+                                        aria-selected="true">New Arrivals</a>
+                                    <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill"
+                                        href="#v-pills-profile" role="tab" aria-controls="v-pills-profile"
+                                        aria-selected="false">Featured Products</a>
+                                    <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill"
+                                        href="#v-pills-messages" role="tab" aria-controls="v-pills-messages"
+                                        aria-selected="false">Best Sellers</a>
+                                </div>
+                            </div>
+                            <div class="col-10">
+                                <div class="tab-content" id="v-pills-tabContent">
+                                    <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
+                                        aria-labelledby="v-pills-home-tab">
+                                        <div class="sparkti_tab_content">
+                                            <!--  -->
+                                            <div class="popular_products_item">
+                                                <div class="popular_products_image">
+                                                    <img src="assets/images/sparkti-popular-products-01.jpg" alt="Product Image">
+                                                </div>
+                                                <div class="popular_product_body">
+                                                    <div class="popular_product_body__pricing_cart">
+                                                        <div class="popular_product_pricing">
+                                                            <span>$329.10 </span>
+                                                            <del>$329.10 </del>
+                                                        </div>
+                                                        <div class="popular_product_cart">
+                                                            <a href="#">
+                                                                <i class="las la-cart-arrow-down"></i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <a href="#" class="popular_product_title">
+                                                        Apple iPad mini 4 Wi-Fi 128GB Silver
+                                                    </a>
+                                                    <a href="#" class="product_vendors">
+                                                        <span>By</span>
+                                                        Krazy Frog
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <!--  -->
+                                            <!--  -->
+                                            <div class="popular_products_item">
+                                                <div class="popular_products_image">
+                                                    <img src="assets/images/sparkti-popular-products-01.jpg" alt="Product Image">
+                                                </div>
+                                                <div class="popular_product_body">
+                                                    <div class="popular_product_body__pricing_cart">
+                                                        <div class="popular_product_pricing">
+                                                            <span>$329.10 </span>
+                                                            <del>$329.10 </del>
+                                                        </div>
+                                                        <div class="popular_product_cart">
+                                                            <a href="#">
+                                                                <i class="las la-cart-arrow-down"></i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <a href="#" class="popular_product_title">
+                                                        Apple iPad mini 4 Wi-Fi 128GB Silver
+                                                    </a>
+                                                    <a href="#" class="product_vendors">
+                                                        <span>By</span>
+                                                        Krazy Frog
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <!--  -->
+                                            <!--  -->
+                                            <div class="popular_products_item">
+                                                <div class="popular_products_image">
+                                                    <img src="assets/images/sparkti-popular-products-01.jpg" alt="Product Image">
+                                                </div>
+                                                <div class="popular_product_body">
+                                                    <div class="popular_product_body__pricing_cart">
+                                                        <div class="popular_product_pricing">
+                                                            <span>$329.10 </span>
+                                                            <del>$329.10 </del>
+                                                        </div>
+                                                        <div class="popular_product_cart">
+                                                            <a href="#">
+                                                                <i class="las la-cart-arrow-down"></i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <a href="#" class="popular_product_title">
+                                                        Apple iPad mini 4 Wi-Fi 128GB Silver
+                                                    </a>
+                                                    <a href="#" class="product_vendors">
+                                                        <span>By</span>
+                                                        Krazy Frog
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <!--  -->
+                                            <!--  -->
+                                            <div class="popular_products_item">
+                                                <div class="popular_products_image">
+                                                    <img src="assets/images/sparkti-popular-products-01.jpg" alt="Product Image">
+                                                </div>
+                                                <div class="popular_product_body">
+                                                    <div class="popular_product_body__pricing_cart">
+                                                        <div class="popular_product_pricing">
+                                                            <span>$329.10 </span>
+                                                            <del>$329.10 </del>
+                                                        </div>
+                                                        <div class="popular_product_cart">
+                                                            <a href="#">
+                                                                <i class="las la-cart-arrow-down"></i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <a href="#" class="popular_product_title">
+                                                        Apple iPad mini 4 Wi-Fi 128GB Silver
+                                                    </a>
+                                                    <a href="#" class="product_vendors">
+                                                        <span>By</span>
+                                                        Krazy Frog
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <!--  -->
+                                            <!--  -->
+                                            <div class="popular_products_item">
+                                                <div class="popular_products_image">
+                                                    <img src="assets/images/sparkti-popular-products-01.jpg" alt="Product Image">
+                                                </div>
+                                                <div class="popular_product_body">
+                                                    <div class="popular_product_body__pricing_cart">
+                                                        <div class="popular_product_pricing">
+                                                            <span>$329.10 </span>
+                                                            <del>$329.10 </del>
+                                                        </div>
+                                                        <div class="popular_product_cart">
+                                                            <a href="#">
+                                                                <i class="las la-cart-arrow-down"></i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <a href="#" class="popular_product_title">
+                                                        Apple iPad mini 4 Wi-Fi 128GB Silver
+                                                    </a>
+                                                    <a href="#" class="product_vendors">
+                                                        <span>By</span>
+                                                        Krazy Frog
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <!--  -->
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
+                                        aria-labelledby="v-pills-profile-tab">
+                                        <div class="sparkti_tab_content">
+                                            <!--  -->
+                                            <div class="popular_products_item">
+                                                <div class="popular_products_image">
+                                                    <img src="assets/images/sparkti-popular-products-01.jpg" alt="Product Image">
+                                                </div>
+                                                <div class="popular_product_body">
+                                                    <div class="popular_product_body__pricing_cart">
+                                                        <div class="popular_product_pricing">
+                                                            <span>$329.10 </span>
+                                                            <del>$329.10 </del>
+                                                        </div>
+                                                        <div class="popular_product_cart">
+                                                            <a href="#">
+                                                                <i class="las la-cart-arrow-down"></i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <a href="#" class="popular_product_title">
+                                                        Apple iPad mini 4 Wi-Fi 128GB Silver
+                                                    </a>
+                                                    <a href="#" class="product_vendors">
+                                                        <span>By</span>
+                                                        Krazy Frog
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <!--  -->
+                                            <!--  -->
+                                            <div class="popular_products_item">
+                                                <div class="popular_products_image">
+                                                    <img src="assets/images/sparkti-popular-products-01.jpg" alt="Product Image">
+                                                </div>
+                                                <div class="popular_product_body">
+                                                    <div class="popular_product_body__pricing_cart">
+                                                        <div class="popular_product_pricing">
+                                                            <span>$329.10 </span>
+                                                            <del>$329.10 </del>
+                                                        </div>
+                                                        <div class="popular_product_cart">
+                                                            <a href="#">
+                                                                <i class="las la-cart-arrow-down"></i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <a href="#" class="popular_product_title">
+                                                        Apple iPad mini 4 Wi-Fi 128GB Silver
+                                                    </a>
+                                                    <a href="#" class="product_vendors">
+                                                        <span>By</span>
+                                                        Krazy Frog
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <!--  -->
+                                            <!--  -->
+                                            <div class="popular_products_item">
+                                                <div class="popular_products_image">
+                                                    <img src="assets/images/sparkti-popular-products-01.jpg" alt="Product Image">
+                                                </div>
+                                                <div class="popular_product_body">
+                                                    <div class="popular_product_body__pricing_cart">
+                                                        <div class="popular_product_pricing">
+                                                            <span>$329.10 </span>
+                                                            <del>$329.10 </del>
+                                                        </div>
+                                                        <div class="popular_product_cart">
+                                                            <a href="#">
+                                                                <i class="las la-cart-arrow-down"></i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <a href="#" class="popular_product_title">
+                                                        Apple iPad mini 4 Wi-Fi 128GB Silver
+                                                    </a>
+                                                    <a href="#" class="product_vendors">
+                                                        <span>By</span>
+                                                        Krazy Frog
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <!--  -->
+                                            <!--  -->
+                                            <div class="popular_products_item">
+                                                <div class="popular_products_image">
+                                                    <img src="assets/images/sparkti-popular-products-01.jpg" alt="Product Image">
+                                                </div>
+                                                <div class="popular_product_body">
+                                                    <div class="popular_product_body__pricing_cart">
+                                                        <div class="popular_product_pricing">
+                                                            <span>$329.10 </span>
+                                                            <del>$329.10 </del>
+                                                        </div>
+                                                        <div class="popular_product_cart">
+                                                            <a href="#">
+                                                                <i class="las la-cart-arrow-down"></i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <a href="#" class="popular_product_title">
+                                                        Apple iPad mini 4 Wi-Fi 128GB Silver
+                                                    </a>
+                                                    <a href="#" class="product_vendors">
+                                                        <span>By</span>
+                                                        Krazy Frog
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <!--  -->
+                                            <!--  -->
+                                            <div class="popular_products_item">
+                                                <div class="popular_products_image">
+                                                    <img src="assets/images/sparkti-popular-products-01.jpg" alt="Product Image">
+                                                </div>
+                                                <div class="popular_product_body">
+                                                    <div class="popular_product_body__pricing_cart">
+                                                        <div class="popular_product_pricing">
+                                                            <span>$329.10 </span>
+                                                            <del>$329.10 </del>
+                                                        </div>
+                                                        <div class="popular_product_cart">
+                                                            <a href="#">
+                                                                <i class="las la-cart-arrow-down"></i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <a href="#" class="popular_product_title">
+                                                        Apple iPad mini 4 Wi-Fi 128GB Silver
+                                                    </a>
+                                                    <a href="#" class="product_vendors">
+                                                        <span>By</span>
+                                                        Krazy Frog
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <!--  -->
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
+                                        aria-labelledby="v-pills-messages-tab">
+                                        <div class="sparkti_tab_content">
+                                            <!--  -->
+                                            <div class="popular_products_item">
+                                                <div class="popular_products_image">
+                                                    <img src="assets/images/sparkti-popular-products-01.jpg" alt="Product Image">
+                                                </div>
+                                                <div class="popular_product_body">
+                                                    <div class="popular_product_body__pricing_cart">
+                                                        <div class="popular_product_pricing">
+                                                            <span>$329.10 </span>
+                                                            <del>$329.10 </del>
+                                                        </div>
+                                                        <div class="popular_product_cart">
+                                                            <a href="#">
+                                                                <i class="las la-cart-arrow-down"></i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <a href="#" class="popular_product_title">
+                                                        Apple iPad mini 4 Wi-Fi 128GB Silver
+                                                    </a>
+                                                    <a href="#" class="product_vendors">
+                                                        <span>By</span>
+                                                        Krazy Frog
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <!--  -->
+                                            <!--  -->
+                                            <div class="popular_products_item">
+                                                <div class="popular_products_image">
+                                                    <img src="assets/images/sparkti-popular-products-01.jpg" alt="Product Image">
+                                                </div>
+                                                <div class="popular_product_body">
+                                                    <div class="popular_product_body__pricing_cart">
+                                                        <div class="popular_product_pricing">
+                                                            <span>$329.10 </span>
+                                                            <del>$329.10 </del>
+                                                        </div>
+                                                        <div class="popular_product_cart">
+                                                            <a href="#">
+                                                                <i class="las la-cart-arrow-down"></i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <a href="#" class="popular_product_title">
+                                                        Apple iPad mini 4 Wi-Fi 128GB Silver
+                                                    </a>
+                                                    <a href="#" class="product_vendors">
+                                                        <span>By</span>
+                                                        Krazy Frog
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <!--  -->
+                                            <!--  -->
+                                            <div class="popular_products_item">
+                                                <div class="popular_products_image">
+                                                    <img src="assets/images/sparkti-popular-products-01.jpg" alt="Product Image">
+                                                </div>
+                                                <div class="popular_product_body">
+                                                    <div class="popular_product_body__pricing_cart">
+                                                        <div class="popular_product_pricing">
+                                                            <span>$329.10 </span>
+                                                            <del>$329.10 </del>
+                                                        </div>
+                                                        <div class="popular_product_cart">
+                                                            <a href="#">
+                                                                <i class="las la-cart-arrow-down"></i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <a href="#" class="popular_product_title">
+                                                        Apple iPad mini 4 Wi-Fi 128GB Silver
+                                                    </a>
+                                                    <a href="#" class="product_vendors">
+                                                        <span>By</span>
+                                                        Krazy Frog
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <!--  -->
+                                            <!--  -->
+                                            <div class="popular_products_item">
+                                                <div class="popular_products_image">
+                                                    <img src="assets/images/sparkti-popular-products-01.jpg" alt="Product Image">
+                                                </div>
+                                                <div class="popular_product_body">
+                                                    <div class="popular_product_body__pricing_cart">
+                                                        <div class="popular_product_pricing">
+                                                            <span>$329.10 </span>
+                                                            <del>$329.10 </del>
+                                                        </div>
+                                                        <div class="popular_product_cart">
+                                                            <a href="#">
+                                                                <i class="las la-cart-arrow-down"></i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <a href="#" class="popular_product_title">
+                                                        Apple iPad mini 4 Wi-Fi 128GB Silver
+                                                    </a>
+                                                    <a href="#" class="product_vendors">
+                                                        <span>By</span>
+                                                        Krazy Frog
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <!--  -->
+                                            <!--  -->
+                                            <div class="popular_products_item">
+                                                <div class="popular_products_image">
+                                                    <img src="assets/images/sparkti-popular-products-01.jpg" alt="Product Image">
+                                                </div>
+                                                <div class="popular_product_body">
+                                                    <div class="popular_product_body__pricing_cart">
+                                                        <div class="popular_product_pricing">
+                                                            <span>$329.10 </span>
+                                                            <del>$329.10 </del>
+                                                        </div>
+                                                        <div class="popular_product_cart">
+                                                            <a href="#">
+                                                                <i class="las la-cart-arrow-down"></i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <a href="#" class="popular_product_title">
+                                                        Apple iPad mini 4 Wi-Fi 128GB Silver
+                                                    </a>
+                                                    <a href="#" class="product_vendors">
+                                                        <span>By</span>
+                                                        Krazy Frog
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <!--  -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--  -->
+
+    <!--  -->
+    <!--  -->
+
+    <!--  -->
+    <!--  -->
+
+    <!--  -->
+    <!--  -->
+
+    <!--  -->
+    <!--  -->
+
+    <!-- JQuery -->
+    <script src="assets/js/jquery-3.4.1.min.js"></script>
+    <!--  -->
+    <script src="assets/js/popper.min.js"></script>
+    <!--  -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!--  -->
+    <script src="assets/js/slick.min.js"></script>
+    <!--  -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

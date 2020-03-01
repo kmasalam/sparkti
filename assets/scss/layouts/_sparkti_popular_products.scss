@@ -1,0 +1,68 @@
+@mixin popular_products_item{
+    .popular_products_image{}
+    .popular_product_body{
+        &__pricing_cart{
+            @include flexDirection(row);
+            justify-content: space-between;
+            padding-top: 15px;
+            padding-bottom: 10px;
+            .popular_product_pricing{
+                span{
+                    color: $cf1;
+                    font-size: $fz16;
+                    font-weight: $bold;
+                    font-family: $assistant;
+                }
+                del{
+                    @extend span;
+                    font-size: $fz14;
+                    color: $c252;
+                }
+            }
+            .popular_product_cart{
+                a{
+                    i{
+                        color: $cac;
+                        font-size: $fz22;
+                    }
+                }
+            }
+        }
+        .popular_product_title{
+            color: $c6c8;
+            font-size: $fz14;
+            font-weight: $medium;
+            font-family: $rubik;
+        }
+        .product_vendors{
+            display: block;
+            color: $c737;
+            font-size: $fz12;
+            padding-top: 35px;
+            span{
+                color: $cac;
+            }
+        }
+    }
+}
+.sparkti_popular_products{
+    background: $cff;
+    .sparkti_popular_products__carousel{
+        
+        .sparkti_dots{
+            position: relative;
+            margin-top: 65px;
+            margin-bottom: 0;
+        }
+        .slick-slide{
+            margin-left: 25px;
+            margin-right: 25px;
+            &:focus{
+                @include no_out_box;
+            }
+        }
+        .popular_products_item{
+            @include popular_products_item;
+        }
+    }
+}

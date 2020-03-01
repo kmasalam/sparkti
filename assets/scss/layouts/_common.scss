@@ -1,0 +1,20 @@
+.sparkti_dots{
+    @include inlineFlex;
+    left: 50%;
+    transform: translateX(-50%);
+    li{
+        height: 8px;
+        width: 8px;
+        background: $cac;
+        border-radius: 50%;
+        &:not(:last-child){
+            margin-right: 10px;
+        }
+        &.slick-active{
+            background: $cf1;
+        }
+        button{
+            display: none;
+        }
+    }
+} 

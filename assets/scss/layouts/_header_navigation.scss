@@ -1,0 +1,129 @@
+.sparkti_navigation{
+    box-shadow: 0px 6px 4px rgba($c36,.20);
+    background: $cff;
+    
+    &__content{
+        padding: 20px 0;
+        .navbar-brand{}
+        .sparkti_navigation__content_center{
+            form{
+                @include inlineFlex;
+                .input-group-prepend{
+                    .sparkti_offcanvas_btn{
+                        background:transparent;
+                        border: none;
+                        font-size: $fz24;
+                        color: $c36;
+                        @include inlineFlex;
+                        margin-right: 20px;
+                        i{}
+                    }
+                }
+                .input-group{
+                    border: 1px solid $c737;
+                    .form-control{
+                        height: 40px;
+                        line-height: 40px;
+                        border: none;
+                        border-radius: 0;
+                        width: 350px;
+                        font-family: $assistant;
+                        font-size: $fz14;
+                        border-right: 1px solid $ce1e;
+                        &:focus{
+                            outline: none;
+                            box-shadow: none;
+                        }
+                    }
+                    .sparkti_select{
+                        padding: 0 25px;
+                        line-height: 40px;
+                        border: none;
+                        color:$c252;
+                        font-size: $fz14;
+                        font-family: $assistant;
+                    }
+                    .sparkti_navigation_search{
+                        height: 40px;
+                        @include inlineFlex;
+                        background: $c737;
+                        font-family: $assistant;
+                        font-size: $fz14;
+                        font-weight: $bold;
+                        text-transform: uppercase;
+                        border: none;
+                        color: $cff;
+                        padding: 0 30px;
+                        i{
+                            font-size: $fz18;
+                            @include inlineFlex;
+                            margin-right: 5px;
+                        }
+                    }
+                }
+            }
+        }
+        .sparkti_navigation__content_right{
+            @include flexDirection(row);
+            .sparkti_navigation_login_signup{
+                @include flexDirection(row);
+                a{
+                    color: $cac;
+                    font-size: $fz14;
+                    font-family: $rubik;
+                    display: inline-flex;
+                    align-items: center;
+                    
+                    i{
+                        font-size: $fz24;
+                        color: $c36;
+                    }
+                    &.sparkti_navigation_signup{
+                        
+                    }
+                    &.sparkti_navigation_login{
+                        margin-right: 30px;
+                        i{
+                            font-size: $fz14;
+                            color: $c63;
+                        }
+                    }
+                }
+            }
+            .sparkti_navigation_cart{
+                display: inline-flex;
+                align-items: center;
+                a{
+                    display: inline-flex;
+                    align-items: center;
+                    margin-left: 24px;
+                    i{
+                        font-size: $fz24;
+                        color: $c36;
+                    }
+                    &.sparkti_cart_compare{
+                        // margin-left: 25px;
+                        // margin-right: 25px;
+                    }
+                    &.sparkti_cart_wishlist{}
+                    &.sparkti_cart_container{
+                        font-family: $assistant;
+                        font-weight: $bold;
+                        color: $c36;
+                        font-size: $fz18;
+                        .sparkti_cart_container__item{
+                            height: 30px;
+                            width: 30px;
+                            border-radius: 50%;
+                            background: $cf1;
+                            font-size: $fz12;
+                            color: $cff;
+                            @include inlineFlex;
+                            margin-left: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

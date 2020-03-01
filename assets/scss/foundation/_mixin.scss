@@ -1,0 +1,51 @@
+@mixin flexDirection($flow) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @if $flow == "column" {
+      flex-flow: $flow;
+    } @else if $flow == "row" {
+      flex-flow: $flow;
+    } @else {
+      flex-flow: row-reverse;
+    }
+  }
+  @mixin transition($timing) {
+    transition: all $timing linear;
+  }
+
+@mixin inlineFlex{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin list {
+  padding: 0 12px;
+}
+@mixin list_anchor {
+  font-family: $rubik;
+  font-weight: $regular;
+  font-size: $fz12;
+  color: $c63;
+  padding: 10px 0;
+  display: block;
+  border-bottom: 1px solid $ce1e;
+  
+}
+@mixin btn_content($height,$padding,$font) {
+  background: $cff;
+  line-height: $height;
+  height: $height;
+  padding: 0 $padding;
+  font-family: $assistant;
+  font-weight: $bold;
+  text-transform: uppercase;
+  font-size: $font;
+  color: $c36; 
+  display: inline-flex;
+}
+@mixin no_out_box {
+    outline: none;
+    box-shadow: none;
+}

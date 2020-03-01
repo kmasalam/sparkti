@@ -1,0 +1,155 @@
+.sparkti_banner{
+    background:$cefe;
+    padding-top: 30px;
+    &__categories{
+        .sparkti_categories_marker{
+            background: $cf1;
+            @include flexDirection(row);
+            padding: 12px 0;
+            font-family: $assistant;
+            font-size: $fz16;
+            font-weight: $bold;
+            text-transform: uppercase;
+            color: $cff;
+            i{
+                font-size: $fz32;
+                font-weight: $regular;
+            }
+        }
+        .sparkti_categories_nav{
+            background: $cff;
+            
+            ul{
+                margin: 0;
+                padding: 0;
+                li{
+                    @include list;
+                    
+                    &.has_sparkti_dropdown{
+                        position: relative;
+                        >a{
+                            position: relative;
+                            &::after{
+                                content: "\f105";
+                                font-family: 'Line Awesome Free';
+                                font-weight: 700;
+                                position: absolute;
+                                right: 0;
+                            }
+                        }
+                        .sparkti_dropdown{
+                            position: absolute;
+                            left: calc(100% + 20px);
+                            width: 250px;
+                            background:$cff;
+                            z-index: 5;
+                            opacity: 0;
+                            visibility: hidden;
+                            @include transition(.30s);
+                            transform: scale(1.05);
+                            top: 0;
+                        }
+                    }
+                    a{
+                        @include list_anchor;
+                        @include transition(.30s);
+                    }
+                    &:hover{
+                        >a{
+                            font-weight: $bold;
+                            background: $cf7f;
+                        }
+                        .sparkti_dropdown{
+                            visibility: visible;
+                            opacity: 1;
+                            left: calc(100% + 0px);
+                            transform: scale(1);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &__content{
+        background: $c50a;
+        height: 100%;
+        padding: 30px 30px 0 30px;
+        @include flexDirection(column);
+        align-items: flex-start;
+        .sparkti_banner_cloud{
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        h6{
+            color: $cff;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+        h2{
+            color: $cff;
+            margin-bottom: 10px;
+        }
+        p{
+            color: $cff;
+            font-weight: $regular;
+            font-family: $rubik;
+            font-size: $fz15;
+            margin-bottom: 25px;
+        }
+        .sparkti_btn{
+            &.shop_btn{
+                @include btn_content(50px,25px,$fz16);
+            }
+        }
+    }
+    &__adds{
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        .sparkti_banner__adds_container{
+            height: 50%;
+            flex:  0 0 50%;
+            max-width: 50%;
+            padding: 25px;
+            h6{
+                font-weight: $bold;
+                text-transform: uppercase;
+                color: $cff;
+            }
+            p{
+                font-family: $assistant;
+                padding-top: 7px;
+                color: $cff;
+            }
+            .sparkti_btn {
+                @include btn_content(30px,20px,12px); 
+                margin-top: 15px;
+            }
+            &.adds_container_one{
+                background: $ce2d;
+                h6{
+                    color: $c36;
+                }
+                p{
+                    font-size: $fz14;
+                    color: $c36;
+                }
+                .sparkti_btn{
+                    background: $c737;
+                    color: $cff;
+                }
+                
+            }
+            &.adds_container_two{
+                background: $c8c6;
+            }
+            &.adds_container_three{
+                background: $c2f2;
+            }
+            &.adds_container_four{
+                background: $c1b1;
+            }
+        }
+    }
+}

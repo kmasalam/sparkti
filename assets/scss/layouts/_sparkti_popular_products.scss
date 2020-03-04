@@ -33,12 +33,18 @@
             font-size: $fz14;
             font-weight: $medium;
             font-family: $rubik;
+            @include respond-to(larage) {
+                font-size: $fz12;
+            }
         }
         .product_vendors{
             display: block;
             color: $c737;
             font-size: $fz12;
             padding-top: 35px;
+            @include respond-to(larage) {
+                padding-top: 20px;
+            }
             span{
                 color: $cac;
             }

@@ -1,0 +1,100 @@
+.sparkti_available_products{
+    margin-top: 70px;
+    .sparkti_available_products_container{
+        background: $cff;
+        padding: 20px 20px;
+        .sparkti_section_heading{
+            @include sparkti_section_heading;
+        }
+        .sparkti_brand_carousel{
+            @include sparkti_brand_carousel;
+        }
+        .sparkti_available_products_item{
+            position: relative;
+            padding: 38px 0 50px 30px;
+            background: $cf3f3;
+            h5{
+                font-weight: $bold;
+                font-size: $fz20;
+                color: $c36;
+                margin-bottom: 12px;
+                position: relative;
+                z-index: 5;
+            }
+            p{
+                font-size: $fz14;
+                margin-bottom: 20px;
+                color: $c63;
+                position: relative;
+                z-index: 5;
+            }
+            a{
+                @include btn_content(30px,20px,$fz12); 
+                background: $c737;
+                color: $cff;
+                border-radius: 3px;
+                position: relative;
+                z-index: 5;
+            }
+            &.cloath_item{
+                background: $cffc5;
+                h5{
+                    color: $cff;
+                }
+                p{
+                    @extend h5;
+                    font-weight: $regular;
+                    font-size: $fz14;
+                }
+                .sparkti_btn{
+                    background: $cff;
+                    color: $cf1;
+                }
+            }
+            img{
+                position: absolute;
+                right: 0;
+                top: 0;
+                height: 100%;
+                z-index: 0;
+            }
+        }
+        .sparkti_popular_products_tab{
+            margin-top: 40px;
+            .sparkti_section_title{
+                text-align: center;
+                .nav{
+                    @include inlineFlex;
+                }
+                margin-bottom: 35px;
+                ul{
+                    li{
+                        a{
+                            font-size: $fz20;
+                            color: $c36;
+                            font-family: $assistant;
+                            font-weight: $bold;
+                            padding-top: 0;
+                            @include transition(.30s);
+                            @include respond-to(larage) {
+                                font-size: $fz14;
+                            }
+                            @include respond-to(mdm) {
+                                font-size: $fz14;
+                            }
+                            &.active{
+                                color: $cf1;
+                            }
+                        }
+                    }
+                }
+            }
+            .tab-content{
+                .tab-pane{
+                    @include popular_products_item;
+                }
+            }
+        }
+    }
+    
+}

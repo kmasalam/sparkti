@@ -34,6 +34,12 @@
                             outline: none;
                             box-shadow: none;
                         }
+                        @include respond-to(larage) {
+                            width: 210px;
+                        }
+                        @include respond-to(mdm) {
+                            width: 200px;
+                        }
                     }
                     .sparkti_select{
                         padding: 0 25px;
@@ -58,6 +64,9 @@
                             font-size: $fz18;
                             @include inlineFlex;
                             margin-right: 5px;
+                        }
+                        @include respond-to(larage) {
+                            padding: 0 20px;
                         }
                     }
                 }
@@ -87,6 +96,12 @@
                             font-size: $fz14;
                             color: $c63;
                         }
+                        @include respond-to(larage) {
+                            margin-right: 20px;
+                        }
+                        @include respond-to(mdm) {
+                            margin-right: 10px;
+                        }
                     }
                 }
             }
@@ -97,6 +112,12 @@
                     display: inline-flex;
                     align-items: center;
                     margin-left: 24px;
+                    @include respond-to(larage) {
+                        margin-left: 15px;
+                    }
+                    @include respond-to(mdm) {
+                        margin-left: 10px;
+                    }
                     i{
                         font-size: $fz24;
                         color: $c36;

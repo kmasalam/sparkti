@@ -6,6 +6,10 @@ body{
     padding: 0;
     background: $cf6f;
 }
+button:focus{
+  outline: none;
+  box-shadow: none;
+}
 img{
     max-width: 100%;
 }
@@ -52,5 +56,11 @@ h1,h2,h3,h4,h5,h6,p{
   }
   .section_padding_bottom{
     padding-bottom: 65px;
+  }
+  .form-control{
+      &:focus{
+          outline: none;
+          box-shadow: none;
+      }
   }
 

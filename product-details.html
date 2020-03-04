@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sparkti</title>
+    <!--  -->
+    <link href="https://fonts.googleapis.com/css?family=Assistant:400,700|Rubik:400,500&display=swap" rel="stylesheet">
+    <!--  -->
+    <link rel="stylesheet" href="assets/css/line-awesome.min.css">
+    <!--  -->
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <!--  -->
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <!--  -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!--  -->
+    <header>
+        <!--  -->
+        <div class="sparkti_toolbar">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="sparkti_toolbar__left">
+                            <span class="sparkti_toolbar__currency sparkti_toolbar__item">
+                                <select name="sparkti_currency" class="sparkti_select" id="">
+                                    <option value="Us Dollar">Us Dollar</option>
+                                    <option value="Pound">Pound</option>
+                                    <option value="Taka">Taka</option>
+                                    <option value="Euro">Euro</option>
+                                </select>
+                            </span>
+                            <span class="sparkti_toolbar__language sparkti_toolbar__item">
+                                <select name="sparkti_currency" class="sparkti_select" id="">
+                                    <option value="English">English</option>
+                                    <option value="Spanish">Spanish</option>
+                                    <option value="Chinese">Chinese</option>
+                                </select>
+                            </span>
+                            <span class="sparkti_toolbar__hotline sparkti_toolbar__item">
+                                <span class="sparkti_toolbar__hotline_label">
+                                    <i class="las la-phone"></i>
+                                    Toll Free:
+                                </span>
+                                <a href="#">
+                                    1-800-333-6868
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="sparkti_toolbar__right">
+                            <span class="sparkti_toolbar__item sparkti_toolbar__order_tracking sparkti_has_dropdown">
+                                <a href="#">
+                                    Trach your order
+                                </a>
+                                <div class="sparkti_dropdown">
+                                    <div class="form-group">
+                                        <input type="text" placeholder="Order No:" class="form-control">
+                                        <div class="sparkti_toolbar_order_phone">
+                                            <span>
+                                                +880
+                                            </span>
+                                            <input type="text" class="form-control" placeholder="Your Mobile Number">
+                                        </div>
+                                    </div>
+                                </div>
+                            </span>
+                            <span class="sparkti_toolbar__item sparkti_toolbar__help sparkti_has_dropdown">
+                                <a href="#">
+                                    Help & Contact
+                                </a>
+                            </span>
+                            <span class="sparkti_toolbar__item sparkti_toolbar_products">
+                                <a href="#">
+                                    Shop All Products On Deals!
+                                    <i class="las la-arrow-right"></i>
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--  -->
+        <div class="sparkti_navigation   ">
+            <div class="container-fluid">
+                <div class="navbar sparkti_navigation__content">
+                    <a class="navbar-brand" href="#">
+                        <img src="assets/images/logo.png" alt="sparkti">
+                    </a>
+                    <div class="sparkti_navigation__content_center ml-auto">
+                        <form action="#">
+                            <div class="input-group-prepend">
+                                <button class="sparkti_offcanvas_btn">
+                                    <i class="las la-bars"></i>
+                                </button>
+                            </div>
+                            <div class="input-group">
+
+                                <input type="email" class="form-control" placeholder="Search on Martel..."
+                                    id="exampleInputEmail1" aria-describedby="emailHelp">
+                                <div class="input-group-append">
+                                    <!-- <button class="sparkti_categories_btn">
+                                        All
+                                        <i class="las la-angle-down"></i>
+                                    </button> -->
+                                    <select name="sparkti_currency" class="sparkti_select" id="">
+                                        <option value="All">All</option>
+                                        <option value="cat-1">cat-1</option>
+                                        <option value="cat-2">cat-2</option>
+                                    </select>
+                                </div>
+                                <div class="input-group-append">
+                                    <button class="sparkti_navigation_search" type="submit">
+                                        <i class="las la-search"></i>
+                                        Search
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="sparkti_navigation__content_right ml-auto">
+                        <div class="sparkti_navigation_login_signup">
+                            <a href="#" class="sparkti_navigation_signup">
+                                <i class="lar la-user"></i>
+                                Sign up
+                            </a>
+
+                            <a href="#" class="sparkti_navigation_login">
+                                <i>or</i>
+                                Log in
+                            </a>
+                        </div>
+                        <div class="sparkti_navigation_cart">
+                            <a href="#" class="sparkti_cart_compare">
+                                <i class="las la-random"></i>
+                            </a>
+                            <a href="#" class="sparkti_cart_wishlist">
+                                <i class="las la-heart"></i>
+                            </a>
+                            <a href="#" class="sparkti_cart_container">
+                                Cart
+                                <span class="sparkti_cart_container__item">
+                                    12
+                                </span>
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--  -->
+
+    <!--  -->
+    <div class="sparkti_breadcrumb">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="sparkti_breadcrumb__inner">
+                        <ul class="sparkti_breadcrumb_menu">
+                            <li>
+                                <a href="#">
+                                    <i class="las la-home"></i>
+                                    Home  
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Martel’s Shop 
+                                </a>
+                            </li>
+                            <li>
+                                <span>
+                                    Brushed 316L Stainless Steel Case Tan Leather Watch
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--  -->
+
+    <!--  -->
+    <section class="sparkti_single_product_details">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="sparkti_product_container">
+                        <div class="sparkti_best_deal_carousel_area">
+                            <div class="sparkti_best_deal_carousel_images">
+                                <!--  -->
+                                <div class="sparkti_image__item">
+                                    <img src="assets/images/today-dl_images-01.jpg" alt="today deal">
+                                </div>
+                                <!--  -->
+                                <!--  -->
+                                <div class="sparkti_image__item">
+                                    <img src="assets/images/today-dl_images-01.jpg" alt="today deal">
+                                </div>
+                                <!--  -->
+                                <!--  -->
+                                <div class="sparkti_image__item">
+                                    <img src="assets/images/today-dl_images-01.jpg" alt="today deal">
+                                </div>
+                                <!--  -->
+                                <!--  -->
+                                <div class="sparkti_image__item">
+                                    <img src="assets/images/today-dl_images-01.jpg" alt="today deal">
+                                </div>
+                                <!--  -->
+                            </div>
+                            <!--  -->
+                            <div class="sparkti_best_deal__content_carousel">
+                                <!--  -->
+                                <div class="sparkti_best_deal__content_carousel_item">
+                                    <div class="sparkti_best_deal__content_carousel_image">
+                                        <img src="assets/images/single-product-01.jpg" alt="Today Deal image">
+                                    </div>
+                                    <div class="sparkti_best_deal__content_carousel_content">
+                                        <a href="#" class="sparkti_deals_title">
+                                            <h4>
+                                                Brushed 316L Stainless Steel Case Tang Leather
+                                                Watch
+                                            </h4>
+                                        </a>
+                                        <div class="sparkti_product_rating">
+                                            
+                                            <i class="las la-star"></i>
+                                            <i class="las la-star"></i>
+                                            <i class="las la-star"></i>
+                                            <i class="las la-star"></i>
+                                            <i class="las la-star-half-alt"></i>
+                                            <a class="sparkti_product_reviews">
+                                                42 reviews
+                                            </a>
+                                            <a href="#" class="product_vendors">
+                                                <span>By</span>
+                                                Krazy Frog
+                                            </a>
+                                        </div>
+                                        <div class="today_deals_product_pricing_supplier">
+                                            <div class="today_deals_product_pricing">
+                                                <span>$329.10 </span>
+                                                <del>$329.10 </del>
+                                            </div>
+                                            <a href="#" class="sparkti_question">
+                                                Ask a question
+                                            </a>
+                                        </div>
+                                        
+                                        <div class="sparkti_product_features">
+                                            <ul>
+                                                <li>
+                                                    For when your phone's run out of battery
+                                                </li>
+                                                <li>
+                                                    Rose-gold-tone strap and charset
+                                                </li>
+                                                <li>
+                                                    Three-hand movement
+                                                </li>
+                                                <li>
+                                                   Date window 
+                                                </li>
+                                                <li>
+                                                   3/4″ Dome Tweeters: 2X and 4″ Woofer: 1X
+                                                </li>
+                                            </ul>
+                                            <span class="sparkti_product_status">
+                                                Status: <span>Only 5 left!</span>
+                                            </span>
+                                            <span class="sparkti_product_brand">
+                                                Brand: <a href="#">Apple</a>
+                                            </span>
+                                        </div>
+                                        <div class="sparkti_product_shopping_cart_options">
+                                            <div class="sparkti_product_shopping_cart_options__quantity">
+                                                <span class="shopping_cart_options_minus">-</span>
+                                                <span class="shopping_cart_options_display"></span>
+                                                <span class="shopping_cart_options_minus">+</span>
+                                            </div>
+                                            <a href="#" class="sparkti_btn shop_btn btn_lg">
+                                                Add To Cart
+                                            </a>
+                                            <a href="#" class="sparkti_wishlist_btn">
+                                                <i class="las la-heart"></i>
+                                            </a>
+                                            <a href="" class="sparkti_shopping_reset_btn">
+                                                <i class="las la-sync-alt"></i>
+                                            </a>
+                                        </div>
+                                        
+                                        <div class="sparkti_single_product_id">
+                                            <span>
+                                                SKU: 
+                                            </span>
+                                            AB123456787
+                                        </div>
+                                        <div class="sparkti_single_product_category">
+                                            <span>Categories:</span> <a href="#">Books & Office</a>, <a href="#">Cars & Motocycles</a>
+                                        </div>
+                                        <div class="sparkti_product_tags">
+                                           <span> Tags:</span> <a href="#">t-shirt</a>, <a href="#">wireless</a>
+                                        </div>
+                                        <div class="sparkti_social_icon_container">
+                                            <ul class="sparkti_social_icon">
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="lab la-facebook-f"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="lab la-twitter"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="lab la-google"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="lab la-whatsapp"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="las la-envelope"></i>
+                                                    </a>
+                                                </li>
+                                            </ul> 
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--  -->
+                                 <!--  -->
+                                 <div class="sparkti_best_deal__content_carousel_item">
+                                    <div class="sparkti_best_deal__content_carousel_image">
+                                        <img src="assets/images/single-product-01.jpg" alt="Today Deal image">
+                                    </div>
+                                    <div class="sparkti_best_deal__content_carousel_content">
+                                        <a href="#" class="sparkti_deals_category">
+                                            Electronics, Tablets
+                                        </a>
+                                        <a href="#" class="sparkti_deals_title">
+                                            <h5>
+                                                Apple iPad mini 4 Wi-Fi 128GB Silver
+                                            </h5>
+                                        </a>
+                                        <div class="today_deals_product_pricing_supplier">
+                                            <div class="today_deals_product_pricing">
+                                                <span>$329.10 </span>
+                                                <del>$329.10 </del>
+                                            </div>
+                                            <a href="#" class="product_vendors">
+                                                <span>By</span>
+                                                Krazy Frog
+                                            </a>
+                                        </div>
+                                        <div class="sparkti_countdown_parent">
+                                            <div class="sparkti_parent_label">Ends in:</div>
+                                            <div class="kounty_countdown" data-countdown-seperator="label"  data-timer-date='Apr,09,2020 16:15:20' data-day-label='Days' data-hour-label='Hrs' data-min-label='Mins' data-sec-label='Secs'>
+                                                <span class="countdown-days"></span>
+                                                <span class="countdown-hours"></span>
+                                                <span class="countdown-minutes"></span>
+                                                <span class="countdown-seconds"></span>
+                                            </div>
+                                        </div>
+                                        <div class="sparkti_product_rating">
+                                            <span class="sparkti_product_rating__label">
+                                                Rating: 
+                                            </span>
+                                            <i class="las la-star"></i>
+                                            <i class="las la-star"></i>
+                                            <i class="las la-star"></i>
+                                            <i class="las la-star"></i>
+                                            <i class="las la-star-half-alt"></i>
+                                        </div>
+                                        <div class="product_cart_range_options">
+                                            <!--  -->
+                                            <div class="weekly_deals_product_stock_cart">
+                                                <div class="weekly_deals_product_stock_range">
+                                                    <div class="weekly_deals_product_stock_range__bar"></div>
+                                                </div>
+                                                <div class="weekly_deals_product_cart">
+                                                    <a href="#" class="sparkti_sell_btn">
+                                                        <i class="las la-cart-arrow-down"></i>
+                                                    </a>
+                                                </div>
+    
+                                            </div>
+                                            <div class="weekly_deals_product_stock_cart_info">
+                                                <span>
+                                                    Sold: <span class="sold_item">40</span>
+                                                </span>
+                                                <span>
+                                                    Remaining: <span class="remaining_item">30</span>
+                                                </span>
+                                            </div>
+                                            <!--  -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--  -->
+                                 <!--  -->
+                                 <div class="sparkti_best_deal__content_carousel_item">
+                                    <div class="sparkti_best_deal__content_carousel_image">
+                                        <img src="assets/images/single-product-01.jpg" alt="Today Deal image">
+                                    </div>
+                                    <div class="sparkti_best_deal__content_carousel_content">
+                                        <a href="#" class="sparkti_deals_category">
+                                            Electronics, Tablets
+                                        </a>
+                                        <a href="#" class="sparkti_deals_title">
+                                            <h5>
+                                                Apple iPad mini 4 Wi-Fi 128GB Silver
+                                            </h5>
+                                        </a>
+                                        <div class="today_deals_product_pricing_supplier">
+                                            <div class="today_deals_product_pricing">
+                                                <span>$329.10 </span>
+                                                <del>$329.10 </del>
+                                            </div>
+                                            <a href="#" class="product_vendors">
+                                                <span>By</span>
+                                                Krazy Frog
+                                            </a>
+                                        </div>
+                                        <div class="sparkti_countdown_parent">
+                                            <div class="sparkti_parent_label">Ends in:</div>
+                                            <div class="kounty_countdown" data-countdown-seperator="label"  data-timer-date='Mar,09,2020 16:15:20' data-day-label='Days' data-hour-label='Hrs' data-min-label='Mins' data-sec-label='Secs'>
+                                                <span class="countdown-days"></span>
+                                                <span class="countdown-hours"></span>
+                                                <span class="countdown-minutes"></span>
+                                                <span class="countdown-seconds"></span>
+                                            </div>
+                                        </div>
+                                        <div class="sparkti_product_rating">
+                                            <span class="sparkti_product_rating__label">
+                                                Rating: 
+                                            </span>
+                                            <i class="las la-star"></i>
+                                            <i class="las la-star"></i>
+                                            <i class="las la-star"></i>
+                                            <i class="las la-star"></i>
+                                            <i class="las la-star-half-alt"></i>
+                                        </div>
+                                        <div class="product_cart_range_options">
+                                            <!--  -->
+                                            <div class="weekly_deals_product_stock_cart">
+                                                <div class="weekly_deals_product_stock_range">
+                                                    <div class="weekly_deals_product_stock_range__bar"></div>
+                                                </div>
+                                                <div class="weekly_deals_product_cart">
+                                                    <a href="#" class="sparkti_sell_btn">
+                                                        <i class="las la-cart-arrow-down"></i>
+                                                    </a>
+                                                </div>
+    
+                                            </div>
+                                            <div class="weekly_deals_product_stock_cart_info">
+                                                <span>
+                                                    Sold: <span class="sold_item">40</span>
+                                                </span>
+                                                <span>
+                                                    Remaining: <span class="remaining_item">30</span>
+                                                </span>
+                                            </div>
+                                            <!--  -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--  -->
+                                 <!--  -->
+                                 <div class="sparkti_best_deal__content_carousel_item">
+                                    <div class="sparkti_best_deal__content_carousel_image">
+                                        <img src="assets/images/single-product-01.jpg" alt="Today Deal image">
+                                    </div>
+                                    <div class="sparkti_best_deal__content_carousel_content">
+                                        <a href="#" class="sparkti_deals_category">
+                                            Electronics, Tablets
+                                        </a>
+                                        <a href="#" class="sparkti_deals_title">
+                                            <h5>
+                                                Apple iPad mini 4 Wi-Fi 128GB Silver
+                                            </h5>
+                                        </a>
+                                        <div class="today_deals_product_pricing_supplier">
+                                            <div class="today_deals_product_pricing">
+                                                <span>$329.10 </span>
+                                                <del>$329.10 </del>
+                                            </div>
+                                            <a href="#" class="product_vendors">
+                                                <span>By</span>
+                                                Krazy Frog
+                                            </a>
+                                        </div>
+                                        <div class="sparkti_countdown_parent">
+                                            <div class="sparkti_parent_label">Ends in:</div>
+                                            <div class="kounty_countdown" data-countdown-seperator="label"  data-timer-date='Aug,09,2020 16:15:20' data-day-label='Days' data-hour-label='Hrs' data-min-label='Mins' data-sec-label='Secs'>
+                                                <span class="countdown-days"></span>
+                                                <span class="countdown-hours"></span>
+                                                <span class="countdown-minutes"></span>
+                                                <span class="countdown-seconds"></span>
+                                            </div>
+                                        </div>
+                                        <div class="sparkti_product_rating">
+                                            <span class="sparkti_product_rating__label">
+                                                Rating: 
+                                            </span>
+                                            <i class="las la-star"></i>
+                                            <i class="las la-star"></i>
+                                            <i class="las la-star"></i>
+                                            <i class="las la-star"></i>
+                                            <i class="las la-star-half-alt"></i>
+                                        </div>
+                                        <div class="product_cart_range_options">
+                                            <!--  -->
+                                            <div class="weekly_deals_product_stock_cart">
+                                                <div class="weekly_deals_product_stock_range">
+                                                    <div class="weekly_deals_product_stock_range__bar"></div>
+                                                </div>
+                                                <div class="weekly_deals_product_cart">
+                                                    <a href="#" class="sparkti_sell_btn">
+                                                        <i class="las la-cart-arrow-down"></i>
+                                                    </a>
+                                                </div>
+    
+                                            </div>
+                                            <div class="weekly_deals_product_stock_cart_info">
+                                                <span>
+                                                    Sold: <span class="sold_item">40</span>
+                                                </span>
+                                                <span>
+                                                    Remaining: <span class="remaining_item">30</span>
+                                                </span>
+                                            </div>
+                                            <!--  -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--  -->
+                            </div>
+                            <!--  -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--  -->
+
+    <!--  -->
+    <div class="sparkti_offcanvas_navigation">
+        
+    </div>
+    <!--  -->
+
+    <!-- JQuery -->
+    <script src="assets/js/jquery-3.4.1.min.js"></script>
+    <!--  -->
+    <script src="assets/js/popper.min.js"></script>
+    <!--  -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!--  -->
+    <script src="assets/js/slick.min.js"></script>
+    <!--  -->
+    <script src="assets/js/kounty.min.js"></script>
+    <!--  -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

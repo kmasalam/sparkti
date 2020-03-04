@@ -6,6 +6,9 @@
         @include flexDirection(row);
         justify-content: flex-start;
         padding: 20px;
+        @include respond-to(mdm) {
+            padding: 10px;
+        }
         &.add_one{
             background: $c3db;
             .add_section_text{
@@ -28,6 +31,13 @@
                 line-height: 70px;
                 @include inlineFlex;
                 margin: 0 20px;
+                @include respond-to(larage) {
+                    font-size: $fz40;
+                    margin: 0 10px;
+                }
+                @include respond-to(mdm) {
+                    font-size: $fz32;
+                }
             }
             .add_section_coupon{
                 font-family: $assistant;
@@ -37,11 +47,23 @@
                 border: 1px dashed $cff;
                 color: $cff;
                 padding: 10px 15px;
+                @include respond-to(larage) {
+                    font-size: $fz14;
+                    padding: 10px 10px;
+                }
+                @include respond-to(mdm) {
+                    font-size: $fz14;
+                    padding: 10px 10px;
+                }
+                
             }
             .add_section_image{
                 img{
                     position: absolute;
                     top: 0;
+                    @include respond-to(mdm) {
+                        width: 30%;
+                    }
                 }
             }
         }

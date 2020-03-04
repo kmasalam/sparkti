@@ -1,0 +1,104 @@
+.sparkti_testimonial_app{
+    background: $cff;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    .sparkti_testimonial_carousel_container{
+        text-align: center;
+        background: $cf6f;
+        padding: 45px 20px;
+        height: 100%;
+        h4{
+            color: $c36;
+            font-family: $assistant;
+            margin-bottom: 40px;
+
+        }
+        .sparkti_testimonial_carousel{
+            padding-bottom: 40px;
+            .sparkti_dots{
+                padding-left: 0;
+                top: 100%;
+                position: absolute;
+
+            }
+            .sparkti_testimonial_carousel__item{
+                text-align: center;
+                &:focus{
+                    outline: none;
+                    box-shadow: none;
+                }
+                img{
+                    height: 80px;
+                    width: 80px;
+                    border-radius: 50%;
+                    margin-bottom: 25px;
+                    display: inline-block;
+                }
+                p{
+                    color: $c36;
+                    font-size: $fz14;
+                    font-family: $rubik;
+                    margin-bottom: 20px;
+                }
+                h6{
+                    font-family: $assistant;
+                    font-weight: $bold;
+                    font-size: $fz16;
+                    span{
+                        color: $cac;
+                        font-family: $rubik;
+                        font-size: $fz14;
+                    }
+                }
+            }
+        }
+    }
+    .sparkti_app_container{
+        background: $cf6f;
+        @include flexDirection(row);
+        padding-left: 30px;
+        padding-top: 100px;
+        height: 100%;
+        @include respond-to(larage) {
+            padding-top: 0px;
+        }
+        .sparkti_app_image{
+            @include respond-to(larage) {
+                max-width: 40%;
+            }
+            img{
+                max-width: 100%;  
+            }
+        }
+        .sparkti_app_content{
+            margin-left: 50px;
+            flex: 1;
+            @include respond-to(larage) {
+                margin-left: 30px;
+            }
+
+            h4{
+                color: $c36;
+                font-family: $assistant;
+                margin-bottom: 15px;
+
+            }
+            p{
+                font-family: $rubik;
+                font-size: $fz14;
+                color: $c63;
+                margin-bottom: 30px;
+            }
+            a{
+                display: inline-block;
+                &:not(:last-child){
+                    margin-right: 11px;
+                }
+                img{
+                    margin-bottom: 0;
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+}

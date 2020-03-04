@@ -1,0 +1,109 @@
+.sparkti_vertical_product{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    &.type-2{
+        margin-top: 0;
+        .sparkti_vartical_tab_container{
+            &::before{
+                background-color: $cebeb;
+            }
+        }
+    }
+    .sparkti_section_title{
+        &.sparkti_throughline_title{
+            border-bottom: 0;
+            &::before{
+                height: 3px;
+                width: 100%;
+                background: $ce1e;
+                position: absolute;
+                content: "";
+                left: 0;
+                top: 15px;
+            }
+            h4{
+                background: $cf6f;
+                padding-left: 10px;
+                padding-right: 10px;
+                &::before{
+                    visibility: hidden;
+                }
+            }
+            ul{
+                @include flexDirection(row);
+                padding-left: 0;
+                margin-bottom: 30px;
+                margin-top: 25px;
+                li{
+                    position: relative;
+                   a{
+                    color: $c63;
+                    font-size: $fz14;
+                   }
+                    &:not(:last-child){
+                        margin-right: 30px;
+                        &::after{
+                            content: "";
+                            position: absolute;
+                            right: -10px;
+                            height: 4px;
+                            width: 4px;
+                            background: $c63;
+                            top: 50%;
+                            transform: translateY(-50%);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .sparkti_vartical_tab_container{
+        background: $cff;
+        border: 1px solid $ce1e;
+        position: relative;
+        &::before{
+            content: "";
+            position: absolute;
+            right: calc(100% - 40px);
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: $ccbde;
+            
+        }
+        .nav{
+            padding-top: 30px;
+            .nav-link{
+                font-family: $assistant;
+                font-size: $fz20;
+                color: $c36;
+                font-weight: $bold;
+                padding-bottom: 0px;
+                @include respond-to(larage) {
+                    font-size: $fz14;
+                }
+                position: relative;
+                &.active{
+                    color: $cf1;
+                }
+            }
+        }
+        .sparkti_tab_content{
+            background: $cff;
+            
+            @include flexDirection(row);
+            .popular_products_item{
+                flex: 0 0 20%;
+                max-width: 20%;
+                padding: 0px 15px;
+                margin-top: 15px;
+                margin-bottom: 15px;
+                border-right: 1px solid $ce1e;
+                @include popular_products_item;
+                .product_vendors{
+                    padding-top: 15px !important;
+                }
+            }
+        }
+    }
+}

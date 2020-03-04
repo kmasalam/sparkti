@@ -3,11 +3,11 @@
     // Whole-script strict mode syntax
     'use strict';
 
-    var TestimonialCarousel = $('.pl_testimonial__carousel');
-    if (TestimonialCarousel.length > 0) {
-        TestimonialCarousel.slick({
+    var sparkti_testimonial_carousel = $('.sparkti_testimonial_carousel');
+    if (sparkti_testimonial_carousel.length > 0) {
+        sparkti_testimonial_carousel.slick({
             dots: true,
-            dotsClass: 'pl_dots',
+            dotsClass: 'sparkti_dots',
             infinite: true,
             speed: 500,
             arrows: false,
@@ -18,6 +18,28 @@
             cssEase: 'linear'
         });
     }
+
+    $('.sparkti_best_deal__content_carousel').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      dots: true,
+      dotsClass: 'sparkti_dots',
+      arrows: false,
+      fade: true,
+      asNavFor: '.sparkti_best_deal_carousel_images'
+    });
+    $('.sparkti_best_deal_carousel_images').slick({
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      asNavFor: '.sparkti_best_deal__content_carousel',
+      dots: false,
+      vertical: true,
+      arrows: false,
+      centerMode: false,
+      focusOnSelect: true
+    });
+
+    
     var ClientsCarousel = $('.pl_clients_carousel');
     if (ClientsCarousel.length > 0) {
         ClientsCarousel.slick({
@@ -90,10 +112,9 @@
                 {
                   breakpoint: 1024,
                   settings: {
-                    slidesToShow: 5,
-                    slidesToScroll: 5,
+                    slidesToShow: 4,
+                    slidesToScroll: 4,
                     infinite: true,
-                    dots: true
                   }
                 },
                 {
@@ -178,5 +199,68 @@
         }
 
     });
+    $(document).ready(function(){
+        $('.sparkti_offcanvas_btn').on('click',function(e){
+            e.preventDefault();
+            //<i class="las la-times"></i>
+            $(this).children('.las').toggleClass('la-bars la-times')
+            $(document).find('.sparkti_offcanvas_navigation').toggleClass('show');
+        });
+
+
+      if (jQuery('.kounty_countdown').length) {
+          jQuery('.kounty_countdown').kounty();
+      }
+      $('.sparkti_set_color').each(function(){
+            let checkcolor = $(this).attr('data-bg-color');
+            if(checkcolor){
+                $(this).css({
+                    backgroundColor: '#' + checkcolor
+                })
+            }
+      });
+        
+        var allParent = $('.product_cart_range_options');
+        allParent.each(function(){
+        var totalItem = 70,
+            buyItem = 40,
+            itemcalc = (100 * buyItem) / totalItem,
+            sparkti_sell_btn = $(this).find('.sparkti_sell_btn'),
+            rangebar = $(this).find('.weekly_deals_product_stock_range__bar'),
+            remaining = $(this).find('.remaining_item'),
+            buy_item = $(this).find('.sold_item');
+        upgradeRange(itemcalc);
+        remainingItem(totalItem,buyItem);
+        buyitemFunc(buyItem);
+        sparkti_sell_btn.on('click',function(e){
+            e.preventDefault();
+            buyItem +=1
+            var itemcalc = (100 * buyItem) / totalItem;
+            if(itemcalc<=100){
+                upgradeRange(itemcalc);
+                remainingItem(totalItem,buyItem);
+                buyitemFunc(buyItem);
+            }
+            
+        })
+        function upgradeRange(itemcalc){
+            rangebar.css({
+                width: itemcalc + '%'
+            })
+        }
+        function buyitemFunc(buyItem){
+            buy_item.text(buyItem);
+        }
+        function remainingItem(totalItem,buyItem){
+            let remain =  totalItem - buyItem;
+            remaining.text(remain);
+        }
+    })
+        });
+
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+          })
+        
 
 })()

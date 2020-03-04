@@ -1,0 +1,51 @@
+.sparkti_top_rated_seller{
+    padding-top: 65px;
+    background: $cff;
+    padding-bottom: 70px;
+    .sparkti_section_title{
+        margin-bottom: 40px;
+    }
+    .sparkti_top_rated_seller__box{
+        @include flexDirection(row);
+        border: 11px solid $cf1f1;
+        border-left-width: 21px;
+        border-right-width: 21px;
+        padding: 30px 0;
+        background: $cff;
+        @include respond-to(larage) {
+            border-left-width: 15px;
+            border-right-width: 15px;
+        }
+        .sparkti_top_rated_seller_image{
+            img{
+                height: 100px;
+                width: 100px;
+                border-radius: 50%;
+                @include respond-to(larage) {
+                    height: 60px;
+                    width: 60px;
+                }
+            }
+        }
+        .sparkti_top_rated_seller_content{
+            margin-left: 24px;
+            @include respond-to(larage) {
+                margin-left: 15px;
+            }
+            flex: 1;
+            h5{
+                color: $c63;  
+                margin-bottom: 15px; 
+            }
+            p{
+                color: $c63;   
+            }
+            .sparkti_btn{
+                @include btn_content(30px,20px,12px); 
+                background: $c737;
+                color: $cff;
+                margin-top: 20px;
+            }
+        }
+    }
+}

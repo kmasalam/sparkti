@@ -1,0 +1,60 @@
+.sparkti_subscription{
+    margin-top: 70px;
+    &__inner{
+        background: $c6c8;
+        @include flexDirection(row);
+        justify-content: space-between;
+        padding: 25px 25px;
+        .sparkti_subscription_content{
+            @include flexDirection(row);
+            i{
+                @include inlineFlex;
+                color: $cff;
+                font-size: $fz60;
+                font-weight: $regular;
+            }
+            .sparkti_subscription_content_message{
+                margin-left: 20px;
+                h4{
+                    color: $cff;
+                    font-weight: $bold;
+                    margin-bottom: 10px;
+                }
+                p{
+                    color: $cff;
+                    margin-bottom: 0;
+                    font-family: $rubik;
+                }
+            }
+        }
+        .sparkti_subscription_content_fields{
+            .input-group{
+                .form-control{
+                    min-width: 550px;
+                    line-height: 50px;
+                    height: 50px;
+                    border-top-left-radius: 3px;
+                    border-bottom-left-radius: 3px;
+                    border: none;
+                    border-top-right-radius: 0;
+                    border-bottom-right-radius: 0;
+                    @include respond-to(larage) {
+                        min-width: 350px;
+                    }
+                }
+                .sparkti_btn{
+                    &.sparkti_subscription_btn{
+                        background: $cf1;
+                        line-height: 50px;
+                        padding: 0 30px;
+                        border: none;
+                        font-family: $assistant;
+                        font-weight: $bold;
+                        font-size: $fz14;
+                        color: $cff;
+                    }
+                }
+            }
+        }
+    }
+}

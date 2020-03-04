@@ -11,6 +11,9 @@
             font-weight: $bold;
             text-transform: uppercase;
             color: $cff;
+            @include respond-to(mdm) {
+                font-size: $fz12;
+            }
             i{
                 font-size: $fz32;
                 font-weight: $regular;

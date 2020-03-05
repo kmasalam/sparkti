@@ -723,7 +723,7 @@ h5, .sparkti_available_products .sparkti_available_products_container .sparkti_a
           @media only screen and (min-width: 768px) and (max-width: 991px) {
             .sparkti_available_products .sparkti_available_products_container .sparkti_popular_products_tab .sparkti_section_title ul li a {
               font-size: 14px; } }
-          .sparkti_available_products .sparkti_available_products_container .sparkti_popular_products_tab .sparkti_section_title ul li a.active {
+          .sparkti_available_products .sparkti_available_products_container .sparkti_popular_products_tab .sparkti_section_title ul li a.active, .sparkti_available_products .sparkti_available_products_container .sparkti_popular_products_tab .sparkti_section_title ul li .sparkti_pagination a.sparkti_pagination_item:hover, .sparkti_pagination .sparkti_available_products .sparkti_available_products_container .sparkti_popular_products_tab .sparkti_section_title ul li a.sparkti_pagination_item:hover {
             color: #f17d80; }
       .sparkti_available_products .sparkti_available_products_container .sparkti_popular_products_tab .tab-content .tab-pane .popular_product_body__pricing_cart {
         display: flex;
@@ -836,7 +836,7 @@ h5, .sparkti_available_products .sparkti_available_products_container .sparkti_a
         @media only screen and (min-width: 992px) and (max-width: 1199px) {
           .sparkti_vertical_product .sparkti_vartical_tab_container .nav .nav-link {
             font-size: 14px; } }
-        .sparkti_vertical_product .sparkti_vartical_tab_container .nav .nav-link.active {
+        .sparkti_vertical_product .sparkti_vartical_tab_container .nav .nav-link.active, .sparkti_vertical_product .sparkti_vartical_tab_container .nav .sparkti_pagination .nav-link.sparkti_pagination_item:hover, .sparkti_pagination .sparkti_vertical_product .sparkti_vartical_tab_container .nav .nav-link.sparkti_pagination_item:hover {
           color: #f17d80; }
     .sparkti_vertical_product .sparkti_vartical_tab_container .sparkti_tab_content {
       background: #ffffff;
@@ -1600,10 +1600,236 @@ h5, .sparkti_available_products .sparkti_available_products_container .sparkti_a
 
 /*-------------------------------------
 -------------------------------------*/
+.sparkti_page_description {
+  padding: 45px 0 45px 0;
+  background-color: #ffffff; }
+  .sparkti_page_description .sparkti_page_description_inner h3 {
+    color: "Assistant";
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #363636; }
+  .sparkti_page_description .sparkti_page_description_inner p {
+    color: #636363;
+    font-size: 14px; }
+
 /*-------------------------------------
 -------------------------------------*/
+.sparkti_blog_area {
+  padding-bottom: 80px;
+  background: #ffffff; }
+  .sparkti_blog_area .sparkti_sidebar .sparkti_sidebar_widget {
+    margin-bottom: 50px; }
+    .sparkti_blog_area .sparkti_sidebar .sparkti_sidebar_widget .sparkti_widget_title {
+      color: #252525;
+      font-size: 18px;
+      margin-bottom: 20px; }
+    .sparkti_blog_area .sparkti_sidebar .sparkti_sidebar_widget.sparkti_sidebar_search .input-group .form-control {
+      border: 1px solid #ebebeb;
+      line-height: 40px;
+      height: 40px; }
+    .sparkti_blog_area .sparkti_sidebar .sparkti_sidebar_widget.sparkti_sidebar_search .input-group .input-group-append {
+      position: absolute;
+      right: 10px;
+      z-index: 9; }
+      .sparkti_blog_area .sparkti_sidebar .sparkti_sidebar_widget.sparkti_sidebar_search .input-group .input-group-append .sparkti_button {
+        background: transparent;
+        color: #737495;
+        font-size: 18px;
+        border: none;
+        line-height: 40px;
+        height: 40px; }
+    .sparkti_blog_area .sparkti_sidebar .sparkti_sidebar_widget.sparkti_cat .card {
+      border: 2px solid #ebebeb;
+      border-radius: 0 !important; }
+      .sparkti_blog_area .sparkti_sidebar .sparkti_sidebar_widget.sparkti_cat .card .sparkti_categories_head {
+        color: #636363;
+        font-size: 14px;
+        background: transparent;
+        border: none;
+        text-align: left;
+        padding: 12px 12px 12px 20px; }
+      .sparkti_blog_area .sparkti_sidebar .sparkti_sidebar_widget.sparkti_cat .card:not(:last-child) {
+        margin-bottom: 10px; }
+      .sparkti_blog_area .sparkti_sidebar .sparkti_sidebar_widget.sparkti_cat .card .sparkti_categories_list {
+        padding: 5px 12px 12px 20px; }
+        .sparkti_blog_area .sparkti_sidebar .sparkti_sidebar_widget.sparkti_cat .card .sparkti_categories_list a {
+          font-size: 14px;
+          font-family: "Rubik";
+          color: #636363;
+          display: block; }
+          .sparkti_blog_area .sparkti_sidebar .sparkti_sidebar_widget.sparkti_cat .card .sparkti_categories_list a:not(:last-child) {
+            margin-bottom: 10px; }
+    .sparkti_blog_area .sparkti_sidebar .sparkti_sidebar_widget.sparkti_social_icon a {
+      height: 45px;
+      width: 45px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      color: #ffffff;
+      margin-right: 8px;
+      margin-bottom: 8px; }
+    .sparkti_blog_area .sparkti_sidebar .sparkti_sidebar_widget.sparkti_tags a {
+      color: #636363;
+      background: #f7f7f7;
+      font-size: 13px;
+      border: 1px solid #e1e1e1 !important;
+      padding: 7px 10px;
+      margin-right: 7px;
+      margin-bottom: 7px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 3px; }
+    .sparkti_blog_area .sparkti_sidebar .sparkti_sidebar_widget.sparkti_recent_post ul {
+      padding-left: 0; }
+      .sparkti_blog_area .sparkti_sidebar .sparkti_sidebar_widget.sparkti_recent_post ul li {
+        display: flex; }
+        .sparkti_blog_area .sparkti_sidebar .sparkti_sidebar_widget.sparkti_recent_post ul li .sparkti_post_date {
+          font-size: 14px;
+          font-weight: 300;
+          font-family: "Rubik";
+          color: #ebebeb; }
+          .sparkti_blog_area .sparkti_sidebar .sparkti_sidebar_widget.sparkti_recent_post ul li .sparkti_post_date .sparkti_post_date_day {
+            font-size: 28px;
+            font-weight: 500;
+            display: block; }
+        .sparkti_blog_area .sparkti_sidebar .sparkti_sidebar_widget.sparkti_recent_post ul li .sparkti_recent_post_content {
+          margin-left: 25px; }
+          .sparkti_blog_area .sparkti_sidebar .sparkti_sidebar_widget.sparkti_recent_post ul li .sparkti_recent_post_content a {
+            margin-bottom: 20px;
+            display: block; }
+            .sparkti_blog_area .sparkti_sidebar .sparkti_sidebar_widget.sparkti_recent_post ul li .sparkti_recent_post_content a h6 {
+              margin-bottom: 00px;
+              font-weight: 500;
+              font-family: "Rubik";
+              color: #363636; }
+          .sparkti_blog_area .sparkti_sidebar .sparkti_sidebar_widget.sparkti_recent_post ul li .sparkti_recent_post_content .post_author {
+            font-size: 12px;
+            color: #acacac;
+            font-family: "Rubik"; }
+            .sparkti_blog_area .sparkti_sidebar .sparkti_sidebar_widget.sparkti_recent_post ul li .sparkti_recent_post_content .post_author a {
+              display: inline-block;
+              color: #747496;
+              margin-bottom: 0; }
+        .sparkti_blog_area .sparkti_sidebar .sparkti_sidebar_widget.sparkti_recent_post ul li:not(:last-child) {
+          margin-bottom: 25px; }
+  .sparkti_blog_area .sparkti_blog_container .sparkti_blog_single_item {
+    position: relative;
+    margin-bottom: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row; }
+    .sparkti_blog_area .sparkti_blog_container .sparkti_blog_single_item:nth-child(odd) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-flow: row-reverse; }
+      .sparkti_blog_area .sparkti_blog_container .sparkti_blog_single_item:nth-child(odd) .sparkti_blog_single_content {
+        margin-right: 65px;
+        margin-left: 0; }
+    .sparkti_blog_area .sparkti_blog_container .sparkti_blog_single_item .sparkti_blog_single_content {
+      margin-left: 65px; }
+      .sparkti_blog_area .sparkti_blog_container .sparkti_blog_single_item .sparkti_blog_single_content .sparkti_post_date {
+        display: none; }
+      .sparkti_blog_area .sparkti_blog_container .sparkti_blog_single_item .sparkti_blog_single_content .sparkti_blog_single_title {
+        display: block;
+        margin-bottom: 15px; }
+        .sparkti_blog_area .sparkti_blog_container .sparkti_blog_single_item .sparkti_blog_single_content .sparkti_blog_single_title h4 {
+          font-size: 24px;
+          color: #363636; }
+      .sparkti_blog_area .sparkti_blog_container .sparkti_blog_single_item .sparkti_blog_single_content p {
+        font-size: 14px;
+        color: #636363;
+        font-family: "Rubik";
+        margin-bottom: 0;
+        line-height: 26px; }
+      .sparkti_blog_area .sparkti_blog_container .sparkti_blog_single_item .sparkti_blog_single_content .sparkti_blog_tags {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: row;
+        justify-content: flex-start;
+        padding: 20px 0 25px 0; }
+        .sparkti_blog_area .sparkti_blog_container .sparkti_blog_single_item .sparkti_blog_single_content .sparkti_blog_tags i {
+          font-size: 18px;
+          color: #252525;
+          display: inline-block;
+          margin-right: 7px; }
+        .sparkti_blog_area .sparkti_blog_container .sparkti_blog_single_item .sparkti_blog_single_content .sparkti_blog_tags a {
+          font-size: 12px;
+          font-family: "Rubik";
+          color: #acacac; }
+      .sparkti_blog_area .sparkti_blog_container .sparkti_blog_single_item .sparkti_blog_single_content .sparkti_btn {
+        background: #ffffff;
+        line-height: 32px;
+        height: 32px;
+        padding: 0 20px;
+        font-family: "Assistant";
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 12px;
+        color: #363636;
+        display: inline-flex;
+        background: #747496;
+        color: #ffffff; }
+    .sparkti_blog_area .sparkti_blog_container .sparkti_blog_single_item:first-child {
+      padding-left: 210px; }
+      .sparkti_blog_area .sparkti_blog_container .sparkti_blog_single_item:first-child .sparkti_blog_single_image img {
+        height: calc(100% + 30px); }
+      .sparkti_blog_area .sparkti_blog_container .sparkti_blog_single_item:first-child .sparkti_blog_single_content {
+        border: 4px solid #e1e1e1;
+        position: absolute;
+        bottom: 20px;
+        max-width: calc(228px + 80px);
+        padding: 40px 30px 40px 30px;
+        left: 0;
+        background: #ffffff; }
+        .sparkti_blog_area .sparkti_blog_container .sparkti_blog_single_item:first-child .sparkti_blog_single_content .sparkti_post_date {
+          display: block;
+          position: absolute;
+          bottom: calc(100% + 20px);
+          font-size: 40px;
+          font-weight: 300;
+          font-family: "Rubik";
+          color: #ebebeb;
+          margin-bottom: 0;
+          line-height: 40px; }
+          .sparkti_blog_area .sparkti_blog_container .sparkti_blog_single_item:first-child .sparkti_blog_single_content .sparkti_post_date .sparkti_post_date_day {
+            font-family: "Rubik";
+            font-size: 70px;
+            font-weight: 500;
+            line-height: 60px;
+            margin-bottom: 0;
+            display: block; }
+
 /*-------------------------------------
 -------------------------------------*/
+.sparkti_pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row; }
+  .sparkti_pagination .sparkti_pagination_item {
+    height: 35px;
+    width: 35px;
+    color: #747496;
+    font-size: 14px;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s linear; }
+    .sparkti_pagination .sparkti_pagination_item.active, .sparkti_pagination .sparkti_pagination_item:hover {
+      background: #68a8ad;
+      color: #ffffff; }
+    .sparkti_pagination .sparkti_pagination_item:not(:last-child) {
+      margin-right: 8px; }
+
 /*-------------------------------------
 -------------------------------------*/
 /*-------------------------------------

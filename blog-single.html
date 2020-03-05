@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sparkti</title>
+    <!--  -->
+    <link href="https://fonts.googleapis.com/css?family=Assistant:400,700|Rubik:400,500&display=swap" rel="stylesheet">
+    <!--  -->
+    <link rel="stylesheet" href="assets/css/line-awesome.min.css">
+    <!--  -->
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <!--  -->
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <!--  -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!--  -->
+    <header>
+        <!--  -->
+        <div class="sparkti_toolbar">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="sparkti_toolbar__left">
+                            <span class="sparkti_toolbar__currency sparkti_toolbar__item">
+                                <select name="sparkti_currency" class="sparkti_select" id="">
+                                    <option value="Us Dollar">Us Dollar</option>
+                                    <option value="Pound">Pound</option>
+                                    <option value="Taka">Taka</option>
+                                    <option value="Euro">Euro</option>
+                                </select>
+                            </span>
+                            <span class="sparkti_toolbar__language sparkti_toolbar__item">
+                                <select name="sparkti_currency" class="sparkti_select" id="">
+                                    <option value="English">English</option>
+                                    <option value="Spanish">Spanish</option>
+                                    <option value="Chinese">Chinese</option>
+                                </select>
+                            </span>
+                            <span class="sparkti_toolbar__hotline sparkti_toolbar__item">
+                                <span class="sparkti_toolbar__hotline_label">
+                                    <i class="las la-phone"></i>
+                                    Toll Free:
+                                </span>
+                                <a href="#">
+                                    1-800-333-6868
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="sparkti_toolbar__right">
+                            <span class="sparkti_toolbar__item sparkti_toolbar__order_tracking sparkti_has_dropdown">
+                                <a href="#">
+                                    Trach your order
+                                </a>
+                                <div class="sparkti_dropdown">
+                                    <div class="form-group">
+                                        <input type="text" placeholder="Order No:" class="form-control">
+                                        <div class="sparkti_toolbar_order_phone">
+                                            <span>
+                                                +880
+                                            </span>
+                                            <input type="text" class="form-control" placeholder="Your Mobile Number">
+                                        </div>
+                                    </div>
+                                </div>
+                            </span>
+                            <span class="sparkti_toolbar__item sparkti_toolbar__help sparkti_has_dropdown">
+                                <a href="#">
+                                    Help & Contact
+                                </a>
+                            </span>
+                            <span class="sparkti_toolbar__item sparkti_toolbar_products">
+                                <a href="#">
+                                    Shop All Products On Deals!
+                                    <i class="las la-arrow-right"></i>
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--  -->
+        <div class="sparkti_navigation   ">
+            <div class="container-fluid">
+                <div class="navbar sparkti_navigation__content">
+                    <a class="navbar-brand" href="#">
+                        <img src="assets/images/logo.png" alt="sparkti">
+                    </a>
+                    <div class="sparkti_navigation__content_center ml-auto">
+                        <form action="#">
+                            <div class="input-group-prepend">
+                                <button class="sparkti_offcanvas_btn">
+                                    <i class="las la-bars"></i>
+                                </button>
+                            </div>
+                            <div class="input-group">
+
+                                <input type="email" class="form-control" placeholder="Search on Martel..."
+                                    id="exampleInputEmail1" aria-describedby="emailHelp">
+                                <div class="input-group-append">
+                                    <!-- <button class="sparkti_categories_btn">
+                                        All
+                                        <i class="las la-angle-down"></i>
+                                    </button> -->
+                                    <select name="sparkti_currency" class="sparkti_select" id="">
+                                        <option value="All">All</option>
+                                        <option value="cat-1">cat-1</option>
+                                        <option value="cat-2">cat-2</option>
+                                    </select>
+                                </div>
+                                <div class="input-group-append">
+                                    <button class="sparkti_navigation_search" type="submit">
+                                        <i class="las la-search"></i>
+                                        Search
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="sparkti_navigation__content_right ml-auto">
+                        <div class="sparkti_navigation_login_signup">
+                            <a href="#" class="sparkti_navigation_signup">
+                                <i class="lar la-user"></i>
+                                Sign up
+                            </a>
+
+                            <a href="#" class="sparkti_navigation_login">
+                                <i>or</i>
+                                Log in
+                            </a>
+                        </div>
+                        <div class="sparkti_navigation_cart">
+                            <a href="#" class="sparkti_cart_compare">
+                                <i class="las la-random"></i>
+                            </a>
+                            <a href="#" class="sparkti_cart_wishlist">
+                                <i class="las la-heart"></i>
+                            </a>
+                            <a href="#" class="sparkti_cart_container">
+                                Cart
+                                <span class="sparkti_cart_container__item">
+                                    12
+                                </span>
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--  -->
+
+    <!--  -->
+    <div class="sparkti_breadcrumb">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="sparkti_breadcrumb__inner">
+                        <ul class="sparkti_breadcrumb_menu">
+                            <li>
+                                <a href="#">
+                                    <i class="las la-home"></i>
+                                    Home  
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Martel’s Shop 
+                                </a>
+                            </li>
+                            <li>
+                                <span>
+                                    Brushed 316L Stainless Steel Case Tan Leather Watch
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--  -->
+
+    <!--  -->
+    <section class="sparkti_single_blog_container">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="sparkti_blog__item">
+                        <!--  -->
+                        <div class="sparkti_blog_head">
+                            <div class="sparkti_post_date">
+                                <div class="sparkti_post_date_day"></div>
+                            </div>
+                            <div class="sparkti_blog_head__content">
+                                <h3 class="sparkti_blog_title">
+                                    Modern Southwestern Jewelry From
+                                    Sarah Safavi
+                                </h3>
+                                <div class="sparkti_blog_meta">
+                                    <ul>
+                                        <li>
+                                            <i class="las la-calendar"></i>
+                                            <a href="#"> 
+                                                01 March, 2019  
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <i class="las la-clipboard"></i>
+                                            <a href="#">
+                                                By <span>Sandra Jones</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <i class="las la-comments"></i>
+                                            <a href="#">
+                                                Design, Technology 
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <i class="las la-hdd"></i>
+                                            <a href="#">
+                                                Design, Technology
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <div class="sparkti_post_image"></div>
+                        <div class="sparkti_post_body">
+                            <p>
+                                <strong>
+                                    A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine.
+                                </strong>
+                            </p>
+                            <p>
+                                In our weekly Featured Shop series, we shine a light on a standout shop from Etsy’s talented seller community, offering readers a behind-the-scenes look at their process and story.
+                                <br>
+                                <br>
+
+When you think of Southwestern jewelry, you might envision heavy silver rings and wide cuffs engraved with intricate patterns and inlaid with hefty hunks of smooth natural turquoise. It’s a design tradition that prizes time-tested techniques and the inherent beauty of its metals and stones above all else. And while Phoenix-born, Salt Lake City–based Sarah Safavi has put her own delicate, minimalist spin on the style, that same commitment to careful craftsmanship and focus on materials are unmistakable in her work.
+                            </p>
+                            <h1>Heading H1 - PP Plastic Cups & Lids</h1>
+                            <p>
+                                In our weekly Featured Shop series, we shine a light on a standout shop from talented seller community, offering readers a behind-the-scenes look at their process and story.
+                            </p>
+                            <h2>Heading H2 - PP Plastic Cups & Lids</h2>
+                            <p>
+                                In our weekly Featured Shop series, we shine a light on a standout shop from talented seller community, offering readers a behind-the-scenes look at their process and story.
+                            </p>
+                            <h3>Heading h3 - PP Plastic Cups & Lids</h3>
+                            <p>
+                                In our weekly Featured Shop series, we shine a light on a standout shop from talented seller community, offering readers a behind-the-scenes look at their process and story.
+                            </p>
+                            <h4>Heading h4 - PP Plastic Cups & Lids</h4>
+                            <p>
+                                In our weekly Featured Shop series, we shine a light on a standout shop from talented seller community, offering readers a behind-the-scenes look at their process and story.
+                            </p>
+                            <h5>Heading h5 - PP Plastic Cups & Lids</h5>
+                            <p>
+                                In our weekly Featured Shop series, we shine a light on a standout shop from talented seller community, offering readers a behind-the-scenes look at their process and story.
+                            </p>
+                            <h6>Heading h6 - PP Plastic Cups & Lids</h6>
+                            <p>
+                                In our weekly Featured Shop series, we shine a light on a standout shop from talented seller community, offering readers a behind-the-scenes look at their process and story.
+                            </p>
+                            <blockquote>
+                                <p>
+                                    <strong>
+                                        He waited a considerable time, until it struck eleven, and still nobody came. At last he was so hungry that he could stay no longer, but took a chicken, and ate it in two mouthfuls, trembling all the while
+                                    </strong>
+                                </p>
+                                <span>
+                                    Mark Clarkson
+                                </span>
+                            </blockquote>
+                        </div>
+                        <div class="sparkti_post_social_icon">
+                            <a href="#">
+                                <i class="lab la-facebook-f"></i>
+                                Facebook
+                            </a>
+                            <a href="#">
+                                <i class="lab la-twitter"></i>
+                                Twitter
+                            </a>
+                            <a href="#">
+                                <i class="lab la-twitter"></i>
+                                Twitter
+                            </a>
+                            <a href="#">
+                                <i class="lab la-twitter"></i>
+                                Twitter
+                            </a>
+                        </div>
+                        <div class="sparkti_previous_next_post_pagination">
+                            <a href="#" class="sparkti_prev_post_pagination">
+                                <i class="las la-arrow-left"></i>
+                                 Previous Post
+                            </a>
+                            <a href="#" class="sparkti_next_post_pagination">
+                                <i class="las la-arrow-right"></i>
+                                Previous Post
+                           </a>
+                        </div>
+                        <div class="sparkti_previous_next_post">
+                            <a href="#" class="post_prev_title">
+                                <h5>7 Food Influencers’ Favorite Holiday Recipes</h5>
+                            </a>
+                            <a href="#" class="post_next_title">
+                                <h5>7 Food Influencers’ Favorite Holiday Recipes</h5>
+                            </a>
+                        </div>
+                        <div class="sparkti_post_author">
+                            <img src="assets/images/post-author.jpg" alt="">
+                            <div class="sparkti_post_author__content">
+                                <h5>Lukas Klima</h5>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                                </p>
+                                <a href="#" class="sparkti_btn">
+                                    View all Posts
+                                </a>
+                            </div>
+                        </div>
+                        <!--  -->
+
+                        <!--  -->
+                        <div class="sparkti_comments_container">
+                            <h5 class="sparkti_comments_container__title">21 thoughts on “Comments”</h5>
+                            <!--  -->
+                            <div class="sparkti_commnets">
+                                <!--  -->
+                                <div class="sparkti_single_comments">
+                                    <img src="assets/images/sparkti-comments-image-01.jpg" alt="comments image">
+                                    <div class="sparkti_single_comments__content">
+                                        <h6>Tom McFarlin</h6>
+                                        <a href="#" class="comments_meta">March 11, 2013 at 11:45 pm</a>
+                                        <p>
+                                            It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+                                        </p>
+                                        <a href="#" class="comments_reply">
+                                            <i class="las la-undo"></i>
+                                             Reply
+                                        </a>
+                                    </div>
+                                </div>
+                                <!--  -->
+                                <!--  -->
+                                <div class="sparkti_commnets">
+                                    <div class="sparkti_single_comments">
+                                        <img src="assets/images/sparkti-comments-image-01.jpg" alt="comments image">
+                                        <div class="sparkti_single_comments__content">
+                                            <h6>Tom McFarlin</h6>
+                                            <a href="#" class="comments_meta">March 11, 2013 at 11:45 pm</a>
+                                            <p>
+                                                It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+                                            </p>
+                                            <a href="#" class="comments_reply">
+                                                <i class="las la-undo"></i>
+                                                 Reply
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--  -->
+                            </div>
+                            
+                            <!--  -->
+                        </div>
+                        <!--  -->
+                        <div class="sparkti_reply_container">
+                            <div class="sparkti_reply_container_head">
+                                <h5>Leave a Reply</h5>
+                                <P>
+                                    Your email address will not be published. Required fields are marked *
+                                </P>
+                            </div>
+                            <div class="sparkti_reply_box">
+                                <div class="row no-gutters">
+                                    <div class="col">
+                                        <div class="form-group">
+                                            <textarea name="message" id="" class="form-control"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row no-gutters">
+                                    <!--  -->
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <input type="text" name="name" class="form-control" placeholder="Name">
+                                        </div>
+                                    </div>
+                                    <!--  -->
+                                     <!--  -->
+                                     <div class="col-md-4">
+                                        <div class="form-group">
+                                            <input type="email" name="email"   placeholder='Email'  class="form-control">
+                                        </div>
+                                    </div>
+                                    <!--  -->
+                                     <!--  -->
+                                     <div class="col-md-4">
+                                        <div class="form-group">
+                                            <input type="text" name="website" class="form-control" placeholder="Website" >
+                                        </div>
+                                    </div>
+                                    <!--  -->
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="sparkti_checkbox_parent">
+                                            <div class="sparkti_checkbox">
+                                                <input type="chekbox">
+                                                <label>Notify me of follow-up comments by email.
+                                                    Notify me of new posts by email.</label>
+                                            </div>
+                                            <div class="sparkti_checkbox">
+                                                <input type="chekbox">
+                                                <label>Notify me of follow-up comments by email.
+                                                    Notify me of new posts by email.</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <button class="sparkti_btn" type="submit">
+                                            Post Comment
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--  -->
+                    </div>
+                    <div class="sparkti_related_post">
+                        <div class="row">
+                            <div class="col">
+                                <div class="sparkti_related_post_title">
+                                    <h4>Related Posts</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <!--  -->
+                            <div class="col-md-4">
+                                <div class="sparkti_blog__item">
+                                    <div class="sparkti_blog__item_image">
+                                        <img src="assets/images/sparkti-blog-image-01.jpg" alt="sparkti blog image">
+                                    </div>
+                                    <div class="sparkti_blog__item_content">
+                                        <a href="#">
+                                            <h5>6 Expert-Approved Holiday Wellness Tips</h5>
+                                        </a>
+                                        <p>
+                                            Eat smarter, rest better, and have your happiest, healthiest holiday yet Webb.
+                                        </p>
+                                        <div class="sparkti_blog__item_tags">
+                                            <i class="las la-tags"></i> <a href="#">Design</a>,<a href=""> Technology</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  -->
+                             <!--  -->
+                             <div class="col-md-4">
+                                <div class="sparkti_blog__item">
+                                    <div class="sparkti_blog__item_image">
+                                        <img src="assets/images/sparkti-blog-image-01.jpg" alt="sparkti blog image">
+                                    </div>
+                                    <div class="sparkti_blog__item_content">
+                                        <a href="#">
+                                            <h5>6 Expert-Approved Holiday Wellness Tips</h5>
+                                        </a>
+                                        <p>
+                                            Eat smarter, rest bettried-and-true advice from holistic health coach Koya Webb.
+                                        </p>
+                                        <div class="sparkti_blog__item_tags">
+                                            <i class="las la-tags"></i> <a href="#">Design</a>,<a href=""> Technology</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  -->
+                             <!--  -->
+                             <div class="col-md-4">
+                                <div class="sparkti_blog__item">
+                                    <div class="sparkti_blog__item_image">
+                                        <img src="assets/images/sparkti-blog-image-01.jpg" alt="sparkti blog image">
+                                    </div>
+                                    <div class="sparkti_blog__item_content">
+                                        <a href="#">
+                                            <h5>6 Expert-Approved Holiday Wellness Tips</h5>
+                                        </a>
+                                        <p>
+                                            Eat smarter, resried-and-true advice from holistic health coach Koya Webb.
+                                        </p>
+                                        <div class="sparkti_blog__item_tags">
+                                            <i class="las la-tags"></i> <a href="#">Design</a>,<a href=""> Technology</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--  -->
+
+    <!--  -->
+    <!--  -->
+
+    <!--  -->
+    <!--  -->
+
+    <!--  -->
+    <!--  -->
+
+    <!--  -->
+    <!--  -->
+
+    <!--  -->
+    <!--  -->
+
+    <!-- JQuery -->
+    <script src="assets/js/jquery-3.4.1.min.js"></script>
+    <!--  -->
+    <script src="assets/js/popper.min.js"></script>
+    <!--  -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!--  -->
+    <script src="assets/js/slick.min.js"></script>
+    <!--  -->
+    <script src="assets/js/kounty.min.js"></script>
+    <!--  -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

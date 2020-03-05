@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sparkti</title>
+    <!--  -->
+    <link href="https://fonts.googleapis.com/css?family=Assistant:400,700|Rubik:400,500&display=swap" rel="stylesheet">
+    <!--  -->
+    <link rel="stylesheet" href="assets/css/line-awesome.min.css">
+    <!--  -->
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <!--  -->
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <!--  -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!--  -->
+    <header>
+        <!--  -->
+        <div class="sparkti_toolbar">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="sparkti_toolbar__left">
+                            <span class="sparkti_toolbar__currency sparkti_toolbar__item">
+                                <select name="sparkti_currency" class="sparkti_select" id="">
+                                    <option value="Us Dollar">Us Dollar</option>
+                                    <option value="Pound">Pound</option>
+                                    <option value="Taka">Taka</option>
+                                    <option value="Euro">Euro</option>
+                                </select>
+                            </span>
+                            <span class="sparkti_toolbar__language sparkti_toolbar__item">
+                                <select name="sparkti_currency" class="sparkti_select" id="">
+                                    <option value="English">English</option>
+                                    <option value="Spanish">Spanish</option>
+                                    <option value="Chinese">Chinese</option>
+                                </select>
+                            </span>
+                            <span class="sparkti_toolbar__hotline sparkti_toolbar__item">
+                                <span class="sparkti_toolbar__hotline_label">
+                                    <i class="las la-phone"></i>
+                                    Toll Free:
+                                </span>
+                                <a href="#">
+                                    1-800-333-6868
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="sparkti_toolbar__right">
+                            <span class="sparkti_toolbar__item sparkti_toolbar__order_tracking sparkti_has_dropdown">
+                                <a href="#">
+                                    Trach your order
+                                </a>
+                                <div class="sparkti_dropdown">
+                                    <div class="form-group">
+                                        <input type="text" placeholder="Order No:" class="form-control">
+                                        <div class="sparkti_toolbar_order_phone">
+                                            <span>
+                                                +880
+                                            </span>
+                                            <input type="text" class="form-control" placeholder="Your Mobile Number">
+                                        </div>
+                                    </div>
+                                </div>
+                            </span>
+                            <span class="sparkti_toolbar__item sparkti_toolbar__help sparkti_has_dropdown">
+                                <a href="#">
+                                    Help & Contact
+                                </a>
+                            </span>
+                            <span class="sparkti_toolbar__item sparkti_toolbar_products">
+                                <a href="#">
+                                    Shop All Products On Deals!
+                                    <i class="las la-arrow-right"></i>
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--  -->
+        <div class="sparkti_navigation   ">
+            <div class="container-fluid">
+                <div class="navbar sparkti_navigation__content">
+                    <a class="navbar-brand" href="#">
+                        <img src="assets/images/logo.png" alt="sparkti">
+                    </a>
+                    <div class="sparkti_navigation__content_center ml-auto">
+                        <form action="#">
+                            <div class="input-group-prepend">
+                                <button class="sparkti_offcanvas_btn">
+                                    <i class="las la-bars"></i>
+                                </button>
+                            </div>
+                            <div class="input-group">
+
+                                <input type="email" class="form-control" placeholder="Search on Martel..."
+                                    id="exampleInputEmail1" aria-describedby="emailHelp">
+                                <div class="input-group-append">
+                                    <!-- <button class="sparkti_categories_btn">
+                                        All
+                                        <i class="las la-angle-down"></i>
+                                    </button> -->
+                                    <select name="sparkti_currency" class="sparkti_select" id="">
+                                        <option value="All">All</option>
+                                        <option value="cat-1">cat-1</option>
+                                        <option value="cat-2">cat-2</option>
+                                    </select>
+                                </div>
+                                <div class="input-group-append">
+                                    <button class="sparkti_navigation_search" type="submit">
+                                        <i class="las la-search"></i>
+                                        Search
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="sparkti_navigation__content_right ml-auto">
+                        <div class="sparkti_navigation_login_signup">
+                            <a href="#" class="sparkti_navigation_signup">
+                                <i class="lar la-user"></i>
+                                Sign up
+                            </a>
+
+                            <a href="#" class="sparkti_navigation_login">
+                                <i>or</i>
+                                Log in
+                            </a>
+                        </div>
+                        <div class="sparkti_navigation_cart">
+                            <a href="#" class="sparkti_cart_compare">
+                                <i class="las la-random"></i>
+                            </a>
+                            <a href="#" class="sparkti_cart_wishlist">
+                                <i class="las la-heart"></i>
+                            </a>
+                            <a href="#" class="sparkti_cart_container">
+                                Cart
+                                <span class="sparkti_cart_container__item">
+                                    12
+                                </span>
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--  -->
+
+    <!--  -->
+    <div class="sparkti_breadcrumb">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="sparkti_breadcrumb__inner">
+                        <ul class="sparkti_breadcrumb_menu">
+                            <li>
+                                <a href="#">
+                                    <i class="las la-home"></i>
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <span>
+                                    Brushed 316L Stainless Steel Case Tan Leather Watch
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--  -->
+
+    <!--  -->
+    <section class="sparkti_page_description">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="sparkti_page_description_inner">
+                        <h3>Martel’s Blog</h3>
+                        <p>
+                            Get the latest news about lifestyle, fashion, technology etc..with Martel Blog
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--  -->
+
+    <!--  -->
+    <section class="sparkti_blog_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-4">
+                    <div class="sparkti_sidebar">
+                        <!--  -->
+                        <div class="sparkti_sidebar_widget sparkti_sidebar_search">
+                            <div class="input-group">
+                                <input type="text" class="form-control">
+                                <div class="input-group-append">
+                                    <button class="sparkti_button">
+                                        <i class="las la-search"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!--  -->
+
+                        <!--  -->
+                        <div class="sparkti_sidebar_widget sparkti_recent_post">
+                            <h5 class="sparkti_widget_title">Recent Posts</h5>
+                            <ul>
+                                <!--  -->
+                                <li>
+                                    <span class="sparkti_post_date">
+                                        <span class="sparkti_post_date_day"> 26th</span>
+                                        December
+                                    </span>
+                                    <div class="sparkti_recent_post_content">
+                                        <a href="#">
+                                            <h6>
+                                                Traditional feel in the kitchen
+                                            </h6>
+                                        </a>
+                                        <div class="post_author">
+                                            by <a href="#">Admin</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!--  -->
+                                <!--  -->
+                                <li>
+                                    <span class="sparkti_post_date">
+                                        <span class="sparkti_post_date_day"> 26th</span>
+                                        December
+                                    </span>
+                                    <div class="sparkti_recent_post_content">
+                                        <a href="#">
+                                            <h6>
+                                                Traditional feel in the kitchen
+                                            </h6>
+                                        </a>
+                                        <div class="post_author">
+                                            by <a href="#">Admin</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!--  -->
+                            </ul>
+                        </div>
+                        <!--  -->
+
+                        <!--  -->
+                        <div class="sparkti_sidebar_widget sparkti_cat">
+                            <h5 class="sparkti_widget_title">Categories</h5>
+                            <div class="sparkti_sidebar_widget__content">
+                                <div class="accordion" id="accordionExample">
+                                    <div class="card">
+                                        <button class="sparkti_categories_head"  type="button" data-toggle="collapse"
+                                            data-target="#collapseOne" aria-expanded="true"
+                                            aria-controls="collapseOne">
+                                            Fashion & Clothing
+                                        </button>
+                                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                            data-parent="#accordionExample">
+                                            <div class="sparkti_categories_list">
+                                                <a href='#'>Women’s</a>
+                                                <a href='#'>Men’s</a>
+                                                <a href='#'>Accessories</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <button class="sparkti_categories_head collapsed "  type="button"
+                                            data-toggle="collapse" data-target="#collapseTwo"
+                                            aria-expanded="false" aria-controls="collapseTwo">
+                                            Collapsible Group Item #2
+                                        </button>
+                                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                            data-parent="#accordionExample">
+                                            <div class="sparkti_categories_list">
+                                                <a href='#'>Women’s</a>
+                                                <a href='#'>Men’s</a>
+                                                <a href='#'>Accessories</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <button class="sparkti_categories_head collapsed" type="button"
+                                            data-toggle="collapse" data-target="#collapseThree"
+                                            aria-expanded="false" aria-controls="collapseThree">
+                                            Collapsible Group Item #3
+                                        </button>
+                                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                            data-parent="#accordionExample">
+                                            <div class="sparkti_categories_list">
+                                                <a href='#'>Women’s</a>
+                                                <a href='#'>Men’s</a>
+                                                <a href='#'>Accessories</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--  -->
+
+                        <!--  -->
+                        <div class="sparkti_sidebar_widget sparkti_social_icon ">
+                            <h5 class="sparkti_widget_title">Connect With Us</h5>
+                            <div class="sparkti_sidebar_widget__content">
+                                <a href="#" class="sparkti_set_color" data-bg-color='a0b3d8'>
+                                    <i class="las la-thumbs-up"></i>
+                                </a>
+                                <a href="#" class="sparkti_set_color" data-bg-color='1da1f3'>
+                                    <i class="lab la-twitter"></i>
+                                </a>
+                                <a href="#" class="sparkti_set_color" data-bg-color='f5a4c4'>
+                                    <i class="las la-basketball-ball"></i>
+                                </a>
+                                <a href="#" class="sparkti_set_color" data-bg-color='ff7f7f'>
+                                    <i class="lab la-youtube"></i>
+                                </a>
+                                <a href="#" class="sparkti_set_color" data-bg-color='8bb4ff'>
+                                    <i class="lab la-behance"></i>
+                                </a>
+                                <a href="#" class="sparkti_set_color" data-bg-color='eea6a0'>
+                                    <i class="lab la-google-plus-g"></i>
+                                </a>
+                                <a href="#" class="sparkti_set_color" data-bg-color='e99594'>
+                                    <i class="lab la-pinterest"></i>
+                                </a>
+                                <a href="#" class="sparkti_set_color" data-bg-color='eb9fb2'>
+                                    <i class="lab la-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <!--  -->
+
+                        <!--  -->
+                        <div class="sparkti_sidebar_widget sparkti_tags">
+                            <h5 class="sparkti_widget_title">Popular Tags</h5>
+                            <div class="sparkti_sidebar_widget__content">
+                                <a href='#'>smarter </a>
+                                <a href='#'>wordpress</a>
+                                <a href='#'>themeforest </a>
+                                <a href='#'>bingotheme</a>
+                                <a href='#'>blog </a>
+                                <a href='#'>martel</a>
+                            </div>
+                        </div>
+                        <!--  -->
+                    </div>
+                </div>
+                <div class="col-lg-9 col-md-8">
+                    <div class="sparkti_blog_container">
+                        <!--  -->
+                        <div class="sparkti_blog_single_item">
+                            <div class="sparkti_blog_single_image">
+                                <img src="assets/images/sparkti_blog_list-01.jpg" alt="Blog image">
+                            </div>
+                            <div class="sparkti_blog_single_content">
+                                <span class="sparkti_post_date position-absolute">
+                                    <span class="sparkti_post_date_day"> 26th</span>
+                                    December
+                                </span>
+                                <a href="#" class="sparkti_blog_single_title">
+                                    <h4>Traditional feel in the kitchen</h4>
+                                </a>
+                                <p>
+                                    An enchanting array of flora and fauna lend a cheerful-but-zen vibe to this illustrated paper goods line.
+                                </p>
+                                <div class="sparkti_blog_tags">
+                                    <i class="las la-tags"></i>
+                                    <a href="#">Design</a>
+                                     , <a href="#">Technology</a>
+                                </div>
+                                <a href="#" class="sparkti_btn shop_btn btn_sm ">
+                                    Continue Reading
+                                </a>
+                            </div>
+                        </div>
+                        <!--  -->
+                         <!--  -->
+                         <div class="sparkti_blog_single_item">
+                            <div class="sparkti_blog_single_image">
+                                <img src="assets/images/sparkti_blog_list-01.jpg" alt="Blog image">
+                            </div>
+                            <div class="sparkti_blog_single_content">
+                                <span class="sparkti_post_date position-absolute">
+                                    <span class="sparkti_post_date_day"> 26th</span>
+                                    December
+                                </span>
+                                <a href="#" class="sparkti_blog_single_title">
+                                    <h4>Traditional feel in the kitchen</h4>
+                                </a>
+                                <p>
+                                    An enchanting array of flora and fauna lend a cheerful-but-zen vibe to this illustrated paper goods line.
+                                </p>
+                                <div class="sparkti_blog_tags">
+                                    <i class="las la-tags"></i>
+                                    <a href="#">Design</a>
+                                     , <a href="#">Technology</a>
+                                </div>
+                                <a href="#" class="sparkti_btn shop_btn btn_sm ">
+                                    Continue Reading
+                                </a>
+                            </div>
+                        </div>
+                        <!--  -->
+                         <!--  -->
+                         <div class="sparkti_blog_single_item">
+                            <div class="sparkti_blog_single_image">
+                                <img src="assets/images/sparkti_blog_list-01.jpg" alt="Blog image">
+                            </div>
+                            <div class="sparkti_blog_single_content">
+                                <span class="sparkti_post_date position-absolute">
+                                    <span class="sparkti_post_date_day"> 26th</span>
+                                    December
+                                </span>
+                                <a href="#" class="sparkti_blog_single_title">
+                                    <h4>Traditional feel in the kitchen</h4>
+                                </a>
+                                <p>
+                                    An enchanting array of flora and fauna lend a cheerful-but-zen vibe to this illustrated paper goods line.
+                                </p>
+                                <div class="sparkti_blog_tags">
+                                    <i class="las la-tags"></i>
+                                    <a href="#">Design</a>
+                                     , <a href="#">Technology</a>
+                                </div>
+                                <a href="#" class="sparkti_btn shop_btn btn_sm ">
+                                    Continue Reading
+                                </a>
+                            </div>
+                        </div>
+                        <!--  -->
+                         <!--  -->
+                         <div class="sparkti_blog_single_item">
+                            <div class="sparkti_blog_single_image">
+                                <img src="assets/images/sparkti_blog_list-01.jpg" alt="Blog image">
+                            </div>
+                            <div class="sparkti_blog_single_content">
+                                <span class="sparkti_post_date position-absolute">
+                                    <span class="sparkti_post_date_day"> 26th</span>
+                                    December
+                                </span>
+                                <a href="#" class="sparkti_blog_single_title">
+                                    <h4>Traditional feel in the kitchen</h4>
+                                </a>
+                                <p>
+                                    An enchanting array of flora and fauna lend a cheerful-but-zen vibe to this illustrated paper goods line.
+                                </p>
+                                <div class="sparkti_blog_tags">
+                                    <i class="las la-tags"></i>
+                                    <a href="#">Design</a>
+                                     , <a href="#">Technology</a>
+                                </div>
+                                <a href="#" class="sparkti_btn shop_btn btn_sm ">
+                                    Continue Reading
+                                </a>
+                            </div>
+                        </div>
+                        <!--  -->
+                         <!--  -->
+                         <div class="sparkti_blog_single_item">
+                            <div class="sparkti_blog_single_image">
+                                <img src="assets/images/sparkti_blog_list-01.jpg" alt="Blog image">
+                            </div>
+                            <div class="sparkti_blog_single_content">
+                                <span class="sparkti_post_date position-absolute">
+                                    <span class="sparkti_post_date_day"> 26th</span>
+                                    December
+                                </span>
+                                <a href="#" class="sparkti_blog_single_title">
+                                    <h4>Traditional feel in the kitchen</h4>
+                                </a>
+                                <p>
+                                    An enchanting array of flora and fauna lend a cheerful-but-zen vibe to this illustrated paper goods line.
+                                </p>
+                                <div class="sparkti_blog_tags">
+                                    <i class="las la-tags"></i>
+                                    <a href="#">Design</a>
+                                     , <a href="#">Technology</a>
+                                </div>
+                                <a href="#" class="sparkti_btn shop_btn btn_sm ">
+                                    Continue Reading
+                                </a>
+                            </div>
+                        </div>
+                        <!--  -->
+                         <!--  -->
+                         <div class="sparkti_blog_single_item">
+                            <div class="sparkti_blog_single_image">
+                                <img src="assets/images/sparkti_blog_list-01.jpg" alt="Blog image">
+                            </div>
+                            <div class="sparkti_blog_single_content">
+                                <span class="sparkti_post_date position-absolute">
+                                    <span class="sparkti_post_date_day"> 26th</span>
+                                    December
+                                </span>
+                                <a href="#" class="sparkti_blog_single_title">
+                                    <h4>Traditional feel in the kitchen</h4>
+                                </a>
+                                <p>
+                                    An enchanting array of flora and fauna lend a cheerful-but-zen vibe to this illustrated paper goods line.
+                                </p>
+                                <div class="sparkti_blog_tags">
+                                    <i class="las la-tags"></i>
+                                    <a href="#">Design</a>
+                                     , <a href="#">Technology</a>
+                                </div>
+                                <a href="#" class="sparkti_btn shop_btn btn_sm ">
+                                    Continue Reading
+                                </a>
+                            </div>
+                        </div>
+                        <!--  -->
+                         <!--  -->
+                         <div class="sparkti_blog_single_item">
+                            <div class="sparkti_blog_single_image">
+                                <img src="assets/images/sparkti_blog_list-01.jpg" alt="Blog image">
+                            </div>
+                            <div class="sparkti_blog_single_content">
+                                <span class="sparkti_post_date position-absolute">
+                                    <span class="sparkti_post_date_day"> 26th</span>
+                                    December
+                                </span>
+                                <a href="#" class="sparkti_blog_single_title">
+                                    <h4>Traditional feel in the kitchen</h4>
+                                </a>
+                                <p>
+                                    An enchanting array of flora and fauna lend a cheerful-but-zen vibe to this illustrated paper goods line.
+                                </p>
+                                <div class="sparkti_blog_tags">
+                                    <i class="las la-tags"></i>
+                                    <a href="#">Design</a>
+                                     , <a href="#">Technology</a>
+                                </div>
+                                <a href="#" class="sparkti_btn shop_btn btn_sm ">
+                                    Continue Reading
+                                </a>
+                            </div>
+                        </div>
+                        <!--  -->
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="sparkti_pagination">
+                                <a href="#" class="sparkti_prev sparkti_pagination_item">
+                                    <i class="las la-arrow-left"></i>
+                                </a>
+                                <a href="#" class="sparkti_pagination_item">1</a>
+                                <a href="#" class="sparkti_pagination_item active">2</a>
+                                <a href="#" class="sparkti_pagination_item">3</a>
+                                <a href="#" class="sparkti_next sparkti_pagination_item">
+                                    <i class="las la-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--  -->
+
+    <!--  -->
+    <!--  -->
+
+    <!--  -->
+    <!--  -->
+
+    <!-- JQuery -->
+    <script src="assets/js/jquery-3.4.1.min.js"></script>
+    <!--  -->
+    <script src="assets/js/popper.min.js"></script>
+    <!--  -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!--  -->
+    <script src="assets/js/slick.min.js"></script>
+    <!--  -->
+    <script src="assets/js/kounty.min.js"></script>
+    <!--  -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

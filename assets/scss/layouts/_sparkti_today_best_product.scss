@@ -125,7 +125,17 @@
         }
     }
 }
-
+.sparkti_section_title{
+    &.left_align{
+        text-align: left;
+        margin-bottom: 40px;
+        h4{
+            &::before{
+                width: 100%;
+            }
+        }
+    }
+}
 .sparkti_today_best_product{
     background: $cff;
     margin-top: 70px;
@@ -133,15 +143,7 @@
     padding-top: 70px;
     padding-bottom: 70px;
     .sparkti_section_title{
-        &.left_align{
-            text-align: left;
-            margin-bottom: 40px;
-            h4{
-                &::before{
-                    width: 100%;
-                }
-            }
-        }
+        @extend .sparkti_section_title;
     }
     .sparkti_best_deal_carousel_area{
         @include flexDirection(row);

@@ -1,0 +1,16 @@
+.sparkti_page_description{
+    padding: 45px 0 45px 0;
+    background-color: $cff;
+    .sparkti_page_description_inner{
+        h3{
+            color: $assistant;
+            font-size: $fz28;
+            margin-bottom: 15px;
+            color: $c36;
+        }
+        p{
+            color: $c63;
+            font-size: $fz14;
+        }
+    }
+}

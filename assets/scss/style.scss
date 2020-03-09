@@ -70,60 +70,30 @@
 }
 /*-------------------------------------
 -------------------------------------*/ 
-.sparkti_breadcrumb{
-    border-bottom: 1px solid $ce1e;
-    border-top: 1px solid $ce1e;
-    padding: 20px 0;
-    background: $cff;
-    &__inner{
-        .sparkti_breadcrumb_menu{
-            @include flexDirection(row);
-            justify-content: flex-start;
-            padding-left: 0;
-            margin-bottom: 0;
-            li{
-                position: relative;
-                &:not(:last-child){
-                    margin-right: 30px;
-                    &::after{
-                        content: "\f054";
-                        position: absolute;
-                        right: -21px;
-                        top: 50%;
-                        transform: translateY(-50%);
-                        color: $cac;
-                        font-family:'Line Awesome Free';
-                        font-weight: 700;
-                    }
-                }
-                
-                a{
-                    margin-right: 0;
-                    font-size: $fz13;
-                    color: $c63;
-                    font-family: $rubik;
-                }
-                span{
-                    color: $cac;
-                }
-            }
-        }
-    }
-}
+@import 'layouts/sparkti_breadcrumb';
 /*-------------------------------------
 -------------------------------------*/ 
 .sparkti_single_product_details{
+    background: $cff;
     .sparkti_best_deal_carousel_area{
         @include flexDirection(row);
         align-items: flex-start;
+        padding-top: 50px;
         .sparkti_best_deal__content_carousel{
-            .sparkti_best_deal__content_carousel_image{}
+            .sparkti_dots{
+                display: none;
+            }
+            .sparkti_best_deal__content_carousel_item {
+                align-items: flex-start;
+                .sparkti_best_deal__content_carousel_image{}
                 .sparkti_best_deal__content_carousel_content{
+                    padding-left: 25px;
                     .sparkti_deals_title{
                         
                         h4{
-                            font-size: $fz28;
+                            font-size: $fz24;
                             color: $c36;
+                            font-weight: 700;
                         }
                     }
                     .sparkti_product_rating{
@@ -161,7 +131,7 @@
                         .sparkti_question{
                             color: $c63;
                             font-size: $fz12;
-                            padding: 10px 20px;
+                            padding: 7px 20px;
                             border: 1px solid $ce1e;
                             border-radius: 3px;
                         }
@@ -169,8 +139,8 @@
                     .sparkti_product_features{
                         border-top: 1px solid $ce1e;
                         border-bottom: 1px solid $ce1e;
-                        padding-bottom: 20px;
-                        padding-top: 20px;
+                        padding-bottom: 15px;
+                        padding-top: 15px;
                         ul{
                             padding-left: 0;
                             margin-bottom: 20px;
@@ -219,19 +189,43 @@
                         border-bottom: 1px solid $ce1e;
                         @include flexDirection(row);
                         justify-content: flex-start;
+                        padding: 23px 0 23px 0;
                         &__quantity{
-                            .shopping_cart_options_minus{}
-                            .shopping_cart_options_display{}
-                            .shopping_cart_options_minus{}
+                            .shopping_cart_options_minus{
+                                font-size: $fz24;
+                                color: $c36;
+                                margin-right: 22px;
+                                @include inlineFlex;
+                            }
+                            .shopping_cart_options_display{
+                                @extend .shopping_cart_options_minus;
+                            }
+                            .shopping_cart_options_plus{
+                                @extend .shopping_cart_options_minus;
+                            }
                         }
                         .sparkti_btn{
-
+                            @include btn_content(45px,30px,16px); 
+                            font-weight: 700;
+                            background: $c737;
+                            color: $cff;
+                            text-transform: uppercase;
+                            border-radius: 4px;
+                            letter-spacing: 1px;
                         }
-                        .sparkti_wishlist_btn{}
-                        .sparkti_shopping_reset_btn{}
+                        .sparkti_wishlist_btn{
+                            font-size: $fz24;
+                            color: $c737 ;
+                            @include inlineFlex;
+                            margin-left: 22px;
+                        }
+                        .sparkti_shopping_reset_btn{
+                            @extend .sparkti_wishlist_btn;
+                        }
                     }
                     .sparkti_single_product_id{
                         margin-bottom: 10px;
+                        padding-top: 10px;
                         color: $cac;
                         text-transform: uppercase;
                         font-size: $fz13;
@@ -262,6 +256,7 @@
                     .sparkti_social_icon_container{
                         .sparkti_social_icon{
                             @include inlineFlex;
+                            padding-left: 0;
                             li{
                                 &:not(:last-child){
                                     margin-right: 20px;
@@ -269,8 +264,11 @@
                                 a{
                                     height: 40px;
                                     width: 40px;
+                                    @include inlineFlex;
+                                    
                                     i{
                                         font-size: $fz24;
+                                        color: $cff;
                                     }
                                 }
                             }
@@ -278,27 +276,85 @@
                     }
 
                 }
+            }
+            
         }
     }
 }
 /*-------------------------------------
 -------------------------------------*/ 
-.sparkti_page_description{
-    padding: 45px 0 45px 0;
-    background-color: $cff;
-    .sparkti_page_description_inner{
-        h3{
-            color: $assistant;
-            font-size: $fz28;
-            margin-bottom: 15px;
-            color: $c36;
+.sparkti_product_navs{
+    background: $cff;
+    .sparkti_product_navs_tab{
+        padding-left: 0;
+        margin-bottom: 0;
+        border-bottom: 1px solid $ce1e;
+        li{
+            &:not(:last-child){
+                margin-right: 30px;
+                @include transition(.30s);
+                padding: 0 0 0 0;
+            }
+            a{
+                font-size: $fz20;
+                font-weight: 700;
+                font-family: $assistant;
+                color: $c36;
+                padding: 0 0px 12px 0;
+                display: block;
+                &.active{
+                    color: $cf1;
+                }
+            }
         }
-        p{
-            color: $c63;
-            font-size: $fz14;
+    }
+    &__body{
+        padding-top: 30px;
+        @include flexDirection(row);
+        .sparkti_product_navs_content{
+            padding-right: 60px;
+            p{
+                color: $c63;
+                line-height: 28px;
+                font-size: $fz14;
+            }
+            ul{
+                padding-left: 0;
+                margin-bottom: 0;
+                li{
+                    color: $c63;
+                    line-height: 28px;
+                    font-size: $fz14;
+                }
+            }
+        }
+        img{}
+    }
+}
+/*-------------------------------------
+-------------------------------------*/ 
+.sparkti_related_products{
+    background: $cff;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @extend .sparkti_section_title;
+    &__carousel{
+        .popular_products_item{
+            margin-left: 15px;
+            margin-right: 15px;
+            @include popular_products_item;
+            .popular_product_body{
+                text-align: left;
+            }
         }
     }
 }
+/*-------------------------------------
+-------------------------------------*/ 
+
+/*-------------------------------------
+-------------------------------------*/ 
+@import 'layouts/sparkti_page_description';
 /*-------------------------------------
 -------------------------------------*/ 
 @import 'layouts/sparkti_blog_area';
@@ -309,420 +365,53 @@
 
 /*-------------------------------------
 -------------------------------------*/ 
-.sparkti_single_blog_container{
-    background: $cff;
-    .sparkti_blog__item{
-        .sparkti_blog_head{
-            @include flexDirection(row);
-            padding-top: 60px;
-            padding-bottom: 60px;
-            justify-content: flex-start;
-            .sparkti_post_date{
-                display: block;
-                font-size: $fz40;
-                font-weight: $light;
-                font-family: $rubik;
-                color: $cebeb;
-                margin-bottom: 0;
-                line-height: 40px;
-                .sparkti_post_date_day{
-                    font-family: $rubik;
-                    font-size: $fz70;
-                    font-weight: $medium;
-                    line-height: 60px;
-                    margin-bottom: 0;
-                    display: block;
-                }
-            }
-            .sparkti_blog_head__content{
-                margin-left: 45px;
-                .sparkti_blog_title{
-                    font-size: $fz32;
-                    color: $c36;
-                    margin-bottom: 20px;
-                }
-                .sparkti_blog_meta{
-                    ul{
-                        @include flexDirection(row);
-                        margin-bottom: 0;
-                        padding-left: 0;
-                        justify-content: flex-start;
-                        li{
-                            font-size: $fz13;
-                            color: $c63;
-                            &:not(:last-child){
-                                margin-right: 28px;
-                            }
-                            i{
-                                color: $c6c8;
-                                font-size: $fz20;
-                            }
-                            a{
-                                font-size: $fz13;
-                                color: $c63;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-        .sparkti_post_image{
-            margin-bottom: 50px;
-            img{}
-        }
-        .sparkti_post_body{
-            padding-left: 200px;
-            strong{
-                font-size: $fz14;
-                color: $c36;
-                margin-bottom: 70px;
-                display: block;
-            }
-            p{
-                line-height: 26px;
-            }
-            h1{
-                font-size: $fz28;
-                color: $c36;
-                margin-bottom: 15px;
-                margin-top: 40px;
-            }
-            h1 + p{
-
-            }
-            h2{
-                color: $c36;
-                margin-bottom: 15px;
-                margin-top: 30px;
-                font-size: $fz24;
-            }
-            h2 + p{}
-            h3{
-                color: $c36;
-                margin-bottom: 15px;
-                font-size: $fz22;
-                margin-top: 30px;
-            }
-            h3 + p{}
-            h4{
-                margin-top: 30px;
-                font-size: $fz20;
-                color: $c36;
-            }
-            h4 + p{}
-            h5{
-                color: $c36;
-                margin-bottom: 15px;
-                margin-top: 30px;
-                font-size: $fz18;
-            }
-            h5 + p{}
-            h6{
-                color: $c36;
-                margin-bottom: 15px;
-                margin-top: 30px;
-                font-size: $fz16;
-            }
-            h6 + p{}
-            blockquote{
-                margin-top: 40px;
-                position: relative;
-                margin-bottom: 40px;
-                p{
-                    strong{
-                        font-weight: $medium;
-                        font-size: $fz16;
-                        margin-bottom: 0 !important;
-                        color: $c36;
-                        font-style: italic;
-                        
-                    }
-                }
-                span{
-                    font-size: $fz13;
-                    font-weight: $regular;
-                    color: $cac;
-                    display: block;
-                    margin-top: 10px;
-                }
-            }
-        }
-        .sparkti_post_social_icon{
-            @include flexDirection(row);
-            justify-content: flex-start;
-            border-top: 1px solid $ce1e;
-            border-bottom: 1px solid $ce1e;
-            padding-top: 25px;
-            padding-bottom: 25px;
-            a{
-                @include inlineFlex;
-                line-height: 30px;
-                border-radius: 3px;
-                height: 30px;
-                padding-right: 7px;
-                color: $cff;
-                &:not(:last-child){
-                    margin-right: 10px;
-                }
-                i{
-                    line-height: 30px;
-                    padding-left: 10px;
-                    padding-right: 10px;
-                    display: inline-block;
-                    margin-right: 10px;
-                    border-right: 1px solid rgba($cff,.30);
-                    color: $cff;
-
-                }
-            }
-        }
-        .sparkti_previous_next_post_pagination{
-            @include flexDirection(row);
-            justify-content: space-between;
-            padding-top: 35px;
-            .sparkti_prev_post_pagination{
-                color: $cac;
-                font-size: $fz14;
-                @include inlineFlex;
-                align-items: center;
-                i{
-                    font-size: $fz18;
-                    display: inline-block;
-                    margin-right: 5px;
-                }
-            }
-            .sparkti_next_post_pagination{
-                @extend .sparkti_prev_post_pagination;
-                i{
-                    margin-left: 5px;
-                }
-            }
-        }
-        .sparkti_previous_next_post{
-            @include flexDirection(row);
-            padding-top: 20px;
-            justify-content: space-between;
-            .post_prev_title{
-                h5{
-                    margin: 0;  
-                }
-            }
-            .post_next_title{
-                @extend .post_prev_title;
-            }
-        }
-        .sparkti_post_author{
-            background: $cf9f9;
-            @include flexDirection(row);
-            justify-content: space-between;
-            padding: 30px;
-            margin-top: 30px;
-            img{
-                height: 70px;
-                width: 70px;
-                border-radius: 50%;
-            }
-            &__content{
-                margin-left: 30px;
-                h5{
-                    font-size: $fz18;
-                    color: $c36;
-                    margin-bottom: 15px;
-                    margin-top: 0;
-                }
-                p{
-                    color: $c63;
-                    margin-bottom: 20px;
-                }
-                .sparkti_btn{
-                    @include btn_content(30px,20px,12px); 
-                    background: $c737;
-                    color: $cff;
-                }
-            }
-        }
-        .sparkti_comments_container{
-            .sparkti_comments_container__title{
-                font-size: $fz20;
-                color: $c36;
-                padding-bottom: 20px;
-                border-bottom: 1px solid $ce1e;
-                margin-bottom: 40px;
-            }
-            .sparkti_commnets{
-                .sparkti_commnets{
-                    padding-left: 100px;
-                }
-                .sparkti_single_comments{
-                    @include flexDirection(row);
-                    justify-content: flex-start;
-                    align-items: flex-start;
-                    margin-bottom: 40px;
-                    img{}
-                    .sparkti_single_comments__content{
-                        margin-left: 20px;
-                        h6{
-                            color: $c79a7;
-                            font-size: $fz16;
-                            margin-top: 0;
-                        }
-                        .comments_meta{
-                            color: $cac;
-                            font-size: $fz13;
-                        }
-                        p{
-                            font-size: $fz14;
-                            color: $c63;
-                        }
-                        .comments_reply{
-                            @include btn_content(30px,20px,12px); 
-                            background: $c737;
-                            color: $cff;
-                            @include inlineFlex;
-                            margin-top: 20px;
-                            align-items: center;
-                            i{
-                                line-height: 20px;
-                                display: inline-block;
-                                margin-right: 7px;
-                            }
-                        }
-                    }
-                    
-                }
-                
-            }
-        }
-        .sparkti_reply_container{
-            padding-top: 40px;
-            border-top: 1px solid $ce1e;
-            .sparkti_reply_container_head{
-                padding-bottom: 30px;
-                h5{
-                    font-size: $fz20;
-                    color: $c36;
-                    text-transform: uppercase;
-                    margin-top: 0;
-                    margin-bottom: 10px;
-                }
-                p{
-                    font-size: $fz14;
-                    color: $c63
-                }
-            }
-            .sparkti_reply_box{
-                .form-group{
-                    margin-right: 8px;
-                    margin-bottom: 15px;
-                    label{
-                        font-size: $fz14;
-                        text-transform: uppercase;
-                        font-family: $rubik;
-                        color: $cac;
-                    }
-                    .form-control{
-                        background: $cf9f9;
-                        border: 1px solid $ce1e;
-                        border-radius: 3px;
-                        padding-left: 15px; 
-                        
-                    }
-                    textarea{
-                        height: 200px;
-                    }
-                    input{
-                        height: 50px;
-                        line-height: 50px;
-                    }
-                }
-                
-            }
-            .sparkti_checkbox_parent{
-                margin-bottom: 30px;
-                margin-top: 20px;
-                .sparkti_checkbox{
-                    margin-bottom: 15px;
-                    position: relative;
-                    @include flexDirection(row);
-                    justify-content: flex-start;
-                    input{
-                        height: 15px;
-                        width: 15px;
-                        border-radius: 50%;
-                        margin-right: 7px;
-                        z-index: 9;
-                        opacity: 0;
-                        &:checked + label::after{
-                            visibility: visible;
-                            opacity: 1;
-                        }
-                    }
-                    label{
-                        font-size: $fz14;
-                        color: $c63;
-                        margin-bottom: 0;
-                        &::before{
-                            content: "";
-                            position: absolute;
-                            height: 15px;
-                            width: 15px;
-                            border-radius: 50%;
-                            border: 1px solid $ce1e;
-                            top: 50%;
-                            left: 0;
-                            transform: translateY(-50%);
-                            z-index: 0;
-                        }
-                        &::after{
-                            position: absolute;
-                            top: 10px;
-                            left: 3px;
-                            transform: translateY(-50%);
-                            z-index: 0;
-                            visibility: visible;
-                            opacity: 1;
-                            content: "\f00c";
-                            font-family: 'Line Awesome Free';
-                            font-weight: 700;
-                            visibility: hidden;
-                            opacity: 0;
-                            @include transition(.40s);
-                        }
-                    }
-                }
-            }
-            .sparkti_btn{
-                @include btn_content(40px,20px,12px); 
-                background: $c737;
-                color: $cff;
-                border: none;
-            }
-        }
-        .sparkti_related_post{
-            .sparkti_related_post_title{
-                h4{}
-            }
-            .sparkti_blog__item{
-                .sparkti_blog__item_image{
-                    img{}
-                }
-                .sparkti_blog__item_content{
+@import 'layouts/sparkti_single_blog_container';
+/*-------------------------------------
+-------------------------------------*/ 
+.sparkti_footer{
+    &__top{
+        .sparkti_footer_widget{
+            .sparkti_social_icon{
+                li{
                     a{
-                        h5{}
+                        i{}
                     }
-                    p{
-                        .sparkti_blog__item_tags{
+                }
+            }
+            &.contact_info{
+                .sparkti_footer_widget__title{
+                    .sparkti_footer_widget__content{
+    
+                    }
+                }
+            }
+            &.useful_link{
+                .sparkti_footer_widget__title{
+                    .sparkti_footer_widget__content{
+                        ul{
+                            li{
+                                a{
 
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .sparkti_footer_widget__title{
+                .sparkti_footer_widget__content{
+                    ul{
+                        li{
+                            a{}
+                            span{}
                         }
                     }
                 }
             }
         }
     }
+    &__bottom{}
 }
-/*-------------------------------------
--------------------------------------*/ 
-
 /*-------------------------------------
 -------------------------------------*/ 
 

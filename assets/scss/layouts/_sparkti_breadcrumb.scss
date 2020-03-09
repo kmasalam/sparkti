@@ -1,0 +1,40 @@
+.sparkti_breadcrumb{
+    border-bottom: 1px solid $ce1e;
+    border-top: 1px solid $ce1e;
+    padding: 20px 0;
+    background: $cff;
+    &__inner{
+        .sparkti_breadcrumb_menu{
+            @include flexDirection(row);
+            justify-content: flex-start;
+            padding-left: 0;
+            margin-bottom: 0;
+            li{
+                position: relative;
+                &:not(:last-child){
+                    margin-right: 30px;
+                    &::after{
+                        content: "\f054";
+                        position: absolute;
+                        right: -21px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        color: $cac;
+                        font-family:'Line Awesome Free';
+                        font-weight: 700;
+                    }
+                }
+                
+                a{
+                    margin-right: 0;
+                    font-size: $fz13;
+                    color: $c63;
+                    font-family: $rubik;
+                }
+                span{
+                    color: $cac;
+                }
+            }
+        }
+    }
+}

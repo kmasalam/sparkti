@@ -48,7 +48,7 @@
             infinite: true,
             speed: 500,
             arrows: false,
-            autoplay: true,
+            autoplay: false,
             autoplaySpeed: 2000,
             slidesToShow: 5,
             cssEase: 'linear',

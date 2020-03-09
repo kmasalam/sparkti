@@ -73,6 +73,25 @@
 @import 'layouts/sparkti_breadcrumb';
 /*-------------------------------------
 -------------------------------------*/ 
+@mixin sparkti_social_icon{
+    @include inlineFlex;
+    padding-left: 0;
+    li{
+        &:not(:last-child){
+            margin-right: 20px;
+        }
+        a{
+            height: 40px;
+            width: 40px;
+            @include inlineFlex;
+            
+            i{
+                font-size: $fz24;
+                color: $cff;
+            }
+        }
+    }
+}
 .sparkti_single_product_details{
     background: $cff;
     .sparkti_best_deal_carousel_area{
@@ -254,25 +273,7 @@
                         }
                     }
                     .sparkti_social_icon_container{
-                        .sparkti_social_icon{
-                            @include inlineFlex;
-                            padding-left: 0;
-                            li{
-                                &:not(:last-child){
-                                    margin-right: 20px;
-                                }
-                                a{
-                                    height: 40px;
-                                    width: 40px;
-                                    @include inlineFlex;
-                                    
-                                    i{
-                                        font-size: $fz24;
-                                        color: $cff;
-                                    }
-                                }
-                            }
-                        }
+                        @include sparkti_social_icon;
                     }
 
                 }
@@ -369,11 +370,17 @@
 /*-------------------------------------
 -------------------------------------*/ 
 .sparkti_footer{
+    background:$c231;
     &__top{
+        padding-top: 70px;
+        padding-bottom: 70px;
+        border-top: 1px solid $c36;
+        border-bottom: 1px solid $c36;
         .sparkti_footer_widget{
             .sparkti_social_icon{
                 li{
                     a{
+                        
                         i{}
                     }
                 }
@@ -399,18 +406,107 @@
                 }
             }
             .sparkti_footer_widget__title{
-                .sparkti_footer_widget__content{
-                    ul{
-                        li{
-                            a{}
-                            span{}
+                margin-bottom: 20px;
+                text-transform: capitalize;
+                color: $cff;
+
+            }
+            &__content{
+                padding-left: 0;
+                margin-bottom: 0;
+                .input-group{
+                    margin-bottom: 15px;
+                    .form-control{
+                        height: 40px;
+                        border-radius: 0;
+                        border: 1px solid $c737;
+                        font-size: $fz14;
+                    }
+                    .sparkti_btn{
+                        @include btn_content(40px,20px,12px); 
+                        background: $c737;
+                        color: $cff;
+                        border: 1px solid $c737;
+                    }
+
+                }
+                li{
+                    @include flexDirection(row);
+                    align-items: flex-start;
+                    justify-content: flex-start;
+                    margin-bottom: 10px;
+                    a{
+                        font-size: $fz14;
+                        color: $cac;
+                    }
+                    .footer_widget_content_icon{
+                        font-size: $fz16;
+                        @include inlineFlex;
+                        margin-right: 7px;
+                        color: $cac;
+                        i{
+                            display: inline-block;
+                            margin-top: 3px;
                         }
+                    }
+                    .footer_widget_content_text{
+                        font-size: $fz14;
+                        color: $cac;
+                        .hotline_number{
+                            font-size: $fz18;
+                            display: block;
+                            color: $cff;
+                        }
+                        a{
+                            font-size: $fz14;
+                            color:$cac;
+                        }
+                    }
+                }
+            }
+            .sparkti_social_icon{
+                @include sparkti_social_icon;
+                margin-top: 10px;
+                li{
+                    &:not(:last-child){
+                        margin-right: 15px;
+                    }
+                }
+                a{
+                    height: 30px !important;
+                    width: 30px !important;
+                    i{
+                        font-size: $fz16 !important;
                     }
                 }
             }
         }
     }
-    &__bottom{}
+    &__bottom{
+        background: $c00;
+        padding: 10px 0;
+        .sparkti_footer__bottom_copyright{
+           text-align: left; 
+           height: 100%;
+           @include inlineFlex;
+           padding: 10px 0;
+           p{
+                font-size: $fz14;
+                color: $c63;
+           }
+        }
+        .sparkti_footer__bottom_cards{
+            height: 100%;
+            @include inlineFlex;
+            padding: 10px 0;
+            text-align: right;
+            @include flexDirection(row);
+            justify-content: flex-end;
+            a:not(:last-child){
+                margin-right: 10px;
+            }
+        }
+    }
 }
 /*-------------------------------------
 -------------------------------------*/ 

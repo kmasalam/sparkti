@@ -1635,20 +1635,20 @@ h5, .sparkti_available_products .sparkti_available_products_container .sparkti_a
             color: #636363; }
           .sparkti_single_product_details .sparkti_best_deal_carousel_area .sparkti_best_deal__content_carousel .sparkti_best_deal__content_carousel_item .sparkti_best_deal__content_carousel_content .sparkti_product_tags a {
             color: #acacac; }
-        .sparkti_single_product_details .sparkti_best_deal_carousel_area .sparkti_best_deal__content_carousel .sparkti_best_deal__content_carousel_item .sparkti_best_deal__content_carousel_content .sparkti_social_icon_container .sparkti_social_icon {
+        .sparkti_single_product_details .sparkti_best_deal_carousel_area .sparkti_best_deal__content_carousel .sparkti_best_deal__content_carousel_item .sparkti_best_deal__content_carousel_content .sparkti_social_icon_container {
           display: inline-flex;
           align-items: center;
           justify-content: center;
           padding-left: 0; }
-          .sparkti_single_product_details .sparkti_best_deal_carousel_area .sparkti_best_deal__content_carousel .sparkti_best_deal__content_carousel_item .sparkti_best_deal__content_carousel_content .sparkti_social_icon_container .sparkti_social_icon li:not(:last-child) {
+          .sparkti_single_product_details .sparkti_best_deal_carousel_area .sparkti_best_deal__content_carousel .sparkti_best_deal__content_carousel_item .sparkti_best_deal__content_carousel_content .sparkti_social_icon_container li:not(:last-child) {
             margin-right: 20px; }
-          .sparkti_single_product_details .sparkti_best_deal_carousel_area .sparkti_best_deal__content_carousel .sparkti_best_deal__content_carousel_item .sparkti_best_deal__content_carousel_content .sparkti_social_icon_container .sparkti_social_icon li a {
+          .sparkti_single_product_details .sparkti_best_deal_carousel_area .sparkti_best_deal__content_carousel .sparkti_best_deal__content_carousel_item .sparkti_best_deal__content_carousel_content .sparkti_social_icon_container li a {
             height: 40px;
             width: 40px;
             display: inline-flex;
             align-items: center;
             justify-content: center; }
-            .sparkti_single_product_details .sparkti_best_deal_carousel_area .sparkti_best_deal__content_carousel .sparkti_best_deal__content_carousel_item .sparkti_best_deal__content_carousel_content .sparkti_social_icon_container .sparkti_social_icon li a i {
+            .sparkti_single_product_details .sparkti_best_deal_carousel_area .sparkti_best_deal__content_carousel .sparkti_best_deal__content_carousel_item .sparkti_best_deal__content_carousel_content .sparkti_social_icon_container li a i {
               font-size: 24px;
               color: #ffffff; }
 
@@ -2359,6 +2359,124 @@ h5, .sparkti_available_products .sparkti_available_products_container .sparkti_a
 
 /*-------------------------------------
 -------------------------------------*/
+.sparkti_footer {
+  background: #231f20; }
+  .sparkti_footer__top {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    border-top: 1px solid #363636;
+    border-bottom: 1px solid #363636; }
+    .sparkti_footer__top .sparkti_footer_widget .sparkti_footer_widget__title {
+      margin-bottom: 20px;
+      text-transform: capitalize;
+      color: #ffffff; }
+    .sparkti_footer__top .sparkti_footer_widget__content {
+      padding-left: 0;
+      margin-bottom: 0; }
+      .sparkti_footer__top .sparkti_footer_widget__content .input-group {
+        margin-bottom: 15px; }
+        .sparkti_footer__top .sparkti_footer_widget__content .input-group .form-control {
+          height: 40px;
+          border-radius: 0;
+          border: 1px solid #737495;
+          font-size: 14px; }
+        .sparkti_footer__top .sparkti_footer_widget__content .input-group .sparkti_btn {
+          background: #ffffff;
+          line-height: 40px;
+          height: 40px;
+          padding: 0 20px;
+          font-family: "Assistant";
+          font-weight: 700;
+          text-transform: uppercase;
+          font-size: 12px;
+          color: #363636;
+          display: inline-flex;
+          background: #737495;
+          color: #ffffff;
+          border: 1px solid #737495; }
+      .sparkti_footer__top .sparkti_footer_widget__content li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+        margin-bottom: 10px; }
+        .sparkti_footer__top .sparkti_footer_widget__content li a {
+          font-size: 14px;
+          color: #acacac; }
+        .sparkti_footer__top .sparkti_footer_widget__content li .footer_widget_content_icon {
+          font-size: 16px;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          margin-right: 7px;
+          color: #acacac; }
+          .sparkti_footer__top .sparkti_footer_widget__content li .footer_widget_content_icon i {
+            display: inline-block;
+            margin-top: 3px; }
+        .sparkti_footer__top .sparkti_footer_widget__content li .footer_widget_content_text {
+          font-size: 14px;
+          color: #acacac; }
+          .sparkti_footer__top .sparkti_footer_widget__content li .footer_widget_content_text .hotline_number {
+            font-size: 18px;
+            display: block;
+            color: #ffffff; }
+          .sparkti_footer__top .sparkti_footer_widget__content li .footer_widget_content_text a {
+            font-size: 14px;
+            color: #acacac; }
+    .sparkti_footer__top .sparkti_footer_widget .sparkti_social_icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding-left: 0;
+      margin-top: 10px; }
+      .sparkti_footer__top .sparkti_footer_widget .sparkti_social_icon li:not(:last-child) {
+        margin-right: 20px; }
+      .sparkti_footer__top .sparkti_footer_widget .sparkti_social_icon li a {
+        height: 40px;
+        width: 40px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center; }
+        .sparkti_footer__top .sparkti_footer_widget .sparkti_social_icon li a i {
+          font-size: 24px;
+          color: #ffffff; }
+      .sparkti_footer__top .sparkti_footer_widget .sparkti_social_icon li:not(:last-child) {
+        margin-right: 15px; }
+      .sparkti_footer__top .sparkti_footer_widget .sparkti_social_icon a {
+        height: 30px !important;
+        width: 30px !important; }
+        .sparkti_footer__top .sparkti_footer_widget .sparkti_social_icon a i {
+          font-size: 16px !important; }
+  .sparkti_footer__bottom {
+    background: #000000;
+    padding: 10px 0; }
+    .sparkti_footer__bottom .sparkti_footer__bottom_copyright {
+      text-align: left;
+      height: 100%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 0; }
+      .sparkti_footer__bottom .sparkti_footer__bottom_copyright p {
+        font-size: 14px;
+        color: #636363; }
+    .sparkti_footer__bottom .sparkti_footer__bottom_cards {
+      height: 100%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 0;
+      text-align: right;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-flow: row;
+      justify-content: flex-end; }
+      .sparkti_footer__bottom .sparkti_footer__bottom_cards a:not(:last-child) {
+        margin-right: 10px; }
+
 /*-------------------------------------
 -------------------------------------*/
 /*-------------------------------------

@@ -1,3 +1,15 @@
+.product_vendors{
+    display: block;
+    color: $c737;
+    font-size: $fz12;
+    padding-top: 35px;
+    @include respond-to(larage) {
+        padding-top: 20px;
+    }
+    span{
+        color: $cac;
+    }
+}
 @mixin popular_products_item{
     .popular_products_image{}
     .popular_product_body{
@@ -38,16 +50,7 @@
             }
         }
         .product_vendors{
-            display: block;
-            color: $c737;
-            font-size: $fz12;
-            padding-top: 35px;
-            @include respond-to(larage) {
-                padding-top: 20px;
-            }
-            span{
-                color: $cac;
-            }
+            @extend .product_vendors;
         }
     }
 }

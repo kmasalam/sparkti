@@ -1,0 +1,13 @@
+.sparkti_offcanvas_navigation{
+    width: 243px;
+    height: 100vh;
+    background: $cff;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    @include transition(.40s);
+    box-shadow: 0px 2px 5px rgba(0,0,0,.30);
+    &.sparkti_offcanvas_navigation.show{
+        left: 0;
+    }
+}

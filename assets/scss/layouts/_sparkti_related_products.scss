@@ -1,0 +1,16 @@
+.sparkti_related_products{
+    background: $cff;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @extend .sparkti_section_title;
+    &__carousel{
+        .popular_products_item{
+            margin-left: 15px;
+            margin-right: 15px;
+            @include popular_products_item;
+            .popular_product_body{
+                text-align: left;
+            }
+        }
+    }
+}

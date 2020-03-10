@@ -1,0 +1,48 @@
+.sparkti_product_navs{
+    background: $cff;
+    .sparkti_product_navs_tab{
+        padding-left: 0;
+        margin-bottom: 0;
+        border-bottom: 1px solid $ce1e;
+        li{
+            &:not(:last-child){
+                margin-right: 30px;
+                @include transition(.30s);
+                padding: 0 0 0 0;
+            }
+            a{
+                font-size: $fz20;
+                font-weight: 700;
+                font-family: $assistant;
+                color: $c36;
+                padding: 0 0px 12px 0;
+                display: block;
+                &.active{
+                    color: $cf1;
+                }
+            }
+        }
+    }
+    &__body{
+        padding-top: 30px;
+        @include flexDirection(row);
+        .sparkti_product_navs_content{
+            padding-right: 60px;
+            p{
+                color: $c63;
+                line-height: 28px;
+                font-size: $fz14;
+            }
+            ul{
+                padding-left: 0;
+                margin-bottom: 0;
+                li{
+                    color: $c63;
+                    line-height: 28px;
+                    font-size: $fz14;
+                }
+            }
+        }
+        img{}
+    }
+}

@@ -261,6 +261,35 @@
         $(function () {
             $('[data-toggle="tooltip"]').tooltip()
           })
+
+          $('.sparkti_product_shopping_cart_options__quantity').each(function(){
+                var PlusBtn = $(this).find('.shopping_cart_options_plus'),
+                    MinusBtn = $(this).find('.shopping_cart_options_minus'),
+                    Display = $(this).find('.shopping_cart_options_display'),
+                    DisplayVal = parseInt(Display.text());
+                PlusBtn.on('click',function(e){
+                    e.preventDefault();
+                    if(DisplayVal >= 0){
+                        DisplayVal += 1
+                        Display.text(DisplayVal);
+                    }
+                });
+                MinusBtn.on('click',function(e){
+                    e.preventDefault();
+                    if(DisplayVal > 0){
+                        DisplayVal -= 1
+                        Display.text(DisplayVal);
+                    }
+                });
+          });
+        // Sparkti single cart
+        $('.sparkti_single_cart').each(function(){
+            var CancelBtn = $(this).find('.sparkti_single_cart_cancel');
+            CancelBtn.on('click',function(e){
+                e.preventDefault();
+                $(this).parents('.sparkti_single_cart').hide();
+            });
+        });
         
 
 })()

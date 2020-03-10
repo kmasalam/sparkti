@@ -59,6 +59,40 @@ $large-limit: 1199px;
   border-bottom: 1px solid $ce1e;
   
 }
+@mixin cart_quantity {
+  .shopping_cart_options_minus{
+      font-size: $fz24;
+      color: $c36;
+      margin-right: 22px;
+      @include inlineFlex;
+      cursor: pointer;
+  }
+  .shopping_cart_options_display{
+      @extend .shopping_cart_options_minus;
+  }
+  .shopping_cart_options_plus{
+      @extend .shopping_cart_options_minus;
+  }
+}
+@mixin sparkti_social_icon{
+  @include inlineFlex;
+  padding-left: 0;
+  li{
+      &:not(:last-child){
+          margin-right: 20px;
+      }
+      a{
+          height: 40px;
+          width: 40px;
+          @include inlineFlex;
+          
+          i{
+              font-size: $fz24;
+              color: $cff;
+          }
+      }
+  }
+}
 @mixin btn_content($height,$padding,$font) {
   background: $cff;
   line-height: $height;

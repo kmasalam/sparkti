@@ -2227,54 +2227,53 @@ h5, .sparkti_available_products .sparkti_available_products_container .sparkti_a
         line-height: 50px; }
     .sparkti_single_blog_container .sparkti_blog__item .sparkti_reply_container .sparkti_checkbox_parent {
       margin-bottom: 30px;
-      margin-top: 20px; }
-      .sparkti_single_blog_container .sparkti_blog__item .sparkti_reply_container .sparkti_checkbox_parent .sparkti_checkbox {
-        margin-bottom: 15px;
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-flow: row;
-        justify-content: flex-start; }
-        .sparkti_single_blog_container .sparkti_blog__item .sparkti_reply_container .sparkti_checkbox_parent .sparkti_checkbox input {
+      margin-top: 20px;
+      margin-bottom: 15px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-flow: row;
+      justify-content: flex-start; }
+      .sparkti_single_blog_container .sparkti_blog__item .sparkti_reply_container .sparkti_checkbox_parent input {
+        height: 15px;
+        width: 15px;
+        border-radius: 50%;
+        margin-right: 7px;
+        z-index: 9;
+        opacity: 0; }
+        .sparkti_single_blog_container .sparkti_blog__item .sparkti_reply_container .sparkti_checkbox_parent input:checked + label::after {
+          visibility: visible;
+          opacity: 1; }
+      .sparkti_single_blog_container .sparkti_blog__item .sparkti_reply_container .sparkti_checkbox_parent label {
+        font-size: 14px;
+        color: #636363;
+        margin-bottom: 0; }
+        .sparkti_single_blog_container .sparkti_blog__item .sparkti_reply_container .sparkti_checkbox_parent label::before {
+          content: "";
+          position: absolute;
           height: 15px;
           width: 15px;
           border-radius: 50%;
-          margin-right: 7px;
-          z-index: 9;
-          opacity: 0; }
-          .sparkti_single_blog_container .sparkti_blog__item .sparkti_reply_container .sparkti_checkbox_parent .sparkti_checkbox input:checked + label::after {
-            visibility: visible;
-            opacity: 1; }
-        .sparkti_single_blog_container .sparkti_blog__item .sparkti_reply_container .sparkti_checkbox_parent .sparkti_checkbox label {
-          font-size: 14px;
-          color: #636363;
-          margin-bottom: 0; }
-          .sparkti_single_blog_container .sparkti_blog__item .sparkti_reply_container .sparkti_checkbox_parent .sparkti_checkbox label::before {
-            content: "";
-            position: absolute;
-            height: 15px;
-            width: 15px;
-            border-radius: 50%;
-            border: 1px solid #e1e1e1;
-            top: 50%;
-            left: 0;
-            transform: translateY(-50%);
-            z-index: 0; }
-          .sparkti_single_blog_container .sparkti_blog__item .sparkti_reply_container .sparkti_checkbox_parent .sparkti_checkbox label::after {
-            position: absolute;
-            top: 10px;
-            left: 3px;
-            transform: translateY(-50%);
-            z-index: 0;
-            visibility: visible;
-            opacity: 1;
-            content: "\f00c";
-            font-family: 'Line Awesome Free';
-            font-weight: 700;
-            visibility: hidden;
-            opacity: 0;
-            transition: all 0.4s linear; }
+          border: 1px solid #e1e1e1;
+          top: 50%;
+          left: 0;
+          transform: translateY(-50%);
+          z-index: 0; }
+        .sparkti_single_blog_container .sparkti_blog__item .sparkti_reply_container .sparkti_checkbox_parent label::after {
+          position: absolute;
+          top: 10px;
+          left: 3px;
+          transform: translateY(-50%);
+          z-index: 0;
+          visibility: visible;
+          opacity: 1;
+          content: "\f00c";
+          font-family: 'Line Awesome Free';
+          font-weight: 700;
+          visibility: hidden;
+          opacity: 0;
+          transition: all 0.4s linear; }
     .sparkti_single_blog_container .sparkti_blog__item .sparkti_reply_container .sparkti_btn {
       background: #ffffff;
       line-height: 40px;
@@ -2531,6 +2530,210 @@ h5, .sparkti_available_products .sparkti_available_products_container .sparkti_a
 
 /*-------------------------------------
 -------------------------------------*/
+.sparkti_cart_coupon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row;
+  justify-content: space-between;
+  border-top: 2px solid #e1e1e1;
+  padding-top: 20px;
+  padding-bottom: 100px; }
+  .sparkti_cart_coupon > .sparkti_btn {
+    background: #ffffff;
+    line-height: 50px;
+    height: 50px;
+    padding: 0 20px;
+    font-family: "Assistant";
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #363636;
+    display: inline-flex;
+    color: #ffffff;
+    background: #737495;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    min-width: 160px; }
+    .sparkti_cart_coupon > .sparkti_btn i {
+      font-size: 18px;
+      display: inline-block;
+      margin-right: 10px; }
+  .sparkti_cart_coupon .input-group {
+    justify-content: flex-end; }
+    .sparkti_cart_coupon .input-group .form-control {
+      line-height: 50px;
+      height: 50px;
+      background-color: #f9f9f9;
+      border: 1px solid #e1e1e1;
+      border-radius: 3px;
+      font-size: 13px;
+      color: #acacac;
+      text-transform: uppercase;
+      flex: 0 0 calc(100% - 200px) !important; }
+    .sparkti_cart_coupon .input-group .input-group-prefend .sparkti_btn.sparkti_bordered {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: 10px;
+      line-height: 50px;
+      height: 50px;
+      background-color: #ffffff;
+      border: 1px solid #e1e1e1;
+      padding: 0 20px;
+      border-radius: 3px;
+      font-size: 14px;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-family: "Assistant";
+      color: #acacac; }
+      .sparkti_cart_coupon .input-group .input-group-prefend .sparkti_btn.sparkti_bordered i {
+        display: inline-block;
+        margin-right: 10px; }
+
+/*-------------------------------------
+-------------------------------------*/
+.sparkti_shopping_cart__details {
+  background: #f9f9f9;
+  border: 1px solid #e1e1e1;
+  padding: 26px 20px 26px 30px;
+  border-radius: 4px;
+  margin-top: 30px; }
+  .sparkti_shopping_cart__details .sparkti_shopping_cart_subtotal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e1e1e1; }
+    .sparkti_shopping_cart__details .sparkti_shopping_cart_subtotal .sparkti_shopping_cart_subtotal_amount {
+      font-size: 20px;
+      color: #363636;
+      font-family: "Rubik"; }
+  .sparkti_shopping_cart__details .sparkti_shopping_cart_shipping {
+    padding-top: 15px; }
+    .sparkti_shopping_cart__details .sparkti_shopping_cart_shipping h6 {
+      margin-bottom: 15px; }
+    .sparkti_shopping_cart__details .sparkti_shopping_cart_shipping .sparkti_shopping_cart_shipping_options .sparkti_single_shipping_option {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-flow: row;
+      justify-content: space-between; }
+      .sparkti_shopping_cart__details .sparkti_shopping_cart_shipping .sparkti_shopping_cart_shipping_options .sparkti_single_shipping_option .sparkti_checkbox {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 15px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: row;
+        justify-content: flex-start; }
+        .sparkti_shopping_cart__details .sparkti_shopping_cart_shipping .sparkti_shopping_cart_shipping_options .sparkti_single_shipping_option .sparkti_checkbox input {
+          height: 15px;
+          width: 15px;
+          border-radius: 50%;
+          margin-right: 7px;
+          z-index: 9;
+          opacity: 0; }
+          .sparkti_shopping_cart__details .sparkti_shopping_cart_shipping .sparkti_shopping_cart_shipping_options .sparkti_single_shipping_option .sparkti_checkbox input:checked + label::after {
+            visibility: visible;
+            opacity: 1; }
+        .sparkti_shopping_cart__details .sparkti_shopping_cart_shipping .sparkti_shopping_cart_shipping_options .sparkti_single_shipping_option .sparkti_checkbox label {
+          font-size: 14px;
+          color: #636363;
+          margin-bottom: 0; }
+          .sparkti_shopping_cart__details .sparkti_shopping_cart_shipping .sparkti_shopping_cart_shipping_options .sparkti_single_shipping_option .sparkti_checkbox label::before {
+            content: "";
+            position: absolute;
+            height: 15px;
+            width: 15px;
+            border-radius: 50%;
+            border: 1px solid #e1e1e1;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            z-index: 0; }
+          .sparkti_shopping_cart__details .sparkti_shopping_cart_shipping .sparkti_shopping_cart_shipping_options .sparkti_single_shipping_option .sparkti_checkbox label::after {
+            position: absolute;
+            top: 10px;
+            left: 3px;
+            transform: translateY(-50%);
+            z-index: 0;
+            visibility: visible;
+            opacity: 1;
+            content: "\f00c";
+            font-family: 'Line Awesome Free';
+            font-weight: 700;
+            visibility: hidden;
+            opacity: 0;
+            transition: all 0.4s linear; }
+  .sparkti_shopping_cart__details .sparkti_shipping_destination p {
+    font-size: 14px;
+    color: #636363;
+    padding-bottom: 6px; }
+    .sparkti_shopping_cart__details .sparkti_shipping_destination p small {
+      font-size: 12px;
+      color: #acacac; }
+  .sparkti_shopping_cart__details .sparkti_shipping_destination .sparkti_shipping_address {
+    color: #737495;
+    font-size: 13px;
+    text-transform: uppercase;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #e1e1e1;
+    border-radius: 3px;
+    width: 100%;
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-left: 10px; }
+  .sparkti_shopping_cart__details .sparkti_shipping_destination h6 {
+    margin-bottom: 10px; }
+  .sparkti_shopping_cart__details .sparkti_shipping_total {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 2px solid #e1e1e1;
+    justify-content: space-between;
+    margin-top: 20px; }
+    .sparkti_shopping_cart__details .sparkti_shipping_total h4 {
+      font-size: 24px; }
+    .sparkti_shopping_cart__details .sparkti_shipping_total .sparkti_shipping_total_value {
+      font-size: 24px;
+      font-weight: 400; }
+  .sparkti_shopping_cart__details .sparkti_btn {
+    background: #ffffff;
+    line-height: 55px;
+    height: 55px;
+    padding: 0 20px;
+    font-family: "Assistant";
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 15px;
+    color: #363636;
+    display: inline-flex;
+    background: #737495;
+    display: block;
+    width: 100%;
+    font-weight: 700;
+    border-radius: 4px;
+    color: #ffffff;
+    border: none; }
+  .sparkti_shopping_cart__details h6 {
+    font-family: "Assistant";
+    font-weight: 700;
+    color: #363636;
+    font-size: 16px; }
+
 /*-------------------------------------
 -------------------------------------*/
 /*-------------------------------------

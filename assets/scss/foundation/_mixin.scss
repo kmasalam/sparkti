@@ -74,6 +74,56 @@ $large-limit: 1199px;
       @extend .shopping_cart_options_minus;
   }
 }
+@mixin sparkti_checkbox{
+  margin-bottom: 15px;
+  position: relative;
+  @include flexDirection(row);
+  justify-content: flex-start;
+  input{
+      height: 15px;
+      width: 15px;
+      border-radius: 50%;
+      margin-right: 7px;
+      z-index: 9;
+      opacity: 0;
+      &:checked + label::after{
+          visibility: visible;
+          opacity: 1;
+      }
+  }
+  label{
+      font-size: $fz14;
+      color: $c63;
+      margin-bottom: 0;
+      &::before{
+          content: "";
+          position: absolute;
+          height: 15px;
+          width: 15px;
+          border-radius: 50%;
+          border: 1px solid $ce1e;
+          top: 50%;
+          left: 0;
+          transform: translateY(-50%);
+          z-index: 0;
+      }
+      &::after{
+          position: absolute;
+          top: 10px;
+          left: 3px;
+          transform: translateY(-50%);
+          z-index: 0;
+          visibility: visible;
+          opacity: 1;
+          content: "\f00c";
+          font-family: 'Line Awesome Free';
+          font-weight: 700;
+          visibility: hidden;
+          opacity: 0;
+          @include transition(.40s);
+      }
+  }
+}
 @mixin sparkti_social_icon{
   @include inlineFlex;
   padding-left: 0;

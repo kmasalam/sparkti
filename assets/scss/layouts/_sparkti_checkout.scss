@@ -1,0 +1,46 @@
+.sparkti_checkout{
+    background-color: $cff;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    &__billing{
+
+    }
+    &__billing_alternative{
+
+    }
+    h5{
+        color: $c36;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        letter-spacing: 1.4px;
+    }
+    form{
+        .form-group{
+            margin-bottom: 20px;
+            label{
+                color: $c36;
+                font-size: $fz16;
+                font-weight: $bold;
+                font-family: $assistant;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+            }
+            .form-control{
+                height: 40px;
+                width: 100%;
+                line-height: 40px;
+                padding: 0 0 0 15px;
+                border-radius: 0;
+                border: 1px solid $ce1e;
+                color: $cac;
+                font-size: $fz14;
+                @include transition(.40s);
+                &:focus{
+                    border-color: $c36;
+                }
+                select{}
+                input{}
+            }
+        }
+    }
+}

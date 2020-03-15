@@ -153,7 +153,11 @@ h5, .sparkti_available_products .sparkti_available_products_container .sparkti_a
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        margin-right: 20px; }
+        margin-right: 20px;
+        z-index: 999;
+        position: relative; }
+        .sparkti_navigation__content .sparkti_navigation__content_center form .input-group-prepend .sparkti_offcanvas_btn.activated {
+          color: #ffffff; }
       .sparkti_navigation__content .sparkti_navigation__content_center form .input-group {
         border: 1px solid #737495; }
         .sparkti_navigation__content .sparkti_navigation__content_center form .input-group .form-control {
@@ -1410,16 +1414,57 @@ h5, .sparkti_available_products .sparkti_available_products_container .sparkti_a
 /*-------------------------------------
 -------------------------------------*/
 .sparkti_offcanvas_navigation {
-  width: 243px;
   height: 100vh;
-  background: #ffffff;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: none;
   position: fixed;
   top: 0;
-  left: -100%;
-  transition: all 0.4s linear;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3); }
+  left: 0; }
+  .sparkti_offcanvas_navigation .sparkti_offcanvas_menu {
+    width: 243px;
+    height: 100%;
+    background: #ffffff;
+    position: relative;
+    top: 0;
+    left: -100%;
+    transition: all 0.4s linear;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3); }
   .sparkti_offcanvas_navigation.sparkti_offcanvas_navigation.show {
-    left: 0; }
+    display: block; }
+    .sparkti_offcanvas_navigation.sparkti_offcanvas_navigation.show .sparkti_offcanvas_menu {
+      left: 0; }
+
+.nl-offcanvas-nav .sub-menu {
+  display: none;
+  padding-left: 10px; }
+
+.sparkti_offcanvas_menu {
+  padding: 30px 30px 30px 20px; }
+  .sparkti_offcanvas_menu ul {
+    padding-left: 0;
+    margin-bottom: 0; }
+    .sparkti_offcanvas_menu ul li a {
+      font-size: 16px;
+      font-weight: 500;
+      color: #363636;
+      font-family: "Assistant";
+      line-height: 45px;
+      border-bottom: 1px solid #e1e1e1;
+      display: block; }
+    .sparkti_offcanvas_menu ul .has-dropdown {
+      position: relative; }
+      .sparkti_offcanvas_menu ul .has-dropdown::after {
+        content: "\f107";
+        font-family: 'Line Awesome Free';
+        font-weight: 700;
+        position: absolute;
+        right: 10px;
+        top: 16px;
+        cursor: pointer; }
+    .sparkti_offcanvas_menu ul .sub-menu {
+      display: none;
+      padding-left: 10px; }
 
 /*-------------------------------------
 -------------------------------------*/
@@ -2736,9 +2781,119 @@ h5, .sparkti_available_products .sparkti_available_products_container .sparkti_a
 
 /*-------------------------------------
 -------------------------------------*/
+.sparkti_checkout {
+  background-color: #ffffff;
+  padding-top: 70px;
+  padding-bottom: 70px; }
+  .sparkti_checkout h5, .sparkti_checkout .sparkti_available_products .sparkti_available_products_container .sparkti_available_products_item.cloath_item p, .sparkti_available_products .sparkti_available_products_container .sparkti_available_products_item.cloath_item .sparkti_checkout p {
+    color: #363636;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1.4px; }
+  .sparkti_checkout form .form-group {
+    margin-bottom: 20px; }
+    .sparkti_checkout form .form-group label {
+      color: #363636;
+      font-size: 16px;
+      font-weight: 700;
+      font-family: "Assistant";
+      text-transform: uppercase;
+      letter-spacing: 1px; }
+    .sparkti_checkout form .form-group .form-control {
+      height: 40px;
+      width: 100%;
+      line-height: 40px;
+      padding: 0 0 0 15px;
+      border-radius: 0;
+      border: 1px solid #e1e1e1;
+      color: #acacac;
+      font-size: 14px;
+      transition: all 0.4s linear; }
+      .sparkti_checkout form .form-group .form-control:focus {
+        border-color: #363636; }
+
 /*-------------------------------------
 -------------------------------------*/
-/*-------------------------------------
--------------------------------------*/
+.sparkti_radio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  position: relative; }
+  .sparkti_radio input:checked ~ label::after {
+    visibility: visible;
+    opacity: 1; }
+  .sparkti_radio label {
+    position: absolute; }
+    .sparkti_radio label::before {
+      content: "";
+      position: absolute;
+      left: -6px;
+      top: -8px;
+      height: 13px;
+      width: 13px;
+      border: 1px solid #fef2f2;
+      border-radius: 50%; }
+    .sparkti_radio label::after {
+      content: "";
+      position: absolute;
+      left: -6px;
+      background: #f17d80;
+      top: -8px;
+      height: 13px;
+      width: 13px;
+      border-radius: 50%;
+      visibility: hidden;
+      opacity: 0; }
+
+.sparkti_payment_method_area {
+  background: #ffffff;
+  padding-bottom: 70px; }
+  .sparkti_payment_method_area .sparkti_payment_method h5, .sparkti_payment_method_area .sparkti_payment_method .sparkti_available_products .sparkti_available_products_container .sparkti_available_products_item.cloath_item p, .sparkti_available_products .sparkti_available_products_container .sparkti_available_products_item.cloath_item .sparkti_payment_method_area .sparkti_payment_method p {
+    color: #363636;
+    margin-bottom: 20px; }
+  .sparkti_payment_method_area .sparkti_payment_method .sparkti_btn {
+    background: #ffffff;
+    line-height: 40px;
+    height: 40px;
+    padding: 0 20px;
+    font-family: "Assistant";
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #363636;
+    display: inline-flex;
+    background: #737495;
+    color: #ffffff;
+    margin-top: 20px;
+    border: none;
+    letter-spacing: 1px;
+    font-weight: 700; }
+  .sparkti_payment_method_area .sparkti_payment_method ul {
+    border: 1px solid #acacac;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center; }
+    .sparkti_payment_method_area .sparkti_payment_method ul li:not(:last-child) {
+      border-right: 1px solid #acacac; }
+    .sparkti_payment_method_area .sparkti_payment_method ul li a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-flow: column;
+      padding: 20px 30px 20px 30px; }
+      .sparkti_payment_method_area .sparkti_payment_method ul li a img {
+        margin-bottom: 10px; }
+  .sparkti_payment_method_area .sparkti_payment_method .tab-content {
+    border: 1px solid #acacac;
+    margin-top: -1px; }
+    .sparkti_payment_method_area .sparkti_payment_method .tab-content .sparkti_payment_method__tab_content {
+      padding: 15px 15px; }
+      .sparkti_payment_method_area .sparkti_payment_method .tab-content .sparkti_payment_method__tab_content h5, .sparkti_payment_method_area .sparkti_payment_method .tab-content .sparkti_payment_method__tab_content .sparkti_available_products .sparkti_available_products_container .sparkti_available_products_item.cloath_item p, .sparkti_available_products .sparkti_available_products_container .sparkti_available_products_item.cloath_item .sparkti_payment_method_area .sparkti_payment_method .tab-content .sparkti_payment_method__tab_content p {
+        margin-bottom: 10px;
+        color: #363636; }
+      .sparkti_payment_method_area .sparkti_payment_method .tab-content .sparkti_payment_method__tab_content p {
+        line-height: 28px; }
+
 /*-------------------------------------
 -------------------------------------*/

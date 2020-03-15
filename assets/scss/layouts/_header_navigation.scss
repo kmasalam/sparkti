@@ -16,7 +16,12 @@
                         color: $c36;
                         @include inlineFlex;
                         margin-right: 20px;
+                        z-index: 999;
+                        position: relative;
                         i{}
+                        &.activated{
+                            color: $cff;
+                        }
                     }
                 }
                 .input-group{

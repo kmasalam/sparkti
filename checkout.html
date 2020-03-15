@@ -197,7 +197,7 @@
             <div class="row">
                 <div class="col">
                     <div class="sparkti_page_description_inner">
-                        <h3>Shopping Cart</h3>
+                        <h3>Checkout</h3>
                         <p>
                             Free Shipping on All Orders Over $75
                         </p>
@@ -209,208 +209,288 @@
     <!--  -->
 
     <!--  -->
-    <div class="sparkti_cart_notice">
+    <section class="sparkti_checkout">
         <div class="container">
             <div class="row">
-                <div class="col">
-                    <div class="sparkti_cart_notice__content">
-                        <i class="las la-exclamation-triangle"></i>
-                        Cart updated.
+                <div class="col-md-6 ">
+                    <div class="sparkti_checkout__billing">
+                        <h5>Billing Details</h5>
+                        <form action="#">
+                            <!--  -->
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label>Country</label>
+                                        <select name="country_name" class="form-control">
+                                            <option value="#">Country Name</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  -->
+                        
+                            <!--  -->
+                            <div class="row">
+                                <div class="col-md-6">
+                                   <div class="form-group">
+                                        <label>First Name</label>
+                                        <input type="text" placeholder="First Name" class="form-control">
+                                   </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Last Name</label>
+                                        <input type="text" placeholder="Last Name" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  -->
+                            <!--  -->
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label>Company Name</label>
+                                        <input type="text" placeholder="Company Name" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  -->
+                            <!--  -->
+                             <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label>Address</label>
+                                        <input type="text" placeholder="Address" class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" placeholder="Address" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  -->
+
+                            <!--  -->
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label>Town/City</label>
+                                        <input type="text" placeholder="Town or city" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  -->
+
+                           <!--  -->
+                            <div class="row">
+                                <div class="col-md-6">
+                                   <div class="form-group">
+                                        <label>State/Provinence</label>
+                                        <input type="text" class="form-control">
+                                   </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Zip/Postal Code</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  -->
+
+                           <!--  -->
+                           <div class="row">
+                            <div class="col-md-6">
+                               <div class="form-group">
+                                    <label>E-Mail Address</label>
+                                    <input type="text" class="form-control">
+                               </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>Phone Number</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                        <!--  -->
+
+                            <!--  -->
+                            
+                            <!--  -->
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="sparkti_checkout__billing_alternative">
+                        <h5>Ship to Different Address</h5>
+                        <form action="#">
+                            <!--  -->
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label>Country</label>
+                                        <select name="country_name" class="form-control">
+                                            <option value="#">Country Name</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  -->
+                        
+                            <!--  -->
+                            <div class="row">
+                                <div class="col-md-6">
+                                   <div class="form-group">
+                                        <label>First Name</label>
+                                        <input type="text" placeholder="First Name" class="form-control">
+                                   </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Last Name</label>
+                                        <input type="text" placeholder="Last Name" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  -->
+                            <!--  -->
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label>Company Name</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  -->
+                            <!--  -->
+                             <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label>Address</label>
+                                        <input type="text" placeholder="Address" class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" placeholder="Address" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  -->
+
+                            <!--  -->
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label>Town/City</label>
+                                        <input type="text" placeholder="Town or city" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  -->
+
+                           <!--  -->
+                            <div class="row">
+                                <div class="col-md-6">
+                                   <div class="form-group">
+                                        <label>State/Provinence</label>
+                                        <input type="text" placeholder="State/Provinence" class="form-control">
+                                   </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Zip/Postal Code</label>
+                                        <input type="text" placeholder="Zip/Postal Code" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  -->
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label>Order Notes</label>
+                                        <input type="text" placeholder="Enter Aditional Notes" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+    </section>
+    <!--  -->
+
+    <!--  -->
+    <section class="sparkti_payment_method_area ">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="sparkti_payment_method">
+                        <h5>Payment Method</h5>
+                        <ul class="nav" id="myTab" role="tablist">
+                            <li class="nav-item">
+                              <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">
+                                  <img src="assets/images/paypal.jpg" alt="paypal card">
+                                  <span class="sparkti_radio">
+                                    <input type="radio" id="paypal"  checked name="sparkti_payment_method" value="paypal">
+                                    <label></label>
+                                  </span>
+                              </a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">
+                                  <img src="assets/images/master.jpg" alt="master card image">
+                                  <span class="sparkti_radio">
+                                    <input type="radio" id="master" name="sparkti_payment_method" value="master">
+                                    <label></label>
+                                  </span>
+                              </a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">
+                                  <img src="assets/images/skrill.jpg" alt="skrill image">
+                                  <span class="sparkti_radio">
+                                    <input type="radio" id="skrill" name="sparkti_payment_method" value="skrill">
+                                    <label></label>
+                                  </span>
+                              </a>
+                            </li>
+                          </ul>
+                          <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                <div class="sparkti_payment_method__tab_content">
+                                    <h5>PayPal</h5>
+                                    <p>
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo et accusamusm explicabo molestiae ducimus vel culpa officiis.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                <div class="sparkti_payment_method__tab_content">
+                                    <h5>Master Card</h5>
+                                    <p>
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo et accusamusm explicabo molestiae ducimus vel culpa officiis.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                                <div class="sparkti_payment_method__tab_content">
+                                    <h5>Skrill</h5>
+                                    <p>
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo et accusamusm explicabo molestiae ducimus vel culpa officiis.
+                                    </p>
+                                </div>
+                            </div>
+                          </div>
+                          <button class="sparkti_btn">
+                            Proceed Checkout
+                          </button>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!--  -->
-    
-    <!--  -->
-    <div class="sparkti_shopping_cart_table">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-7">
-                     <!--  -->
-                     <div class="sparkti_single_cart">
-                        <span class="sparkti_single_cart_cancel">
-                            <i class="las la-times-circle"></i>
-                        </span>
-                        <div class="sparkti_single_cart__product_image">
-                            <img src="assets/images/sparkti-cart-image-01.jpg" alt="cart product image">
-                            <div class="sparkti_single_cart_product">
-                                <p>
-                                    <strong>Tabi Platform Pplit-toe Leather Ankle Boots</strong>
-                                </p>
-                                <h6>$69.96</h6>
-                                <div class="sparkti_product_shopping_cart_options__quantity">
-                                    <span class="shopping_cart_options_minus">-</span>
-                                    <span class="shopping_cart_options_display">0</span>
-                                    <span class="shopping_cart_options_plus">+</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="sparkti_single_cart__pricing_vendor">
-                            <h4>$69.96</h4>
-                            <a href="#" class="product_vendors" >
-                                <span>By</span>
-                                Krazy Frog
-                            </a>
-                        </div>
-                    </div>
-                    <!--  -->
-                    <!--  -->
-                     <div class="sparkti_single_cart">
-                        <span class="sparkti_single_cart_cancel">
-                            <i class="las la-times-circle"></i>
-                        </span>
-                        <div class="sparkti_single_cart__product_image">
-                            <img src="assets/images/sparkti-cart-image-01.jpg" alt="cart product image">
-                            <div class="sparkti_single_cart_product">
-                                <p>
-                                    <strong>Tabi Platform Pplit-toe Leather Ankle Boots</strong>
-                                </p>
-                                <h6>$69.96</h6>
-                                <div class="sparkti_product_shopping_cart_options__quantity">
-                                    <span class="shopping_cart_options_minus">-</span>
-                                    <span class="shopping_cart_options_display">0</span>
-                                    <span class="shopping_cart_options_plus">+</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="sparkti_single_cart__pricing_vendor">
-                            <h4>$69.96</h4>
-                            <a href="#" class="product_vendors" >
-                                <span>By</span>
-                                Krazy Frog
-                            </a>
-                        </div>
-                    </div>
-                    <!--  -->
-                    <!--  -->
-                     <div class="sparkti_single_cart">
-                        <span class="sparkti_single_cart_cancel">
-                            <i class="las la-times-circle"></i>
-                        </span>
-                        <div class="sparkti_single_cart__product_image">
-                            <img src="assets/images/sparkti-cart-image-01.jpg" alt="cart product image">
-                            <div class="sparkti_single_cart_product">
-                                <p>
-                                    <strong>Tabi Platform Pplit-toe Leather Ankle Boots</strong>
-                                </p>
-                                <h6>$69.96</h6>
-                                <div class="sparkti_product_shopping_cart_options__quantity">
-                                    <span class="shopping_cart_options_minus">-</span>
-                                    <span class="shopping_cart_options_display">0</span>
-                                    <span class="shopping_cart_options_plus">+</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="sparkti_single_cart__pricing_vendor">
-                            <h4>$69.96</h4>
-                            <a href="#" class="product_vendors" >
-                                <span>By</span>
-                                Krazy Frog
-                            </a>
-                        </div>
-                    </div>
-                    <!--  -->
-                    <!--  -->
-                    <div class="sparkti_cart_coupon">
-                        <a href="#" class="sparkti_btn">
-                            <i class="las la-arrow-left"></i>
-                             Back to Shop
-                        </a>
-                        <div class="input-group">
-                            <input type="text" placeholder="Coupon code" class="form-control">
-                            <div class="input-group-prefend">
-                                <button class="sparkti_btn sparkti_bordered">
-                                    <i class="las la-redo-alt"></i>
-                                     Update Cart
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <!--  -->
-                </div>
-                <!--  -->
-                <div class="col-md-4 offset-md-1">
-                    <!--  -->
-                    <div class="sparkti_shopping_cart__details">
-                        <div class="sparkti_shopping_cart_subtotal">
-                            <h6>
-                                Subtotal
-                            </h6>
-                            <span class="sparkti_shopping_cart_subtotal_amount">
-                                $69.96
-                            </span>
-                        </div>
-                        <!--  -->
-                        <div class="sparkti_shopping_cart_shipping">
-                            <h6>
-                                Subtotal
-                            </h6>
-                            <div class="sparkti_checkbox_parent sparkti_shopping_cart_shipping_options">
-                                <div class="sparkti_single_shipping_option">
-                                    <div class="sparkti_checkbox">
-                                        <input type="checkbox">
-                                        <label>Flat Rate</label>
-                                    </div>
-                                    <span class="sparkti_single_shipping_option_cost">
-                                        $5.00
-                                    </span>
-                                </div>
-                                <div class="sparkti_single_shipping_option">
-                                    <div class="sparkti_checkbox">
-                                        <input type="checkbox">
-                                        <label>Free Shipping</label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--  -->
-                        <div class="sparkti_shipping_destination">
-                            <p>
-                                Estimate for <strong>Vietnam</strong>.
-                            </p>
-                            <p>
-                                <small>Tabi Platform Pplit-toe Leather Ankle Boots x 2</small>
-                            </p>
-                            <select name="sparkti_shipping_address" class="sparkti_shipping_address" >
-                                <option value="">Enter a Different Address</option>
-                            </select>
-                            <h6>Krazy Frog Shipping</h6>
-                            <p>No shipping options were found for <strong>Vietnam</strong>.</p>
-                            <p>
-                                <small>
-                                    Summer Friday Jet Lag Mask x 1
-                                </small>
-                            </p>
-                        </div>
-                        <!--  -->
-                        <div class="sparkti_shipping_total">
-                            <h4>
-                                Totals
-                            </h4>
-                            <span class="sparkti_shipping_total_value">
-                                $7.082,35
-                            </span>
-                        </div>
-                        <!--  -->
-                        <button class="sparkti_btn">
-                            Proceed to checkout
-                        </button>
-                        <!--  -->
-                    </div>
-                    <!-- ./sparkti_shopping_cart__details -->
-                </div>
-                <!--  -->
-            </div>
-        </div>
-    </div>
-    <!--  -->
-
-    <!--  -->
-    <!--  -->
-
-    <!--  -->
+    </section>
     <!--  -->
 
     

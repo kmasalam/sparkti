@@ -1,0 +1,57 @@
+.sparkti_cart_coupon{
+    @include flexDirection(row);
+    justify-content: space-between;
+    border-top: 2px solid $ce1e;
+    padding-top: 20px;
+    padding-bottom: 100px;
+    >.sparkti_btn{
+        @include btn_content(50px,20px,14px); 
+        color: $cff;
+        background: $c737;
+        @include inlineFlex;
+        border-radius: 4px;
+        min-width: 160px;
+        i{
+            font-size: $fz18;
+            display: inline-block;
+            margin-right: 10px;
+        }
+    }
+    .input-group{
+        justify-content: flex-end;
+        .form-control{
+            line-height: 50px;
+            height: 50px;
+            background-color: $cf9f9;
+            border: 1px solid $ce1e;
+            border-radius: 3px;
+            font-size: $fz13;
+            color: $cac;
+            text-transform: uppercase;
+            flex: 0 0 calc(100% - 200px) !important;
+        }
+        .input-group-prefend{
+            .sparkti_btn{
+                &.sparkti_bordered{
+                    @include inlineFlex;
+                    margin-left: 10px;
+                    line-height: 50px;
+                    height: 50px;
+                    background-color: $cff;
+                    border: 1px solid $ce1e;
+                    padding: 0 20px;
+                    border-radius: 3px;
+                    font-size: $fz14;
+                    font-weight: $bold;
+                    text-transform: uppercase;
+                    font-family: $assistant;
+                    color: $cac;
+                    i{
+                        display: inline-block;
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

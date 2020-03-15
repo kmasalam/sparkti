@@ -56,6 +56,48 @@
 /*-------------------------------------
 -------------------------------------*/ 
 @import 'layouts/sparkti_offcanvas_navigation';
+
+.nl-offcanvas-nav .sub-menu {
+    display: none;
+    padding-left: 10px;
+}
+.sparkti_offcanvas_menu{
+    padding: 30px 30px 30px 20px;
+    ul{
+        padding-left: 0;
+        margin-bottom: 0;
+        li{
+            a{
+                font-size: $fz16;
+                font-weight: $medium;
+                color: $c36;
+                font-family: $assistant;
+                line-height: 45px;
+                border-bottom: 1px solid $ce1e;
+                display: block;
+            }
+            
+        }
+        .has-dropdown{
+            position: relative;
+            &::after{
+                content: "\f107";
+                font-family: 'Line Awesome Free';
+                font-weight: 700;
+                position: absolute;
+                right: 10px;
+                top: 16px;
+                cursor: pointer;
+            }
+        }
+        .sub-menu{
+            display: none;
+            padding-left: 10px;
+        }
+    }
+}
+
+
 /*-------------------------------------
 -------------------------------------*/ 
 @import 'layouts/sparkti_breadcrumb';
@@ -91,172 +133,15 @@
 @import 'layouts/sparkti_shopping_cart_table';
 /*-------------------------------------
 -------------------------------------*/ 
-.sparkti_cart_coupon{
-    @include flexDirection(row);
-    justify-content: space-between;
-    border-top: 2px solid $ce1e;
-    padding-top: 20px;
-    padding-bottom: 100px;
-    >.sparkti_btn{
-        @include btn_content(50px,20px,14px); 
-        color: $cff;
-        background: $c737;
-        @include inlineFlex;
-        border-radius: 4px;
-        min-width: 160px;
-        i{
-            font-size: $fz18;
-            display: inline-block;
-            margin-right: 10px;
-        }
-    }
-    .input-group{
-        justify-content: flex-end;
-        .form-control{
-            line-height: 50px;
-            height: 50px;
-            background-color: $cf9f9;
-            border: 1px solid $ce1e;
-            border-radius: 3px;
-            font-size: $fz13;
-            color: $cac;
-            text-transform: uppercase;
-            flex: 0 0 calc(100% - 200px) !important;
-        }
-        .input-group-prefend{
-            .sparkti_btn{
-                &.sparkti_bordered{
-                    @include inlineFlex;
-                    margin-left: 10px;
-                    line-height: 50px;
-                    height: 50px;
-                    background-color: $cff;
-                    border: 1px solid $ce1e;
-                    padding: 0 20px;
-                    border-radius: 3px;
-                    font-size: $fz14;
-                    font-weight: $bold;
-                    text-transform: uppercase;
-                    font-family: $assistant;
-                    color: $cac;
-                    i{
-                        display: inline-block;
-                        margin-right: 10px;
-                    }
-                }
-            }
-        }
-    }
-}
+@import 'layouts/sparkti_cart_coupon';
 /*-------------------------------------
 -------------------------------------*/ 
-.sparkti_shopping_cart__details{
-    background: $cf9f9;
-    border: 1px solid $ce1e;
-    padding: 26px 20px 26px 30px;
-    border-radius: 4px;
-    margin-top: 30px;
-    .sparkti_shopping_cart_subtotal{
-        @include flexDirection(row);
-        justify-content: space-between;
-        padding-bottom: 10px;
-        border-bottom: 1px solid $ce1e;
-        h6{}
-        .sparkti_shopping_cart_subtotal_amount{
-            font-size: $fz20;
-            color: $c36;
-            font-family: $rubik;
-
-        }
-    }
-    .sparkti_shopping_cart_shipping{
-        padding-top: 15px;
-        h6{
-            margin-bottom: 15px;
-        }
-        .sparkti_shopping_cart_shipping_options{
-            .sparkti_single_shipping_option{
-                @include flexDirection(row);
-                justify-content: space-between;
-                .sparkti_checkbox{
-                    @include inlineFlex;
-                    @include sparkti_checkbox;
-                }
-                .sparkti_single_shipping_option_cost{}
-            }
-        }
-    }
-    .sparkti_shipping_destination{
-        p{
-            font-size: $fz14;
-            color: $c63;
-            padding-bottom: 6px;
-            strong{
-            }
-            small{
-                font-size: $fz12;
-                color: $cac;
-            }
-        }
-        .sparkti_shipping_address{
-            color: $c737;
-            font-size: $fz13;
-            text-transform: uppercase;
-            height: 40px;
-            line-height: 40px;
-            border: 1px solid $ce1e;
-            border-radius: 3px;
-            width: 100%;
-            display: block;
-            margin-top: 15px;
-            margin-bottom: 15px;
-            padding-left: 10px;
-        }
-        h6{
-            margin-bottom: 10px;
-        }
-
-    }
-    .sparkti_shipping_total{
-        @include flexDirection(row);
-        padding-top: 20px;
-        padding-bottom: 20px;
-        border-top: 2px solid $ce1e;
-        justify-content: space-between;
-        margin-top: 20px;
-        h4{
-            font-size: $fz24;
-        }
-        .sparkti_shipping_total_value{
-            font-size: $fz24;
-            font-weight: $regular;
-        }
-    }
-    .sparkti_btn{
-        @include btn_content(55px,20px,15px); 
-        background: $c737;
-        display: block;
-        width: 100%;
-        font-weight: $bold;
-        
-        border-radius: 4px;
-        color: $cff;
-        border: none;
-    }
-    h6{
-        font-family: $assistant;
-        font-weight: $bold;
-        color: $c36;
-        font-size: $fz16;
-    }
-}
+@import 'layouts/sparkti_shopping_cart__details';
 /*-------------------------------------
 -------------------------------------*/ 
-
+@import 'layouts/sparkti_checkout';
 /*-------------------------------------
 -------------------------------------*/ 
-/*-------------------------------------
--------------------------------------*/ 
-
+@import 'layouts/sparkti_payment_method_area';
 /*-------------------------------------
 -------------------------------------*/ 

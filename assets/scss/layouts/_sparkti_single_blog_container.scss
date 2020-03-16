@@ -1,3 +1,59 @@
+.sparkti_reply_container{
+    padding-top: 40px;
+    border-top: 1px solid $ce1e;
+    .sparkti_reply_container_head{
+        padding-bottom: 30px;
+        h5{
+            font-size: $fz20;
+            color: $c36;
+            text-transform: uppercase;
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+        p{
+            font-size: $fz14;
+            color: $c63
+        }
+    }
+    .sparkti_reply_box{
+        .form-group{
+            margin-right: 8px;
+            margin-bottom: 15px;
+            label{
+                font-size: $fz14;
+                text-transform: uppercase;
+                font-family: $rubik;
+                color: $cac;
+            }
+            .form-control{
+                background: $cf9f9;
+                border: 1px solid $ce1e;
+                border-radius: 3px;
+                padding-left: 15px; 
+                
+            }
+            textarea{
+                height: 200px;
+            }
+            input{
+                height: 50px;
+                line-height: 50px;
+            }
+        }
+        
+    }
+    .sparkti_checkbox_parent{
+        margin-bottom: 30px;
+        margin-top: 20px;
+        @include sparkti_checkbox;
+    }
+    .sparkti_btn{
+        @include btn_content(40px,20px,12px); 
+        background: $c737;
+        color: $cff;
+        border: none;
+    }
+}
 .sparkti_single_blog_container{
     background: $cff;
     .sparkti_blog__item{
@@ -282,61 +338,9 @@
                 
             }
         }
+        //
         .sparkti_reply_container{
-            padding-top: 40px;
-            border-top: 1px solid $ce1e;
-            .sparkti_reply_container_head{
-                padding-bottom: 30px;
-                h5{
-                    font-size: $fz20;
-                    color: $c36;
-                    text-transform: uppercase;
-                    margin-top: 0;
-                    margin-bottom: 10px;
-                }
-                p{
-                    font-size: $fz14;
-                    color: $c63
-                }
-            }
-            .sparkti_reply_box{
-                .form-group{
-                    margin-right: 8px;
-                    margin-bottom: 15px;
-                    label{
-                        font-size: $fz14;
-                        text-transform: uppercase;
-                        font-family: $rubik;
-                        color: $cac;
-                    }
-                    .form-control{
-                        background: $cf9f9;
-                        border: 1px solid $ce1e;
-                        border-radius: 3px;
-                        padding-left: 15px; 
-                        
-                    }
-                    textarea{
-                        height: 200px;
-                    }
-                    input{
-                        height: 50px;
-                        line-height: 50px;
-                    }
-                }
-                
-            }
-            .sparkti_checkbox_parent{
-                margin-bottom: 30px;
-                margin-top: 20px;
-                @include sparkti_checkbox;
-            }
-            .sparkti_btn{
-                @include btn_content(40px,20px,12px); 
-                background: $c737;
-                color: $cff;
-                border: none;
-            }
+            @extend .sparkti_reply_container;
         }
     }
     .sparkti_related_post{

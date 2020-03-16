@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sparkti</title>
+    <!--  -->
+    <link href="https://fonts.googleapis.com/css?family=Assistant:400,700|Rubik:400,500&display=swap" rel="stylesheet">
+    <!--  -->
+    <link rel="stylesheet" href="assets/css/line-awesome.min.css">
+    <!--  -->
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <!--  -->
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <!--  -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!--  -->
+    <header>
+        <!--  -->
+        <div class="sparkti_toolbar">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="sparkti_toolbar__left">
+                            <span class="sparkti_toolbar__currency sparkti_toolbar__item">
+                                <select name="sparkti_currency" class="sparkti_select" id="">
+                                    <option value="Us Dollar">Us Dollar</option>
+                                    <option value="Pound">Pound</option>
+                                    <option value="Taka">Taka</option>
+                                    <option value="Euro">Euro</option>
+                                </select>
+                            </span>
+                            <span class="sparkti_toolbar__language sparkti_toolbar__item">
+                                <select name="sparkti_currency" class="sparkti_select" id="">
+                                    <option value="English">English</option>
+                                    <option value="Spanish">Spanish</option>
+                                    <option value="Chinese">Chinese</option>
+                                </select>
+                            </span>
+                            <span class="sparkti_toolbar__hotline sparkti_toolbar__item">
+                                <span class="sparkti_toolbar__hotline_label">
+                                    <i class="las la-phone"></i>
+                                    Toll Free:
+                                </span>
+                                <a href="#">
+                                    1-800-333-6868
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="sparkti_toolbar__right">
+                            <span class="sparkti_toolbar__item sparkti_toolbar__order_tracking sparkti_has_dropdown">
+                                <a href="#">
+                                    Trach your order
+                                </a>
+                                <div class="sparkti_dropdown">
+                                    <div class="form-group">
+                                        <input type="text" placeholder="Order No:" class="form-control">
+                                        <div class="sparkti_toolbar_order_phone">
+                                            <span>
+                                                +880
+                                            </span>
+                                            <input type="text" class="form-control" placeholder="Your Mobile Number">
+                                        </div>
+                                    </div>
+                                </div>
+                            </span>
+                            <span class="sparkti_toolbar__item sparkti_toolbar__help sparkti_has_dropdown">
+                                <a href="#">
+                                    Help & Contact
+                                </a>
+                            </span>
+                            <span class="sparkti_toolbar__item sparkti_toolbar_products">
+                                <a href="#">
+                                    Shop All Products On Deals!
+                                    <i class="las la-arrow-right"></i>
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--  -->
+        <div class="sparkti_navigation   ">
+            <div class="container-fluid">
+                <div class="navbar sparkti_navigation__content">
+                    <a class="navbar-brand" href="#">
+                        <img src="assets/images/logo.png" alt="sparkti">
+                    </a>
+                    <div class="sparkti_navigation__content_center ml-auto">
+                        <form action="#">
+                            <div class="input-group-prepend">
+                                <button class="sparkti_offcanvas_btn">
+                                    <i class="las la-bars"></i>
+                                </button>
+                            </div>
+                            <div class="input-group">
+
+                                <input type="email" class="form-control" placeholder="Search on Martel..."
+                                    id="exampleInputEmail1" aria-describedby="emailHelp">
+                                <div class="input-group-append">
+                                    <!-- <button class="sparkti_categories_btn">
+                                        All
+                                        <i class="las la-angle-down"></i>
+                                    </button> -->
+                                    <select name="sparkti_currency" class="sparkti_select" id="">
+                                        <option value="All">All</option>
+                                        <option value="cat-1">cat-1</option>
+                                        <option value="cat-2">cat-2</option>
+                                    </select>
+                                </div>
+                                <div class="input-group-append">
+                                    <button class="sparkti_navigation_search" type="submit">
+                                        <i class="las la-search"></i>
+                                        Search
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="sparkti_navigation__content_right ml-auto">
+                        <div class="sparkti_navigation_login_signup">
+                            <a href="#" class="sparkti_navigation_signup">
+                                <i class="lar la-user"></i>
+                                Sign up
+                            </a>
+
+                            <a href="#" class="sparkti_navigation_login">
+                                <i>or</i>
+                                Log in
+                            </a>
+                        </div>
+                        <div class="sparkti_navigation_cart">
+                            <a href="#" class="sparkti_cart_compare">
+                                <i class="las la-random"></i>
+                            </a>
+                            <a href="#" class="sparkti_cart_wishlist">
+                                <i class="las la-heart"></i>
+                            </a>
+                            <a href="#" class="sparkti_cart_container">
+                                Cart
+                                <span class="sparkti_cart_container__item">
+                                    12
+                                </span>
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--  -->
+
+    <!--  -->
+    <div class="sparkti_breadcrumb">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="sparkti_breadcrumb__inner">
+                        <ul class="sparkti_breadcrumb_menu">
+                            <li>
+                                <a href="#">
+                                    <i class="las la-home"></i>
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Martel’s Shop
+                                </a>
+                            </li>
+                            <li>
+                                <span>
+                                    Brushed 316L Stainless Steel Case Tan Leather Watch
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--  -->
+
+    <!--  -->
+    <section class="sparkti_page_description">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="sparkti_page_description_inner">
+                        <h3>Shopping Cart</h3>
+                        <p>
+                            Free Shipping on All Orders Over $75
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--  -->
+    
+    <section class="sparkti_section sparkti_about_us">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="sparkti_about_us__image">
+                        <img src="assets/images/about-us.jpg" alt="sparkti about us image">
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="sparkti_about_us__content">
+                        <h4>About Us</h4>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis reprehenderit iste blanditiis. Assumenda delectus consectetur sed eum eos non voluptatum magni totam necessitatibus nihil, fugiat similique ex ut laborum dolorem repellat repellendus ea facilis expedita architecto molestiae dolore inventore placeat! Laboriosam dolore nostrum cupiditate quae tempora ex, porro modi vero?
+                                </p>
+                            </div>
+                            <div class="col-md-6">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis reprehenderit iste blanditiis. Assumenda delectus consectetur sed eum eos non voluptatum magni totam necessitatibus nihil, fugiat similique ex ut laborum dolorem repellat repellendus ea facilis expedita architecto molestiae dolore inventore placeat! Laboriosam dolore nostrum cupiditate quae tempora ex, porro modi vero?
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--  -->
+    <section class="sparkti_section sparkti_brand_section bg-white">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <!-- sparkti_brand_carousel -->
+                    <div class="sparkti_brand_carousel">
+                        <!--  -->
+                        <div class="sparkti_brand_carousel_item">
+                            <img src="assets/images/brand-item-01.jpg" alt="Brand item">
+                        </div>
+                        <!--  -->
+                        <!--  -->
+                        <div class="sparkti_brand_carousel_item">
+                            <img src="assets/images/brand-item-02.jpg" alt="Brand item">
+                        </div>
+                        <!--  -->
+                        <!--  -->
+                        <div class="sparkti_brand_carousel_item">
+                            <img src="assets/images/brand-item-03.jpg" alt="Brand item">
+                        </div>
+                        <!--  -->
+                        <!--  -->
+                        <div class="sparkti_brand_carousel_item">
+                            <img src="assets/images/brand-item-04.jpg" alt="Brand item">
+                        </div>
+                        <!--  -->
+                        <!--  -->
+                        <div class="sparkti_brand_carousel_item">
+                            <img src="assets/images/brand-item-05.jpg" alt="Brand item">
+                        </div>
+                        <!--  -->
+                        <!--  -->
+                        <div class="sparkti_brand_carousel_item">
+                            <img src="assets/images/brand-item-06.jpg" alt="Brand item">
+                        </div>
+                        <!--  -->
+                        <!--  -->
+                        <div class="sparkti_brand_carousel_item">
+                            <img src="assets/images/brand-item-07.jpg" alt="Brand item">
+                        </div>
+                        <!--  -->
+                        <!--  -->
+                        <div class="sparkti_brand_carousel_item">
+                            <img src="assets/images/brand-item-08.jpg" alt="Brand item">
+                        </div>
+                        <!--  -->
+                    </div>
+                    <!-- ./sparkti_brand_carousel -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--  -->
+
+    <!--  -->
+    <section class="sparkti_section sparkti_subscription ">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="sparkti_subscription__inner">
+                        <div class="sparkti_subscription_content">
+                            <i class="lab la-telegram-plane"></i>
+                            <div class="sparkti_subscription_content_message">
+                                <h4>Love the Deals above?</h4>
+                                <p>Sing up to receive Martel’s amazing offers!</p>
+                            </div>
+                        </div>
+                        <div class="sparkti_subscription_content_fields">
+                            <div class="input-group">
+                                <div class="input-group-append">
+                                    <input type="text" class="form-control" placeholder="Enter your email here...">
+                                    <button class="sparkti_btn sparkti_subscription_btn ">
+                                        Subscribe
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--  -->
+
+
+    
+    <!--  -->
+    <footer class="sparkti_section sparkti_footer">
+       <div class="sparkti_footer__top">
+           <div class="container">
+               <div class="row">
+                   <div class="col-md-4">
+                       <!--  -->
+                       <div class="sparkti_footer_widget contact_info">
+                           <h5 class="sparkti_footer_widget__title">contact Info</h5>
+                            <ul class="sparkti_footer_widget__content">
+                                <li>
+                                    <span class="footer_widget_content_icon">
+                                        <i class="las la-home"></i>
+                                    </span>
+                                    <span class="footer_widget_content_text">
+                                        you’re here. For to community
+improvements, please visitrums.
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="footer_widget_content_icon">
+                                        <i class="las la-home"></i>
+                                       
+                                    </span>
+                                    <span class="footer_widget_content_text"> 
+                                        Hotline support 24/7
+                                        <span class="hotline_number">
+                                            1-800-333-6868
+                                        </span>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="footer_widget_content_icon">
+                                        <i class="las la-envelope"></i>
+                                    </span>
+                                    <span class="footer_widget_content_text">
+                                        <a href="#">
+                                            support@infotech.com
+                                        </a>
+                                    </span>
+                                </li>
+                            </ul>
+                            <ul class="sparkti_social_icon">
+                                <li>
+                                    <a href="#" class="sparkti_set_color" data-bg-color='1b4e9b'>
+                                        <i class="lab la-facebook-f"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sparkti_set_color" data-bg-color='00aeef'>
+                                        <i class="lab la-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sparkti_set_color" data-bg-color='cc0000'>
+                                        <i class="lab la-google"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sparkti_set_color" data-bg-color='5ed055'>
+                                        <i class="lab la-whatsapp"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sparkti_set_color" data-bg-color='acacac'>
+                                        <i class="las la-envelope"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                       </div>
+                       <!--  -->
+                   </div>
+                   <!--  -->
+                   
+                   <!--  -->
+                   <div class="col-md-2 offset-md-1">
+                       <div class="sparkti_footer_widget useful_link">
+                        <h5 class="sparkti_footer_widget__title">useful Info</h5>
+                        <ul class="sparkti_footer_widget__content">
+                            <li>
+                                <a href="#">
+                                    About Us
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Contact Us
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Help Center
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Policy
+                                </a>
+                            </li>
+                        </ul>
+                       </div>
+                   </div>
+                   <!--  -->
+
+                   <!--  -->
+                   <div class="col-md-2">
+                    <div class="sparkti_footer_widget">
+                        <h5 class="sparkti_footer_widget__title">useful Info</h5>
+                        <ul class="sparkti_footer_widget__content">
+                            <li>
+                                <a href="#">
+                                    About Us
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Contact Us
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Help Center
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Policy
+                                </a>
+                            </li>
+                        </ul>
+                       </div>
+                   </div>
+                   <!--  -->
+
+                   <!--  -->
+                   <div class="col-md-3">
+                        <div class="sparkti_footer_widget">
+                            <h5 class="sparkti_footer_widget__title">useful Info</h5>
+                            <div class="sparkti_footer_widget__content">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Enter Your Email">
+                                    <div class="input-group-prefend">
+                                    <button class="sparkti_btn">
+                                            Search
+                                    </button>
+                                    </div>
+                                </div>
+                                <p>
+                                    Register Now to get Updates and Promotions!
+                                </p>
+                            </div>
+                            
+                    </div>
+                   </div>
+                   <!--  -->
+               </div>
+           </div>
+       </div>
+       <div class="sparkti_footer__bottom">
+           <div class="container">
+               <div class="row">
+                <div class="col-md-6">
+                    <div class="sparkti_footer__bottom_copyright">
+                         <p>
+                             2019 © Bingotheme - All Rights Reserved.
+                         </p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="sparkti_footer__bottom_cards">
+                        <a href="#">
+                            <img src="assets/images/visa.jpg" alt="card image">
+                        </a>
+                        <a href="#">
+                            <img src="assets/images/master.jpg" alt="card image">
+                        </a>
+                        <a href="#">
+                            <img src="assets/images/amex.jpg" alt="card image">
+                        </a>
+                        <a href="#">
+                            <img src="assets/images/skrill.jpg" alt="card image">
+                        </a>
+                    </div>
+                </div>
+               </div>
+           </div>
+       </div>
+    </footer>
+    <!--  -->
+
+    <!--  -->
+    <div class="sparkti_offcanvas_navigation">
+
+    </div>
+    <!--  -->
+
+    <!-- JQuery -->
+    <script src="assets/js/jquery-3.4.1.min.js"></script>
+    <!--  -->
+    <script src="assets/js/popper.min.js"></script>
+    <!--  -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!--  -->
+    <script src="assets/js/slick.min.js"></script>
+    <!--  -->
+    <script src="assets/js/kounty.min.js"></script>
+    <!--  -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

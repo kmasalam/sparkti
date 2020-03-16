@@ -3,8 +3,6 @@
 @import 'foundation/presets';
 @import 'layouts/common';
 @import 'layouts/sparki_select';
-
-
 /*-------------------------------------
 -------------------------------------*/ 
 @import 'layouts/toolbar';
@@ -56,48 +54,6 @@
 /*-------------------------------------
 -------------------------------------*/ 
 @import 'layouts/sparkti_offcanvas_navigation';
-
-.nl-offcanvas-nav .sub-menu {
-    display: none;
-    padding-left: 10px;
-}
-.sparkti_offcanvas_menu{
-    padding: 30px 30px 30px 20px;
-    ul{
-        padding-left: 0;
-        margin-bottom: 0;
-        li{
-            a{
-                font-size: $fz16;
-                font-weight: $medium;
-                color: $c36;
-                font-family: $assistant;
-                line-height: 45px;
-                border-bottom: 1px solid $ce1e;
-                display: block;
-            }
-            
-        }
-        .has-dropdown{
-            position: relative;
-            &::after{
-                content: "\f107";
-                font-family: 'Line Awesome Free';
-                font-weight: 700;
-                position: absolute;
-                right: 10px;
-                top: 16px;
-                cursor: pointer;
-            }
-        }
-        .sub-menu{
-            display: none;
-            padding-left: 10px;
-        }
-    }
-}
-
-
 /*-------------------------------------
 -------------------------------------*/ 
 @import 'layouts/sparkti_breadcrumb';
@@ -145,3 +101,22 @@
 @import 'layouts/sparkti_payment_method_area';
 /*-------------------------------------
 -------------------------------------*/ 
+@import 'layouts/sparkti_scroll_top';
+/*-------------------------------------
+-------------------------------------*/ 
+@import 'layouts/sparkti_contact_information';
+/*-------------------------------------
+-------------------------------------*/ 
+@import 'layouts/sparkti_contact_form';
+/*-------------------------------------
+-------------------------------------*/
+@import 'layouts/sparkti_about_us' ;
+/*-------------------------------------
+-------------------------------------*/ 
+@import 'layouts/sparkti_brand_section';
+/*-------------------------------------
+-------------------------------------*/ 
+
+/*-------------------------------------
+-------------------------------------*/ 
+

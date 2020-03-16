@@ -315,6 +315,25 @@
       e.preventDefault();
       $('.sparkti_offcanvas_menu .has-dropdown').find('.sub-menu').slideUp();
   });
+
+  $('.sparkti_scroll_top').on('click',function(e){
+      $("html, body").animate({ scrollTop: 0 }, 1000);
+      return false;
+  });
+  // Window Load Function
+  $(window).on('scroll',function(){
+    var documentHeight = $(document).height();
+    var scrollableHeight = documentHeight / 1.70;
+    var Content = $('.sparkti_scroll_top');
+    if(Content.length > 0){
+        $('.sparkti_scroll_top').hide();
+        if($(this).scrollTop() > scrollableHeight){
+            $('.sparkti_scroll_top').show();
+        } else {
+            $('.sparkti_scroll_top').hide()
+        } 
+    } 
+});
         
 
 })()

@@ -11,6 +11,10 @@
             color: $c36;
             font-family: $assistant;
             margin-bottom: 40px;
+            @include respond-to(mdm){
+                margin-bottom: 20px;
+                font-size: 18px;
+            }
 
         }
         .sparkti_testimonial_carousel{
@@ -66,6 +70,12 @@
             @include respond-to(larage) {
                 max-width: 40%;
             }
+            @include respond-to(mdm){
+                max-width: 40%;
+            }
+            @include respond-to(allsmall){
+                max-width: 40%;
+            }
             img{
                 max-width: 100%;  
             }
@@ -75,6 +85,9 @@
             flex: 1;
             @include respond-to(larage) {
                 margin-left: 30px;
+            }
+            @include respond-to (mdm){
+                margin-left: 20px;
             }
 
             h4{
@@ -97,6 +110,12 @@
                 img{
                     margin-bottom: 0;
                     border-radius: 10px;
+                    @include respond-to(mdm){
+                        height: 35px;
+                    }
+                    @include respond-to(allsmall){
+                        height: 40px;
+                    }
                 }
             }
         }

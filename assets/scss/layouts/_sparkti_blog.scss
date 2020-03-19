@@ -6,8 +6,18 @@
     margin-bottom: 70px;
     &__item{
         background: $cff;
+        @include respond-to(mdm){
+            margin-bottom: 15px;
+        }
+        @include respond-to(little){
+            margin-bottom: 15px;
+        }
         .sparkti_blog__item_image{
-            img{}
+            img{
+                @include respond-to(allsmall){
+                    width: 100%;
+                }
+            }
         }
         .sparkti_blog__item_content{
             border: 1px solid $ce1e;

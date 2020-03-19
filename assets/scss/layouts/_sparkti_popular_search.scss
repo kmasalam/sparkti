@@ -12,6 +12,18 @@
             flex: 0 0 calc(16.66% - 16px);
             max-width: calc(16.66% - 16px);
             margin: 6px 8px 6px 8px;
+            @include respond-to(mdm){
+                flex: 0 0 calc(25% - 16px);
+                max-width: calc(25% - 16px);
+            }
+            @include respond-to(allsmall){
+                flex: 0 0 calc(50% - 16px);
+                max-width: calc(50% - 16px);
+            }
+            @include respond-to(little){
+                flex: 0 0 calc(100% - 16px);
+                max-width: calc(100% - 16px);
+            }
             a{
                 display: block;
                 padding: 18px 30px;

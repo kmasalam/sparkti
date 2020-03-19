@@ -51,6 +51,9 @@
                             @include transition(.30s);
                             transform: scale(1.05);
                             top: 0;
+                            @include respond-to(allsmall){
+                                display: none;
+                            }
                         }
                     }
                     a{
@@ -78,11 +81,18 @@
         height: 100%;
         padding: 30px 30px 0 30px;
         @include flexDirection(column);
+        @include respond-to(allsmall){
+            padding: 100px 30px 30px 30px;
+        }
         align-items: flex-start;
         .sparkti_banner_cloud{
             position: absolute;
             left: 0;
             top: 0;
+            @include respond-to(allsmall){
+                left: 0;
+                top: 0;           
+            }
         }
         h6{
             color: $cff;

@@ -13,6 +13,9 @@
             position: relative;
             padding: 38px 0 50px 30px;
             background: $cf3f3;
+            @include respond-to(allsmall){
+                margin-bottom: 15px;
+            }
             h5{
                 font-weight: $bold;
                 font-size: $fz20;
@@ -65,6 +68,9 @@
                 text-align: center;
                 .nav{
                     @include inlineFlex;
+                    @include respond-to(little){
+                        text-align: center;
+                    }
                 }
                 margin-bottom: 35px;
                 ul{
@@ -80,7 +86,7 @@
                                 font-size: $fz14;
                             }
                             @include respond-to(mdm) {
-                                font-size: $fz14;
+                                font-size: 10px;
                             }
                             &.active{
                                 color: $cf1;
@@ -92,6 +98,9 @@
             .tab-content{
                 .tab-pane{
                     @include popular_products_item;
+                    .popular_products_item{
+                        margin-bottom: 15px;
+                    }
                 }
             }
         }

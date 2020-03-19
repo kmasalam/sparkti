@@ -38,6 +38,9 @@
                 margin-bottom: 20px;
                 text-transform: capitalize;
                 color: $cff;
+                @include respond-to(mdm){
+                    font-size: 18px;
+                }
 
             }
             &__content{

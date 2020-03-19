@@ -9,6 +9,9 @@
         @include respond-to(mdm) {
             padding: 10px;
         }
+        @include respond-to(little){
+            padding: 10px;
+        }
         &.add_one{
             background: $c3db;
             .add_section_text{
@@ -21,6 +24,11 @@
                 font-family: $assistant;
                 margin-right: 10px;
                 line-height: 20px;
+                @include respond-to(little){
+                    max-width: 40px;
+                    font-size: 14px;
+                    margin-right: 4px;
+                }
             }
             .add_section_number{
                 font-weight: $medium;
@@ -37,6 +45,13 @@
                 }
                 @include respond-to(mdm) {
                     font-size: $fz32;
+                }
+                @include respond-to(allsmall){
+                    font-size: 36px;
+                }
+                @include respond-to(little){
+                    font-size: 15px;
+                    margin: 0 5px;
                 }
             }
             .add_section_coupon{
@@ -55,6 +70,10 @@
                     font-size: $fz14;
                     padding: 10px 10px;
                 }
+                @include respond-to(little){
+                    font-size: 12px;
+                    padding: 10px 5px;
+                }
                 
             }
             .add_section_image{
@@ -63,6 +82,12 @@
                     top: 0;
                     @include respond-to(mdm) {
                         width: 30%;
+                    }
+                    @include respond-to (allsmall){
+                        height: 90px;
+                    }
+                    @include respond-to(little){
+                        height: 53px;
                     }
                 }
             }

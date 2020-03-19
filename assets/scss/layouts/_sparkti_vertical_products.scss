@@ -34,11 +34,32 @@
                 padding-left: 0;
                 margin-bottom: 30px;
                 margin-top: 25px;
+                @include respond-to(mdm){
+                    flex-wrap: wrap;
+                    justify-content: flex-start;
+                }
+                @include respond-to(allsmall){
+                    flex-wrap: wrap;
+                    justify-content: flex-start;
+                }
                 li{
                     position: relative;
+                    @include respond-to(mdm){
+                        flex: 0 0 20%;
+                        max-width: 20%;
+                        text-align: left;
+                    }
+                    @include respond-to(allsmall){
+                        flex: 0 0 20%;
+                        max-width: 20%;
+                        text-align: left;
+                    }
                    a{
                     color: $c63;
                     font-size: $fz14;
+                    @include respond-to(mdm){
+                        font-size: 12px;
+                    }
                    }
                     &:not(:last-child){
                         margin-right: 30px;
@@ -51,6 +72,12 @@
                             background: $c63;
                             top: 50%;
                             transform: translateY(-50%);
+                            @include respond-to(mdm){
+                                display: none;
+                            }
+                            @include respond-to(allsmall){
+                                display: none;
+                            }
                         }
                     }
                 }
@@ -82,6 +109,9 @@
                 @include respond-to(larage) {
                     font-size: $fz14;
                 }
+                @include respond-to(mdm){
+                    font-size: 14px;
+                }
                 position: relative;
                 &.active{
                     color: $cf1;
@@ -92,6 +122,11 @@
             background: $cff;
             
             @include flexDirection(row);
+            @include respond-to(allsmall){
+                flex-flow: row;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+            }
             .popular_products_item{
                 flex: 0 0 20%;
                 max-width: 20%;
@@ -100,6 +135,17 @@
                 margin-bottom: 15px;
                 border-right: 1px solid $ce1e;
                 @include popular_products_item;
+                @include respond-to(allsmall){
+                    flex: 0 0 100%;
+                    max-width: 100%;
+                }
+                .popular_products_image{
+                    img{
+                        @include respond-to(allsmall){
+                            width: 100%;
+                        }
+                    }
+                }
                 .product_vendors{
                     padding-top: 15px !important;
                 }

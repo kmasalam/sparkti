@@ -48,6 +48,9 @@
             @include respond-to(larage) {
                 font-size: $fz12;
             }
+            @include respond-to(mdm){
+                font-size: 10px;
+            }
         }
         .product_vendors{
             @extend .product_vendors;
@@ -72,6 +75,7 @@
         }
         .popular_products_item{
             @include popular_products_item;
+            
         }
     }
 }

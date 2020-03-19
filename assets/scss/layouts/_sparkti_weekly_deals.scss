@@ -87,10 +87,16 @@
         @include flexDirection(row);
         margin-bottom: 50px;
         align-items: flex-start;
+        @include respond-to(mdm){
+            flex-flow: column;
+        }
         .sparkti_weekly_deals_image{}
         .sparkti_weekly_deals_content{
             margin-left: 20px;
             flex: 1;
+            @include respond-to(mdm){
+                margin-left: 0;
+            }
             .sparkti_deals_category{
                 @extend .sparkti_deals_category;
 

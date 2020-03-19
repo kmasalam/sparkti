@@ -16,6 +16,10 @@
             border-left-width: 15px;
             border-right-width: 15px;
         }
+        @include respond-to(mdm){
+            flex-flow: column;
+            text-align: center;
+        }
         .sparkti_top_rated_seller_image{
             img{
                 height: 100px;
@@ -26,16 +30,25 @@
                     width: 60px;
                 }
             }
+            @include respond-to(mdm){
+                margin-bottom: 10px;
+            }
         }
         .sparkti_top_rated_seller_content{
             margin-left: 24px;
             @include respond-to(larage) {
                 margin-left: 15px;
             }
+            @include respond-to(mdm){
+                margin-left: 10px;
+            }
             flex: 1;
             h5{
                 color: $c63;  
                 margin-bottom: 15px; 
+                @include respond-to(mdm){
+                    margin-bottom: 0;
+                }
             }
             p{
                 color: $c63;   

@@ -5,6 +5,15 @@
         padding-right: 15px;
         border-left: 1px solid $c4a;
         line-height: 41px;
+        @include respond-to(mdm){
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+        @include respond-to(little){
+            padding-left: 4px;
+            padding-right: 5px;
+            line-height: 35px;
+        }
         a{
             @extend .sparkti_select;
         }
@@ -28,11 +37,21 @@
                 @extend .sparkti_select;
                 i{
                     font-size: $fz14;
+                    
                 }
             }
             a{
                 font-size: $fz16;
                 color: $cf1;
+                @include respond-to(mdm){
+                    font-size: 11px;
+                }
+                @include respond-to(allsmall){
+                    font-size: 12px;
+                }
+                @include respond-to(little){
+                    font-size: 10px;
+                }
             }
         }
         &.sparkti_toolbar_products{
@@ -42,6 +61,9 @@
     &__left{
         @include flexDirection(row);
         justify-content: flex-start;
+        @include respond-to(allsmall){
+            justify-content: center;
+        }
         .sparkti_toolbar__item{
            
             &:not(:last-child){
@@ -52,7 +74,13 @@
     &__right{
         @include flexDirection(row);
         justify-content: flex-end;
+        @include respond-to(allsmall){
+            justify-content: center;
+        }
         .sparkti_toolbar__item{
+            a{
+                font-size: 10px;
+            }
             &.sparkti_toolbar_products{
                 a{
                     font-family: $assistant;
@@ -60,6 +88,12 @@
                     font-size: $fz12;
                     text-transform: uppercase;
                     color: $cff;
+                    @include respond-to(mdm){
+                        font-size: 11px;
+                    }
+                    @include respond-to(little){
+                        font-size: 7px;
+                    }
                 }
             }
         }

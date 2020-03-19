@@ -39,6 +39,12 @@ h4 {
   font-size: 24px;
   font-weight: 700;
   font-family: "Assistant"; }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    h4 {
+      font-size: 18px; } }
+  @media only screen and (max-width: 575px) {
+    h4 {
+      font-size: 18px; } }
 
 h5, .sparkti_available_products .sparkti_available_products_container .sparkti_available_products_item.cloath_item p {
   font-size: 20px;
@@ -99,6 +105,15 @@ h5, .sparkti_available_products .sparkti_available_products_container .sparkti_a
     padding-right: 15px;
     border-left: 1px solid #4a4a4a;
     line-height: 41px; }
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+      .sparkti_toolbar__item {
+        padding-left: 5px;
+        padding-right: 5px; } }
+    @media only screen and (max-width: 575px) {
+      .sparkti_toolbar__item {
+        padding-left: 4px;
+        padding-right: 5px;
+        line-height: 35px; } }
     .sparkti_toolbar__item.sparkti_has_dropdown {
       position: relative; }
       .sparkti_toolbar__item.sparkti_has_dropdown .sparkti_dropdown {
@@ -115,24 +130,47 @@ h5, .sparkti_available_products .sparkti_available_products_container .sparkti_a
     .sparkti_toolbar__item.sparkti_toolbar__hotline a {
       font-size: 16px;
       color: #f17d80; }
+      @media only screen and (min-width: 768px) and (max-width: 991px) {
+        .sparkti_toolbar__item.sparkti_toolbar__hotline a {
+          font-size: 11px; } }
+      @media only screen and (max-width: 767px) {
+        .sparkti_toolbar__item.sparkti_toolbar__hotline a {
+          font-size: 12px; } }
+      @media only screen and (max-width: 575px) {
+        .sparkti_toolbar__item.sparkti_toolbar__hotline a {
+          font-size: 10px; } }
   .sparkti_toolbar__left {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-flow: row;
     justify-content: flex-start; }
+    @media only screen and (max-width: 767px) {
+      .sparkti_toolbar__left {
+        justify-content: center; } }
   .sparkti_toolbar__right {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-flow: row;
     justify-content: flex-end; }
+    @media only screen and (max-width: 767px) {
+      .sparkti_toolbar__right {
+        justify-content: center; } }
+    .sparkti_toolbar__right .sparkti_toolbar__item a {
+      font-size: 10px; }
     .sparkti_toolbar__right .sparkti_toolbar__item.sparkti_toolbar_products a {
       font-family: "Assistant";
       font-weight: 700;
       font-size: 12px;
       text-transform: uppercase;
       color: #ffffff; }
+      @media only screen and (min-width: 768px) and (max-width: 991px) {
+        .sparkti_toolbar__right .sparkti_toolbar__item.sparkti_toolbar_products a {
+          font-size: 11px; } }
+      @media only screen and (max-width: 575px) {
+        .sparkti_toolbar__right .sparkti_toolbar__item.sparkti_toolbar_products a {
+          font-size: 7px; } }
 
 /*-------------------------------------
 -------------------------------------*/
@@ -141,6 +179,29 @@ h5, .sparkti_available_products .sparkti_available_products_container .sparkti_a
   background: #ffffff; }
   .sparkti_navigation__content {
     padding: 20px 0; }
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+      .sparkti_navigation__content {
+        flex-flow: row;
+        flex-wrap: wrap; } }
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+      .sparkti_navigation__content .navbar-brand {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 14px; } }
+    @media only screen and (max-width: 767px) {
+      .sparkti_navigation__content .navbar-brand {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 14px; } }
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+      .sparkti_navigation__content .sparkti_navigation__content_center {
+        margin-left: 0 !important;
+        width: 50%;
+        margin-right: 35px; } }
     .sparkti_navigation__content .sparkti_navigation__content_center form {
       display: inline-flex;
       align-items: center;
@@ -156,6 +217,14 @@ h5, .sparkti_available_products .sparkti_available_products_container .sparkti_a
         margin-right: 20px;
         z-index: 999;
         position: relative; }
+        @media only screen and (min-width: 768px) and (max-width: 991px) {
+          .sparkti_navigation__content .sparkti_navigation__content_center form .input-group-prepend .sparkti_offcanvas_btn {
+            font-size: 20px;
+            margin-right: 15px; } }
+        @media only screen and (max-width: 575px) {
+          .sparkti_navigation__content .sparkti_navigation__content_center form .input-group-prepend .sparkti_offcanvas_btn {
+            font-size: 17px;
+            margin-right: 8px; } }
         .sparkti_navigation__content .sparkti_navigation__content_center form .input-group-prepend .sparkti_offcanvas_btn.activated {
           color: #ffffff; }
       .sparkti_navigation__content .sparkti_navigation__content_center form .input-group {
@@ -178,6 +247,10 @@ h5, .sparkti_available_products .sparkti_available_products_container .sparkti_a
           @media only screen and (min-width: 768px) and (max-width: 991px) {
             .sparkti_navigation__content .sparkti_navigation__content_center form .input-group .form-control {
               width: 200px; } }
+          @media only screen and (max-width: 575px) {
+            .sparkti_navigation__content .sparkti_navigation__content_center form .input-group .form-control {
+              width: 240px;
+              font-size: 14px; } }
         .sparkti_navigation__content .sparkti_navigation__content_center form .input-group .sparkti_select, .sparkti_navigation__content .sparkti_navigation__content_center form .input-group .sparkti_toolbar__item a, .sparkti_toolbar__item .sparkti_navigation__content .sparkti_navigation__content_center form .input-group a, .sparkti_navigation__content .sparkti_navigation__content_center form .input-group .sparkti_toolbar__item.sparkti_toolbar__hotline .sparkti_toolbar__hotline_label, .sparkti_toolbar__item.sparkti_toolbar__hotline .sparkti_navigation__content .sparkti_navigation__content_center form .input-group .sparkti_toolbar__hotline_label {
           padding: 0 25px;
           line-height: 40px;
@@ -185,6 +258,9 @@ h5, .sparkti_available_products .sparkti_available_products_container .sparkti_a
           color: #252525;
           font-size: 14px;
           font-family: "Assistant"; }
+          @media only screen and (max-width: 575px) {
+            .sparkti_navigation__content .sparkti_navigation__content_center form .input-group .sparkti_select, .sparkti_navigation__content .sparkti_navigation__content_center form .input-group .sparkti_toolbar__item a, .sparkti_toolbar__item .sparkti_navigation__content .sparkti_navigation__content_center form .input-group a, .sparkti_navigation__content .sparkti_navigation__content_center form .input-group .sparkti_toolbar__item.sparkti_toolbar__hotline .sparkti_toolbar__hotline_label, .sparkti_toolbar__item.sparkti_toolbar__hotline .sparkti_navigation__content .sparkti_navigation__content_center form .input-group .sparkti_toolbar__hotline_label {
+              padding: 0 14px; } }
         .sparkti_navigation__content .sparkti_navigation__content_center form .input-group .sparkti_navigation_search {
           height: 40px;
           display: inline-flex;
@@ -198,12 +274,23 @@ h5, .sparkti_available_products .sparkti_available_products_container .sparkti_a
           border: none;
           color: #ffffff;
           padding: 0 30px; }
+          @media only screen and (min-width: 768px) and (max-width: 991px) {
+            .sparkti_navigation__content .sparkti_navigation__content_center form .input-group .sparkti_navigation_search {
+              padding: 0 22px;
+              font-size: 10px; } }
+          @media only screen and (max-width: 575px) {
+            .sparkti_navigation__content .sparkti_navigation__content_center form .input-group .sparkti_navigation_search {
+              font-size: 10px;
+              padding: 0 10px; } }
           .sparkti_navigation__content .sparkti_navigation__content_center form .input-group .sparkti_navigation_search i {
             font-size: 18px;
             display: inline-flex;
             align-items: center;
             justify-content: center;
             margin-right: 5px; }
+            @media only screen and (max-width: 575px) {
+              .sparkti_navigation__content .sparkti_navigation__content_center form .input-group .sparkti_navigation_search i {
+                font-size: 12px; } }
           @media only screen and (min-width: 992px) and (max-width: 1199px) {
             .sparkti_navigation__content .sparkti_navigation__content_center form .input-group .sparkti_navigation_search {
               padding: 0 20px; } }
@@ -212,6 +299,14 @@ h5, .sparkti_available_products .sparkti_available_products_container .sparkti_a
       align-items: center;
       justify-content: center;
       flex-flow: row; }
+      @media only screen and (min-width: 768px) and (max-width: 991px) {
+        .sparkti_navigation__content .sparkti_navigation__content_right {
+          margin-left: 0 !important; } }
+      @media only screen and (max-width: 767px) {
+        .sparkti_navigation__content .sparkti_navigation__content_right {
+          margin-left: 0 !important;
+          width: 100%;
+          margin-top: 10px; } }
       .sparkti_navigation__content .sparkti_navigation__content_right .sparkti_navigation_login_signup {
         display: flex;
         align-items: center;
@@ -223,9 +318,15 @@ h5, .sparkti_available_products .sparkti_available_products_container .sparkti_a
           font-family: "Rubik";
           display: inline-flex;
           align-items: center; }
+          @media only screen and (max-width: 575px) {
+            .sparkti_navigation__content .sparkti_navigation__content_right .sparkti_navigation_login_signup a {
+              font-size: 12px; } }
           .sparkti_navigation__content .sparkti_navigation__content_right .sparkti_navigation_login_signup a i {
             font-size: 24px;
             color: #363636; }
+            @media only screen and (max-width: 575px) {
+              .sparkti_navigation__content .sparkti_navigation__content_right .sparkti_navigation_login_signup a i {
+                font-size: 18px; } }
           .sparkti_navigation__content .sparkti_navigation__content_right .sparkti_navigation_login_signup a.sparkti_navigation_login {
             margin-right: 30px; }
             .sparkti_navigation__content .sparkti_navigation__content_right .sparkti_navigation_login_signup a.sparkti_navigation_login i {
@@ -250,9 +351,15 @@ h5, .sparkti_available_products .sparkti_available_products_container .sparkti_a
           @media only screen and (min-width: 768px) and (max-width: 991px) {
             .sparkti_navigation__content .sparkti_navigation__content_right .sparkti_navigation_cart a {
               margin-left: 10px; } }
+          @media only screen and (max-width: 575px) {
+            .sparkti_navigation__content .sparkti_navigation__content_right .sparkti_navigation_cart a {
+              margin-left: 10px; } }
           .sparkti_navigation__content .sparkti_navigation__content_right .sparkti_navigation_cart a i {
             font-size: 24px;
             color: #363636; }
+            @media only screen and (max-width: 575px) {
+              .sparkti_navigation__content .sparkti_navigation__content_right .sparkti_navigation_cart a i {
+                font-size: 16px; } }
           .sparkti_navigation__content .sparkti_navigation__content_right .sparkti_navigation_cart a.sparkti_cart_container {
             font-family: "Assistant";
             font-weight: 700;
@@ -269,6 +376,10 @@ h5, .sparkti_available_products .sparkti_available_products_container .sparkti_a
               align-items: center;
               justify-content: center;
               margin-left: 10px; }
+              @media only screen and (max-width: 575px) {
+                .sparkti_navigation__content .sparkti_navigation__content_right .sparkti_navigation_cart a.sparkti_cart_container .sparkti_cart_container__item {
+                  height: 25px;
+                  width: 25px; } }
 
 /*-------------------------------------
 -------------------------------------*/
@@ -321,6 +432,9 @@ h5, .sparkti_available_products .sparkti_available_products_container .sparkti_a
             transition: all 0.3s linear;
             transform: scale(1.05);
             top: 0; }
+            @media only screen and (max-width: 767px) {
+              .sparkti_banner__categories .sparkti_categories_nav ul li.has_sparkti_dropdown .sparkti_dropdown {
+                display: none; } }
         .sparkti_banner__categories .sparkti_categories_nav ul li a {
           font-family: "Rubik";
           font-weight: 400;
@@ -347,10 +461,17 @@ h5, .sparkti_available_products .sparkti_available_products_container .sparkti_a
     justify-content: center;
     flex-flow: column;
     align-items: flex-start; }
+    @media only screen and (max-width: 767px) {
+      .sparkti_banner__content {
+        padding: 100px 30px 30px 30px; } }
     .sparkti_banner__content .sparkti_banner_cloud {
       position: absolute;
       left: 0;
       top: 0; }
+      @media only screen and (max-width: 767px) {
+        .sparkti_banner__content .sparkti_banner_cloud {
+          left: 0;
+          top: 0; } }
     .sparkti_banner__content h6 {
       color: #ffffff;
       text-transform: uppercase;
@@ -437,6 +558,9 @@ h5, .sparkti_available_products .sparkti_available_products_container .sparkti_a
     @media only screen and (min-width: 768px) and (max-width: 991px) {
       .sparkti_add_section .sparkti_add_section__add {
         padding: 10px; } }
+    @media only screen and (max-width: 575px) {
+      .sparkti_add_section .sparkti_add_section__add {
+        padding: 10px; } }
     .sparkti_add_section .sparkti_add_section__add.add_one {
       background: #3dbea2; }
       .sparkti_add_section .sparkti_add_section__add.add_one .add_section_text {
@@ -449,6 +573,11 @@ h5, .sparkti_available_products .sparkti_available_products_container .sparkti_a
         font-family: "Assistant";
         margin-right: 10px;
         line-height: 20px; }
+        @media only screen and (max-width: 575px) {
+          .sparkti_add_section .sparkti_add_section__add.add_one .add_section_text {
+            max-width: 40px;
+            font-size: 14px;
+            margin-right: 4px; } }
       .sparkti_add_section .sparkti_add_section__add.add_one .add_section_number {
         font-weight: 500;
         font-size: 78px;
@@ -467,6 +596,13 @@ h5, .sparkti_available_products .sparkti_available_products_container .sparkti_a
         @media only screen and (min-width: 768px) and (max-width: 991px) {
           .sparkti_add_section .sparkti_add_section__add.add_one .add_section_number {
             font-size: 32px; } }
+        @media only screen and (max-width: 767px) {
+          .sparkti_add_section .sparkti_add_section__add.add_one .add_section_number {
+            font-size: 36px; } }
+        @media only screen and (max-width: 575px) {
+          .sparkti_add_section .sparkti_add_section__add.add_one .add_section_number {
+            font-size: 15px;
+            margin: 0 5px; } }
       .sparkti_add_section .sparkti_add_section__add.add_one .add_section_coupon {
         font-family: "Assistant";
         font-weight: 700;
@@ -483,12 +619,22 @@ h5, .sparkti_available_products .sparkti_available_products_container .sparkti_a
           .sparkti_add_section .sparkti_add_section__add.add_one .add_section_coupon {
             font-size: 14px;
             padding: 10px 10px; } }
+        @media only screen and (max-width: 575px) {
+          .sparkti_add_section .sparkti_add_section__add.add_one .add_section_coupon {
+            font-size: 12px;
+            padding: 10px 5px; } }
       .sparkti_add_section .sparkti_add_section__add.add_one .add_section_image img {
         position: absolute;
         top: 0; }
         @media only screen and (min-width: 768px) and (max-width: 991px) {
           .sparkti_add_section .sparkti_add_section__add.add_one .add_section_image img {
             width: 30%; } }
+        @media only screen and (max-width: 767px) {
+          .sparkti_add_section .sparkti_add_section__add.add_one .add_section_image img {
+            height: 90px; } }
+        @media only screen and (max-width: 575px) {
+          .sparkti_add_section .sparkti_add_section__add.add_one .add_section_image img {
+            height: 53px; } }
     .sparkti_add_section .sparkti_add_section__add.add_two {
       height: 100%;
       display: flex;
@@ -576,6 +722,9 @@ h5, .sparkti_available_products .sparkti_available_products_container .sparkti_a
     @media only screen and (min-width: 992px) and (max-width: 1199px) {
       .sparkti_popular_products .sparkti_popular_products__carousel .popular_products_item .popular_product_body .popular_product_title {
         font-size: 12px; } }
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+      .sparkti_popular_products .sparkti_popular_products__carousel .popular_products_item .popular_product_body .popular_product_title {
+        font-size: 10px; } }
 
 /*-------------------------------------
 -------------------------------------*/
@@ -596,6 +745,10 @@ h5, .sparkti_available_products .sparkti_available_products_container .sparkti_a
       @media only screen and (min-width: 768px) and (max-width: 991px) {
         .sparkti_available_products .sparkti_available_products_container .sparkti_section_heading {
           padding-right: 10px; } }
+      @media only screen and (max-width: 575px) {
+        .sparkti_available_products .sparkti_available_products_container .sparkti_section_heading {
+          flex-flow: column;
+          padding-right: 0; } }
       .sparkti_available_products .sparkti_available_products_container .sparkti_section_heading__content {
         background: #6c8672;
         font-size: 22px;
@@ -614,6 +767,12 @@ h5, .sparkti_available_products .sparkti_available_products_container .sparkti_a
           .sparkti_available_products .sparkti_available_products_container .sparkti_section_heading__content {
             font-size: 14px;
             padding: 0 20px 0 10px; } }
+        @media only screen and (max-width: 767px) {
+          .sparkti_available_products .sparkti_available_products_container .sparkti_section_heading__content {
+            font-size: 14px; } }
+        @media only screen and (max-width: 575px) {
+          .sparkti_available_products .sparkti_available_products_container .sparkti_section_heading__content {
+            width: 100%; } }
         .sparkti_available_products .sparkti_available_products_container .sparkti_section_heading__content i {
           color: #ffffff;
           font-size: 32px;
@@ -635,10 +794,35 @@ h5, .sparkti_available_products .sparkti_available_products_container .sparkti_a
         @media only screen and (min-width: 992px) and (max-width: 1199px) {
           .sparkti_available_products .sparkti_available_products_container .sparkti_section_heading__categories ul {
             flex-wrap: wrap; } }
+        @media only screen and (min-width: 768px) and (max-width: 991px) {
+          .sparkti_available_products .sparkti_available_products_container .sparkti_section_heading__categories ul {
+            flex-wrap: wrap;
+            margin-left: 15px; } }
+        @media only screen and (max-width: 575px) {
+          .sparkti_available_products .sparkti_available_products_container .sparkti_section_heading__categories ul {
+            padding-left: 0;
+            flex-wrap: wrap;
+            margin-left: 15px;
+            justify-content: flex-start; } }
         .sparkti_available_products .sparkti_available_products_container .sparkti_section_heading__categories ul li {
           position: relative; }
+          @media only screen and (min-width: 768px) and (max-width: 991px) {
+            .sparkti_available_products .sparkti_available_products_container .sparkti_section_heading__categories ul li {
+              flex: 0 0 100%;
+              max-width: 100%; } }
+          @media only screen and (max-width: 575px) {
+            .sparkti_available_products .sparkti_available_products_container .sparkti_section_heading__categories ul li {
+              flex: 0 0 50%;
+              max-width: 50%;
+              margin-right: 0; } }
           .sparkti_available_products .sparkti_available_products_container .sparkti_section_heading__categories ul li:not(:last-child) {
             margin-right: 20px; }
+            @media only screen and (min-width: 768px) and (max-width: 991px) {
+              .sparkti_available_products .sparkti_available_products_container .sparkti_section_heading__categories ul li:not(:last-child) {
+                margin-right: 0; } }
+            @media only screen and (max-width: 575px) {
+              .sparkti_available_products .sparkti_available_products_container .sparkti_section_heading__categories ul li:not(:last-child) {
+                margin-right: 0px; } }
             .sparkti_available_products .sparkti_available_products_container .sparkti_section_heading__categories ul li:not(:last-child):after {
               content: "";
               position: absolute;
@@ -648,6 +832,12 @@ h5, .sparkti_available_products .sparkti_available_products_container .sparkti_a
               height: 3px;
               width: 3px;
               background: #636363; }
+              @media only screen and (min-width: 768px) and (max-width: 991px) {
+                .sparkti_available_products .sparkti_available_products_container .sparkti_section_heading__categories ul li:not(:last-child):after {
+                  display: none; } }
+              @media only screen and (max-width: 575px) {
+                .sparkti_available_products .sparkti_available_products_container .sparkti_section_heading__categories ul li:not(:last-child):after {
+                  display: none; } }
           .sparkti_available_products .sparkti_available_products_container .sparkti_section_heading__categories ul li a {
             font-family: "Rubik";
             color: #636363;
@@ -666,6 +856,9 @@ h5, .sparkti_available_products .sparkti_available_products_container .sparkti_a
       position: relative;
       padding: 38px 0 50px 30px;
       background: #f3f3f3; }
+      @media only screen and (max-width: 767px) {
+        .sparkti_available_products .sparkti_available_products_container .sparkti_available_products_item {
+          margin-bottom: 15px; } }
       .sparkti_available_products .sparkti_available_products_container .sparkti_available_products_item h5, .sparkti_available_products .sparkti_available_products_container .sparkti_available_products_item.cloath_item p {
         font-weight: 700;
         font-size: 20px;
@@ -720,6 +913,9 @@ h5, .sparkti_available_products .sparkti_available_products_container .sparkti_a
           display: inline-flex;
           align-items: center;
           justify-content: center; }
+          @media only screen and (max-width: 575px) {
+            .sparkti_available_products .sparkti_available_products_container .sparkti_popular_products_tab .sparkti_section_title .nav, .sparkti_available_products .sparkti_available_products_container .sparkti_popular_products_tab .sparkti_related_products .nav {
+              text-align: center; } }
         .sparkti_available_products .sparkti_available_products_container .sparkti_popular_products_tab .sparkti_section_title ul li a, .sparkti_available_products .sparkti_available_products_container .sparkti_popular_products_tab .sparkti_related_products ul li a {
           font-size: 20px;
           color: #363636;
@@ -732,7 +928,7 @@ h5, .sparkti_available_products .sparkti_available_products_container .sparkti_a
               font-size: 14px; } }
           @media only screen and (min-width: 768px) and (max-width: 991px) {
             .sparkti_available_products .sparkti_available_products_container .sparkti_popular_products_tab .sparkti_section_title ul li a, .sparkti_available_products .sparkti_available_products_container .sparkti_popular_products_tab .sparkti_related_products ul li a {
-              font-size: 14px; } }
+              font-size: 10px; } }
           .sparkti_available_products .sparkti_available_products_container .sparkti_popular_products_tab .sparkti_section_title ul li a.active, .sparkti_available_products .sparkti_available_products_container .sparkti_popular_products_tab .sparkti_related_products ul li a.active, .sparkti_available_products .sparkti_available_products_container .sparkti_popular_products_tab .sparkti_section_title ul li .sparkti_pagination a.sparkti_pagination_item:hover, .sparkti_pagination .sparkti_available_products .sparkti_available_products_container .sparkti_popular_products_tab .sparkti_section_title ul li a.sparkti_pagination_item:hover, .sparkti_available_products .sparkti_available_products_container .sparkti_popular_products_tab .sparkti_related_products ul li .sparkti_pagination a.sparkti_pagination_item:hover, .sparkti_pagination .sparkti_available_products .sparkti_available_products_container .sparkti_popular_products_tab .sparkti_related_products ul li a.sparkti_pagination_item:hover {
             color: #f17d80; }
       .sparkti_available_products .sparkti_available_products_container .sparkti_popular_products_tab .tab-content .tab-pane .popular_product_body__pricing_cart {
@@ -762,6 +958,11 @@ h5, .sparkti_available_products .sparkti_available_products_container .sparkti_a
         @media only screen and (min-width: 992px) and (max-width: 1199px) {
           .sparkti_available_products .sparkti_available_products_container .sparkti_popular_products_tab .tab-content .tab-pane .popular_product_body .popular_product_title {
             font-size: 12px; } }
+        @media only screen and (min-width: 768px) and (max-width: 991px) {
+          .sparkti_available_products .sparkti_available_products_container .sparkti_popular_products_tab .tab-content .tab-pane .popular_product_body .popular_product_title {
+            font-size: 10px; } }
+      .sparkti_available_products .sparkti_available_products_container .sparkti_popular_products_tab .tab-content .tab-pane .popular_products_item {
+        margin-bottom: 15px; }
 
 /*-------------------------------------
 -------------------------------------*/
@@ -796,11 +997,32 @@ h5, .sparkti_available_products .sparkti_available_products_container .sparkti_a
       padding-left: 0;
       margin-bottom: 30px;
       margin-top: 25px; }
+      @media only screen and (min-width: 768px) and (max-width: 991px) {
+        .sparkti_vertical_product .sparkti_section_title.sparkti_throughline_title ul, .sparkti_vertical_product .sparkti_throughline_title.sparkti_related_products ul {
+          flex-wrap: wrap;
+          justify-content: flex-start; } }
+      @media only screen and (max-width: 767px) {
+        .sparkti_vertical_product .sparkti_section_title.sparkti_throughline_title ul, .sparkti_vertical_product .sparkti_throughline_title.sparkti_related_products ul {
+          flex-wrap: wrap;
+          justify-content: flex-start; } }
       .sparkti_vertical_product .sparkti_section_title.sparkti_throughline_title ul li, .sparkti_vertical_product .sparkti_throughline_title.sparkti_related_products ul li {
         position: relative; }
+        @media only screen and (min-width: 768px) and (max-width: 991px) {
+          .sparkti_vertical_product .sparkti_section_title.sparkti_throughline_title ul li, .sparkti_vertical_product .sparkti_throughline_title.sparkti_related_products ul li {
+            flex: 0 0 20%;
+            max-width: 20%;
+            text-align: left; } }
+        @media only screen and (max-width: 767px) {
+          .sparkti_vertical_product .sparkti_section_title.sparkti_throughline_title ul li, .sparkti_vertical_product .sparkti_throughline_title.sparkti_related_products ul li {
+            flex: 0 0 20%;
+            max-width: 20%;
+            text-align: left; } }
         .sparkti_vertical_product .sparkti_section_title.sparkti_throughline_title ul li a, .sparkti_vertical_product .sparkti_throughline_title.sparkti_related_products ul li a {
           color: #636363;
           font-size: 14px; }
+          @media only screen and (min-width: 768px) and (max-width: 991px) {
+            .sparkti_vertical_product .sparkti_section_title.sparkti_throughline_title ul li a, .sparkti_vertical_product .sparkti_throughline_title.sparkti_related_products ul li a {
+              font-size: 12px; } }
         .sparkti_vertical_product .sparkti_section_title.sparkti_throughline_title ul li:not(:last-child), .sparkti_vertical_product .sparkti_throughline_title.sparkti_related_products ul li:not(:last-child) {
           margin-right: 30px; }
           .sparkti_vertical_product .sparkti_section_title.sparkti_throughline_title ul li:not(:last-child)::after, .sparkti_vertical_product .sparkti_throughline_title.sparkti_related_products ul li:not(:last-child)::after {
@@ -812,6 +1034,12 @@ h5, .sparkti_available_products .sparkti_available_products_container .sparkti_a
             background: #636363;
             top: 50%;
             transform: translateY(-50%); }
+            @media only screen and (min-width: 768px) and (max-width: 991px) {
+              .sparkti_vertical_product .sparkti_section_title.sparkti_throughline_title ul li:not(:last-child)::after, .sparkti_vertical_product .sparkti_throughline_title.sparkti_related_products ul li:not(:last-child)::after {
+                display: none; } }
+            @media only screen and (max-width: 767px) {
+              .sparkti_vertical_product .sparkti_section_title.sparkti_throughline_title ul li:not(:last-child)::after, .sparkti_vertical_product .sparkti_throughline_title.sparkti_related_products ul li:not(:last-child)::after {
+                display: none; } }
   .sparkti_vertical_product .sparkti_vartical_tab_container {
     background: #ffffff;
     border: 1px solid #e1e1e1;
@@ -836,6 +1064,9 @@ h5, .sparkti_available_products .sparkti_available_products_container .sparkti_a
         @media only screen and (min-width: 992px) and (max-width: 1199px) {
           .sparkti_vertical_product .sparkti_vartical_tab_container .nav .nav-link {
             font-size: 14px; } }
+        @media only screen and (min-width: 768px) and (max-width: 991px) {
+          .sparkti_vertical_product .sparkti_vartical_tab_container .nav .nav-link {
+            font-size: 14px; } }
         .sparkti_vertical_product .sparkti_vartical_tab_container .nav .nav-link.active, .sparkti_vertical_product .sparkti_vartical_tab_container .nav .sparkti_pagination .nav-link.sparkti_pagination_item:hover, .sparkti_pagination .sparkti_vertical_product .sparkti_vartical_tab_container .nav .nav-link.sparkti_pagination_item:hover {
           color: #f17d80; }
     .sparkti_vertical_product .sparkti_vartical_tab_container .sparkti_tab_content {
@@ -844,6 +1075,11 @@ h5, .sparkti_available_products .sparkti_available_products_container .sparkti_a
       align-items: center;
       justify-content: center;
       flex-flow: row; }
+      @media only screen and (max-width: 767px) {
+        .sparkti_vertical_product .sparkti_vartical_tab_container .sparkti_tab_content {
+          flex-flow: row;
+          flex-wrap: wrap;
+          justify-content: flex-start; } }
       .sparkti_vertical_product .sparkti_vartical_tab_container .sparkti_tab_content .popular_products_item {
         flex: 0 0 20%;
         max-width: 20%;
@@ -878,6 +1114,16 @@ h5, .sparkti_available_products .sparkti_available_products_container .sparkti_a
           @media only screen and (min-width: 992px) and (max-width: 1199px) {
             .sparkti_vertical_product .sparkti_vartical_tab_container .sparkti_tab_content .popular_products_item .popular_product_body .popular_product_title {
               font-size: 12px; } }
+          @media only screen and (min-width: 768px) and (max-width: 991px) {
+            .sparkti_vertical_product .sparkti_vartical_tab_container .sparkti_tab_content .popular_products_item .popular_product_body .popular_product_title {
+              font-size: 10px; } }
+        @media only screen and (max-width: 767px) {
+          .sparkti_vertical_product .sparkti_vartical_tab_container .sparkti_tab_content .popular_products_item {
+            flex: 0 0 100%;
+            max-width: 100%; } }
+        @media only screen and (max-width: 767px) {
+          .sparkti_vertical_product .sparkti_vartical_tab_container .sparkti_tab_content .popular_products_item .popular_products_image img {
+            width: 100%; } }
         .sparkti_vertical_product .sparkti_vartical_tab_container .sparkti_tab_content .popular_products_item .product_vendors, .sparkti_vertical_product .sparkti_vartical_tab_container .sparkti_tab_content .popular_products_item .sparkti_available_products .sparkti_available_products_container .sparkti_popular_products_tab .tab-content .tab-pane .popular_product_body .product_vendors, .sparkti_available_products .sparkti_available_products_container .sparkti_popular_products_tab .tab-content .tab-pane .popular_product_body .sparkti_vertical_product .sparkti_vartical_tab_container .sparkti_tab_content .popular_products_item .product_vendors, .sparkti_vertical_product .sparkti_vartical_tab_container .sparkti_tab_content .popular_products_item .popular_product_body .product_vendors {
           padding-top: 15px !important; }
 
@@ -903,6 +1149,10 @@ h5, .sparkti_available_products .sparkti_available_products_container .sparkti_a
       .sparkti_top_rated_seller .sparkti_top_rated_seller__box {
         border-left-width: 15px;
         border-right-width: 15px; } }
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+      .sparkti_top_rated_seller .sparkti_top_rated_seller__box {
+        flex-flow: column;
+        text-align: center; } }
     .sparkti_top_rated_seller .sparkti_top_rated_seller__box .sparkti_top_rated_seller_image img {
       height: 100px;
       width: 100px;
@@ -911,15 +1161,24 @@ h5, .sparkti_available_products .sparkti_available_products_container .sparkti_a
         .sparkti_top_rated_seller .sparkti_top_rated_seller__box .sparkti_top_rated_seller_image img {
           height: 60px;
           width: 60px; } }
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+      .sparkti_top_rated_seller .sparkti_top_rated_seller__box .sparkti_top_rated_seller_image {
+        margin-bottom: 10px; } }
     .sparkti_top_rated_seller .sparkti_top_rated_seller__box .sparkti_top_rated_seller_content {
       margin-left: 24px;
       flex: 1; }
       @media only screen and (min-width: 992px) and (max-width: 1199px) {
         .sparkti_top_rated_seller .sparkti_top_rated_seller__box .sparkti_top_rated_seller_content {
           margin-left: 15px; } }
+      @media only screen and (min-width: 768px) and (max-width: 991px) {
+        .sparkti_top_rated_seller .sparkti_top_rated_seller__box .sparkti_top_rated_seller_content {
+          margin-left: 10px; } }
       .sparkti_top_rated_seller .sparkti_top_rated_seller__box .sparkti_top_rated_seller_content h5, .sparkti_top_rated_seller .sparkti_top_rated_seller__box .sparkti_top_rated_seller_content .sparkti_available_products .sparkti_available_products_container .sparkti_available_products_item.cloath_item p, .sparkti_available_products .sparkti_available_products_container .sparkti_available_products_item.cloath_item .sparkti_top_rated_seller .sparkti_top_rated_seller__box .sparkti_top_rated_seller_content p {
         color: #636363;
         margin-bottom: 15px; }
+        @media only screen and (min-width: 768px) and (max-width: 991px) {
+          .sparkti_top_rated_seller .sparkti_top_rated_seller__box .sparkti_top_rated_seller_content h5, .sparkti_top_rated_seller .sparkti_top_rated_seller__box .sparkti_top_rated_seller_content .sparkti_available_products .sparkti_available_products_container .sparkti_available_products_item.cloath_item p, .sparkti_available_products .sparkti_available_products_container .sparkti_available_products_item.cloath_item .sparkti_top_rated_seller .sparkti_top_rated_seller__box .sparkti_top_rated_seller_content p {
+            margin-bottom: 0; } }
       .sparkti_top_rated_seller .sparkti_top_rated_seller__box .sparkti_top_rated_seller_content p {
         color: #636363; }
       .sparkti_top_rated_seller .sparkti_top_rated_seller__box .sparkti_top_rated_seller_content .sparkti_btn {
@@ -1016,9 +1275,15 @@ h5, .sparkti_available_products .sparkti_available_products_container .sparkti_a
     flex-flow: row;
     margin-bottom: 50px;
     align-items: flex-start; }
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+      .sparkti_weekly_deals__item {
+        flex-flow: column; } }
     .sparkti_weekly_deals__item .sparkti_weekly_deals_content {
       margin-left: 20px;
       flex: 1; }
+      @media only screen and (min-width: 768px) and (max-width: 991px) {
+        .sparkti_weekly_deals__item .sparkti_weekly_deals_content {
+          margin-left: 0; } }
       .sparkti_weekly_deals__item .sparkti_weekly_deals_content .weekly_deals_product_pricing_supplier {
         display: flex;
         align-items: center;
@@ -1039,6 +1304,9 @@ h5, .sparkti_available_products .sparkti_available_products_container .sparkti_a
     flex-flow: row;
     justify-content: space-between;
     padding: 25px 25px; }
+    @media only screen and (max-width: 767px) {
+      .sparkti_subscription__inner {
+        flex-wrap: wrap; } }
     .sparkti_subscription__inner .sparkti_subscription_content {
       display: flex;
       align-items: center;
@@ -1051,16 +1319,34 @@ h5, .sparkti_available_products .sparkti_available_products_container .sparkti_a
         color: #ffffff;
         font-size: 60px;
         font-weight: 400; }
+        @media only screen and (min-width: 768px) and (max-width: 991px) {
+          .sparkti_subscription__inner .sparkti_subscription_content i {
+            font-size: 45px; } }
+        @media only screen and (max-width: 575px) {
+          .sparkti_subscription__inner .sparkti_subscription_content i {
+            font-size: 40px; } }
       .sparkti_subscription__inner .sparkti_subscription_content .sparkti_subscription_content_message {
         margin-left: 20px; }
+        @media only screen and (min-width: 768px) and (max-width: 991px) {
+          .sparkti_subscription__inner .sparkti_subscription_content .sparkti_subscription_content_message {
+            margin-left: 10px; } }
+        @media only screen and (max-width: 575px) {
+          .sparkti_subscription__inner .sparkti_subscription_content .sparkti_subscription_content_message {
+            margin-left: 12px; } }
         .sparkti_subscription__inner .sparkti_subscription_content .sparkti_subscription_content_message h4 {
           color: #ffffff;
           font-weight: 700;
           margin-bottom: 10px; }
+          @media only screen and (min-width: 768px) and (max-width: 991px) {
+            .sparkti_subscription__inner .sparkti_subscription_content .sparkti_subscription_content_message h4 {
+              margin-bottom: 5px; } }
         .sparkti_subscription__inner .sparkti_subscription_content .sparkti_subscription_content_message p {
           color: #ffffff;
           margin-bottom: 0;
           font-family: "Rubik"; }
+    @media only screen and (max-width: 767px) {
+      .sparkti_subscription__inner .sparkti_subscription_content_fields {
+        margin-top: 15px; } }
     .sparkti_subscription__inner .sparkti_subscription_content_fields .input-group .form-control {
       min-width: 550px;
       line-height: 50px;
@@ -1073,6 +1359,15 @@ h5, .sparkti_available_products .sparkti_available_products_container .sparkti_a
       @media only screen and (min-width: 992px) and (max-width: 1199px) {
         .sparkti_subscription__inner .sparkti_subscription_content_fields .input-group .form-control {
           min-width: 350px; } }
+      @media only screen and (min-width: 768px) and (max-width: 991px) {
+        .sparkti_subscription__inner .sparkti_subscription_content_fields .input-group .form-control {
+          min-width: 201px; } }
+      @media only screen and (max-width: 767px) {
+        .sparkti_subscription__inner .sparkti_subscription_content_fields .input-group .form-control {
+          min-width: 100%; } }
+      @media only screen and (max-width: 575px) {
+        .sparkti_subscription__inner .sparkti_subscription_content_fields .input-group .form-control {
+          min-width: calc(100% - 74px); } }
     .sparkti_subscription__inner .sparkti_subscription_content_fields .input-group .sparkti_btn.sparkti_subscription_btn {
       background: #f17d80;
       line-height: 50px;
@@ -1082,6 +1377,9 @@ h5, .sparkti_available_products .sparkti_available_products_container .sparkti_a
       font-weight: 700;
       font-size: 14px;
       color: #ffffff; }
+      @media only screen and (max-width: 575px) {
+        .sparkti_subscription__inner .sparkti_subscription_content_fields .input-group .sparkti_btn.sparkti_subscription_btn {
+          padding: 0 10px; } }
 
 /*-------------------------------------
 -------------------------------------*/
@@ -1093,6 +1391,15 @@ h5, .sparkti_available_products .sparkti_available_products_container .sparkti_a
   margin-bottom: 70px; }
   .sparkti_blog__item {
     background: #ffffff; }
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+      .sparkti_blog__item {
+        margin-bottom: 15px; } }
+    @media only screen and (max-width: 575px) {
+      .sparkti_blog__item {
+        margin-bottom: 15px; } }
+    @media only screen and (max-width: 767px) {
+      .sparkti_blog__item .sparkti_blog__item_image img {
+        width: 100%; } }
     .sparkti_blog__item .sparkti_blog__item_content {
       border: 1px solid #e1e1e1;
       padding: 20px; }
@@ -1160,6 +1467,9 @@ h5, .sparkti_available_products .sparkti_available_products_container .sparkti_a
       @media only screen and (min-width: 992px) and (max-width: 1199px) {
         .sparkti_recommended_products .popular_products_item .popular_product_body .popular_product_title {
           font-size: 12px; } }
+      @media only screen and (min-width: 768px) and (max-width: 991px) {
+        .sparkti_recommended_products .popular_products_item .popular_product_body .popular_product_title {
+          font-size: 10px; } }
 
 /*-------------------------------------
 -------------------------------------*/
@@ -1176,6 +1486,10 @@ h5, .sparkti_available_products .sparkti_available_products_container .sparkti_a
       color: #363636;
       font-family: "Assistant";
       margin-bottom: 40px; }
+      @media only screen and (min-width: 768px) and (max-width: 991px) {
+        .sparkti_testimonial_app .sparkti_testimonial_carousel_container h4 {
+          margin-bottom: 20px;
+          font-size: 18px; } }
     .sparkti_testimonial_app .sparkti_testimonial_carousel_container .sparkti_testimonial_carousel {
       padding-bottom: 40px; }
       .sparkti_testimonial_app .sparkti_testimonial_carousel_container .sparkti_testimonial_carousel .sparkti_dots {
@@ -1221,6 +1535,12 @@ h5, .sparkti_available_products .sparkti_available_products_container .sparkti_a
     @media only screen and (min-width: 992px) and (max-width: 1199px) {
       .sparkti_testimonial_app .sparkti_app_container .sparkti_app_image {
         max-width: 40%; } }
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+      .sparkti_testimonial_app .sparkti_app_container .sparkti_app_image {
+        max-width: 40%; } }
+    @media only screen and (max-width: 767px) {
+      .sparkti_testimonial_app .sparkti_app_container .sparkti_app_image {
+        max-width: 40%; } }
     .sparkti_testimonial_app .sparkti_app_container .sparkti_app_image img {
       max-width: 100%; }
     .sparkti_testimonial_app .sparkti_app_container .sparkti_app_content {
@@ -1229,6 +1549,9 @@ h5, .sparkti_available_products .sparkti_available_products_container .sparkti_a
       @media only screen and (min-width: 992px) and (max-width: 1199px) {
         .sparkti_testimonial_app .sparkti_app_container .sparkti_app_content {
           margin-left: 30px; } }
+      @media only screen and (min-width: 768px) and (max-width: 991px) {
+        .sparkti_testimonial_app .sparkti_app_container .sparkti_app_content {
+          margin-left: 20px; } }
       .sparkti_testimonial_app .sparkti_app_container .sparkti_app_content h4 {
         color: #363636;
         font-family: "Assistant";
@@ -1245,6 +1568,12 @@ h5, .sparkti_available_products .sparkti_available_products_container .sparkti_a
         .sparkti_testimonial_app .sparkti_app_container .sparkti_app_content a img {
           margin-bottom: 0;
           border-radius: 10px; }
+          @media only screen and (min-width: 768px) and (max-width: 991px) {
+            .sparkti_testimonial_app .sparkti_app_container .sparkti_app_content a img {
+              height: 35px; } }
+          @media only screen and (max-width: 767px) {
+            .sparkti_testimonial_app .sparkti_app_container .sparkti_app_content a img {
+              height: 40px; } }
 
 /*-------------------------------------
 -------------------------------------*/
@@ -1395,6 +1724,18 @@ h5, .sparkti_available_products .sparkti_available_products_container .sparkti_a
       flex: 0 0 calc(16.66% - 16px);
       max-width: calc(16.66% - 16px);
       margin: 6px 8px 6px 8px; }
+      @media only screen and (min-width: 768px) and (max-width: 991px) {
+        .sparkti_popular_search .sparkti_popular_search__container .sparkti_popular_search_item {
+          flex: 0 0 calc(25% - 16px);
+          max-width: calc(25% - 16px); } }
+      @media only screen and (max-width: 767px) {
+        .sparkti_popular_search .sparkti_popular_search__container .sparkti_popular_search_item {
+          flex: 0 0 calc(50% - 16px);
+          max-width: calc(50% - 16px); } }
+      @media only screen and (max-width: 575px) {
+        .sparkti_popular_search .sparkti_popular_search__container .sparkti_popular_search_item {
+          flex: 0 0 calc(100% - 16px);
+          max-width: calc(100% - 16px); } }
       .sparkti_popular_search .sparkti_popular_search__container .sparkti_popular_search_item a {
         display: block;
         padding: 18px 30px;
@@ -1748,6 +2089,9 @@ h5, .sparkti_available_products .sparkti_available_products_container .sparkti_a
       @media only screen and (min-width: 992px) and (max-width: 1199px) {
         .sparkti_related_products__carousel .popular_products_item .popular_product_body .popular_product_title {
           font-size: 12px; } }
+      @media only screen and (min-width: 768px) and (max-width: 991px) {
+        .sparkti_related_products__carousel .popular_products_item .popular_product_body .popular_product_title {
+          font-size: 10px; } }
     .sparkti_related_products__carousel .popular_products_item .popular_product_body {
       text-align: left; }
 
@@ -2377,6 +2721,9 @@ h5, .sparkti_available_products .sparkti_available_products_container .sparkti_a
       margin-bottom: 20px;
       text-transform: capitalize;
       color: #ffffff; }
+      @media only screen and (min-width: 768px) and (max-width: 991px) {
+        .sparkti_footer__top .sparkti_footer_widget .sparkti_footer_widget__title {
+          font-size: 18px; } }
     .sparkti_footer__top .sparkti_footer_widget__content {
       padding-left: 0;
       margin-bottom: 0; }

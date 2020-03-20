@@ -9,8 +9,23 @@
             justify-content: flex-start;
             padding-left: 0;
             margin-bottom: 0;
+            @include respond-to(allsmall){
+                flex-wrap: wrap;
+            }
             li{
                 position: relative;
+                @include respond-to(allsmall){
+                    flex: 0 0 33%;
+                }
+                &:last-child{
+                    @include respond-to(allsmall){
+                        margin-left: 0;
+                        margin-right: 0;
+                        width: 100%;
+                        flex: 0 0 100%;
+                        margin-top: 10px;
+                    }
+                }
                 &:not(:last-child){
                     margin-right: 30px;
                     &::after{

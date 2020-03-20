@@ -66,6 +66,12 @@
         @include respond-to(larage) {
             padding-top: 0px;
         }
+        @include respond-to(little){
+            flex-flow: column;
+        }
+        @include respond-to(little){
+            padding-left: 0;
+        }
         .sparkti_app_image{
             @include respond-to(larage) {
                 max-width: 40%;
@@ -75,6 +81,10 @@
             }
             @include respond-to(allsmall){
                 max-width: 40%;
+            }
+            @include respond-to(little){
+                max-width: 80%;
+                margin-bottom: 30px;
             }
             img{
                 max-width: 100%;  
@@ -88,6 +98,10 @@
             }
             @include respond-to (mdm){
                 margin-left: 20px;
+            }
+            @include respond-to(little){
+                margin-left: 0;
+                padding: 15px;
             }
 
             h4{

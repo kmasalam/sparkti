@@ -35,6 +35,9 @@ h1,h2,h3,h4,h5,h6,p{
       font-size: $fz16;
       font-weight: $bold;
       font-family: $assistant;
+      @include respond-to(little){
+        font-size: 14px;
+      }
   }
   h2{
     font-size: $fz40;

@@ -4,6 +4,9 @@
     padding: 26px 20px 26px 30px;
     border-radius: 4px;
     margin-top: 30px;
+    @include respond-to(little){
+        margin-bottom: 30px;
+    }
     .sparkti_shopping_cart_subtotal{
         @include flexDirection(row);
         justify-content: space-between;
@@ -74,10 +77,22 @@
         margin-top: 20px;
         h4{
             font-size: $fz24;
+            @include respond-to(mdm){
+                font-size: 16px;
+            }
+            @include respond-to(little){
+                font-size: 16px;
+            }
         }
         .sparkti_shipping_total_value{
             font-size: $fz24;
             font-weight: $regular;
+            @include respond-to(mdm){
+                font-size: 14px;
+            }
+            @include respond-to(little){
+                font-size: 18px;
+            }
         }
     }
     .sparkti_btn{
@@ -90,6 +105,18 @@
         border-radius: 4px;
         color: $cff;
         border: none;
+        @include respond-to(mdm){
+            line-height: 45px;
+            height: 45px;
+            padding: 0 14px;
+            font-size: 12px;
+        }
+        @include respond-to(little){
+            line-height: 45px;
+            height: 45px;
+            padding: 0 14px;
+            font-size: 12px;
+        }
     }
     h6{
         font-family: $assistant;

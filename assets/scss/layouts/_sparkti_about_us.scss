@@ -3,7 +3,14 @@
     border-top: 1px solid $ce1e;
     padding-top: 70px;
     padding-bottom: 70px;
-    &__image{}
+    @include respond-to(allsmall){
+        padding-bottom: 40px;
+    }
+    &__image{
+        @include respond-to(allsmall){
+            margin-bottom: 15px;
+        }
+    }
     &__content{
         h4{
             color: $c36;

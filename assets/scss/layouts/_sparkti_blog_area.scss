@@ -1,9 +1,18 @@
 .sparkti_blog_area{
     padding-bottom: 80px;
     background: $cff;
+    @include respond-to(allsmall){
+        padding-bottom: 15px;
+    }
     .sparkti_sidebar{
+        @include respond-to(allsmall){
+            margin-top: 30px;
+        }
         .sparkti_sidebar_widget{
             margin-bottom: 50px;
+            @include respond-to(mdm){
+                margin-bottom: 30px;
+            }
             .sparkti_widget_title{
                 color: $c252;
                 font-size: $fz18;
@@ -109,6 +118,9 @@
                             a{
                                 margin-bottom: 20px;
                                 display: block;
+                                @include respond-to(little){
+                                    margin-bottom: 10px;
+                                }
                                 h6{
                                     margin-bottom: 00px;
                                     font-weight: $medium;
@@ -140,11 +152,23 @@
             position: relative;
             margin-bottom: 70px;
             @include flexDirection(row);
+            @include respond-to(mdm){
+                margin-bottom: 40px;
+            }
+            @include respond-to(little){
+                flex-flow: column;
+            }
             &:nth-child(odd){
                 @include flexDirection(row-reverse);
+                @include respond-to(little){
+                    flex-flow: column;
+                }
                 .sparkti_blog_single_content{
                     margin-right: 65px;
                     margin-left: 0;
+                   @include respond-to(mdm){
+                        margin-right: 30px;
+                   } 
                 }
             }
             .sparkti_blog_single_image{
@@ -152,6 +176,13 @@
             }
             .sparkti_blog_single_content{
                 margin-left: 65px;
+                @include respond-to(mdm){
+                    margin-left: 30px;
+                }
+                @include respond-to(little){
+                    margin-left: 0;
+                    margin-top: 20px;
+                }
                 .sparkti_post_date{
                     display: none;
                     .sparkti_post_date_day{}
@@ -162,6 +193,12 @@
                     h4{
                         font-size: $fz24;
                         color: $c36;
+                        @include respond-to(mdm){
+                            font-size: 18px;
+                        }
+                        @include respond-to(little){
+                            font-size: 20px;
+                        }
                     }
                 }
                 p{
@@ -218,6 +255,9 @@
                         color: $cebeb;
                         margin-bottom: 0;
                         line-height: 40px;
+                        @include respond-to(little){
+                            font-size: 24px;
+                        }
                         .sparkti_post_date_day{
                             font-family: $rubik;
                             font-size: $fz70;
@@ -225,6 +265,10 @@
                             line-height: 60px;
                             margin-bottom: 0;
                             display: block;
+                            @include respond-to(little){
+                                font-size: 36px;
+                                line-height: 32px;
+                            }
                         }
                     }
                 }

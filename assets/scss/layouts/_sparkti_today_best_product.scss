@@ -161,9 +161,41 @@
                 left: 140px;
                 margin-top: 24px;
                 margin-bottom: 0;
+                @include respond-to(little){
+                    left: 25%;
+                }
             }
             .sparkti_best_deal__content_carousel_item{
                 @extend .sparkti_best_deal__content_carousel;
+                @include respond-to(little){
+                    flex: 0 0 100%;
+                    max-width: 100%;
+                }
+                .sparkti_deals_title{
+                    h5{
+                        @include respond-to(little){
+                            font-size: 14px;
+                        }
+                    }
+                }
+                .today_deals_product_pricing{
+                    span{
+                        @include respond-to(little){
+                            font-size: 18px;
+                        }
+                    }
+                }
+                .kounty_countdown {
+                    @include flexDirection(row);
+                    flex-wrap: wrap;
+                    >span{
+                        flex: 0 0 calc(50% - 15px);
+                        height: 60px;
+                        margin-bottom: 5px;
+                        margin-right: 5px;
+                    }
+                }
+
             }
         }
     }

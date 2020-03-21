@@ -420,10 +420,31 @@ h5, .sparkti_available_products .sparkti_available_products_container .sparkti_a
             position: relative; }
             .sparkti_banner__categories .sparkti_categories_nav ul li.has_sparkti_dropdown > a::after {
               content: "\f105";
-              font-family: 'Line Awesome Free';
+              font-family: "Line Awesome Free";
               font-weight: 700;
               position: absolute;
               right: 0; }
+              @media only screen and (max-width: 767px) {
+                .sparkti_banner__categories .sparkti_categories_nav ul li.has_sparkti_dropdown > a::after {
+                  display: none; } }
+          @media only screen and (max-width: 767px) {
+            .sparkti_banner__categories .sparkti_categories_nav ul li.has_sparkti_dropdown.has-dropdown {
+              padding-right: 40px; } }
+          .sparkti_banner__categories .sparkti_categories_nav ul li.has_sparkti_dropdown.has-dropdown::after {
+            display: none; }
+            @media only screen and (max-width: 767px) {
+              .sparkti_banner__categories .sparkti_categories_nav ul li.has_sparkti_dropdown.has-dropdown::after {
+                display: block;
+                top: -1px;
+                height: 40px;
+                width: 30px;
+                border: 1px solid #ccc;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                z-index: 5;
+                background: #79a7c6;
+                color: #ffffff; } }
           .sparkti_banner__categories .sparkti_categories_nav ul li.has_sparkti_dropdown .sparkti_dropdown {
             position: absolute;
             left: calc(100% + 20px);
@@ -437,6 +458,11 @@ h5, .sparkti_available_products .sparkti_available_products_container .sparkti_a
             top: 0; }
             @media only screen and (max-width: 767px) {
               .sparkti_banner__categories .sparkti_categories_nav ul li.has_sparkti_dropdown .sparkti_dropdown {
+                visibility: visible;
+                opacity: 1;
+                left: 0;
+                transform: scale(1);
+                position: relative;
                 display: none; } }
         .sparkti_banner__categories .sparkti_categories_nav ul li a {
           font-family: "Rubik";
@@ -455,6 +481,12 @@ h5, .sparkti_available_products .sparkti_available_products_container .sparkti_a
           opacity: 1;
           left: calc(100% + 0px);
           transform: scale(1); }
+          @media only screen and (max-width: 767px) {
+            .sparkti_banner__categories .sparkti_categories_nav ul li:hover .sparkti_dropdown {
+              opacity: 1;
+              left: 0;
+              transform: scale(1);
+              position: relative; } }
   .sparkti_banner__content {
     background: #50a2b7;
     height: 100%;
@@ -1795,6 +1827,17 @@ h5, .sparkti_available_products .sparkti_available_products_container .sparkti_a
 
 /*-------------------------------------
 -------------------------------------*/
+.has-dropdown, .sparkti_offcanvas_navigation .sparkti_offcanvas_menu ul .has-dropdown {
+  position: relative; }
+  .has-dropdown::after, .sparkti_offcanvas_navigation .sparkti_offcanvas_menu ul .has-dropdown::after {
+    content: "\f107";
+    font-family: 'Line Awesome Free';
+    font-weight: 700;
+    position: absolute;
+    right: 10px;
+    top: 16px;
+    cursor: pointer; }
+
 .sparkti_offcanvas_navigation {
   height: 100vh;
   width: 100%;
@@ -1824,16 +1867,6 @@ h5, .sparkti_available_products .sparkti_available_products_container .sparkti_a
         line-height: 45px;
         border-bottom: 1px solid #e1e1e1;
         display: block; }
-      .sparkti_offcanvas_navigation .sparkti_offcanvas_menu ul .has-dropdown {
-        position: relative; }
-        .sparkti_offcanvas_navigation .sparkti_offcanvas_menu ul .has-dropdown::after {
-          content: "\f107";
-          font-family: 'Line Awesome Free';
-          font-weight: 700;
-          position: absolute;
-          right: 10px;
-          top: 16px;
-          cursor: pointer; }
       .sparkti_offcanvas_navigation .sparkti_offcanvas_menu ul .sub-menu {
         display: none;
         padding-left: 10px; }

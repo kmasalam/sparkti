@@ -305,7 +305,7 @@
             $(this).addClass('has-dropdown');
         }
     });
-    $('.sparkti_offcanvas_menu .has-dropdown').on('click', function (e) {
+    $('.sparkti_offcanvas_menu .has-dropdown,.sparkti_offcanvas_menu .has-dropdown > a').on('click', function (e) {
         e = window.event || e;
         e.stopPropagation();
         // $(this).children('.sub-menu').addClass('test');

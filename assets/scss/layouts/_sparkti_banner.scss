@@ -48,9 +48,9 @@
                 padding-right: 40px;
               }
               &::after {
-                  display: none;
+                display: none;
                 @include respond-to(allsmall) {
-                    display: block;
+                  display: block;
                   top: -1px;
                   height: 40px;
                   width: 30px;

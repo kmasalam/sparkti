@@ -1,0 +1,13 @@
+.zinimart_select{
+    font-family: $rubik;
+    font-size: $fz12;
+    color: $cac;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+    &:focus{
+        outline: none;
+        box-shadow: none;
+    }
+}

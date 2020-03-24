@@ -1,0 +1,54 @@
+.zinimart_blog{
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background: $cff;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    &__item{
+        background: $cff;
+        @include respond-to(mdm){
+            margin-bottom: 15px;
+        }
+        @include respond-to(little){
+            margin-bottom: 15px;
+        }
+        .zinimart_blog__item_image{
+            img{
+                @include respond-to(allsmall){
+                    width: 100%;
+                }
+            }
+        }
+        .zinimart_blog__item_content{
+            border: 1px solid $ce1e;
+            padding: 20px;
+            a{
+                h5{
+                    font-size: $fz18;
+                    color: $c36;
+                    margin-bottom: 0;
+                    @include respond-to(larage) {
+                        font-size: $fz16;
+                    }
+                }
+                display: block;
+                margin-bottom: 10px;
+            }
+            .zinimart_blog__item_tags{
+                @include flexDirection(row);
+                justify-content: flex-start;
+                i{
+                    font-size: $fz18;
+                    color: $c231;
+                    display: inline-block;
+                    margin-right: 7px;
+                }
+                a{
+                    font-size: $fz12;
+                    color: $cac;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}

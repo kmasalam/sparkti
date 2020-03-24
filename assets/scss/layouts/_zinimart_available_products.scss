@@ -1,0 +1,109 @@
+.zinimart_available_products{
+    margin-top: 70px;
+    .zinimart_available_products_container{
+        background: $cff;
+        padding: 20px 20px;
+        .zinimart_section_heading{
+            @include zinimart_section_heading;
+        }
+        .zinimart_brand_carousel{
+            @include zinimart_brand_carousel;
+        }
+        .zinimart_available_products_item{
+            position: relative;
+            padding: 38px 0 50px 30px;
+            background: $cf3f3;
+            @include respond-to(allsmall){
+                margin-bottom: 15px;
+            }
+            h5{
+                font-weight: $bold;
+                font-size: $fz20;
+                color: $c36;
+                margin-bottom: 12px;
+                position: relative;
+                z-index: 5;
+            }
+            p{
+                font-size: $fz14;
+                margin-bottom: 20px;
+                color: $c63;
+                position: relative;
+                z-index: 5;
+            }
+            a{
+                @include btn_content(30px,20px,$fz12); 
+                background: $c737;
+                color: $cff;
+                border-radius: 3px;
+                position: relative;
+                z-index: 5;
+            }
+            &.cloath_item{
+                background: $cffc5;
+                h5{
+                    color: $cff;
+                }
+                p{
+                    @extend h5;
+                    font-weight: $regular;
+                    font-size: $fz14;
+                }
+                .zinimart_btn{
+                    background: $cff;
+                    color: $cf1;
+                }
+            }
+            img{
+                position: absolute;
+                right: 0;
+                top: 0;
+                height: 100%;
+                z-index: 0;
+            }
+        }
+        .zinimart_popular_products_tab{
+            margin-top: 40px;
+            .zinimart_section_title{
+                text-align: center;
+                .nav{
+                    @include inlineFlex;
+                    @include respond-to(little){
+                        text-align: center;
+                    }
+                }
+                margin-bottom: 35px;
+                ul{
+                    li{
+                        a{
+                            font-size: $fz20;
+                            color: $c36;
+                            font-family: $assistant;
+                            font-weight: $bold;
+                            padding-top: 0;
+                            @include transition(.30s);
+                            @include respond-to(larage) {
+                                font-size: $fz14;
+                            }
+                            @include respond-to(mdm) {
+                                font-size: 10px;
+                            }
+                            &.active{
+                                color: $cf1;
+                            }
+                        }
+                    }
+                }
+            }
+            .tab-content{
+                .tab-pane{
+                    @include popular_products_item;
+                    .popular_products_item{
+                        margin-bottom: 15px;
+                    }
+                }
+            }
+        }
+    }
+    
+}

@@ -1,0 +1,183 @@
+.zinimart_single_product_details{
+    background: $cff;
+    .zinimart_best_deal_carousel_area{
+        @include flexDirection(row);
+        align-items: flex-start;
+        padding-top: 50px;
+        .zinimart_best_deal__content_carousel{
+            .zinimart_dots{
+                display: none;
+            }
+            .zinimart_best_deal__content_carousel_item {
+                align-items: flex-start;
+                .zinimart_best_deal__content_carousel_image{}
+                .zinimart_best_deal__content_carousel_content{
+                    padding-left: 25px;
+                    .zinimart_deals_title{
+                        
+                        h4{
+                            font-size: $fz24;
+                            color: $c36;
+                            font-weight: 700;
+                        }
+                    }
+                    .zinimart_product_rating{
+                        i{
+                            color: $cf7ad;
+                            font-size: $fz12;
+                        }
+                        .zinimart_product_reviews{
+                            font-size: $fz13;
+                            color: $c63;
+                            display: inline-block;
+                            padding-left: 10px;
+                        }
+                        .product_vendors{
+                            display: inline-block;
+                            font-size: $fz13;
+                            color: $cac;
+                            margin-left: 60px;
+                            &:hover{
+                                color: $cac;
+                            }
+                            span{
+                                color: $c79a7;
+                            }
+                        }
+                    }
+                    .today_deals_product_pricing_supplier{
+                        .today_deals_product_pricing{
+                            font-size: $fz24;
+                            span{}
+                            del{
+                                font-size: $fz16;
+                            }
+                        }
+                        .zinimart_question{
+                            color: $c63;
+                            font-size: $fz12;
+                            padding: 7px 20px;
+                            border: 1px solid $ce1e;
+                            border-radius: 3px;
+                        }
+                    }
+                    .zinimart_product_features{
+                        border-top: 1px solid $ce1e;
+                        border-bottom: 1px solid $ce1e;
+                        padding-bottom: 15px;
+                        padding-top: 15px;
+                        ul{
+                            padding-left: 0;
+                            margin-bottom: 20px;
+                            li{
+                                font-size: $fz14;
+                                color: $c63;
+                                padding-left: 15px;
+                                position: relative;
+                                &:not(:last-child){
+                                    margin-bottom: 8px;
+                                }
+                                &::before{
+                                    content: "";
+                                    position: absolute;
+                                    left: 0;
+                                    top: 50%;
+                                    transform: translateY(-50%);
+                                    width: 4px;
+                                    height: 4px;
+                                    background: $c737;
+                                }
+                            }
+                        }
+                        .zinimart_product_status{
+                            font-size: $fz13;
+                            color: $c63;
+                            span{
+                                font-weight: $bold;
+                                font-family: $assistant;
+                                color: $c8dc6;
+                            }
+
+                        }
+                        .zinimart_product_brand{
+                            font-size: $fz13;
+                            color: $c63;
+                            display: inline-block;
+                            margin-left: 55px;
+                            a{
+                                color: $c79a7;
+                            }
+                        }
+                    }
+                    .zinimart_product_shopping_cart_options{
+                        margin-bottom: 10px;
+                        border-bottom: 1px solid $ce1e;
+                        @include flexDirection(row);
+                        justify-content: flex-start;
+                        padding: 23px 0 23px 0;
+                        &__quantity{
+                            @include cart_quantity;
+                        }
+                        .zinimart_btn{
+                            @include btn_content(45px,30px,16px); 
+                            font-weight: 700;
+                            background: $c737;
+                            color: $cff;
+                            text-transform: uppercase;
+                            border-radius: 4px;
+                            letter-spacing: 1px;
+                        }
+                        .zinimart_wishlist_btn{
+                            font-size: $fz24;
+                            color: $c737 ;
+                            @include inlineFlex;
+                            margin-left: 22px;
+                        }
+                        .zinimart_shopping_reset_btn{
+                            @extend .zinimart_wishlist_btn;
+                        }
+                    }
+                    .zinimart_single_product_id{
+                        margin-bottom: 10px;
+                        padding-top: 10px;
+                        color: $cac;
+                        text-transform: uppercase;
+                        font-size: $fz13;
+                        span{
+                            color: $c63;
+                        }
+                    }
+                    .zinimart_single_product_category{
+                        margin-bottom: 10px;
+                        font-size: $fz13;
+                        span{
+                            color: $c63;
+                        }
+                        a{
+                            color: $c79a7;
+                        }
+                    }
+                    .zinimart_product_tags{
+                        margin-bottom: 10px;
+                        font-size: $fz13;
+                        span{
+                            color: $c63;
+                        }
+                        a{
+                            color: $cac;
+                        }
+                    }
+                    .zinimart_social_icon_container{
+                        @include zinimart_social_icon;
+                        .zinimart_social_icon{
+                            @include flexDirection(row);
+                            padding-left: 0;
+                        }
+                    }
+
+                }
+            }
+            
+        }
+    }
+}

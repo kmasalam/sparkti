@@ -1,4 +1,4 @@
-.sparkti_toolbar{
+.zinimart_toolbar{
     background: $c36;
     &__item{
         padding-left: 15px;
@@ -15,26 +15,26 @@
             line-height: 35px;
         }
         a{
-            @extend .sparkti_select;
+            @extend .zinimart_select;
         }
-        &.sparkti_has_dropdown{
+        &.zinimart_has_dropdown{
             position: relative;
-            .sparkti_dropdown{
+            .zinimart_dropdown{
                 position: absolute;
                 box-shadow: 0px 3px 5px rgba($c00,.10);
                 visibility: hidden;
             }
         }
-        .sparkti_select{
-            @extend .sparkti_select;
+        .zinimart_select{
+            @extend .zinimart_select;
             background:transparent;
             border: none;
             display: inline-flex;
             align-items: center;
         }
-        &.sparkti_toolbar__hotline{
-            .sparkti_toolbar__hotline_label{
-                @extend .sparkti_select;
+        &.zinimart_toolbar__hotline{
+            .zinimart_toolbar__hotline_label{
+                @extend .zinimart_select;
                 i{
                     font-size: $fz14;
                     
@@ -54,7 +54,7 @@
                 }
             }
         }
-        &.sparkti_toolbar_products{
+        &.zinimart_toolbar_products{
 
         }
     }
@@ -64,7 +64,7 @@
         @include respond-to(allsmall){
             justify-content: center;
         }
-        .sparkti_toolbar__item{
+        .zinimart_toolbar__item{
            
             &:not(:last-child){
 
@@ -77,11 +77,11 @@
         @include respond-to(allsmall){
             justify-content: center;
         }
-        .sparkti_toolbar__item{
+        .zinimart_toolbar__item{
             a{
                 font-size: 10px;
             }
-            &.sparkti_toolbar_products{
+            &.zinimart_toolbar_products{
                 a{
                     font-family: $assistant;
                     font-weight: $bold;

@@ -1,0 +1,497 @@
+input:not([type='checkbox']) {
+  
+  
+}
+.form-control {
+  background: $cf9f9;
+  border: 1px solid $ce1e;
+  border-radius: 3px;
+  padding-left: 15px;
+  font-family: $assistant;
+  font-size: $fz16;
+  @include transition(.40s);
+  padding: 0 15px;
+  &:focus{
+    border-color: $c737;
+  }
+}
+.zinimart_reply_container {
+  padding-top: 40px;
+  border-top: 1px solid $ce1e;
+  .zinimart_reply_container_head {
+    padding-bottom: 30px;
+    h5 {
+      font-size: $fz20;
+      color: $c36;
+      text-transform: uppercase;
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: $fz14;
+      color: $c63;
+    }
+  }
+  .zinimart_reply_box {
+    .form-group {
+      margin-right: 8px;
+      margin-bottom: 15px;
+      label {
+        font-size: $fz14;
+        text-transform: uppercase;
+        font-family: $assistant;
+        color: $cac;
+      }
+      .form-control {
+        @extend .form-control;
+      }
+      textarea {
+        height: 150px;
+        @include respond-to(allsmall){
+            height: 100px;
+        }
+      }
+      input {
+        height:50px ;
+        line-height:50px;
+      }
+    }
+  }
+  .zinimart_checkbox_parent {
+    margin-bottom: 30px;
+    margin-top: 20px;
+    .zinimart_checkbox{
+        position: relative;
+        @include zinimart_checkbox;
+        label{
+            @include respond-to(little){
+                margin-left: 10px;
+            }
+        }
+    }
+    
+  }
+  .zinimart_btn {
+    @include btn_content(40px, 20px, 12px);
+    background: $c737;
+    color: $cff;
+    border: none;
+  }
+}
+.zinimart_single_blog_container {
+  background: $cff;
+  .zinimart_blog__item {
+    .zinimart_blog_head {
+      @include flexDirection(row);
+      padding-top: 60px;
+      padding-bottom: 60px;
+      justify-content: flex-start;
+      @include respond-to(little){
+        flex-flow: column;
+        align-items: flex-start;
+        padding-bottom: 20px;
+      }
+      .zinimart_post_date {
+        display: block;
+        font-size: $fz40;
+        font-weight: $light;
+        font-family: $rubik;
+        color: $cebeb;
+        margin-bottom: 0;
+        line-height: 40px;
+        @include respond-to(mdm){
+            font-size: 20px;
+            margin-bottom: 0;
+            line-height: 26px;
+        }
+        @include respond-to(allsmall){
+            font-size: 20px;
+            margin-bottom: 0;
+            line-height: 40px;
+        }
+        .zinimart_post_date_day {
+          font-family: $rubik;
+          font-size: $fz70;
+          font-weight: $medium;
+          line-height: 60px;
+          margin-bottom: 0;
+          display: block;
+          @include respond-to(mdm){
+            font-size: 45px;
+          }
+          @include respond-to(allsmall){
+            font-size: 44px;
+            line-height: 41px;
+          }
+        }
+      }
+      .zinimart_blog_head__content {
+        margin-left: 45px;
+        @include respond-to(mdm){
+            margin-left: 15px;
+        }
+        @include respond-to(allsmall){
+            margin-left: 20px;
+        }
+        @include respond-to(little){
+            margin-left: 0;
+        }
+        .zinimart_blog_title {
+          font-size: $fz32;
+          color: $c36;
+          margin-bottom: 20px;
+          @include respond-to(larage) {
+            font-size: 20px;
+            margin-bottom: 16px;
+          }
+          @include respond-to(mdm) {
+            font-size: 20px;
+            margin-bottom: 16px;
+          }
+          @include respond-to(allsmall){
+            font-size: 20px;
+          }
+        }
+        .zinimart_blog_meta {
+          ul {
+            @include flexDirection(row);
+            margin-bottom: 0;
+            padding-left: 0;
+            justify-content: flex-start;
+            @include respond-to(little){
+                flex-wrap: wrap;
+            }
+            li {
+              font-size: $fz13;
+              color: $c63;
+              @include respond-to(little){
+                  flex: 0 0 50%;
+                  max-width: 50%;
+              }
+              &:not(:last-child) {
+                margin-right: 28px;
+                @include respond-to(little){
+                    margin-right: 0;
+                }
+              }
+              i {
+                color: $c6c8;
+                font-size: $fz20;
+              }
+              a {
+                font-size: $fz13;
+                color: $c63;
+              }
+            }
+          }
+        }
+      }
+    }
+    .zinimart_post_image {
+      margin-bottom: 50px;
+      img {
+      }
+    }
+    .zinimart_post_body {
+      padding-left: 200px;
+      @include respond-to(mdm){
+        padding-left: 130px;
+      }
+      @include respond-to(allsmall){
+        padding-left: 60px;
+      }
+      @include respond-to(allsmall){
+        padding-left: 0px;
+      }
+      strong {
+        font-size: $fz14;
+        color: $c36;
+        margin-bottom: 70px;
+        display: block;
+      }
+      p {
+        line-height: 26px;
+      }
+      h1 {
+        font-size: $fz28;
+        color: $c36;
+        margin-bottom: 15px;
+        margin-top: 40px;
+        @include respond-to(little){
+            font-size: 22px;
+        }
+      }
+      h1 + p {
+      }
+      h2 {
+        color: $c36;
+        margin-bottom: 15px;
+        margin-top: 30px;
+        font-size: $fz24;
+        @include respond-to(little){
+            font-size: 20px;
+        }
+      }
+      h2 + p {
+      }
+      h3 {
+        color: $c36;
+        margin-bottom: 15px;
+        font-size: $fz22;
+        margin-top: 30px;
+        @include respond-to(little){
+            font-size: 17px;
+        }
+      }
+      h3 + p {
+      }
+      h4 {
+        margin-top: 30px;
+        font-size: $fz20;
+        color: $c36;
+      }
+      h4 + p {
+      }
+      h5 {
+        color: $c36;
+        margin-bottom: 15px;
+        margin-top: 30px;
+        font-size: $fz18;
+        @include respond-to(allsmall){
+            font-size: 12px;
+        }
+      }
+      h5 + p {
+      }
+      h6 {
+        color: $c36;
+        margin-bottom: 15px;
+        margin-top: 30px;
+        font-size: $fz16;
+      }
+      h6 + p {
+      }
+      blockquote {
+        margin-top: 40px;
+        position: relative;
+        margin-bottom: 40px;
+        p {
+          strong {
+            font-weight: $medium;
+            font-size: $fz16;
+            margin-bottom: 0 !important;
+            color: $c36;
+            font-style: italic;
+          }
+        }
+        span {
+          font-size: $fz13;
+          font-weight: $regular;
+          color: $cac;
+          display: block;
+          margin-top: 10px;
+        }
+      }
+    }
+    .zinimart_post_social_icon {
+      @include flexDirection(row);
+      justify-content: flex-start;
+      border-top: 1px solid $ce1e;
+      border-bottom: 1px solid $ce1e;
+      padding-top: 25px;
+      padding-bottom: 25px;
+      @include respond-to(little){
+        flex-wrap: wrap;
+      }
+      a {
+        @include inlineFlex;
+        line-height: 30px;
+        border-radius: 3px;
+        height: 30px;
+        padding-right: 7px;
+        color: $cff;
+        @include respond-to(little){
+            margin: 5px 3px;
+        }
+        &:not(:last-child) {
+          margin-right: 10px;
+        }
+        i {
+          line-height: 30px;
+          padding-left: 10px;
+          padding-right: 10px;
+          display: inline-block;
+          margin-right: 10px;
+          border-right: 1px solid rgba($cff, 0.3);
+          color: $cff;
+        }
+      }
+    }
+    .zinimart_previous_next_post_pagination {
+      @include flexDirection(row);
+      justify-content: space-between;
+      padding-top: 35px;
+      .zinimart_prev_post_pagination {
+        color: $cac;
+        font-size: $fz14;
+        @include inlineFlex;
+        align-items: center;
+        i {
+          font-size: $fz18;
+          display: inline-block;
+          margin-right: 5px;
+        }
+      }
+      .zinimart_next_post_pagination {
+        @extend .zinimart_prev_post_pagination;
+        i {
+          margin-left: 5px;
+        }
+      }
+    }
+    .zinimart_previous_next_post {
+      @include flexDirection(row);
+      padding-top: 20px;
+      justify-content: space-between;
+      .post_prev_title {
+        h5 {
+          margin: 0;
+        }
+      }
+      .post_next_title {
+        @extend .post_prev_title;
+      }
+    }
+    .zinimart_post_author {
+      background: $cf9f9;
+      @include flexDirection(row);
+      justify-content: space-between;
+      padding: 30px;
+      margin-top: 30px;
+      @include respond-to(little){
+          flex-flow: column;
+          text-align: center;
+          justify-content: center;
+          padding: 15px;
+      }
+      img {
+        height: 70px;
+        width: 70px;
+        border-radius: 50%;
+      }
+      &__content {
+        margin-left: 30px;
+        @include respond-to(little){
+            margin-left: 0;
+            margin-top: 15px;
+        }
+        h5 {
+          font-size: $fz18;
+          color: $c36;
+          margin-bottom: 15px;
+          margin-top: 0;
+        }
+        p {
+          color: $c63;
+          margin-bottom: 20px;
+        }
+        .zinimart_btn {
+          @include btn_content(30px, 20px, 12px);
+          background: $c737;
+          color: $cff;
+        }
+      }
+    }
+    .zinimart_comments_container {
+      .zinimart_comments_container__title {
+        font-size: $fz20;
+        color: $c36;
+        padding-bottom: 20px;
+        border-bottom: 1px solid $ce1e;
+        margin-bottom: 40px;
+      }
+      .zinimart_commnets {
+         
+        .zinimart_commnets {
+          padding-left: 100px;
+          @include respond-to(little){
+            padding-left: 30px;
+          }
+        }
+        .zinimart_single_comments {
+          @include flexDirection(row);
+          justify-content: flex-start;
+          align-items: flex-start;
+          margin-bottom: 40px;
+          img {
+          }
+          .zinimart_single_comments__content {
+            margin-left: 20px;
+            @include respond-to(little){
+                margin-left: 15px;
+            }
+            h6 {
+              color: $c79a7;
+              font-size: $fz16;
+              margin-top: 0;
+            }
+            .comments_meta {
+              color: $cac;
+              font-size: $fz13;
+            }
+            p {
+              font-size: $fz14;
+              color: $c63;
+            }
+            .comments_reply {
+              @include btn_content(30px, 20px, 12px);
+              background: $c737;
+              color: $cff;
+              @include inlineFlex;
+              margin-top: 20px;
+              align-items: center;
+              i {
+                line-height: 20px;
+                display: inline-block;
+                margin-right: 7px;
+              }
+            }
+          }
+        }
+      }
+    }
+    //
+    .zinimart_reply_container {
+      @extend .zinimart_reply_container;
+    }
+  }
+  .zinimart_related_post {
+    padding-top: 70px;
+    .zinimart_related_post_title {
+      text-align: center;
+      padding-bottom: 40px;
+      h4 {
+        font-size: $fz24;
+        color: $c36;
+      }
+    }
+    .zinimart_blog__item {
+      .zinimart_blog__item_content {
+        padding-left: 0;
+        padding-right: 0;
+        border: none;
+        .zinimart_blog__item_tags {
+          display: flex;
+          padding-top: 20px;
+          padding-bottom: 20px;
+        }
+        .zinimart_btn {
+          @include btn_content(30px, 20px, 12px);
+          background: $c737;
+          color: $cff;
+          @include inlineFlex;
+        }
+      }
+    }
+  }
+}

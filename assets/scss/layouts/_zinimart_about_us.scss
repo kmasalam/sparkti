@@ -1,0 +1,24 @@
+.zinimart_about_us{
+    background: $cff;
+    border-top: 1px solid $ce1e;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    @include respond-to(allsmall){
+        padding-bottom: 40px;
+    }
+    &__image{
+        @include respond-to(allsmall){
+            margin-bottom: 15px;
+        }
+    }
+    &__content{
+        h4{
+            color: $c36;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+        p{
+            line-height: 26px;
+        }
+    }
+}

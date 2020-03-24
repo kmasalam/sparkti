@@ -74,7 +74,7 @@ $large-limit: 1199px;
       @extend .shopping_cart_options_minus;
   }
 }
-@mixin sparkti_checkbox{
+@mixin zinimart_checkbox{
   margin-bottom: 15px;
   position: relative;
   @include flexDirection(row);
@@ -124,7 +124,7 @@ $large-limit: 1199px;
       }
   }
 }
-@mixin sparkti_social_icon{
+@mixin zinimart_social_icon{
   @include inlineFlex;
   padding-left: 0;
   li{
@@ -159,15 +159,17 @@ $large-limit: 1199px;
     outline: none;
     box-shadow: none;
 }
-@mixin sparkti_brand_carousel{
+@mixin zinimart_brand_carousel{
   margin: 20px -10px 20px -10px;
-  .sparkti_brand_carousel_item{
+  .zinimart_brand_carousel_item{
       margin: 0 10px;
       img{}
   }     
 }
 
-@mixin sparkti_section_heading{
+
+
+@mixin zinimart_section_heading{
   border: 1px solid $ce1e;
   background: $cf7f;
   @include flexDirection(row);
@@ -284,4 +286,29 @@ $large-limit: 1199px;
           }
       }
   }
+}
+// keyframes animation
+@mixin keyframes($animation-name) {
+  @-webkit-keyframes #{$animation-name} {
+    @content;
+  }
+  @-moz-keyframes #{$animation-name} {
+    @content;
+  }
+  @-ms-keyframes #{$animation-name} {
+    @content;
+  }
+  @-o-keyframes #{$animation-name} {
+    @content;
+  }
+  @keyframes #{$animation-name} {
+    @content;
+  }
+}
+@mixin animation($str) {
+  -webkit-animation: #{$str};
+  -moz-animation: #{$str};
+  -ms-animation: #{$str};
+  -o-animation: #{$str};
+  animation: #{$str};
 }

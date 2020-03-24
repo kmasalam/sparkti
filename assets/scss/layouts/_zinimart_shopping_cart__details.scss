@@ -1,0 +1,126 @@
+.zinimart_shopping_cart__details{
+    background: $cf9f9;
+    border: 1px solid $ce1e;
+    padding: 26px 20px 26px 30px;
+    border-radius: 4px;
+    margin-top: 30px;
+    @include respond-to(little){
+        margin-bottom: 30px;
+    }
+    .zinimart_shopping_cart_subtotal{
+        @include flexDirection(row);
+        justify-content: space-between;
+        padding-bottom: 10px;
+        border-bottom: 1px solid $ce1e;
+        h6{}
+        .zinimart_shopping_cart_subtotal_amount{
+            font-size: $fz20;
+            color: $c36;
+            font-family: $rubik;
+
+        }
+    }
+    .zinimart_shopping_cart_shipping{
+        padding-top: 15px;
+        h6{
+            margin-bottom: 15px;
+        }
+        .zinimart_shopping_cart_shipping_options{
+            .zinimart_single_shipping_option{
+                @include flexDirection(row);
+                justify-content: space-between;
+                .zinimart_checkbox{
+                    @include inlineFlex;
+                    @include zinimart_checkbox;
+                }
+                .zinimart_single_shipping_option_cost{}
+            }
+        }
+    }
+    .zinimart_shipping_destination{
+        p{
+            font-size: $fz14;
+            color: $c63;
+            padding-bottom: 6px;
+            strong{
+            }
+            small{
+                font-size: $fz12;
+                color: $cac;
+            }
+        }
+        .zinimart_shipping_address{
+            color: $c737;
+            font-size: $fz13;
+            text-transform: uppercase;
+            height: 40px;
+            line-height: 40px;
+            border: 1px solid $ce1e;
+            border-radius: 3px;
+            width: 100%;
+            display: block;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            padding-left: 10px;
+        }
+        h6{
+            margin-bottom: 10px;
+        }
+
+    }
+    .zinimart_shipping_total{
+        @include flexDirection(row);
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border-top: 2px solid $ce1e;
+        justify-content: space-between;
+        margin-top: 20px;
+        h4{
+            font-size: $fz24;
+            @include respond-to(mdm){
+                font-size: 16px;
+            }
+            @include respond-to(little){
+                font-size: 16px;
+            }
+        }
+        .zinimart_shipping_total_value{
+            font-size: $fz24;
+            font-weight: $regular;
+            @include respond-to(mdm){
+                font-size: 14px;
+            }
+            @include respond-to(little){
+                font-size: 18px;
+            }
+        }
+    }
+    .zinimart_btn{
+        @include btn_content(55px,20px,15px); 
+        background: $c737;
+        display: block;
+        width: 100%;
+        font-weight: $bold;
+        border-radius: 4px;
+        color: $cff;
+        border: none;
+        @include respond-to(mdm){
+            line-height: 45px;
+            height: 45px;
+            padding: 0 14px;
+            font-size: 12px;
+        }
+        @include respond-to(little){
+            line-height: 45px;
+            height: 45px;
+            padding: 0 14px;
+            font-size: 12px;
+        }
+    }
+    h6{
+        font-family: $assistant;
+        font-weight: $bold;
+        color: $c36;
+        font-size: $fz16;
+    }
+}

@@ -1,0 +1,86 @@
+.zinimart_radio{
+    @include flexDirection(column);
+    position: relative;
+    input{
+        &:checked{
+            &~label::after{
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+    }
+    label{
+        position: absolute;
+        &::before{
+            content: "";
+            position: absolute;
+            left: -6px;
+            top: -8px;
+            height: 13px;
+            width: 13px;
+            border: 1px solid $cfef2;
+            border-radius: 50%;
+        }
+        &::after{
+            content: "";
+            position: absolute;
+            left: -6px;
+            background: $cf1;
+            top: -8px;
+            height: 13px;
+            width: 13px;
+            border-radius: 50%;
+            visibility: hidden;
+            opacity: 0;
+        }
+    }
+}
+.zinimart_payment_method_area{
+    background: $cff;
+    padding-bottom: 70px;
+    .zinimart_payment_method{
+        h5{
+            color: $c36;
+            margin-bottom: 20px;
+        }
+        .zinimart_btn{
+            @include btn_content(40px,20px,12px); 
+            background: $c737;
+            color: $cff;
+            margin-top: 20px;
+            border: none;
+            letter-spacing: 1px;
+            font-weight: $bold;
+        }
+        ul{
+            border: 1px solid $cac;
+            @include inlineFlex;
+            li{
+                &:not(:last-child){
+                    border-right: 1px solid $cac;
+                }
+                a{
+                    @include flexDirection(column);
+                    padding: 20px 30px 20px 30px;
+                    img{
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+        .tab-content{
+            border: 1px solid $cac;
+            margin-top: -1px;
+            .zinimart_payment_method__tab_content{
+                padding: 15px 15px;
+                h5{
+                    margin-bottom: 10px;
+                    color: $c36;
+                }
+                p{
+                    line-height: 28px;
+                }
+            }
+        }
+    }
+}

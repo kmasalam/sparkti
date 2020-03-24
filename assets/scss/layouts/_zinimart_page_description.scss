@@ -1,0 +1,26 @@
+.zinimart_page_description_inner{
+    h3{
+        color: $assistant;
+        font-size: $fz28;
+        margin-bottom: 15px;
+        color: $c36;
+        @include respond-to(allsmall){
+            font-size: 18px;
+        }
+    }
+    p{
+        color: $c63;
+        font-size: $fz14;
+    }
+}
+.zinimart_page_description{
+    padding: 45px 0 45px 0;
+    background-color: $cff;
+    background: $cf7f;
+    @include respond-to(allsmall){
+        padding: 30px 0 30px 0;
+    }
+    .zinimart_page_description_inner{
+        @extend .zinimart_page_description_inner;
+    }
+}

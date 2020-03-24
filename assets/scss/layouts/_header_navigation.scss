@@ -1,4 +1,4 @@
-.sparkti_navigation{
+.zinimart_navigation{
     box-shadow: 0px 6px 4px rgba($c36,.20);
     background: $cff;
     
@@ -24,7 +24,7 @@
                 margin-bottom: 14px;
             }
         }
-        .sparkti_navigation__content_center{
+        .zinimart_navigation__content_center{
             @include respond-to(mdm){
                 margin-left: 0 !important;
                 width: 50%;
@@ -33,7 +33,7 @@
             form{
                 @include inlineFlex;
                 .input-group-prepend{
-                    .sparkti_offcanvas_btn{
+                    .zinimart_offcanvas_btn{
                         background:transparent;
                         border: none;
                         font-size: $fz24;
@@ -59,7 +59,7 @@
                 .input-group{
                     border: 1px solid $c737;
                     .form-control{
-                        height: 40px;
+                        height: 40px !important;
                         line-height: 40px;
                         border: none;
                         border-radius: 0;
@@ -82,7 +82,7 @@
                             font-size: 14px;
                         }
                     }
-                    .sparkti_select{
+                    .zinimart_select{
                         padding: 0 25px;
                         line-height: 40px;
                         border: none;
@@ -93,7 +93,7 @@
                             padding: 0 14px;
                         }
                     }
-                    .sparkti_navigation_search{
+                    .zinimart_navigation_search{
                         height: 40px;
                         @include inlineFlex;
                         background: $c737;
@@ -127,7 +127,7 @@
                 }
             }
         }
-        .sparkti_navigation__content_right{
+        .zinimart_navigation__content_right{
             @include flexDirection(row);
             @include respond-to(mdm){
                 margin-left: 0 !important;
@@ -137,7 +137,7 @@
                 width: 100%;
                 margin-top: 10px;
             }
-            .sparkti_navigation_login_signup{
+            .zinimart_navigation_login_signup{
                 @include flexDirection(row);
                 a{
                     color: $cac;
@@ -156,10 +156,10 @@
                             font-size: 18px;
                         }
                     }
-                    &.sparkti_navigation_signup{
+                    &.zinimart_navigation_signup{
                         
                     }
-                    &.sparkti_navigation_login{
+                    &.zinimart_navigation_login{
                         margin-right: 30px;
                         i{
                             font-size: $fz14;
@@ -174,7 +174,7 @@
                     }
                 }
             }
-            .sparkti_navigation_cart{
+            .zinimart_navigation_cart{
                 display: inline-flex;
                 align-items: center;
                 a{
@@ -197,17 +197,17 @@
                             font-size: 16px;
                         }
                     }
-                    &.sparkti_cart_compare{
+                    &.zinimart_cart_compare{
                         // margin-left: 25px;
                         // margin-right: 25px;
                     }
-                    &.sparkti_cart_wishlist{}
-                    &.sparkti_cart_container{
+                    &.zinimart_cart_wishlist{}
+                    &.zinimart_cart_container{
                         font-family: $assistant;
                         font-weight: $bold;
                         color: $c36;
                         font-size: $fz18;
-                        .sparkti_cart_container__item{
+                        .zinimart_cart_container__item{
                             height: 30px;
                             width: 30px;
                             border-radius: 50%;

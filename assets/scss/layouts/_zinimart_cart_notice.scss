@@ -1,0 +1,21 @@
+.zinimart_cart_notice{
+    padding-top: 40px;
+    border-top: 1px solid $ce1e;
+    background: $cff;
+    &__content{
+        background: $cfef2;
+        font-size: $fz14;
+        color: $c63;
+        padding: 10px 15px;
+        @include flexDirection(row);
+        justify-content: flex-start;
+        border-left: 5px solid $c6c8;
+        border-radius: 5px;
+        i{
+            color: $cf1;
+            font-size: $fz32;
+            display: inline-block;
+            margin-right: 7px;
+        }
+    }
+}

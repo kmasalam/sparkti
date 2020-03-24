@@ -1,0 +1,96 @@
+.zinimart_subscription_content_fields{
+    @include respond-to(allsmall){
+        margin-top: 15px;
+    }
+    .input-group{
+        .form-control{
+            min-width: 550px;
+            line-height: 50px;
+            height: 50px;
+            border-top-left-radius: 3px;
+            border-bottom-left-radius: 3px;
+            border: none;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+            @include respond-to(larage) {
+                min-width: 350px;
+            }
+            @include respond-to(mdm){
+                min-width: 201px;
+            }
+            @include respond-to(allsmall){
+                min-width: 100%;
+            }
+            @include respond-to(little){
+                min-width: calc(100% - 74px);
+            }
+        }
+        .zinimart_btn{
+            &.zinimart_subscription_btn{
+                background: $cf1;
+                line-height: 50px;
+                padding: 0 30px;
+                border: none;
+                font-family: $assistant;
+                font-weight: $bold;
+                font-size: $fz14;
+                color: $cff;
+                @include respond-to(little){
+                    padding: 0 10px;
+                }
+            }
+        }
+    }
+}
+.zinimart_subscription{
+    margin-top: 70px;
+    &__inner{
+        background: $c6c8;
+        @include flexDirection(row);
+        justify-content: space-between;
+        padding: 25px 25px;
+        @include respond-to(allsmall){
+            flex-wrap: wrap;
+        }
+        .zinimart_subscription_content{
+            @include flexDirection(row);
+            i{
+                @include inlineFlex;
+                color: $cff;
+                font-size: $fz60;
+                font-weight: $regular;
+                @include respond-to(mdm){
+                    font-size: 45px;
+                }
+                @include respond-to(little){
+                    font-size: 40px;
+                }
+            }
+            .zinimart_subscription_content_message{
+                margin-left: 20px;
+                @include respond-to(mdm){
+                    margin-left: 10px;
+                }
+                @include respond-to(little){
+                    margin-left: 12px;
+                }
+                h4{
+                    color: $cff;
+                    font-weight: $bold;
+                    margin-bottom: 10px;
+                    @include respond-to(mdm){
+                        margin-bottom: 5px;
+                    }
+                }
+                p{
+                    color: $cff;
+                    margin-bottom: 0;
+                    font-family: $rubik;
+                }
+            }
+        }
+        .zinimart_subscription_content_fields{
+            @extend .zinimart_subscription_content_fields;
+        }
+    }
+}

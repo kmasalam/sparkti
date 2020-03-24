@@ -2,7 +2,7 @@
 @import 'foundation/mixin';
 @import 'foundation/presets';
 @import 'layouts/common';
-@import 'layouts/sparki_select';
+@import 'layouts/zinimart_select';
 /*-------------------------------------
 -------------------------------------*/ 
 @import 'layouts/toolbar';
@@ -11,109 +11,377 @@
 @import 'layouts/header_navigation';
 /*-------------------------------------
 -------------------------------------*/ 
-@import 'layouts/sparkti_banner';
+@import 'layouts/zinimart_banner';
 /*-------------------------------------
 -------------------------------------*/ 
-@import 'layouts/sparkti_add_section';
+@import 'layouts/zinimart_add_section';
 /*-------------------------------------
 -------------------------------------*/
-@import 'layouts/sparkti_section_title';
+@import 'layouts/zinimart_section_title';
 /*-------------------------------------
 -------------------------------------*/
-@import 'layouts/sparkti_popular_products';
+@import 'layouts/zinimart_popular_products';
 /*-------------------------------------
 -------------------------------------*/ 
-@import 'layouts/sparkti_available_products';
+@import 'layouts/zinimart_available_products';
 /*-------------------------------------
 -------------------------------------*/ 
-@import 'layouts/sparkti_vertical_products';
+@import 'layouts/zinimart_vertical_products';
 /*-------------------------------------
 -------------------------------------*/ 
-@import 'layouts/sparkti_top_rated_seller';
+@import 'layouts/zinimart_top_rated_seller';
 /*-------------------------------------
 -------------------------------------*/ 
-@import 'layouts/sparkti_weekly_deals';
+@import 'layouts/zinimart_weekly_deals';
 /*-------------------------------------
 -------------------------------------*/ 
-@import 'layouts/sparkti_subscription';
+@import 'layouts/zinimart_subscription';
 /*-------------------------------------
 -------------------------------------*/ 
-@import 'layouts/sparkti_blog';
+@import 'layouts/zinimart_blog';
 /*-------------------------------------
 -------------------------------------*/ 
-@import 'layouts/sparkti_recommended_products';
+@import 'layouts/zinimart_recommended_products';
 /*-------------------------------------
 -------------------------------------*/ 
-@import 'layouts/sparkti_testimonial_app';
+@import 'layouts/zinimart_testimonial_app';
 /*-------------------------------------
 -------------------------------------*/ 
-@import 'layouts/sparkti_today_best_product';
+@import 'layouts/zinimart_today_best_product';
 /*-------------------------------------
 -------------------------------------*/ 
-@import 'layouts/sparkti_popular_search';
+@import 'layouts/zinimart_popular_search';
 /*-------------------------------------
 -------------------------------------*/ 
-@import 'layouts/sparkti_offcanvas_navigation';
+@import 'layouts/zinimart_offcanvas_navigation';
 /*-------------------------------------
 -------------------------------------*/ 
-@import 'layouts/sparkti_breadcrumb';
+@import 'layouts/zinimart_breadcrumb';
 /*-------------------------------------
 -------------------------------------*/ 
-@import 'layouts/sparkti_single_product_details';
+@import 'layouts/zinimart_single_product_details';
 /*-------------------------------------
 -------------------------------------*/ 
-@import 'layouts/sparkti_product_navs';
+@import 'layouts/zinimart_product_navs';
 /*-------------------------------------
 -------------------------------------*/ 
-@import 'layouts/sparkti_related_products';
+@import 'layouts/zinimart_related_products';
 /*-------------------------------------
 -------------------------------------*/  
-@import 'layouts/sparkti_page_description';
+@import 'layouts/zinimart_page_description';
 /*-------------------------------------
 -------------------------------------*/ 
-@import 'layouts/sparkti_blog_area';
+@import 'layouts/zinimart_blog_area';
 /*-------------------------------------
 -------------------------------------*/ 
-@import 'layouts/sparkti_pagination';
+@import 'layouts/zinimart_pagination';
 /*-------------------------------------
 -------------------------------------*/ 
-@import 'layouts/sparkti_single_blog_container';
+@import 'layouts/zinimart_single_blog_container';
 /*-------------------------------------
 -------------------------------------*/ 
-@import 'layouts/sparkti_footer';
+@import 'layouts/zinimart_footer';
 /*-------------------------------------
 -------------------------------------*/ 
-@import 'layouts/sparkti_cart_notice';
+@import 'layouts/zinimart_cart_notice';
 /*-------------------------------------
 -------------------------------------*/ 
-@import 'layouts/sparkti_shopping_cart_table';
+@import 'layouts/zinimart_shopping_cart_table';
 /*-------------------------------------
 -------------------------------------*/ 
-@import 'layouts/sparkti_cart_coupon';
+@import 'layouts/zinimart_cart_coupon';
 /*-------------------------------------
 -------------------------------------*/ 
-@import 'layouts/sparkti_shopping_cart__details';
+@import 'layouts/zinimart_shopping_cart__details';
 /*-------------------------------------
 -------------------------------------*/ 
-@import 'layouts/sparkti_checkout';
+@import 'layouts/zinimart_checkout';
 /*-------------------------------------
 -------------------------------------*/ 
-@import 'layouts/sparkti_payment_method_area';
+@import 'layouts/zinimart_payment_method_area';
 /*-------------------------------------
 -------------------------------------*/ 
-@import 'layouts/sparkti_scroll_top';
+@import 'layouts/zinimart_scroll_top';
 /*-------------------------------------
 -------------------------------------*/ 
-@import 'layouts/sparkti_contact_information';
+@import 'layouts/zinimart_contact_information';
 /*-------------------------------------
 -------------------------------------*/ 
-@import 'layouts/sparkti_contact_form';
+@import 'layouts/zinimart_contact_form';
 /*-------------------------------------
 -------------------------------------*/
-@import 'layouts/sparkti_about_us' ;
+@import 'layouts/zinimart_about_us' ;
 /*-------------------------------------
 -------------------------------------*/ 
-@import 'layouts/sparkti_brand_section';
+@import 'layouts/zinimart_brand_section';
+/*-------------------------------------
+-------------------------------------*/ 
+.zinimart_customer_login{
+    background: $cff;
+    padding: 40px 0 120px 0;
+    .zinimart_page_description_inner{
+        @extend .zinimart_page_description_inner;
+        text-align: center;
+        padding-bottom: 80px;
+    }
+    .zinimart_login_area{
+        .form-group{
+            margin-bottom: 30px;
+            label{
+                font-size: $fz14;
+                color: $cac;
+            }
+            .form-control{
+                @extend .form-control;
+                input{
+                    @extend input;
+                }
+            }
+        }
+        .zinimart_checkbox_password{
+            @include flexDirection(row);
+            justify-content: space-between;
+            margin-bottom: 20px;
+            .zinimart_checkbox{
+                @include inlineFlex;
+                @include zinimart_checkbox;
+                margin-bottom: 0;
+            }
+            a{
+                color: $c63;
+                font-size: $fz14;
+            }
+        }
+        
+        p{
+
+        }
+        .zinimart_btn{
+            &.login{
+                @include btn_content(55px,20px,15px); 
+                background: $c737;
+                display: block;
+                width: 100%;
+                font-weight: $bold;
+                border-radius: 4px;
+                color: $cff;
+                border: none;
+            }
+            &.create_account{
+                @extend .login;
+                background: $cf1;
+            }
+        }
+        .zinimart_line{
+            border-bottom: 1px solid $cac;
+            text-align: center;
+            margin: 25px 0;
+            span{
+                display: inline-block;
+                margin-bottom: 0;
+                position: relative;
+                top: 10px;
+                background: $cff;
+            }
+        }
+    }
+        
+}
+/*-------------------------------------
+-------------------------------------*/ 
+.zinimart_dashboard{
+    background: $cff;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    &__sidebar{
+        nav{
+            ul{
+                margin-bottom: 0;
+                padding: 0 30px;
+                border: 2px solid $ce1e;
+                li{
+                    @include transition(.40s);
+                    &:not(:last-child){
+                        border-bottom: 1px solid $ce1e;
+                    }
+                    a{
+                        font-weight: $medium;
+                        color: $c36;
+                        line-height: 55px;
+                        font-size: $fz18;
+                        display: block;
+                        i{
+                            display: inline-block;
+                            margin-right: 18px;
+                            font-size: $fz24;
+                            color: $c36;
+                        }
+                    }
+                    &:hover{
+                        background: $cf9f9;
+                    }
+                }
+            }
+            & + a{
+                color: $cac;
+                font-size: $fz24;
+                display: block;
+                margin-top: 40px;
+                position: relative;
+                span{
+                    background: $cff;
+                    display: inline-block;
+                    position: relative;
+                    z-index: 9;
+                    padding-right: 10px;
+                }
+                i{}
+                &::after{
+                    content: "";
+                    position: absolute;
+                    height: 2px;
+                    width: 100%;
+                    background: $cac;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    left: 0;
+                    z-index: 0;
+                }
+            }
+        }
+        a{
+            
+        }
+    }
+    &__content_area{
+        h5{
+            margin-bottom: 20px;
+        }
+        p{
+            a{
+                color:  $c79a7;
+            }
+        }
+    }
+}
+/*-------------------------------------
+-------------------------------------*/ 
+.zinimart_modal{
+    .modal-dialog{
+        position: relative;
+        .zinimart_modal_close{
+            position: relative;
+            right: 16px;
+            top: 10px;
+            z-index: 99;
+        }
+        .modal-content{
+            .zinimart_modal_content{
+                text-align: center;
+                padding: 50px  0  50px 0;
+                h3{
+                    color: $c36;
+                    font-weight: $regular;
+                    margin-bottom: 10px;
+                }
+                p{}
+                .zinimart_subscription_content_fields{
+                    margin-top: 30px;
+                    .input-group{
+                        border: 1px solid $cf1;
+                        .form-control{
+                            min-width: calc(100% - 125px);
+                        }
+                        .zinimart_btn{
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/*-------------------------------------
+-------------------------------------*/ 
+/*-------------------------------------
+-------------------------------------*/ 
+/*-------------------------------------
+-------------------------------------*/ 
+/*-------------------------------------
+-------------------------------------*/ 
+@include keyframes(spinner) {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+  }
+.zinimart_spinner{
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background: $cff;
+    border: 1px solid $cf1;
+    button{
+        height: 40px;
+        width: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        background: transparent;
+        i{
+            font-size: $fz32;
+            color: $cf1;
+            display: inline-block;
+            @include animation("spinner 1.30s linear infinite");
+        }
+    }
+}
+/*-------------------------------------
+-------------------------------------*/ 
+.zinimart_search_description{
+    background: $cff;
+    .zinimart_page_description_inner{
+        text-align: center;
+        margin-bottom: 70px;
+        .zinimart_subscription_content_fields{
+            margin-top: 30px;
+            .input-group{
+                border: 1px solid $cf1;
+                .form-control{
+                    min-width: calc(100% - 125px);
+                }
+                .zinimart_btn{
+
+                }
+            }
+        }
+    }
+    .popular_products_item{
+        @include popular_products_item;
+        margin-bottom: 30px;
+    }
+}
+/*-------------------------------------
+-------------------------------------*/ 
+/*-------------------------------------
+-------------------------------------*/ 
+
+/*-------------------------------------
+-------------------------------------*/ 
+/*-------------------------------------
+-------------------------------------*/ 
+
+/*-------------------------------------
+-------------------------------------*/ 
+/*-------------------------------------
+-------------------------------------*/ 
+
+/*-------------------------------------
+-------------------------------------*/ 
 /*-------------------------------------
 -------------------------------------*/ 
 

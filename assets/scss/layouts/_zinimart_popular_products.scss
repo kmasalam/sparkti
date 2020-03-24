@@ -1,0 +1,81 @@
+.product_vendors{
+    display: block;
+    color: $c737;
+    font-size: $fz12;
+    padding-top: 35px;
+    @include respond-to(larage) {
+        padding-top: 20px;
+    }
+    span{
+        color: $cac;
+    }
+}
+@mixin popular_products_item{
+    .popular_products_image{}
+    .popular_product_body{
+        &__pricing_cart{
+            @include flexDirection(row);
+            justify-content: space-between;
+            padding-top: 15px;
+            padding-bottom: 10px;
+            .popular_product_pricing{
+                span{
+                    color: $cf1;
+                    font-size: $fz16;
+                    font-weight: $bold;
+                    font-family: $assistant;
+                }
+                del{
+                    @extend span;
+                    font-size: $fz14;
+                    color: $c252;
+                }
+            }
+            .popular_product_cart{
+                a{
+                    i{
+                        color: $cac;
+                        font-size: $fz22;
+                    }
+                }
+            }
+        }
+        .popular_product_title{
+            color: $c6c8;
+            font-size: $fz14;
+            font-weight: $medium;
+            font-family: $rubik;
+            @include respond-to(larage) {
+                font-size: $fz12;
+            }
+            @include respond-to(mdm){
+                font-size: 10px;
+            }
+        }
+        .product_vendors{
+            @extend .product_vendors;
+        }
+    }
+}
+.zinimart_popular_products{
+    background: $cff;
+    .zinimart_popular_products__carousel{
+        
+        .zinimart_dots{
+            position: relative;
+            margin-top: 65px;
+            margin-bottom: 0;
+        }
+        .slick-slide{
+            margin-left: 25px;
+            margin-right: 25px;
+            &:focus{
+                @include no_out_box;
+            }
+        }
+        .popular_products_item{
+            @include popular_products_item;
+            
+        }
+    }
+}

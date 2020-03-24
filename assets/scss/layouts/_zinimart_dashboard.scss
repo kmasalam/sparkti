@@ -1,0 +1,75 @@
+.zinimart_dashboard{
+    background: $cff;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    &__sidebar{
+        nav{
+            ul{
+                margin-bottom: 0;
+                padding: 0 30px;
+                border: 2px solid $ce1e;
+                li{
+                    @include transition(.40s);
+                    &:not(:last-child){
+                        border-bottom: 1px solid $ce1e;
+                    }
+                    a{
+                        font-weight: $medium;
+                        color: $c36;
+                        line-height: 55px;
+                        font-size: $fz18;
+                        display: block;
+                        i{
+                            display: inline-block;
+                            margin-right: 18px;
+                            font-size: $fz24;
+                            color: $c36;
+                        }
+                    }
+                    &:hover{
+                        background: $cf9f9;
+                    }
+                }
+            }
+            & + a{
+                color: $cac;
+                font-size: $fz24;
+                display: block;
+                margin-top: 40px;
+                position: relative;
+                span{
+                    background: $cff;
+                    display: inline-block;
+                    position: relative;
+                    z-index: 9;
+                    padding-right: 10px;
+                }
+                i{}
+                &::after{
+                    content: "";
+                    position: absolute;
+                    height: 2px;
+                    width: 100%;
+                    background: $cac;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    left: 0;
+                    z-index: 0;
+                }
+            }
+        }
+        a{
+            
+        }
+    }
+    &__content_area{
+        h5{
+            margin-bottom: 20px;
+        }
+        p{
+            a{
+                color:  $c79a7;
+            }
+        }
+    }
+}

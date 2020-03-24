@@ -21,9 +21,9 @@
             label{
                 color: $c6c8;
                 font-size: $fz16;
-                font-weight: $bold;
+                font-weight: $regular;
                 font-family: $assistant;
-                text-transform: uppercase;
+                text-transform: capitalize;
                 letter-spacing: 1px;
             }
             .form-control{
@@ -35,7 +35,7 @@
                 border: 1px solid $ce1e;
                 color: $cac;
                 font-size: $fz14;
-                border-radius: 3px;
+                border-radius: 5px;
                 @include transition(.40s);
                 &:focus{
                     border-color: $c737;

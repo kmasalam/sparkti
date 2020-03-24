@@ -1,0 +1,28 @@
+.zinimart_search_description{
+    background: $cff;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    .zinimart_page_description_inner{
+        text-align: center;
+        margin-bottom: 70px;
+        .zinimart_subscription_content_fields{
+            margin-top: 30px;
+            .input-group{
+                border: 1px solid $cf1;
+                .form-control{
+                    min-width: calc(100% - 125px);
+                }
+                .zinimart_btn{
+
+                }
+            }
+        }
+    }
+    .popular_products_item{
+        @include popular_products_item;
+        margin-bottom: 30px;
+    }
+    .zinimart_pagination{
+        margin-top: 50px;
+    }
+}

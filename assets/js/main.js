@@ -362,24 +362,25 @@
             })
                 .appendTo($('body'))
                 .animate({
-                'top': spinner.offset().top + 10,
-                    'left': spinner.offset().left + 10,
+                'top': spinner.offset().top + 0,
+                    'left': spinner.offset().left + 0,
                     'width': 40,
                     'height': 40
-            }, 1000);
+            }, 800);
             
-            // setTimeout(function () {
-            //     spinner.effect("shake", {
-            //         times: 2
-            //     }, 200);
-            // }, 1500);
+            setTimeout(function () {
+                spinner.css({
+                    visibility: 'visible',
+                    opacity: 1
+                })
+            }, 700);
 
-            // CloneParent.animate({
-            //     'width': 0,
-            //         'height': 0
-            // }, function () {
-            //     $(this).detach()
-            // });
+            CloneParent.animate({
+                'width': 0,
+                    'height': 0
+            }, function () {
+                $(this).detach()
+            });
         }
     });
 

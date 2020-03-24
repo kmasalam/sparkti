@@ -1,0 +1,70 @@
+.zinimart_customer_login{
+    background: $cff;
+    padding: 40px 0 120px 0;
+    .zinimart_page_description_inner{
+        @extend .zinimart_page_description_inner;
+        text-align: center;
+        padding-bottom: 80px;
+    }
+    .zinimart_login_area{
+        .form-group{
+            margin-bottom: 30px;
+            label{
+                font-size: $fz14;
+                color: $cac;
+            }
+            .form-control{
+                @extend .form-control;
+                input{
+                    @extend input;
+                }
+            }
+        }
+        .zinimart_checkbox_password{
+            @include flexDirection(row);
+            justify-content: space-between;
+            margin-bottom: 20px;
+            .zinimart_checkbox{
+                @include inlineFlex;
+                @include zinimart_checkbox;
+                margin-bottom: 0;
+            }
+            a{
+                color: $c63;
+                font-size: $fz14;
+            }
+        }
+        
+        p{
+
+        }
+        .zinimart_btn{
+            &.login{
+                @include btn_content(55px,20px,15px); 
+                background: $c737;
+                display: block;
+                width: 100%;
+                font-weight: $bold;
+                border-radius: 4px;
+                color: $cff;
+                border: none;
+            }
+            &.create_account{
+                @extend .login;
+                background: $cf1;
+            }
+        }
+        .zinimart_line{
+            border-bottom: 1px solid $cac;
+            text-align: center;
+            margin: 25px 0;
+            span{
+                display: inline-block;
+                margin-bottom: 0;
+                position: relative;
+                top: 10px;
+                background: $cff;
+            }
+        }
+    }    
+}

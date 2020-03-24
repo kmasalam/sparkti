@@ -344,11 +344,10 @@
     $('.zinimart_modal .close').on('click',function(e){
         e.preventDefault();
         var spinner = $('.zinimart_spinner');
-        var CloneParent = $(this).parents('.zinimart_modal').clone();
+        var CloneParent = $(this).parents('.zinimart_modal');
         var CloneParentWidth = $(this).parents('.zinimart_modal').width();
-        console.log(CloneParent);
         if(CloneParent){
-            var CloneParent = CloneParent.offset({
+            var CloneParent = CloneParent.clone().offset({
                 top: CloneParent.offset().top,
                 left: CloneParent.offset().left + CloneParentWidth/2
                 
@@ -366,13 +365,14 @@
                     'left': spinner.offset().left + 0,
                     'width': 40,
                     'height': 40
-            }, 800);
+            }, 1000);
             
             setTimeout(function () {
                 spinner.css({
                     visibility: 'visible',
                     opacity: 1
                 })
+                $('.zinimart_spinner').tooltip('hide');
             }, 700);
 
             CloneParent.animate({

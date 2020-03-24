@@ -1,6 +1,77 @@
 .zinimart_banner {
   background: $cefe;
   padding-top: 30px;
+  &.type_2{
+      padding-top: 0;
+    .zinimart_banner_carousel{
+      .slick-arrow{
+        position: absolute;
+        top: 50%;
+        height: 50px;
+        width: 50px;
+        border: 1px solid $cac;
+        background: rgba($cff,.70);
+        @include inlineFlex;
+        border-radius: 50%;
+        cursor: pointer;
+        z-index: 99;
+        transform: translateY(-50%);
+        i{
+          font-size: $fz24;
+          color: $c36;
+        }
+        &.slick-prev{
+          left: 0;
+        }
+        &.slick-next{
+          right: 0;
+        }
+      }
+      &__item{
+       
+        .zinimart_banner_carousel_content{
+          height: calc(100vh - 130px);
+          @include flexDirection(column);
+          align-items: flex-start;
+
+          h6{
+              text-transform: uppercase;
+              color: $c36;
+              letter-spacing: 2px;
+              margin-bottom: 7px;
+          }
+          h2{
+            color: $c36;
+            font-weight: $bold;
+            font-family: $assistant;
+            margin-bottom: 20px;
+          }
+          p{
+            padding-bottom: 15px;
+            font-family: $assistant;
+            font-size: $fz16;
+            letter-spacing: 1px;
+          }
+          a{
+            @include btn_content(50px, 30px, 14px);
+            background: $c50a;
+            color: $cff;
+            @include inlineFlex;
+            flex-flow: row;
+            i{
+              display: inline-block;
+              margin-left: 10px;
+            }
+          }
+          &.dark{
+            .zinimart_btn{
+              background: $c36;
+            }
+          }
+        }
+      }
+    }
+  }
   &__categories {
     .zinimart_categories_marker {
       background: $cf1;

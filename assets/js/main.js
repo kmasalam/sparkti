@@ -19,6 +19,16 @@
         });
     }
 
+    $('.zinimart_banner_carousel').slick({
+        dots: false,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        prevArrow: '<div class="slick-prev"><i class="las la-angle-left"></i></div>',
+        nextArrow: '<div class="slick-next"><i class="las la-angle-right"></i></div>',
+        cssEase: 'linear'
+      });
+
     $('.zinimart_best_deal__content_carousel').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -260,7 +270,7 @@
         }
 
         // Modal
-        $('.bd-example-modal-lg').modal('show')
+        //$('.bd-example-modal-lg').modal('show');
     });
 
     $(function () {
@@ -391,6 +401,17 @@
         $(document).find('.zinimart_offcanvas_btn ').removeClass('activated');
         $(document).find('.zinimart_offcanvas_btn ').children('.las').toggleClass('la-times la-bars');
     });
+
+    $('.set_bg').each(function () {
+        var thesrc = jQuery(this).attr('data-bg');
+        if (thesrc) {
+            jQuery(this).css("background-image", "url(" + thesrc + ")");
+            jQuery(this).css("background-position", "center");
+            jQuery(this).css("background-size", "cover");
+            jQuery(this).css("background-repeat", "no-repeat");
+            jQuery(this).removeAttr('data-bg');
+        }
+    })
 
 
 })()

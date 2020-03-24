@@ -1,61 +1,64 @@
+.zinimart_testimonial_carousel_container{
+    text-align: center;
+    background: $cf6f;
+    padding: 45px 20px;
+    height: 100%;
+    h4{
+        color: $c36;
+        font-family: $assistant;
+        margin-bottom: 40px;
+        @include respond-to(mdm){
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+
+    }
+    .zinimart_testimonial_carousel{
+        padding-bottom: 40px;
+        .zinimart_dots{
+            padding-left: 0;
+            top: 100%;
+            position: absolute;
+
+        }
+        .zinimart_testimonial_carousel__item{
+            text-align: center;
+            &:focus{
+                outline: none;
+                box-shadow: none;
+            }
+            img{
+                height: 80px;
+                width: 80px;
+                border-radius: 50%;
+                margin-bottom: 25px;
+                display: inline-block;
+            }
+            p{
+                color: $c36;
+                font-size: $fz14;
+                font-family: $rubik;
+                margin-bottom: 20px;
+            }
+            h6{
+                font-family: $assistant;
+                font-weight: $bold;
+                font-size: $fz16;
+                span{
+                    color: $cac;
+                    font-family: $rubik;
+                    font-size: $fz14;
+                }
+            }
+        }
+    }
+}
 .zinimart_testimonial_app{
     background: $cff;
     padding-top: 70px;
     padding-bottom: 70px;
     .zinimart_testimonial_carousel_container{
-        text-align: center;
-        background: $cf6f;
-        padding: 45px 20px;
-        height: 100%;
-        h4{
-            color: $c36;
-            font-family: $assistant;
-            margin-bottom: 40px;
-            @include respond-to(mdm){
-                margin-bottom: 20px;
-                font-size: 18px;
-            }
-
-        }
-        .zinimart_testimonial_carousel{
-            padding-bottom: 40px;
-            .zinimart_dots{
-                padding-left: 0;
-                top: 100%;
-                position: absolute;
-
-            }
-            .zinimart_testimonial_carousel__item{
-                text-align: center;
-                &:focus{
-                    outline: none;
-                    box-shadow: none;
-                }
-                img{
-                    height: 80px;
-                    width: 80px;
-                    border-radius: 50%;
-                    margin-bottom: 25px;
-                    display: inline-block;
-                }
-                p{
-                    color: $c36;
-                    font-size: $fz14;
-                    font-family: $rubik;
-                    margin-bottom: 20px;
-                }
-                h6{
-                    font-family: $assistant;
-                    font-weight: $bold;
-                    font-size: $fz16;
-                    span{
-                        color: $cac;
-                        font-family: $rubik;
-                        font-size: $fz14;
-                    }
-                }
-            }
-        }
+        @extend .zinimart_testimonial_carousel_container;
     }
     .zinimart_app_container{
         background: $cf6f;

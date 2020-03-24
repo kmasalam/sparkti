@@ -392,6 +392,73 @@ h5, .zinimart_available_products .zinimart_available_products_container .zinimar
 .zinimart_banner {
   background: #efefef;
   padding-top: 30px; }
+  .zinimart_banner.type_2 {
+    padding-top: 0; }
+    .zinimart_banner.type_2 .zinimart_banner_carousel .slick-arrow {
+      position: absolute;
+      top: 50%;
+      height: 50px;
+      width: 50px;
+      border: 1px solid #acacac;
+      background: rgba(255, 255, 255, 0.7);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      cursor: pointer;
+      z-index: 99;
+      transform: translateY(-50%); }
+      .zinimart_banner.type_2 .zinimart_banner_carousel .slick-arrow i {
+        font-size: 24px;
+        color: #363636; }
+      .zinimart_banner.type_2 .zinimart_banner_carousel .slick-arrow.slick-prev {
+        left: 0; }
+      .zinimart_banner.type_2 .zinimart_banner_carousel .slick-arrow.slick-next {
+        right: 0; }
+    .zinimart_banner.type_2 .zinimart_banner_carousel__item .zinimart_banner_carousel_content {
+      height: calc(100vh - 130px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-flow: column;
+      align-items: flex-start; }
+      .zinimart_banner.type_2 .zinimart_banner_carousel__item .zinimart_banner_carousel_content h6 {
+        text-transform: uppercase;
+        color: #363636;
+        letter-spacing: 2px;
+        margin-bottom: 7px; }
+      .zinimart_banner.type_2 .zinimart_banner_carousel__item .zinimart_banner_carousel_content h2 {
+        color: #363636;
+        font-weight: 700;
+        font-family: "Assistant";
+        margin-bottom: 20px; }
+      .zinimart_banner.type_2 .zinimart_banner_carousel__item .zinimart_banner_carousel_content p {
+        padding-bottom: 15px;
+        font-family: "Assistant";
+        font-size: 16px;
+        letter-spacing: 1px; }
+      .zinimart_banner.type_2 .zinimart_banner_carousel__item .zinimart_banner_carousel_content a {
+        background: #ffffff;
+        line-height: 50px;
+        height: 50px;
+        padding: 0 30px;
+        font-family: "Assistant";
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 14px;
+        color: #363636;
+        display: inline-flex;
+        background: #50a2b7;
+        color: #ffffff;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: row; }
+        .zinimart_banner.type_2 .zinimart_banner_carousel__item .zinimart_banner_carousel_content a i {
+          display: inline-block;
+          margin-left: 10px; }
+      .zinimart_banner.type_2 .zinimart_banner_carousel__item .zinimart_banner_carousel_content.dark .zinimart_btn {
+        background: #363636; }
   .zinimart_banner__categories .zinimart_categories_marker {
     background: #f17d80;
     display: flex;
@@ -1514,53 +1581,54 @@ h5, .zinimart_available_products .zinimart_available_products_container .zinimar
 
 /*-------------------------------------
 -------------------------------------*/
+.zinimart_testimonial_carousel_container, .zinimart_testimonial_app .zinimart_testimonial_carousel_container {
+  text-align: center;
+  background: #f6f7f9;
+  padding: 45px 20px;
+  height: 100%; }
+  .zinimart_testimonial_carousel_container h4, .zinimart_testimonial_app .zinimart_testimonial_carousel_container h4 {
+    color: #363636;
+    font-family: "Assistant";
+    margin-bottom: 40px; }
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+      .zinimart_testimonial_carousel_container h4, .zinimart_testimonial_app .zinimart_testimonial_carousel_container h4 {
+        margin-bottom: 20px;
+        font-size: 18px; } }
+  .zinimart_testimonial_carousel_container .zinimart_testimonial_carousel {
+    padding-bottom: 40px; }
+    .zinimart_testimonial_carousel_container .zinimart_testimonial_carousel .zinimart_dots {
+      padding-left: 0;
+      top: 100%;
+      position: absolute; }
+    .zinimart_testimonial_carousel_container .zinimart_testimonial_carousel .zinimart_testimonial_carousel__item {
+      text-align: center; }
+      .zinimart_testimonial_carousel_container .zinimart_testimonial_carousel .zinimart_testimonial_carousel__item:focus {
+        outline: none;
+        box-shadow: none; }
+      .zinimart_testimonial_carousel_container .zinimart_testimonial_carousel .zinimart_testimonial_carousel__item img {
+        height: 80px;
+        width: 80px;
+        border-radius: 50%;
+        margin-bottom: 25px;
+        display: inline-block; }
+      .zinimart_testimonial_carousel_container .zinimart_testimonial_carousel .zinimart_testimonial_carousel__item p {
+        color: #363636;
+        font-size: 14px;
+        font-family: "Rubik";
+        margin-bottom: 20px; }
+      .zinimart_testimonial_carousel_container .zinimart_testimonial_carousel .zinimart_testimonial_carousel__item h6 {
+        font-family: "Assistant";
+        font-weight: 700;
+        font-size: 16px; }
+        .zinimart_testimonial_carousel_container .zinimart_testimonial_carousel .zinimart_testimonial_carousel__item h6 span, .zinimart_testimonial_carousel_container .zinimart_testimonial_carousel .zinimart_testimonial_carousel__item h6 .zinimart_popular_products .zinimart_popular_products__carousel .popular_products_item .popular_product_body__pricing_cart .popular_product_pricing del, .zinimart_popular_products .zinimart_popular_products__carousel .popular_products_item .popular_product_body__pricing_cart .popular_product_pricing .zinimart_testimonial_carousel_container .zinimart_testimonial_carousel .zinimart_testimonial_carousel__item h6 del, .zinimart_testimonial_carousel_container .zinimart_testimonial_carousel .zinimart_testimonial_carousel__item h6 .zinimart_available_products .zinimart_available_products_container .zinimart_popular_products_tab .tab-content .tab-pane .popular_product_body__pricing_cart .popular_product_pricing del, .zinimart_available_products .zinimart_available_products_container .zinimart_popular_products_tab .tab-content .tab-pane .popular_product_body__pricing_cart .popular_product_pricing .zinimart_testimonial_carousel_container .zinimart_testimonial_carousel .zinimart_testimonial_carousel__item h6 del, .zinimart_testimonial_carousel_container .zinimart_testimonial_carousel .zinimart_testimonial_carousel__item h6 .zinimart_vertical_product .zinimart_vartical_tab_container .zinimart_tab_content .popular_products_item .popular_product_body__pricing_cart .popular_product_pricing del, .zinimart_vertical_product .zinimart_vartical_tab_container .zinimart_tab_content .popular_products_item .popular_product_body__pricing_cart .popular_product_pricing .zinimart_testimonial_carousel_container .zinimart_testimonial_carousel .zinimart_testimonial_carousel__item h6 del, .zinimart_testimonial_carousel_container .zinimart_testimonial_carousel .zinimart_testimonial_carousel__item h6 .weekly_deals_product_pricing del, .weekly_deals_product_pricing .zinimart_testimonial_carousel_container .zinimart_testimonial_carousel .zinimart_testimonial_carousel__item h6 del, .zinimart_testimonial_carousel_container .zinimart_testimonial_carousel .zinimart_testimonial_carousel__item h6 .zinimart_best_deal__content_carousel .zinimart_best_deal__content_carousel_item .zinimart_best_deal__content_carousel_content .today_deals_product_pricing_supplier .today_deals_product_pricing del, .zinimart_best_deal__content_carousel .zinimart_best_deal__content_carousel_item .zinimart_best_deal__content_carousel_content .today_deals_product_pricing_supplier .today_deals_product_pricing .zinimart_testimonial_carousel_container .zinimart_testimonial_carousel .zinimart_testimonial_carousel__item h6 del, .zinimart_testimonial_carousel_container .zinimart_testimonial_carousel .zinimart_testimonial_carousel__item h6 .zinimart_recommended_products .popular_products_item .popular_product_body__pricing_cart .popular_product_pricing del, .zinimart_recommended_products .popular_products_item .popular_product_body__pricing_cart .popular_product_pricing .zinimart_testimonial_carousel_container .zinimart_testimonial_carousel .zinimart_testimonial_carousel__item h6 del, .zinimart_testimonial_carousel_container .zinimart_testimonial_carousel .zinimart_testimonial_carousel__item h6 .zinimart_related_products__carousel .popular_products_item .popular_product_body__pricing_cart .popular_product_pricing del, .zinimart_related_products__carousel .popular_products_item .popular_product_body__pricing_cart .popular_product_pricing .zinimart_testimonial_carousel_container .zinimart_testimonial_carousel .zinimart_testimonial_carousel__item h6 del, .zinimart_testimonial_carousel_container .zinimart_testimonial_carousel .zinimart_testimonial_carousel__item h6 .zinimart_search_description .popular_products_item .popular_product_body__pricing_cart .popular_product_pricing del, .zinimart_search_description .popular_products_item .popular_product_body__pricing_cart .popular_product_pricing .zinimart_testimonial_carousel_container .zinimart_testimonial_carousel .zinimart_testimonial_carousel__item h6 del {
+          color: #acacac;
+          font-family: "Rubik";
+          font-size: 14px; }
+
 .zinimart_testimonial_app {
   background: #ffffff;
   padding-top: 70px;
   padding-bottom: 70px; }
-  .zinimart_testimonial_app .zinimart_testimonial_carousel_container {
-    text-align: center;
-    background: #f6f7f9;
-    padding: 45px 20px;
-    height: 100%; }
-    .zinimart_testimonial_app .zinimart_testimonial_carousel_container h4 {
-      color: #363636;
-      font-family: "Assistant";
-      margin-bottom: 40px; }
-      @media only screen and (min-width: 768px) and (max-width: 991px) {
-        .zinimart_testimonial_app .zinimart_testimonial_carousel_container h4 {
-          margin-bottom: 20px;
-          font-size: 18px; } }
-    .zinimart_testimonial_app .zinimart_testimonial_carousel_container .zinimart_testimonial_carousel {
-      padding-bottom: 40px; }
-      .zinimart_testimonial_app .zinimart_testimonial_carousel_container .zinimart_testimonial_carousel .zinimart_dots {
-        padding-left: 0;
-        top: 100%;
-        position: absolute; }
-      .zinimart_testimonial_app .zinimart_testimonial_carousel_container .zinimart_testimonial_carousel .zinimart_testimonial_carousel__item {
-        text-align: center; }
-        .zinimart_testimonial_app .zinimart_testimonial_carousel_container .zinimart_testimonial_carousel .zinimart_testimonial_carousel__item:focus {
-          outline: none;
-          box-shadow: none; }
-        .zinimart_testimonial_app .zinimart_testimonial_carousel_container .zinimart_testimonial_carousel .zinimart_testimonial_carousel__item img {
-          height: 80px;
-          width: 80px;
-          border-radius: 50%;
-          margin-bottom: 25px;
-          display: inline-block; }
-        .zinimart_testimonial_app .zinimart_testimonial_carousel_container .zinimart_testimonial_carousel .zinimart_testimonial_carousel__item p {
-          color: #363636;
-          font-size: 14px;
-          font-family: "Rubik";
-          margin-bottom: 20px; }
-        .zinimart_testimonial_app .zinimart_testimonial_carousel_container .zinimart_testimonial_carousel .zinimart_testimonial_carousel__item h6 {
-          font-family: "Assistant";
-          font-weight: 700;
-          font-size: 16px; }
-          .zinimart_testimonial_app .zinimart_testimonial_carousel_container .zinimart_testimonial_carousel .zinimart_testimonial_carousel__item h6 span, .zinimart_testimonial_app .zinimart_testimonial_carousel_container .zinimart_testimonial_carousel .zinimart_testimonial_carousel__item h6 .zinimart_popular_products .zinimart_popular_products__carousel .popular_products_item .popular_product_body__pricing_cart .popular_product_pricing del, .zinimart_popular_products .zinimart_popular_products__carousel .popular_products_item .popular_product_body__pricing_cart .popular_product_pricing .zinimart_testimonial_app .zinimart_testimonial_carousel_container .zinimart_testimonial_carousel .zinimart_testimonial_carousel__item h6 del, .zinimart_testimonial_app .zinimart_testimonial_carousel_container .zinimart_testimonial_carousel .zinimart_testimonial_carousel__item h6 .zinimart_available_products .zinimart_available_products_container .zinimart_popular_products_tab .tab-content .tab-pane .popular_product_body__pricing_cart .popular_product_pricing del, .zinimart_available_products .zinimart_available_products_container .zinimart_popular_products_tab .tab-content .tab-pane .popular_product_body__pricing_cart .popular_product_pricing .zinimart_testimonial_app .zinimart_testimonial_carousel_container .zinimart_testimonial_carousel .zinimart_testimonial_carousel__item h6 del, .zinimart_testimonial_app .zinimart_testimonial_carousel_container .zinimart_testimonial_carousel .zinimart_testimonial_carousel__item h6 .zinimart_vertical_product .zinimart_vartical_tab_container .zinimart_tab_content .popular_products_item .popular_product_body__pricing_cart .popular_product_pricing del, .zinimart_vertical_product .zinimart_vartical_tab_container .zinimart_tab_content .popular_products_item .popular_product_body__pricing_cart .popular_product_pricing .zinimart_testimonial_app .zinimart_testimonial_carousel_container .zinimart_testimonial_carousel .zinimart_testimonial_carousel__item h6 del, .zinimart_testimonial_app .zinimart_testimonial_carousel_container .zinimart_testimonial_carousel .zinimart_testimonial_carousel__item h6 .weekly_deals_product_pricing del, .weekly_deals_product_pricing .zinimart_testimonial_app .zinimart_testimonial_carousel_container .zinimart_testimonial_carousel .zinimart_testimonial_carousel__item h6 del, .zinimart_testimonial_app .zinimart_testimonial_carousel_container .zinimart_testimonial_carousel .zinimart_testimonial_carousel__item h6 .zinimart_best_deal__content_carousel .zinimart_best_deal__content_carousel_item .zinimart_best_deal__content_carousel_content .today_deals_product_pricing_supplier .today_deals_product_pricing del, .zinimart_best_deal__content_carousel .zinimart_best_deal__content_carousel_item .zinimart_best_deal__content_carousel_content .today_deals_product_pricing_supplier .today_deals_product_pricing .zinimart_testimonial_app .zinimart_testimonial_carousel_container .zinimart_testimonial_carousel .zinimart_testimonial_carousel__item h6 del, .zinimart_testimonial_app .zinimart_testimonial_carousel_container .zinimart_testimonial_carousel .zinimart_testimonial_carousel__item h6 .zinimart_recommended_products .popular_products_item .popular_product_body__pricing_cart .popular_product_pricing del, .zinimart_recommended_products .popular_products_item .popular_product_body__pricing_cart .popular_product_pricing .zinimart_testimonial_app .zinimart_testimonial_carousel_container .zinimart_testimonial_carousel .zinimart_testimonial_carousel__item h6 del, .zinimart_testimonial_app .zinimart_testimonial_carousel_container .zinimart_testimonial_carousel .zinimart_testimonial_carousel__item h6 .zinimart_related_products__carousel .popular_products_item .popular_product_body__pricing_cart .popular_product_pricing del, .zinimart_related_products__carousel .popular_products_item .popular_product_body__pricing_cart .popular_product_pricing .zinimart_testimonial_app .zinimart_testimonial_carousel_container .zinimart_testimonial_carousel .zinimart_testimonial_carousel__item h6 del, .zinimart_testimonial_app .zinimart_testimonial_carousel_container .zinimart_testimonial_carousel .zinimart_testimonial_carousel__item h6 .zinimart_search_description .popular_products_item .popular_product_body__pricing_cart .popular_product_pricing del, .zinimart_search_description .popular_products_item .popular_product_body__pricing_cart .popular_product_pricing .zinimart_testimonial_app .zinimart_testimonial_carousel_container .zinimart_testimonial_carousel .zinimart_testimonial_carousel__item h6 del {
-            color: #acacac;
-            font-family: "Rubik";
-            font-size: 14px; }
   .zinimart_testimonial_app .zinimart_app_container {
     background: #f6f7f9;
     display: flex;
@@ -2642,6 +2710,8 @@ h5, .zinimart_available_products .zinimart_available_products_container .zinimar
 
 .zinimart_single_blog_container {
   background: #ffffff; }
+  .zinimart_single_blog_container .zinimart_blog__item.centered .zinimart_post_body {
+    padding-left: 0; }
   .zinimart_single_blog_container .zinimart_blog__item .zinimart_blog_head {
     display: flex;
     align-items: center;
@@ -4079,8 +4149,54 @@ h5, .zinimart_available_products .zinimart_available_products_container .zinimar
 
 /*-------------------------------------
 -------------------------------------*/
+.zinimart_feature {
+  background: #ffffff;
+  padding-bottom: 70px;
+  padding-top: 70px; }
+  .zinimart_feature__single {
+    padding: 15px 30px 15px 30px;
+    text-align: center; }
+    .zinimart_feature__single .zinimart_feature_head {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-flow: row;
+      padding-bottom: 20px; }
+      .zinimart_feature__single .zinimart_feature_head img {
+        margin-right: 10px; }
+      .zinimart_feature__single .zinimart_feature_head h6 {
+        margin-bottom: 0;
+        padding-bottom: 7px;
+        border-bottom: 2px solid #f17d80; }
+    .zinimart_feature__single .zinimart_feature_body {
+      text-align: center; }
+
 /*-------------------------------------
 -------------------------------------*/
+.zinimart_team {
+  padding-top: 70px;
+  padding-bottom: 70px; }
+  .zinimart_team__signle {
+    background: #ffffff;
+    text-align: center;
+    padding: 30px 15px 30px 15px; }
+    .zinimart_team__signle .zinimart_team_image {
+      margin-bottom: 15px; }
+    .zinimart_team__signle .zinimart_team_content h5, .zinimart_team__signle .zinimart_team_content .zinimart_available_products .zinimart_available_products_container .zinimart_available_products_item.cloath_item p, .zinimart_available_products .zinimart_available_products_container .zinimart_available_products_item.cloath_item .zinimart_team__signle .zinimart_team_content p {
+      color: #363636;
+      text-transform: uppercase;
+      line-height: 26px;
+      margin-bottom: 0px;
+      font-family: "Assistant"; }
+    .zinimart_team__signle .zinimart_team_content span, .zinimart_team__signle .zinimart_team_content .zinimart_popular_products .zinimart_popular_products__carousel .popular_products_item .popular_product_body__pricing_cart .popular_product_pricing del, .zinimart_popular_products .zinimart_popular_products__carousel .popular_products_item .popular_product_body__pricing_cart .popular_product_pricing .zinimart_team__signle .zinimart_team_content del, .zinimart_team__signle .zinimart_team_content .zinimart_available_products .zinimart_available_products_container .zinimart_popular_products_tab .tab-content .tab-pane .popular_product_body__pricing_cart .popular_product_pricing del, .zinimart_available_products .zinimart_available_products_container .zinimart_popular_products_tab .tab-content .tab-pane .popular_product_body__pricing_cart .popular_product_pricing .zinimart_team__signle .zinimart_team_content del, .zinimart_team__signle .zinimart_team_content .zinimart_vertical_product .zinimart_vartical_tab_container .zinimart_tab_content .popular_products_item .popular_product_body__pricing_cart .popular_product_pricing del, .zinimart_vertical_product .zinimart_vartical_tab_container .zinimart_tab_content .popular_products_item .popular_product_body__pricing_cart .popular_product_pricing .zinimart_team__signle .zinimart_team_content del, .zinimart_team__signle .zinimart_team_content .weekly_deals_product_pricing del, .weekly_deals_product_pricing .zinimart_team__signle .zinimart_team_content del, .zinimart_team__signle .zinimart_team_content .zinimart_weekly_deals__item .zinimart_weekly_deals_content .weekly_deals_product_pricing_supplier .weekly_deals_product_pricing del, .zinimart_weekly_deals__item .zinimart_weekly_deals_content .weekly_deals_product_pricing_supplier .weekly_deals_product_pricing .zinimart_team__signle .zinimart_team_content del, .zinimart_team__signle .zinimart_team_content .zinimart_best_deal__content_carousel .zinimart_best_deal__content_carousel_item .zinimart_best_deal__content_carousel_content .today_deals_product_pricing_supplier .today_deals_product_pricing del, .zinimart_best_deal__content_carousel .zinimart_best_deal__content_carousel_item .zinimart_best_deal__content_carousel_content .today_deals_product_pricing_supplier .today_deals_product_pricing .zinimart_team__signle .zinimart_team_content del, .zinimart_team__signle .zinimart_team_content .zinimart_recommended_products .popular_products_item .popular_product_body__pricing_cart .popular_product_pricing del, .zinimart_recommended_products .popular_products_item .popular_product_body__pricing_cart .popular_product_pricing .zinimart_team__signle .zinimart_team_content del, .zinimart_team__signle .zinimart_team_content .zinimart_related_products__carousel .popular_products_item .popular_product_body__pricing_cart .popular_product_pricing del, .zinimart_related_products__carousel .popular_products_item .popular_product_body__pricing_cart .popular_product_pricing .zinimart_team__signle .zinimart_team_content del, .zinimart_team__signle .zinimart_team_content .zinimart_search_description .popular_products_item .popular_product_body__pricing_cart .popular_product_pricing del, .zinimart_search_description .popular_products_item .popular_product_body__pricing_cart .popular_product_pricing .zinimart_team__signle .zinimart_team_content del {
+      font-size: 12px;
+      letter-spacing: 3px;
+      font-family: "Assistant"; }
+    .zinimart_team__signle .zinimart_team_content p {
+      padding-top: 15px;
+      font-size: 14px;
+      font-family: "Assistant"; }
+
 /*-------------------------------------
 -------------------------------------*/
 /*-------------------------------------

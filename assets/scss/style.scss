@@ -163,9 +163,67 @@
 }
 /*-------------------------------------
 -------------------------------------*/ 
+.zinimart_feature{
+    background: $cff;
+    padding-bottom: 70px;
+    padding-top: 70px;
+    .zinimart_section_title{
 
+    }
+    &__single{
+        padding: 15px 30px 15px 30px;
+        text-align: center;
+        .zinimart_feature_head{
+            @include flexDirection(row);
+            padding-bottom: 20px;
+            img{
+                margin-right: 10px;
+            }
+            h6{
+                margin-bottom: 0;
+                padding-bottom: 7px;
+                border-bottom: 2px solid $cf1;
+            }
+        }
+        .zinimart_feature_body{
+            text-align: center;
+        }
+    }
+}
 /*-------------------------------------
 -------------------------------------*/ 
+.zinimart_team{
+    padding-top: 70px;
+    padding-bottom: 70px;
+    &__signle{
+        background: $cff;
+        text-align: center;
+        padding: 30px 15px 30px 15px;
+        .zinimart_team_image{
+            img{}
+            margin-bottom: 15px;
+        }
+        .zinimart_team_content{
+            h5{
+                color: $c36;
+                text-transform: uppercase;
+                line-height: 26px;
+                margin-bottom: 0px;
+                font-family: $assistant;
+            }
+            span{
+                font-size: $fz12;
+                letter-spacing: 3px;
+                font-family: $assistant;
+            }
+            p{
+                padding-top: 15px;
+                font-size: $fz14;
+                font-family: $assistant;
+            }
+        }
+    }
+}
 /*-------------------------------------
 -------------------------------------*/ 
 

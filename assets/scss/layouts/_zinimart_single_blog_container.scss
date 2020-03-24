@@ -54,6 +54,7 @@ input:not([type='checkbox']) {
       input {
         height:50px ;
         line-height:50px;
+
       }
     }
   }
@@ -81,6 +82,11 @@ input:not([type='checkbox']) {
 .zinimart_single_blog_container {
   background: $cff;
   .zinimart_blog__item {
+    &.centered{
+      .zinimart_post_body{
+        padding-left: 0;
+      }
+    }
     .zinimart_blog_head {
       @include flexDirection(row);
       padding-top: 60px;

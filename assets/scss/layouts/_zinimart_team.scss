@@ -1,0 +1,32 @@
+.zinimart_team{
+    padding-top: 70px;
+    padding-bottom: 70px;
+    &__signle{
+        background: $cff;
+        text-align: center;
+        padding: 30px 15px 30px 15px;
+        .zinimart_team_image{
+            img{}
+            margin-bottom: 15px;
+        }
+        .zinimart_team_content{
+            h5{
+                color: $c36;
+                text-transform: uppercase;
+                line-height: 26px;
+                margin-bottom: 0px;
+                font-family: $assistant;
+            }
+            span{
+                font-size: $fz12;
+                letter-spacing: 3px;
+                font-family: $assistant;
+            }
+            p{
+                padding-top: 15px;
+                font-size: $fz14;
+                font-family: $assistant;
+            }
+        }
+    }
+}

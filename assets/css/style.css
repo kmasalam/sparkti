@@ -1103,7 +1103,7 @@ h5, .zinimart_available_products .zinimart_available_products_container .zinimar
           @media only screen and (min-width: 768px) and (max-width: 991px) {
             .zinimart_available_products .zinimart_available_products_container .zinimart_popular_products_tab .zinimart_section_title ul li a, .zinimart_available_products .zinimart_available_products_container .zinimart_popular_products_tab .zinimart_related_products ul li a {
               font-size: 10px; } }
-          .zinimart_available_products .zinimart_available_products_container .zinimart_popular_products_tab .zinimart_section_title ul li a.active, .zinimart_available_products .zinimart_available_products_container .zinimart_popular_products_tab .zinimart_related_products ul li a.active, .zinimart_available_products .zinimart_available_products_container .zinimart_popular_products_tab .zinimart_section_title ul li .zinimart_pagination a.zinimart_pagination_item:hover, .zinimart_pagination .zinimart_available_products .zinimart_available_products_container .zinimart_popular_products_tab .zinimart_section_title ul li a.zinimart_pagination_item:hover, .zinimart_available_products .zinimart_available_products_container .zinimart_popular_products_tab .zinimart_related_products ul li .zinimart_pagination a.zinimart_pagination_item:hover, .zinimart_pagination .zinimart_available_products .zinimart_available_products_container .zinimart_popular_products_tab .zinimart_related_products ul li a.zinimart_pagination_item:hover {
+          .zinimart_available_products .zinimart_available_products_container .zinimart_popular_products_tab .zinimart_section_title ul li a.active, .zinimart_available_products .zinimart_available_products_container .zinimart_popular_products_tab .zinimart_related_products ul li a.active {
             color: #f17d80; }
       .zinimart_available_products .zinimart_available_products_container .zinimart_popular_products_tab .tab-content .tab-pane .popular_product_body__pricing_cart {
         display: flex;
@@ -1241,7 +1241,7 @@ h5, .zinimart_available_products .zinimart_available_products_container .zinimar
         @media only screen and (min-width: 768px) and (max-width: 991px) {
           .zinimart_vertical_product .zinimart_vartical_tab_container .nav .nav-link {
             font-size: 14px; } }
-        .zinimart_vertical_product .zinimart_vartical_tab_container .nav .nav-link.active, .zinimart_vertical_product .zinimart_vartical_tab_container .nav .zinimart_pagination .nav-link.zinimart_pagination_item:hover, .zinimart_pagination .zinimart_vertical_product .zinimart_vartical_tab_container .nav .nav-link.zinimart_pagination_item:hover {
+        .zinimart_vertical_product .zinimart_vartical_tab_container .nav .nav-link.active {
           color: #f17d80; }
     .zinimart_vertical_product .zinimart_vartical_tab_container .zinimart_tab_content {
       background: #ffffff;
@@ -2429,7 +2429,7 @@ h5, .zinimart_available_products .zinimart_available_products_container .zinimar
       color: #363636;
       padding: 0 0px 12px 0;
       display: block; }
-      .zinimart_product_navs .zinimart_product_navs_tab li a.active, .zinimart_product_navs .zinimart_product_navs_tab li .zinimart_pagination a.zinimart_pagination_item:hover, .zinimart_pagination .zinimart_product_navs .zinimart_product_navs_tab li a.zinimart_pagination_item:hover {
+      .zinimart_product_navs .zinimart_product_navs_tab li a.active {
         color: #f17d80; }
       @media only screen and (max-width: 767px) {
         .zinimart_product_navs .zinimart_product_navs_tab li a {
@@ -2470,8 +2470,8 @@ h5, .zinimart_available_products .zinimart_available_products_container .zinimar
   padding-top: 60px;
   padding-bottom: 60px; }
   .zinimart_related_products__carousel .popular_products_item {
-    margin-left: 15px;
-    margin-right: 15px; }
+    padding-left: 15px;
+    padding-right: 15px; }
     .zinimart_related_products__carousel .popular_products_item .popular_product_body__pricing_cart {
       display: flex;
       align-items: center;
@@ -2532,7 +2532,8 @@ h5, .zinimart_available_products .zinimart_available_products_container .zinimar
 -------------------------------------*/
 .zinimart_blog_area {
   padding-bottom: 80px;
-  background: #ffffff; }
+  background: #ffffff;
+  padding-top: 70px; }
   @media only screen and (max-width: 767px) {
     .zinimart_blog_area {
       padding-bottom: 15px; } }
@@ -2769,26 +2770,29 @@ h5, .zinimart_available_products .zinimart_available_products_container .zinimar
 /*-------------------------------------
 -------------------------------------*/
 .zinimart_pagination {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-flow: row; }
-  .zinimart_pagination .zinimart_pagination_item {
+  text-align: center; }
+  .zinimart_pagination .zinimart_pagination__prev, .zinimart_pagination .zinimart_pagination__next {
+    width: 30px;
     height: 35px;
-    width: 35px;
-    color: #747496;
-    font-size: 14px;
-    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.1);
-    border-radius: 3px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    transition: all 0.4s linear; }
-    .zinimart_pagination .zinimart_pagination_item.active, .zinimart_pagination .zinimart_pagination_item:hover {
-      background: #68a8ad;
-      color: #ffffff; }
-    .zinimart_pagination .zinimart_pagination_item:not(:last-child) {
-      margin-right: 8px; }
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    border: 1px solid #363636;
+    margin-right: 60px;
+    transition: all 0.4s linear;
+    color: #363636; }
+  .zinimart_pagination .zinimart_pagination__next {
+    margin-left: 60px; }
+  .zinimart_pagination .zinimart_pagination__item {
+    color: #363636;
+    font-size: 16px; }
+    .zinimart_pagination .zinimart_pagination__item:not(:last-child) {
+      margin-right: 12px; }
+    .zinimart_pagination .zinimart_pagination__item.active {
+      color: #f17d80; }
 
 /*-------------------------------------
 -------------------------------------*/
@@ -4026,6 +4030,9 @@ h5, .zinimart_available_products .zinimart_available_products_container .zinimar
 .zinimart_customer_login {
   background: #ffffff;
   padding: 40px 0 120px 0; }
+  @media only screen and (max-width: 767px) {
+    .zinimart_customer_login {
+      padding: 40px 0 60px 0; } }
   .zinimart_customer_login .zinimart_page_description_inner {
     text-align: center;
     padding-bottom: 80px; }
@@ -4319,28 +4326,30 @@ h5, .zinimart_available_products .zinimart_available_products_container .zinimar
 
 /*-------------------------------------
 -------------------------------------*/
-.zinimart_pagination .zinimart_pagination__prev, .zinimart_pagination .zinimart_pagination__next {
-  width: 30px;
-  height: 35px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-flow: column;
-  border: 1px solid #363636;
-  margin-right: 60px;
-  transition: all 0.4s linear;
-  color: #363636; }
-
-.zinimart_pagination .zinimart_pagination__next {
-  margin-left: 60px; }
-
-.zinimart_pagination .zinimart_pagination__item {
-  color: #363636;
-  font-size: 16px; }
-  .zinimart_pagination .zinimart_pagination__item:not(:last-child) {
-    margin-right: 12px; }
-  .zinimart_pagination .zinimart_pagination__item.active, .zinimart_pagination .zinimart_pagination__item.zinimart_pagination_item:hover {
-    color: #f17d80; }
+.zinimart_pagination {
+  text-align: center; }
+  .zinimart_pagination .zinimart_pagination__prev, .zinimart_pagination .zinimart_pagination__next {
+    width: 30px;
+    height: 35px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    border: 1px solid #363636;
+    margin-right: 60px;
+    transition: all 0.4s linear;
+    color: #363636; }
+  .zinimart_pagination .zinimart_pagination__next {
+    margin-left: 60px; }
+  .zinimart_pagination .zinimart_pagination__item {
+    color: #363636;
+    font-size: 16px; }
+    .zinimart_pagination .zinimart_pagination__item:not(:last-child) {
+      margin-right: 12px; }
+    .zinimart_pagination .zinimart_pagination__item.active {
+      color: #f17d80; }
 
 /*-------------------------------------
 -------------------------------------*/
@@ -4394,6 +4403,9 @@ h5, .zinimart_available_products .zinimart_available_products_container .zinimar
 
 /*-------------------------------------
 -------------------------------------*/
+.zinimart_register .form-group {
+  margin-bottom: 20px !important; }
+
 /*-------------------------------------
 -------------------------------------*/
 /*-------------------------------------

@@ -1,0 +1,27 @@
+.zinimart_feature{
+    background: $cff;
+    padding-bottom: 70px;
+    padding-top: 70px;
+    .zinimart_section_title{
+
+    }
+    &__single{
+        padding: 15px 30px 15px 30px;
+        text-align: center;
+        .zinimart_feature_head{
+            @include flexDirection(row);
+            padding-bottom: 20px;
+            img{
+                margin-right: 10px;
+            }
+            h6{
+                margin-bottom: 0;
+                padding-bottom: 7px;
+                border-bottom: 2px solid $cf1;
+            }
+        }
+        .zinimart_feature_body{
+            text-align: center;
+        }
+    }
+}

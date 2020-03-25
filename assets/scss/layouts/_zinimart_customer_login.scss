@@ -1,6 +1,9 @@
 .zinimart_customer_login{
     background: $cff;
     padding: 40px 0 120px 0;
+    @include respond-to(allsmall){
+        padding: 40px 0 60px 0;
+    }
     .zinimart_page_description_inner{
         @extend .zinimart_page_description_inner;
         text-align: center;

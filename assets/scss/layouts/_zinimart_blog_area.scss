@@ -1,6 +1,7 @@
 .zinimart_blog_area{
     padding-bottom: 80px;
     background: $cff;
+    padding-top: 70px;
     @include respond-to(allsmall){
         padding-bottom: 15px;
     }

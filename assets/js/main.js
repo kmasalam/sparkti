@@ -37,6 +37,7 @@
         arrows: false,
         fade: true,
         asNavFor: '.zinimart_best_deal_carousel_images'
+        
     });
     $('.zinimart_best_deal_carousel_images').slick({
         slidesToShow: 3,
@@ -46,7 +47,34 @@
         vertical: true,
         arrows: false,
         centerMode: false,
-        focusOnSelect: true
+        focusOnSelect: true,
+        responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+              }
+            },
+            {
+              breakpoint: 600,
+              settings: {
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                vertical: false,
+              },
+            },
+              {
+                breakpoint: 300,
+                settings: {
+                  vertical: false,
+                }
+            }
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+          ]
     });
 
 
@@ -270,7 +298,7 @@
         }
 
         // Modal
-        //$('.bd-example-modal-lg').modal('show');
+        $('.bd-example-modal-lg').modal('show');
     });
 
     $(function () {

@@ -66,10 +66,21 @@
             margin-top: 40px;
             .zinimart_section_title{
                 text-align: center;
+                @include respond-to(allsmall){
+                    margin-bottom: 20px;
+                }
                 .nav{
                     @include inlineFlex;
                     @include respond-to(little){
                         text-align: center;
+                    }
+                    li{
+                        a{
+                            @include respond-to(allsmall){
+                                font-size: 11px;
+                                padding: 5px;
+                            }
+                        }
                     }
                 }
                 margin-bottom: 35px;

@@ -1,71 +1,131 @@
+@keyframes fadeInDown {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(0, -100%, 0);
+      transform: translate3d(0, -100%, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
 .zinimart_banner {
   background: $cefe;
   padding-top: 30px;
-  &.type_2{
-      padding-top: 0;
-    .zinimart_banner_carousel{
-      .slick-arrow{
+  &.type_2 {
+    padding-top: 0;
+    .zinimart_banner_carousel {
+      .slick-arrow {
         position: absolute;
         top: 50%;
         height: 50px;
         width: 50px;
         border: 1px solid $cac;
-        background: rgba($cff,.70);
+        background: rgba($cff, 0.7);
         @include inlineFlex;
         border-radius: 50%;
         cursor: pointer;
         z-index: 99;
         transform: translateY(-50%);
-        i{
+        @include respond-to(little){
+            height: 40px;
+            width: 40px; 
+        }
+        i {
           font-size: $fz24;
           color: $c36;
+          @include respond-to(little){
+            font-size: 16px;
         }
-        &.slick-prev{
+        }
+        &.slick-prev {
           left: 0;
         }
-        &.slick-next{
+        &.slick-next {
           right: 0;
         }
       }
-      &__item{
-       
-        .zinimart_banner_carousel_content{
+      .slick-current {
+        .zinimart_banner_carousel_content {
+          > * {
+            -webkit-animation-name: fadeInDown;
+            animation-name: fadeInDown;
+            -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+          }
+          h6{
+              transition-delay: .2s;
+          }
+          h2{
+            transition-delay: .2s;
+          }
+          p{
+            transition-delay: .3s;
+          }
+          a{
+            transition-delay: .4s;
+          }
+        }
+      }
+      &__item {
+        .zinimart_banner_carousel_content {
           height: calc(100vh - 130px);
           @include flexDirection(column);
           align-items: flex-start;
 
-          h6{
-              text-transform: uppercase;
-              color: $c36;
-              letter-spacing: 2px;
-              margin-bottom: 7px;
+          h6 {
+            text-transform: uppercase;
+            color: $c36;
+            letter-spacing: 2px;
+            margin-bottom: 7px;
           }
-          h2{
+          h2 {
             color: $c36;
             font-weight: $bold;
             font-family: $assistant;
             margin-bottom: 20px;
+            @include respond-to(larage){
+                font-size: 32px;
+            }
+            @include respond-to(mdm){
+                font-size: 32px;
+            }
+            @include respond-to(allsmall){
+                font-size: 24px;
+            }
           }
-          p{
+          p {
             padding-bottom: 15px;
             font-family: $assistant;
             font-size: $fz16;
             letter-spacing: 1px;
+            @include respond-to(allsmall){
+                font-size: 14px;
+            }
           }
-          a{
+          a {
             @include btn_content(50px, 30px, 14px);
             background: $c50a;
             color: $cff;
             @include inlineFlex;
             flex-flow: row;
-            i{
+            @include respond-to(little){
+                @include btn_content(40px, 20px, 14px);
+            }
+            i {
               display: inline-block;
               margin-left: 10px;
             }
           }
-          &.dark{
-            .zinimart_btn{
+          &.dark {
+            .zinimart_btn {
               background: $c36;
+              color: $cff;
+              border: none;
             }
           }
         }

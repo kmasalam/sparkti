@@ -69,6 +69,10 @@
         .slick-slide{
             margin-left: 25px;
             margin-right: 25px;
+            @include respond-to(allsmall){
+                margin-left: 15px;
+                margin-right: 15px;            
+            }
             &:focus{
                 @include no_out_box;
             }

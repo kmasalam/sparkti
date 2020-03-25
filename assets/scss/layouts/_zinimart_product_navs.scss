@@ -1,5 +1,8 @@
 .zinimart_product_navs{
     background: $cff;
+    @include respond-to(allsmall){
+        padding-top: 20px;
+    }
     .zinimart_product_navs_tab{
         padding-left: 0;
         margin-bottom: 0;
@@ -9,6 +12,9 @@
                 margin-right: 30px;
                 @include transition(.30s);
                 padding: 0 0 0 0;
+                @include respond-to(allsmall){
+                    margin-right: 11px;
+                }
             }
             a{
                 font-size: $fz20;
@@ -20,12 +26,18 @@
                 &.active{
                     color: $cf1;
                 }
+                @include respond-to(allsmall){
+                    font-size: 12px;
+                }
             }
         }
     }
     &__body{
         padding-top: 30px;
         @include flexDirection(row);
+        @include respond-to(allsmall){
+            flex-flow: column-reverse;
+        }
         .zinimart_product_navs_content{
             padding-right: 60px;
             p{
@@ -43,6 +55,13 @@
                 }
             }
         }
-        img{}
+        img{
+            @include respond-to(mdm){
+                max-width: 50%;
+            }
+            @include respond-to(allsmall){
+                margin-bottom: 15px;
+            }
+        }
     }
 }

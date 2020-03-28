@@ -299,6 +299,37 @@
 
         // Modal
         $('.bd-example-modal-lg').modal('show');
+        // Zinimart Awesome Select
+
+        jQuery.fn.hasAttr = function (name) {
+            return this.attr(name) !== undefined && this.attr(name) !== '';
+        };
+        function ZinimartSelect(){
+            var borbibi_awesome_select, selectlabel,multiselect;
+            borbibi_awesome_select = $('.zinimart_awesome_select');
+            if (borbibi_awesome_select.length > 0) {
+                borbibi_awesome_select.each(function () {
+                    if (jQuery(this).hasAttr('data-select-label')) {
+                        selectlabel = jQuery(this).attr('data-select-label');
+                    }
+                    if (jQuery(this).hasAttr('data-multiple')) {
+                        multiselect = jQuery(this).attr('data-multiple');
+                    }
+                    $(this).select2({
+                        placeholder: selectlabel ? selectlabel : '',
+                        multiple: multiselect ? true : false,
+                        allowClear: true
+                    }).on("select2:select", function (e) {
+                        var selected_element = $(e.currentTarget);
+                        var select_val = selected_element.val();
+                        console.log(select_val);
+                    });;
+                    
+                });
+            }
+        }
+        ZinimartSelect();
+        
     });
 
     $(function () {
@@ -439,7 +470,8 @@
             jQuery(this).css("background-repeat", "no-repeat");
             jQuery(this).removeAttr('data-bg');
         }
-    })
+    });
 
+    
 
 })()

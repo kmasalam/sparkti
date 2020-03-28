@@ -14,6 +14,9 @@
             padding-right: 5px;
             line-height: 35px;
         }
+        .select2-selection--single .select2-selection__rendered{
+            color:  $cefe;
+        }
         a{
             @extend .zinimart_select;
         }

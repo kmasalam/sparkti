@@ -14,7 +14,7 @@
 }
 
   
-  @include keyframes(offcanvasvisibility) {
+@include keyframes(offcanvasvisibility) {
     0% {
       visibility: hidden;
       opacity: 0;
@@ -22,6 +22,17 @@
     100% {
       visibility: visible;
       opacity: 1;
+    }
+  }
+  @include keyframes(offcanvasnavright) {
+    0% {
+      visibility: hidden;
+      opacity: 0;
+      right: 0;
+    }
+    100% {
+      right: -100%;
+
     }
   }
 
@@ -51,16 +62,32 @@
     left: 0;
     visibility: hidden;
     opacity: 0;
-    .zinimart_offcanvas_menu{
-        width: 243px;
-        height: 100%;
-        background: $cff;
+    @include flexDirection(row);
+    justify-content: flex-end;
+    transition: .30s linear;
+    transition-delay: .30s;
+    perspective: 800px;
+    .zinimart_offcanvas_navigation__inner{
+      width: 243px;
+        height: 100%;background: $cff;
         position: relative;
         top: 0;
-        left: -100%;
-        @include transition(.40s);
+        @include transition(1s);
         box-shadow: 0px 2px 5px rgba(0,0,0,.30);
         padding: 30px 30px 30px 20px;
+        transform: rotateY(90deg);
+        transform-origin: right;
+        padding-right: 10px;
+    }
+    &__head{
+      text-align: center;
+      img{
+        width: 60%;
+      }
+    }
+    .zinimart_offcanvas_menu{ 
+      height: calc(100% - 48px);
+      padding-top: 30px;
     ul{
         padding-left: 0;
         margin-bottom: 0;
@@ -91,11 +118,15 @@
     }
     &.zinimart_offcanvas_navigation.show{
         // display: block;
-        @include animation("offcanvasvisibility .30s linear");
+        //@include animation("offcanvasvisibility .0s linear");
         visibility: visible;
         opacity: 1;
+        .zinimart_offcanvas_navigation__inner{
+          transform: rotateY(0deg);
+          transform-origin: right;
+        }
         .zinimart_offcanvas_menu{
-            left: 0;
+         
         }
     }
     

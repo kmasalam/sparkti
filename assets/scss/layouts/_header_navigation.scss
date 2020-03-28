@@ -58,6 +58,7 @@
                 }
                 .input-group{
                     border: 1px solid $c737;
+                    border-radius: 30px;
                     .form-control{
                         height: 40px !important;
                         line-height: 40px;
@@ -67,6 +68,8 @@
                         font-family: $assistant;
                         font-size: $fz14;
                         border-right: 1px solid $ce1e;
+                        border-top-left-radius: 30px;
+                        border-bottom-left-radius: 30px;
                         &:focus{
                             outline: none;
                             box-shadow: none;
@@ -104,6 +107,9 @@
                         border: none;
                         color: $cff;
                         padding: 0 30px;
+                        border-top-right-radius: 30px;
+                        border-bottom-right-radius: 30px;
+                       
                         @include respond-to(mdm){
                             padding: 0 22px;
                             font-size: 10px;
@@ -125,6 +131,13 @@
                         }
                     }
                 }
+                .select2-container--default .select2-selection--single .select2-selection__rendered {
+                    color: #444;
+                    line-height: 40px;
+                }
+                .select2-selection__arrow{
+                    top: 8px;
+                }                
             }
         }
         .zinimart_navigation__content_right{

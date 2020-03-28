@@ -67,6 +67,14 @@ h5, .zinimart_available_products .zinimart_available_products_container .zinimar
   outline: none;
   box-shadow: none; }
 
+.select2-container--default .select2-selection--single {
+  border: none;
+  background: transparent; }
+
+.select2-selection {
+  border: none !important;
+  outline: none !important; }
+
 .zinimart_dots {
   display: inline-flex;
   align-items: center;
@@ -94,8 +102,6 @@ h5, .zinimart_available_products .zinimart_available_products_container .zinimar
   font-family: "Rubik";
   font-size: 12px;
   color: #acacac;
-  -webkit-appearance: none;
-  -moz-appearance: none;
   text-indent: 1px;
   text-overflow: ''; }
   .zinimart_select:focus, .zinimart_toolbar__item a:focus, .zinimart_toolbar__item.zinimart_toolbar__hotline .zinimart_toolbar__hotline_label:focus {
@@ -120,6 +126,8 @@ h5, .zinimart_available_products .zinimart_available_products_container .zinimar
         padding-left: 4px;
         padding-right: 5px;
         line-height: 35px; } }
+    .zinimart_toolbar__item .select2-selection--single .select2-selection__rendered {
+      color: #efefef; }
     .zinimart_toolbar__item.zinimart_has_dropdown {
       position: relative; }
       .zinimart_toolbar__item.zinimart_has_dropdown .zinimart_dropdown {
@@ -234,7 +242,8 @@ h5, .zinimart_available_products .zinimart_available_products_container .zinimar
         .zinimart_navigation__content .zinimart_navigation__content_center form .input-group-prepend .zinimart_offcanvas_btn.activated {
           color: #ffffff; }
       .zinimart_navigation__content .zinimart_navigation__content_center form .input-group {
-        border: 1px solid #737495; }
+        border: 1px solid #737495;
+        border-radius: 30px; }
         .zinimart_navigation__content .zinimart_navigation__content_center form .input-group .form-control {
           height: 40px !important;
           line-height: 40px;
@@ -243,7 +252,9 @@ h5, .zinimart_available_products .zinimart_available_products_container .zinimar
           width: 350px;
           font-family: "Assistant";
           font-size: 14px;
-          border-right: 1px solid #e1e1e1; }
+          border-right: 1px solid #e1e1e1;
+          border-top-left-radius: 30px;
+          border-bottom-left-radius: 30px; }
           .zinimart_navigation__content .zinimart_navigation__content_center form .input-group .form-control:focus {
             outline: none;
             box-shadow: none; }
@@ -279,7 +290,9 @@ h5, .zinimart_available_products .zinimart_available_products_container .zinimar
           text-transform: uppercase;
           border: none;
           color: #ffffff;
-          padding: 0 30px; }
+          padding: 0 30px;
+          border-top-right-radius: 30px;
+          border-bottom-right-radius: 30px; }
           @media only screen and (min-width: 768px) and (max-width: 991px) {
             .zinimart_navigation__content .zinimart_navigation__content_center form .input-group .zinimart_navigation_search {
               padding: 0 22px;
@@ -300,6 +313,11 @@ h5, .zinimart_available_products .zinimart_available_products_container .zinimar
           @media only screen and (min-width: 992px) and (max-width: 1199px) {
             .zinimart_navigation__content .zinimart_navigation__content_center form .input-group .zinimart_navigation_search {
               padding: 0 20px; } }
+      .zinimart_navigation__content .zinimart_navigation__content_center form .select2-container--default .select2-selection--single .select2-selection__rendered {
+        color: #444;
+        line-height: 40px; }
+      .zinimart_navigation__content .zinimart_navigation__content_center form .select2-selection__arrow {
+        top: 8px; }
     .zinimart_navigation__content .zinimart_navigation__content_right {
       display: flex;
       align-items: center;
@@ -2038,6 +2056,46 @@ h5, .zinimart_available_products .zinimart_available_products_container .zinimar
     visibility: visible;
     opacity: 1; } }
 
+@-webkit-keyframes offcanvasnavright {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+    right: 0; }
+  100% {
+    right: -100%; } }
+
+@-moz-keyframes offcanvasnavright {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+    right: 0; }
+  100% {
+    right: -100%; } }
+
+@-ms-keyframes offcanvasnavright {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+    right: 0; }
+  100% {
+    right: -100%; } }
+
+@-o-keyframes offcanvasnavright {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+    right: 0; }
+  100% {
+    right: -100%; } }
+
+@keyframes offcanvasnavright {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+    right: 0; }
+  100% {
+    right: -100%; } }
+
 @-webkit-keyframes fadeInDown {
   from {
     opacity: 0;
@@ -2096,17 +2154,34 @@ h5, .zinimart_available_products .zinimart_available_products_container .zinimar
   top: 0;
   left: 0;
   visibility: hidden;
-  opacity: 0; }
-  .zinimart_offcanvas_navigation .zinimart_offcanvas_menu {
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row;
+  justify-content: flex-end;
+  transition: .30s linear;
+  transition-delay: .30s;
+  perspective: 800px; }
+  .zinimart_offcanvas_navigation .zinimart_offcanvas_navigation__inner {
     width: 243px;
     height: 100%;
     background: #ffffff;
     position: relative;
     top: 0;
-    left: -100%;
-    transition: all 0.4s linear;
+    transition: all 1s linear;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
-    padding: 30px 30px 30px 20px; }
+    padding: 30px 30px 30px 20px;
+    transform: rotateY(90deg);
+    transform-origin: right;
+    padding-right: 10px; }
+  .zinimart_offcanvas_navigation__head {
+    text-align: center; }
+    .zinimart_offcanvas_navigation__head img {
+      width: 60%; }
+  .zinimart_offcanvas_navigation .zinimart_offcanvas_menu {
+    height: calc(100% - 48px);
+    padding-top: 30px; }
     .zinimart_offcanvas_navigation .zinimart_offcanvas_menu ul {
       padding-left: 0;
       margin-bottom: 0; }
@@ -2125,15 +2200,11 @@ h5, .zinimart_available_products .zinimart_available_products_container .zinimar
       display: none;
       padding-left: 10px; }
   .zinimart_offcanvas_navigation.zinimart_offcanvas_navigation.show {
-    -webkit-animation: offcanvasvisibility .30s linear;
-    -moz-animation: offcanvasvisibility .30s linear;
-    -ms-animation: offcanvasvisibility .30s linear;
-    -o-animation: offcanvasvisibility .30s linear;
-    animation: offcanvasvisibility .30s linear;
     visibility: visible;
     opacity: 1; }
-    .zinimart_offcanvas_navigation.zinimart_offcanvas_navigation.show .zinimart_offcanvas_menu {
-      left: 0; }
+    .zinimart_offcanvas_navigation.zinimart_offcanvas_navigation.show .zinimart_offcanvas_navigation__inner {
+      transform: rotateY(0deg);
+      transform-origin: right; }
 
 /*-------------------------------------
 -------------------------------------*/
@@ -4206,9 +4277,15 @@ h5, .zinimart_available_products .zinimart_available_products_container .zinimar
     .zinimart_modal .modal-dialog .modal-content .zinimart_modal_content .zinimart_subscription_content_fields {
       margin-top: 30px; }
       .zinimart_modal .modal-dialog .modal-content .zinimart_modal_content .zinimart_subscription_content_fields .input-group {
-        border: 1px solid #f17d80; }
+        border: 1px solid #f17d80;
+        border-radius: 30px; }
         .zinimart_modal .modal-dialog .modal-content .zinimart_modal_content .zinimart_subscription_content_fields .input-group .form-control {
-          min-width: calc(100% - 125px); }
+          min-width: calc(100% - 125px);
+          border-top-left-radius: 30px;
+          border-bottom-left-radius: 30px; }
+        .zinimart_modal .modal-dialog .modal-content .zinimart_modal_content .zinimart_subscription_content_fields .input-group .zinimart_btn {
+          border-top-right-radius: 30px;
+          border-bottom-right-radius: 30px; }
 
 /*-------------------------------------
 -------------------------------------*/
@@ -4286,9 +4363,15 @@ h5, .zinimart_available_products .zinimart_available_products_container .zinimar
     .zinimart_search_description .zinimart_page_description_inner .zinimart_subscription_content_fields {
       margin-top: 30px; }
       .zinimart_search_description .zinimart_page_description_inner .zinimart_subscription_content_fields .input-group {
-        border: 1px solid #f17d80; }
+        border: 1px solid #f17d80;
+        border-radius: 30px; }
         .zinimart_search_description .zinimart_page_description_inner .zinimart_subscription_content_fields .input-group .form-control {
-          min-width: calc(100% - 125px); }
+          min-width: calc(100% - 125px);
+          border-top-left-radius: 30px;
+          border-bottom-left-radius: 30px; }
+        .zinimart_search_description .zinimart_page_description_inner .zinimart_subscription_content_fields .input-group .zinimart_btn {
+          border-top-right-radius: 30px;
+          border-bottom-right-radius: 30px; }
   .zinimart_search_description .popular_products_item {
     margin-bottom: 30px; }
     .zinimart_search_description .popular_products_item .popular_product_body__pricing_cart {

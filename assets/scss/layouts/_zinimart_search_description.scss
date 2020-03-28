@@ -9,11 +9,15 @@
             margin-top: 30px;
             .input-group{
                 border: 1px solid $cf1;
+                border-radius: 30px;
                 .form-control{
                     min-width: calc(100% - 125px);
+                    border-top-left-radius: 30px;
+                            border-bottom-left-radius: 30px;
                 }
                 .zinimart_btn{
-
+                    border-top-right-radius: 30px;
+                    border-bottom-right-radius: 30px;
                 }
             }
         }

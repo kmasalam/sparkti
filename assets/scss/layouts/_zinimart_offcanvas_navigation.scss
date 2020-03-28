@@ -121,6 +121,7 @@
         //@include animation("offcanvasvisibility .0s linear");
         visibility: visible;
         opacity: 1;
+        z-index: 99;
         .zinimart_offcanvas_navigation__inner{
           transform: rotateY(0deg);
           transform-origin: right;

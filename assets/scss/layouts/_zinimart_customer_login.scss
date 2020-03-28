@@ -23,6 +23,7 @@
                 }
             }
         }
+
         .zinimart_checkbox_password{
             @include flexDirection(row);
             justify-content: space-between;
@@ -37,7 +38,9 @@
                 font-size: $fz14;
             }
         }
-        
+        .zinimart_social_icon{
+            @include zinimart_social_icon;
+        }
         p{
 
         }

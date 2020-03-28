@@ -12,12 +12,12 @@
                 border-radius: 30px;
                 .form-control{
                     min-width: calc(100% - 125px);
-                    border-top-left-radius: 30px;
-                            border-bottom-left-radius: 30px;
+                    border-top-left-radius: 5px;
+                            border-bottom-left-radius: 5px;
                 }
                 .zinimart_btn{
-                    border-top-right-radius: 30px;
-                    border-bottom-right-radius: 30px;
+                    border-top-right-radius: 5px;
+                    border-bottom-right-radius: 5px;
                 }
             }
         }

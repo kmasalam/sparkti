@@ -55,8 +55,14 @@
               }
             },
             {
+                breakpoint: 768,
+                settings: {
+                }
+              },
+            {
               breakpoint: 600,
               settings: {
+                vertical: false,
               }
             },
             {
@@ -299,6 +305,18 @@
 
         // Modal
         $('.bd-example-modal-lg').modal('show');
+
+        // sticky Search
+        $(window).on('scroll',function(){
+            //zinimart_navigation__content_center
+            if($(this).scrollTop() > 120){
+                $('.zinimart_navigation').addClass('sticky_nav');
+            } else {
+                $('.zinimart_navigation').removeClass('sticky_nav');
+            }
+        });
+
+
         // Zinimart Awesome Select
 
         jQuery.fn.hasAttr = function (name) {

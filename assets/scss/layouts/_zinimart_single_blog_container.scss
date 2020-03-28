@@ -47,6 +47,7 @@ input:not([type='checkbox']) {
       }
       textarea {
         height: 150px;
+        line-height: 40px;
         @include respond-to(allsmall){
             height: 100px;
         }

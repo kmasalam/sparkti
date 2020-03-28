@@ -1,7 +1,31 @@
+@keyframes stickyNav {
+    0% {
+      transform: translateY(-50px);
+    }
+    100% {
+        transform: translateY(0px);
+
+    }
+  }
+
 .zinimart_navigation{
     box-shadow: 0px 6px 4px rgba($c36,.20);
     background: $cff;
-    
+    transition: all .40s linear;
+    &.sticky_nav{
+        position: fixed;
+        width: 100%;
+        left: 0;
+        top: 0;
+        z-index: 98;
+        transform: translateY(0px);
+        animation: stickyNav .40s linear;
+        background: rgba($cff,.98);
+        .zinimart_navigation__content_right {
+            visibility: hidden;
+            opacity: 0;
+        }
+    }
     &__content{
         padding: 20px 0;
         @include respond-to(mdm){
@@ -53,12 +77,15 @@
                         i{}
                         &.activated{
                             color: $cff;
+                            @include respond-to(allsmall){
+                                //color: $c36;
+                            }
                         }
                     }
                 }
                 .input-group{
                     border: 1px solid $c737;
-                    border-radius: 30px;
+                    border-radius: 5px;
                     .form-control{
                         height: 40px !important;
                         line-height: 40px;
@@ -68,8 +95,8 @@
                         font-family: $assistant;
                         font-size: $fz14;
                         border-right: 1px solid $ce1e;
-                        border-top-left-radius: 30px;
-                        border-bottom-left-radius: 30px;
+                        border-top-left-radius: 5px;
+                        border-bottom-left-radius: 5px;
                         &:focus{
                             outline: none;
                             box-shadow: none;
@@ -107,8 +134,8 @@
                         border: none;
                         color: $cff;
                         padding: 0 30px;
-                        border-top-right-radius: 30px;
-                        border-bottom-right-radius: 30px;
+                        border-top-right-radius: 5px;
+                        border-bottom-right-radius: 5px;
                        
                         @include respond-to(mdm){
                             padding: 0 22px;

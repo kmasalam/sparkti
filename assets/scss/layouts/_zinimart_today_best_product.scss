@@ -31,6 +31,7 @@
             }
         }
         .zinimart_best_deal__content_carousel_content{
+            margin-left: 30px;
             .zinimart_deals_category{
                 @extend .zinimart_deals_category;
             }
@@ -174,6 +175,7 @@
                 }
             }
             .zinimart_best_deal__content_carousel_item{
+                align-items: flex-start;
                 @include respond-to(allsmall){
                     flex-flow: column;
                 }

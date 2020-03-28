@@ -1,5 +1,6 @@
 .zinimart_available_products{
     margin-top: 70px;
+    margin-bottom: 35px;
     .zinimart_available_products_container{
         background: $cff;
         padding: 20px 20px;
@@ -8,6 +9,10 @@
         }
         .zinimart_brand_carousel{
             @include zinimart_brand_carousel;
+            .zinimart_brand_carousel_item{
+                padding-left: 15px;
+                padding-right: 15px;
+            }
         }
         .zinimart_available_products_item{
             position: relative;

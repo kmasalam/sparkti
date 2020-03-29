@@ -262,6 +262,13 @@
             }
         })
 
+        // 
+        $('.zinimart_modal').on('click',function(e){
+            console.log(e);
+            e.preventDefault();
+            return false;
+        });
+
         //
         var zinimart_popular_products__carousel = $('.zinimart_popular_products__carousel');
         if (zinimart_popular_products__carousel.length > 0) {

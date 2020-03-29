@@ -8,10 +8,11 @@
     }
     .zinimart_top_rated_seller__box{
         @include flexDirection(row);
-        border: 11px solid $cf1f1;
+        border: 11px solid $ccbde;
         border-left-width: 21px;
         border-right-width: 21px;
-        padding: 30px 0;
+        padding-left: 15px;
+        padding: 30px 10px !important;
         background: $cff;
         @include respond-to(larage) {
             border-left-width: 15px;
@@ -26,6 +27,7 @@
                 height: 100px;
                 width: 100px;
                 border-radius: 50%;
+                border: 3px solid $cac;
                 @include respond-to(larage) {
                     height: 60px;
                     width: 60px;

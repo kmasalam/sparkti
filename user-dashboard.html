@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="assets/css/line-awesome.min.css">
     <!--  -->
     <link rel="stylesheet" href="assets/css/slick.css">
+    <!-- select2 -->
+    <link rel="stylesheet" href="assets/css/select2.min.css">
     <!--  -->
     <link rel="stylesheet" href="assets/css/bootstrap.css">
     <!--  -->
@@ -25,18 +27,20 @@
         <div class="zinimart_toolbar">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-5 col-lg-6">
                         <div class="zinimart_toolbar__left">
                             <span class="zinimart_toolbar__currency zinimart_toolbar__item">
-                                <select name="zinimart_currency" class="zinimart_select" id="">
+                                <select name="zinimart_currency" class="zinimart_select zinimart_awesome_select" id="" data-select-label='Currency'>
+                                    <option ></option>
                                     <option value="Us Dollar">Us Dollar</option>
                                     <option value="Pound">Pound</option>
                                     <option value="Taka">Taka</option>
                                     <option value="Euro">Euro</option>
                                 </select>
                             </span>
-                            <span class="zinimart_toolbar__language zinimart_toolbar__item">
-                                <select name="zinimart_currency" class="zinimart_select" id="">
+                            <span class="zinimart_toolbar__language zinimart_toolbar__item ">
+                                <select name="zinimart_language" class="zinimart_select zinimart_awesome_select "  data-select-label='Language' id="">
+                                    <option></option>
                                     <option value="English">English</option>
                                     <option value="Spanish">Spanish</option>
                                     <option value="Chinese">Chinese</option>
@@ -53,7 +57,7 @@
                             </span>
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-7 col-lg-6">
                         <div class="zinimart_toolbar__right">
                             <span class="zinimart_toolbar__item zinimart_toolbar__order_tracking zinimart_has_dropdown">
                                 <a href="#">
@@ -103,14 +107,15 @@
                             </div>
                             <div class="input-group">
 
-                                <input type="email" class="form-control" placeholder="Search on Martel..."
+                                <input type="email" class="form-control" placeholder="Search on Zinimart..."
                                     id="exampleInputEmail1" aria-describedby="emailHelp">
                                 <div class="input-group-append">
                                     <!-- <button class="zinimart_categories_btn">
                                         All
                                         <i class="las la-angle-down"></i>
                                     </button> -->
-                                    <select name="zinimart_currency" class="zinimart_select" id="">
+                                    <select name="zinimart_currency" class="zinimart_select zinimart_awesome_select" id="" data-select-label="Catagories" >
+                                        <option ></option>
                                         <option value="All">All</option>
                                         <option value="cat-1">cat-1</option>
                                         <option value="cat-2">cat-2</option>
@@ -127,14 +132,13 @@
                     </div>
                     <div class="zinimart_navigation__content_right ml-auto">
                         <div class="zinimart_navigation_login_signup">
-                            <a href="#" class="zinimart_navigation_signup">
-                                <i class="lar la-user"></i>
-                                Sign up
-                            </a>
-
-                            <a href="#" class="zinimart_navigation_login">
-                                <i>or</i>
+                            <a href="login.html" class="zinimart_navigation_login">
                                 Log in
+                            </a>
+                            &nbsp;
+                            &nbsp;
+                            <a href="register.html" class="zinimart_navigation_signup" data-toggle="tooltip" data-placement="top" title="Click to Register">
+                                <i class="las la-info-circle"></i>
                             </a>
                         </div>
                         <div class="zinimart_navigation_cart">
@@ -144,7 +148,7 @@
                             <a href="#" class="zinimart_cart_wishlist">
                                 <i class="las la-heart"></i>
                             </a>
-                            <a href="#" class="zinimart_cart_container">
+                            <a href="cart.html" class="zinimart_cart_container">
                                 Cart
                                 <span class="zinimart_cart_container__item">
                                     12
@@ -446,87 +450,105 @@ improvements, please visitrums.
     </footer>
     <!--  -->
 
-    <!--  -->
-    <div class="zinimart_offcanvas_navigation">
-        <nav  class="zinimart_offcanvas_menu">
-            <ul>
-                <li>
-                    <a href="index.html">
-                        Home
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        eCommerce
-                    </a>
-                    <ul class="sub-menu">
-                        <li>
-                            <a href="#">
-                                Product Archive
-                            </a>
-                            <ul class="sub-menu">
-                                <li>
-                                    <a href="#">
-                                        Single Product
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        Mens Shopping
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="blog.html">
-                        Blog
-                    </a>
-                    <ul>
-                        <li>
-                            <a href="#">
-                                Blog Single
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="cart.html">
-                        Cart
-                    </a>
-                </li>
-                <li>
-                    <a href="cart.html">
-                        Cart
-                    </a>
-                    <ul class="sub-menu">
-                        <li>
-                            <a href="product-details.html">
-                                Product Details 
-                            </a>
-                        </li>
-                        <li>
-                            <a href="checkout.html">
-                                Checkout
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="contact.html">
-                        Contact
-                    </a>
-                    <ul>
-                        <li>
-                            <a href="about.html">
-                                About
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
+     <!--  -->
+     <div class="zinimart_offcanvas_navigation">
+        <div class="zinimart_offcanvas_navigation__inner">
+            <div class="zinimart_offcanvas_navigation__head">
+                <img src="assets/images/logo.png" alt="Brand Logo">
+            </div>
+            <nav  class="zinimart_offcanvas_menu">
+                <ul>
+                    <li>
+                        <a href="index.html">
+                            Home
+                        </a>
+                        <ul>
+                            <li>
+                                <a href="index-2.html">
+                                    Home -2
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            eCommerce
+                        </a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="#">
+                                    Product Archive
+                                </a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="#">
+                                            Single Product
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Mens Shopping
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="blog.html">
+                            Blog
+                        </a>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    Blog Single
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="search.html">
+                            Search
+                        </a>
+                    </li>
+                    <li>
+                        <a href="cart.html">
+                            Cart
+                        </a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="product-details.html">
+                                    Product Details 
+                                </a>
+                            </li>
+                            <li>
+                                <a href="checkout.html">
+                                    Checkout
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="contact.html">
+                            Contact
+                        </a>
+                        <ul>
+                            <li>
+                                <a href="about.html">
+                                    About
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="zinimart_offcanvas_navigation__footer">
+                <p>
+                    2019 © <a href="#">zinimart</a> - All Rights Reserved.
+                </p>
+            </div>
+        </div>
+        
     </div>
     <!--  -->
 
@@ -547,6 +569,8 @@ improvements, please visitrums.
     <script src="assets/js/bootstrap.min.js"></script>
     <!--  -->
     <script src="assets/js/slick.min.js"></script>
+    <!-- select2 -->
+    <script src="assets/js/select2.min.js"></script>
     <!--  -->
     <script src="assets/js/kounty.min.js"></script>
     <!--  -->

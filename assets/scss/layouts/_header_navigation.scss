@@ -24,6 +24,10 @@
         .zinimart_navigation__content_right {
             visibility: hidden;
             opacity: 0;
+            @include respond-to(allsmall){
+                visibility: visible;
+                opacity: 1;
+            }
         }
     }
     &__content{

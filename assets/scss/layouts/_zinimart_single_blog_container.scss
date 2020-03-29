@@ -82,6 +82,7 @@ input:not([type='checkbox']) {
 }
 .zinimart_single_blog_container {
   background: $cff;
+  padding-bottom: 70px;
   .zinimart_blog__item {
     &.centered{
       .zinimart_post_body{

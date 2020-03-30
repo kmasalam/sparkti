@@ -29,10 +29,13 @@
             @include respond-to(larage) {
                 max-width: 40%;
             }
-            width: 60%;
+            width: 50%;
         }
         .zinimart_best_deal__content_carousel_content{
             margin-left: 30px;
+            @include respond-to(allsmall){
+                margin-left: 0;
+            }
             .zinimart_deals_category{
                 @extend .zinimart_deals_category;
             }
@@ -55,7 +58,7 @@
                 .today_deals_product_pricing{
                     @extend .weekly_deals_product_pricing;
                     span{
-                        font-size: $fz24;
+                        font-size: $fz20;
                         @include respond-to(larage) {
                             font-size: $fz14;
                         }
@@ -140,17 +143,20 @@
     }
 }
 .zinimart_today_best_product{
-    background: $cff;
-    margin-top: 70px;
-    margin-bottom: 70px;
     padding-top: 70px;
-    padding-bottom: 70px;
+    padding-bottom: 35px;
     .zinimart_section_title{
         @extend .zinimart_section_title;
+        margin-bottom: 0;
+        padding: 15px;
+        background: $cff;
+        padding-bottom: 0;
     }
     .zinimart_best_deal_carousel_area{
         @include flexDirection(row);
         align-items: flex-start;
+        background: $cff;
+        padding: 15px;
         @include respond-to(allsmall){
             flex-flow: column;
         }
@@ -166,6 +172,10 @@
             max-width: calc(100% - 70px);
             padding-left: 10px;
             margin-bottom: 0;
+            @include respond-to(allsmall){
+                flex: 0 0 100%;
+                max-width: 100%;
+              }
             .zinimart_dots{
                 position: relative;
                 left: 140px;

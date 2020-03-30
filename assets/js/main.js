@@ -29,60 +29,138 @@
         cssEase: 'linear'
       });
 
-    $('.zinimart_best_deal__content_carousel').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        dots: true,
-        dotsClass: 'zinimart_dots',
-        arrows: false,
-        fade: true,
-        asNavFor: '.zinimart_best_deal_carousel_images'
+    // $('.zinimart_best_deal__content_carousel').slick({
+    //     slidesToShow: 1,
+    //     slidesToScroll: 1,
+    //     dots: true,
+    //     dotsClass: 'zinimart_dots',
+    //     arrows: false,
+    //     fade: true,
+    //     asNavFor: '.zinimart_best_deal_carousel_images'
         
-    });
-    $('.zinimart_best_deal_carousel_images').slick({
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        asNavFor: '.zinimart_best_deal__content_carousel',
-        dots: false,
-        vertical: true,
-        arrows: false,
-        centerMode: false,
-        focusOnSelect: true,
-        responsive: [
-            {
-              breakpoint: 1024,
-              settings: {
-              }
-            },
-            {
-                breakpoint: 768,
-                settings: {
+    // });
+    // $('.zinimart_best_deal_carousel_images').slick({
+    //     slidesToShow: 3,
+    //     slidesToScroll: 1,
+    //     asNavFor: '.zinimart_best_deal__content_carousel',
+    //     dots: false,
+    //     vertical: true,
+    //     arrows: false,
+    //     centerMode: false,
+    //     focusOnSelect: true,
+    //     responsive: [
+    //         {
+    //           breakpoint: 1024,
+    //           settings: {
+    //           }
+    //         },
+    //         {
+    //             breakpoint: 768,
+    //             settings: {
+    //             }
+    //           },
+    //         {
+    //           breakpoint: 600,
+    //           settings: {
+    //             vertical: false,
+    //           }
+    //         },
+    //         {
+    //           breakpoint: 480,
+    //           settings: {
+    //             vertical: false,
+    //           },
+    //         },
+    //           {
+    //             breakpoint: 300,
+    //             settings: {
+    //               vertical: false,
+    //             }
+    //         }
+    //         // You can unslick at a given breakpoint now by adding:
+    //         // settings: "unslick"
+    //         // instead of a settings object
+    //       ]
+    // });
+
+    //  Product carousel 2
+    $('.zinimart_best_deal_carousel_area').each(function(){
+        var zinimart_best_deal__content_carousel = $(this).find('.zinimart_best_deal__content_carousel');
+        var zinimart_best_deal_carousel_images = $(this).find('.zinimart_best_deal_carousel_images');
+
+        zinimart_best_deal__content_carousel.slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            dots: true,
+            dotsClass: 'zinimart_dots',
+            arrows: false,
+            fade: true,
+            asNavFor: zinimart_best_deal_carousel_images
+            
+        });
+        zinimart_best_deal_carousel_images.slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            asNavFor: zinimart_best_deal__content_carousel,
+            dots: false,
+            vertical: true,
+            arrows: false,
+            centerMode: false,
+            focusOnSelect: true,
+            responsive: [
+                {
+                  breakpoint: 1024,
+                  settings: {
+                  }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                    }
+                  },
+                {
+                  breakpoint: 600,
+                  settings: {
+                    vertical: false,
+                  }
+                },
+                {
+                  breakpoint: 480,
+                  settings: {
+                    vertical: false,
+                  },
+                },
+                  {
+                    breakpoint: 300,
+                    settings: {
+                      vertical: false,
+                    }
                 }
-              },
-            {
-              breakpoint: 600,
-              settings: {
-                vertical: false,
-              }
-            },
-            {
-              breakpoint: 480,
-              settings: {
-                vertical: false,
-              },
-            },
-              {
-                breakpoint: 300,
-                settings: {
-                  vertical: false,
-                }
-            }
-            // You can unslick at a given breakpoint now by adding:
-            // settings: "unslick"
-            // instead of a settings object
-          ]
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+              ]
+        });
+
     });
 
+    $("#bigZoomImage").elevateZoom({
+        gallery:'gallery_01',
+        cursor: 'pointer',
+      easing : true,
+        galleryActiveClass: 'active',
+        zoomType: "inner",
+        imageCrossfade: true,
+    });
+    
+    //pass the images to Fancybox
+    $("#bigZoomImage").bind("click", function(e) {
+        var ez = $('#bigZoomImage').data('elevateZoom');
+        $.fancybox(ez.getGalleryList());
+        return false;
+    });
+    
+    //  Product carousel 2
 
     var ClientsCarousel = $('.pl_clients_carousel');
     if (ClientsCarousel.length > 0) {
@@ -311,7 +389,7 @@
         }
 
         // Modal
-        $('.bd-example-modal-lg').modal('show');
+        //$('.bd-example-modal-lg').modal('show');
 
         // sticky Search
         $(window).on('scroll',function(){

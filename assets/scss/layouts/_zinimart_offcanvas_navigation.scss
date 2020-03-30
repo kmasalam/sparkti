@@ -69,15 +69,16 @@
     perspective: 800px;
     .zinimart_offcanvas_navigation__inner{
       width: 243px;
-        height: 100%;background: $cff;
+        height: 100%;
+        background: $cff;
         position: relative;
         top: 0;
-        @include transition(1s);
+        @include transition(.50s);
         box-shadow: 0px 2px 5px rgba(0,0,0,.30);
         padding: 30px 30px 30px 20px;
-        transform: rotateY(90deg);
         transform-origin: right;
         padding-right: 10px;
+        transform: translateX(100%);
     }
     &__head{
       text-align: center;
@@ -122,9 +123,10 @@
         visibility: visible;
         opacity: 1;
         z-index: 99;
+        
         .zinimart_offcanvas_navigation__inner{
-          transform: rotateY(0deg);
           transform-origin: right;
+          transform: translateX(0%);
         }
         .zinimart_offcanvas_menu{
          

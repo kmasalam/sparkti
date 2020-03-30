@@ -100,11 +100,6 @@
                     </a>
                     <div class="zinimart_navigation__content_center ml-auto">
                         <form action="#">
-                            <div class="input-group-prepend">
-                                <button class="zinimart_offcanvas_btn">
-                                    <i class="las la-bars"></i>
-                                </button>
-                            </div>
                             <div class="input-group">
 
                                 <input type="email" class="form-control" placeholder="Search on Zinimart..."
@@ -131,14 +126,15 @@
                         </form>
                     </div>
                     <div class="zinimart_navigation__content_right ml-auto">
+                        <div class="input-group-prepend">
+                                <button class="zinimart_offcanvas_btn">
+                                    <i class="las la-bars"></i>
+                                </button>
+                            </div>
                         <div class="zinimart_navigation_login_signup">
-                            <a href="login.html" class="zinimart_navigation_login">
+                            <a href="login.html" class="zinimart_navigation_login" data-toggle="tooltip" data-placement="top" title="Sign in or Register">
+                                <i class="las la-user"></i>
                                 Log in
-                            </a>
-                            &nbsp;
-                            &nbsp;
-                            <a href="register.html" class="zinimart_navigation_signup" data-toggle="tooltip" data-placement="top" title="Click to Register">
-                                <i class="las la-info-circle"></i>
                             </a>
                         </div>
                         <div class="zinimart_navigation_cart">
@@ -1662,21 +1658,32 @@
                 <div class="col-md-11 offset-md-1">
                     <div class="zinimart_vartical_tab_container">
                         <div class="row no-gutters">
-                            <div class="col-md-2 col-sm-4">
+                            <div class="col-md-3 col-sm-4">
                                 <div class="nav flex-column " id="v-pills-tab" role="tablist"
                                     aria-orientation="vertical">
                                     <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill"
                                         href="#v-pills-home" role="tab" aria-controls="v-pills-home"
-                                        aria-selected="true">New Arrivals</a>
+                                        aria-selected="true">
+                                        New Arrivals
+                                        <i class="lab la-telegram-plane"></i>
+                                    </a>
                                     <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill"
                                         href="#v-pills-profile" role="tab" aria-controls="v-pills-profile"
-                                        aria-selected="false">Featured Products</a>
+                                        aria-selected="false">
+                                        Featured Products
+                                        <i class="las la-meteor"></i>
+                                        
+                                    </a>
                                     <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill"
                                         href="#v-pills-messages" role="tab" aria-controls="v-pills-messages"
-                                        aria-selected="false">Best Sellers</a>
+                                        aria-selected="false">
+                                        
+                                        Best Sellers
+                                        <i class="las la-certificate"></i>
+                                    </a>
                                 </div>
                             </div>
-                            <div class="col-md-10 col-sm-8">
+                            <div class="col-md-9 col-sm-8">
                                 <div class="tab-content" id="v-pills-tabContent">
                                     <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
                                         aria-labelledby="v-pills-home-tab">
@@ -3079,7 +3086,7 @@
     <section class="zinimart_section zinimart_today_best_product">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-7 offset-lg-1 ">
+                <div class="col-lg-6 ">
                     <div class="zinimart_todays_best_deals">
                         <div class="zinimart_section_title left_align ">
                             <h4>Today Best Deals</h4>
@@ -3388,6 +3395,31 @@
                             <!--  -->
                         </div>
                         <!--  -->
+                    </div>
+                </div>
+                <div class="col-lg-6 ">
+                    <div class="zinimart_todays_best_deals">
+                        <div class="zinimart_section_title left_align ">
+                            <h4>Today Best Deals</h4>
+                        </div>
+                    </div>
+                    <div class="zinimart_best_deal_carousel_ara">
+                        <div class="zinimart_best_deal_carousel_small_image" id="gallery_01">
+                            <a href="#" class="elevatezoom-gallery active" data-image="assets/images/sac-chariot-bg-stand-120-01.jpg"  data-zoom-image="assets/images/sac-chariot-bg-stand-120-01.jpg">
+                                <img src="assets/images/sac-chariot-bg-stand-120-01-100x100.jpg" alt="">
+                            </a>
+                            <a href="#" class="elevatezoom-gallery " data-image="assets/images/sac-chariot-bg-stand-120-02.jpg"  data-zoom-image="assets/images/sac-chariot-bg-stand-120-01.jpg">
+                                <img src="assets/images/sac-chariot-bg-stand-120-03-100x100.jpg" alt="">
+                            </a>
+                            <a href="#" class="elevatezoom-gallery " data-image="assets/images/sac-chariot-bg-stand-120-01.jpg"  data-zoom-image="assets/images/sac-chariot-bg-stand-120-01.jpg">
+                                <img src="assets/images/sac-chariot-bg-stand-120-01-100x100.jpg" alt="">
+                            </a>
+                        </div>
+                        <!--  -->
+                        <div class="zinimart_best_deal_carousel_big_image">
+                            <img class="bigZoomImage" id='bigZoomImage' src="assets/images/sac-chariot-bg-stand-120-01.jpg" alt="big image" data-zoom-image="assets/images/sac-chariot-bg-stand-120-01.jpg" width="411" >
+                        </div>
+
                     </div>
                 </div>
 
@@ -4229,6 +4261,8 @@ improvements, please visitrums.
     <script src="assets/js/select2.min.js"></script>
     <!--  -->
     <script src="assets/js/kounty.min.js"></script>
+    <!--  -->
+    <script src="assets/js/jquery.elevateZoom-3.0.8.min.js"></script>
     <!--  -->
     <script src="assets/js/main.js"></script>
 

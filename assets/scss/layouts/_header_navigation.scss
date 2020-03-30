@@ -7,7 +7,33 @@
 
     }
   }
-
+  .input-group-prepend{
+    .zinimart_offcanvas_btn{
+        background:transparent;
+        border: none;
+        font-size: $fz24;
+        color: $c36;
+        @include inlineFlex;
+        margin-right: 60px;
+        z-index: 999;
+        position: relative;
+        @include respond-to(mdm){
+            font-size: 20px;
+            margin-right: 15px;
+        }
+        @include respond-to(little){
+            font-size: 17px;
+            margin-right: 8px;
+        }
+        i{}
+        &.activated{
+            color: $cff !important;
+            @include respond-to(allsmall){
+                color: $cff !important;
+            }
+        }
+    }
+}
 .zinimart_navigation{
     box-shadow: 0px 6px 4px rgba($c36,.20);
     background: $cff;
@@ -60,33 +86,7 @@
             }
             form{
                 @include inlineFlex;
-                .input-group-prepend{
-                    .zinimart_offcanvas_btn{
-                        background:transparent;
-                        border: none;
-                        font-size: $fz24;
-                        color: $c36;
-                        @include inlineFlex;
-                        margin-right: 20px;
-                        z-index: 999;
-                        position: relative;
-                        @include respond-to(mdm){
-                            font-size: 20px;
-                            margin-right: 15px;
-                        }
-                        @include respond-to(little){
-                            font-size: 17px;
-                            margin-right: 8px;
-                        }
-                        i{}
-                        &.activated{
-                            color: $cff;
-                            @include respond-to(allsmall){
-                                //color: $c36;
-                            }
-                        }
-                    }
-                }
+                
                 .input-group{
                     border: 1px solid $c737;
                     border-radius: 5px;
@@ -180,6 +180,9 @@
                 margin-left: 0 !important;
                 width: 100%;
                 margin-top: 10px;
+            }
+            .input-group-prepend{
+                @extend .input-group-prepend;
             }
             .zinimart_navigation_login_signup{
                 @include flexDirection(row);

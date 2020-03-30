@@ -91,7 +91,7 @@
         zinimart_best_deal__content_carousel.slick({
             slidesToShow: 1,
             slidesToScroll: 1,
-            dots: true,
+            dots: false,
             dotsClass: 'zinimart_dots',
             arrows: false,
             fade: true,
@@ -122,6 +122,7 @@
                   breakpoint: 600,
                   settings: {
                     vertical: false,
+                    dots: false
                   }
                 },
                 {
@@ -134,6 +135,7 @@
                     breakpoint: 300,
                     settings: {
                       vertical: false,
+                      dots: false
                     }
                 }
                 // You can unslick at a given breakpoint now by adding:
@@ -144,21 +146,7 @@
 
     });
 
-    $("#bigZoomImage").elevateZoom({
-        gallery:'gallery_01',
-        cursor: 'pointer',
-      easing : true,
-        galleryActiveClass: 'active',
-        zoomType: "inner",
-        imageCrossfade: true,
-    });
-    
-    //pass the images to Fancybox
-    $("#bigZoomImage").bind("click", function(e) {
-        var ez = $('#bigZoomImage').data('elevateZoom');
-        $.fancybox(ez.getGalleryList());
-        return false;
-    });
+   
     
     //  Product carousel 2
 
@@ -282,6 +270,27 @@
 
     });
     $(document).ready(function () {
+
+        // zoom lense
+        //initiate the plugin and pass the id of the div containing gallery images
+// $("#zoom_03").elevateZoom({
+// 	gallery:'gallery_01',
+//     cursor: 'pointer',
+//     zoomType				: "inner",
+//   easing : true,
+// 	galleryActiveClass: 'active',
+// 	imageCrossfade: true,
+// });
+
+// //pass the images to Fancybox
+// $("#zoom_03").bind("click", function(e) {
+// 	var ez = $('#zoom_03').data('elevateZoom');
+// 	$.fancybox(ez.getGalleryList());
+// 	return false;
+// });
+
+
+
         $('.zinimart_offcanvas_btn').on('click', function (e) {
             e.preventDefault();
             //<i class="las la-times"></i>

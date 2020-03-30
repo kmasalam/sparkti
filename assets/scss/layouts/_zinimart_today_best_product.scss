@@ -10,6 +10,108 @@
           }
       }
 }
+
+.zinimart_best_deal__content_carousel_content{
+    margin-left: 30px;
+    @include respond-to(allsmall){
+        margin-left: 0;
+        width: 100%;
+    }
+    .zinimart_deals_category{
+        @extend .zinimart_deals_category;
+    }
+    .zinimart_deals_title{
+        @extend .zinimart_deals_product_title;
+        h5{
+            font-weight: $medium;
+            font-size: $fz18;
+            color: $c6c8;
+            font-family: $rubik;
+            @include respond-to(larage) {
+                font-size: $fz14;
+            }
+        }
+    }
+    .today_deals_product_pricing_supplier{
+        @include flexDirection(row);
+        justify-content: space-between;
+        margin-bottom: 10px;
+        .today_deals_product_pricing{
+            @extend .weekly_deals_product_pricing;
+            span{
+                font-size: $fz20;
+                @include respond-to(larage) {
+                    font-size: $fz14;
+                }
+            }
+        }
+        .product_vendors{
+            @extend .product_vendors;
+        }
+    }
+    .zinimart_countdown_parent{
+        margin-bottom: 25px;
+        @include respond-to(larage) {
+            margin-bottom: 15px;
+        }
+        .zinimart_parent_label{
+            font-size: $fz13;
+            color: $c63;
+        }
+        .kounty_countdown{
+            >span{
+                height: 60px;
+                width: 60px;
+                border-radius: 5px;
+                background: $c737;
+                @include inlineFlex;
+                flex-flow: column;
+                font-family: $assistant;
+                font-size: $fz24;
+                font-weight: $bold;
+                color: $cff;
+                @include respond-to(larage) {
+                    height: 50px;
+                    width: 50px;
+                    font-size: $fz14;
+                    margin-right: 15px;
+                    margin-bottom: 15px;
+                }
+                span{
+                    font-size: $fz13;
+                    font-family: $rubik;
+                    color: $cff;
+                    font-weight: $regular;
+                    line-height: $fz13;
+                }
+            }
+        }
+    }
+    .zinimart_product_rating{
+        margin-bottom: 7px;
+        @include flexDirection(row);
+        justify-content: flex-start;
+        @include respond-to(larage) {
+            margin-bottom: 0px;
+        }
+        &__label{
+            color: $c36;
+            font-size: $fz16;
+            font-weight: $bold;
+            display: inline-block;
+            margin-right: 7px;
+        }
+        i{
+            font-size: $fz16;
+            color: $cfba;
+            text-transform: uppercase;
+        }
+    }
+    .product_cart_range_options{
+        .weekly_deals_product_stock_cart{}
+        .weekly_deals_product_stock_cart_info{}
+    }
+}
 .zinimart_best_deal__content_carousel{
     flex: 0 0 calc(100% - 70px);
     max-width: calc(100% - 70px);
@@ -26,111 +128,12 @@
         justify-content: space-between;
         display: flex !important;
         .zinimart_best_deal__content_carousel_image{
-            @include respond-to(larage) {
-                max-width: 40%;
-            }
-            width: 50%;
+            
         }
-        .zinimart_best_deal__content_carousel_content{
-            margin-left: 30px;
-            @include respond-to(allsmall){
-                margin-left: 0;
-            }
-            .zinimart_deals_category{
-                @extend .zinimart_deals_category;
-            }
-            .zinimart_deals_title{
-                @extend .zinimart_deals_product_title;
-                h5{
-                    font-weight: $medium;
-                    font-size: $fz18;
-                    color: $c6c8;
-                    font-family: $rubik;
-                    @include respond-to(larage) {
-                        font-size: $fz14;
-                    }
-                }
-            }
-            .today_deals_product_pricing_supplier{
-                @include flexDirection(row);
-                justify-content: space-between;
-                margin-bottom: 10px;
-                .today_deals_product_pricing{
-                    @extend .weekly_deals_product_pricing;
-                    span{
-                        font-size: $fz20;
-                        @include respond-to(larage) {
-                            font-size: $fz14;
-                        }
-                    }
-                }
-                .product_vendors{
-                    @extend .product_vendors;
-                }
-            }
-            .zinimart_countdown_parent{
-                margin-bottom: 25px;
-                @include respond-to(larage) {
-                    margin-bottom: 15px;
-                }
-                .zinimart_parent_label{
-                    font-size: $fz13;
-                    color: $c63;
-                }
-                .kounty_countdown{
-                    >span{
-                        height: 60px;
-                        width: 60px;
-                        border-radius: 5px;
-                        background: $c737;
-                        @include inlineFlex;
-                        flex-flow: column;
-                        font-family: $assistant;
-                        font-size: $fz24;
-                        font-weight: $bold;
-                        color: $cff;
-                        @include respond-to(larage) {
-                            height: 50px;
-                            width: 50px;
-                            font-size: $fz14;
-                        }
-                        span{
-                            font-size: $fz13;
-                            font-family: $rubik;
-                            color: $cff;
-                            font-weight: $regular;
-                            line-height: $fz13;
-                        }
-                    }
-                }
-            }
-            .zinimart_product_rating{
-                margin-bottom: 7px;
-                @include flexDirection(row);
-                justify-content: flex-start;
-                @include respond-to(larage) {
-                    margin-bottom: 0px;
-                }
-                &__label{
-                    color: $c36;
-                    font-size: $fz16;
-                    font-weight: $bold;
-                    display: inline-block;
-                    margin-right: 7px;
-                }
-                i{
-                    font-size: $fz16;
-                    color: $cfba;
-                    text-transform: uppercase;
-                }
-            }
-            .product_cart_range_options{
-                .weekly_deals_product_stock_cart{}
-                .weekly_deals_product_stock_cart_info{}
-            }
-        }
+        
     }
 }
+
 .zinimart_section_title{
     &.left_align{
         text-align: left;
@@ -157,6 +160,7 @@
         align-items: flex-start;
         background: $cff;
         padding: 15px;
+        padding-top: 35px;
         @include respond-to(allsmall){
             flex-flow: column;
         }
@@ -168,8 +172,8 @@
           }
         }
         .zinimart_best_deal__content_carousel{
-            flex: 0 0 calc(100% - 70px);
-            max-width: calc(100% - 70px);
+            flex: 0 0 40%;
+            max-width: 40%;
             padding-left: 10px;
             margin-bottom: 0;
             @include respond-to(allsmall){
@@ -227,6 +231,9 @@
                 }
 
             }
+        }
+        .zinimart_best_deal__content_carousel_content{
+            @extend .zinimart_best_deal__content_carousel_content;
         }
     }
 }

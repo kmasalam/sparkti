@@ -1,276 +1,283 @@
 @keyframes stickyNav {
-    0% {
-      transform: translateY(-50px);
+  0% {
+    transform: translateY(-50px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+.input-group-prepend {
+  .zinimart_offcanvas_btn {
+    background: transparent;
+    border: none;
+    font-size: $fz24;
+    color: $c36;
+    @include inlineFlex;
+    margin-right: 60px;
+    z-index: 999;
+    position: relative;
+    @include respond-to(mdm) {
+      font-size: 20px;
+      margin-right: 15px;
     }
-    100% {
-        transform: translateY(0px);
-
+    @include respond-to(little) {
+      font-size: 17px;
+      margin-right: 8px;
+    }
+    i {
+    }
+    &.activated {
+      color: $cff !important;
+      @include respond-to(allsmall) {
+        color: $cff !important;
+      }
     }
   }
-  .input-group-prepend{
-    .zinimart_offcanvas_btn{
-        background:transparent;
-        border: none;
-        font-size: $fz24;
-        color: $c36;
-        @include inlineFlex;
-        margin-right: 60px;
-        z-index: 999;
-        position: relative;
-        @include respond-to(mdm){
-            font-size: 20px;
-            margin-right: 15px;
-        }
-        @include respond-to(little){
-            font-size: 17px;
-            margin-right: 8px;
-        }
-        i{}
-        &.activated{
-            color: $cff !important;
-            @include respond-to(allsmall){
-                color: $cff !important;
-            }
-        }
-    }
 }
-.zinimart_navigation{
-    box-shadow: 0px 6px 4px rgba($c36,.20);
-    background: $cff;
-    transition: all .40s linear;
-    &.sticky_nav{
-        position: fixed;
+.zinimart_navigation {
+  box-shadow: 0px 6px 4px rgba($c36, 0.2);
+  background: $cff;
+  transition: all 0.4s linear;
+  &.sticky_nav {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 98;
+    transform: translateY(0px);
+    animation: stickyNav 0.4s linear;
+    background: rgba($cff, 0.98);
+    .zinimart_navigation__content_center {
+      @include respond-to(mdm) {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+    .zinimart_navigation__content_right {
+      visibility: hidden;
+      opacity: 0;
+      @include respond-to(allsmall) {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+  }
+  &__content {
+    padding: 20px 0;
+    @include respond-to(mdm) {
+      flex-flow: row;
+      flex-wrap: wrap;
+    }
+    .navbar-brand {
+      @include respond-to(mdm) {
+        margin-left: auto;
+        margin-right: auto;
         width: 100%;
-        left: 0;
-        top: 0;
-        z-index: 98;
-        transform: translateY(0px);
-        animation: stickyNav .40s linear;
-        background: rgba($cff,.98);
-        .zinimart_navigation__content_right {
-            visibility: hidden;
-            opacity: 0;
-            @include respond-to(allsmall){
-                visibility: visible;
-                opacity: 1;
-            }
-        }
+        text-align: center;
+        margin-bottom: 14px;
+      }
+      @include respond-to(allsmall) {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 14px;
+      }
     }
-    &__content{
-        padding: 20px 0;
-        @include respond-to(mdm){
-            flex-flow: row;
-            flex-wrap: wrap;
+    .zinimart_navigation__content_center {
+      @include respond-to(mdm) {
+        margin-left: 0 !important;
+        width: 50%;
+        margin-right: 35px;
+      }
+      form {
+        @include inlineFlex;
+
+        .input-group {
+          border: 1px solid $c737;
+          border-radius: 5px;
+          .form-control {
+            height: 40px !important;
+            line-height: 40px;
+            border: none;
+            border-radius: 0;
+            width: 350px;
+            font-family: $assistant;
+            font-size: $fz14;
+            border-right: 1px solid $ce1e;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+            &:focus {
+              outline: none;
+              box-shadow: none;
+            }
+            @include respond-to(larage) {
+              width: 210px;
+            }
+            @include respond-to(mdm) {
+              width: 200px;
+            }
+            @include respond-to(little) {
+              width: 240px;
+              font-size: 14px;
+            }
+          }
+          .zinimart_select {
+            padding: 0 25px;
+            line-height: 40px;
+            border: none;
+            color: $c252;
+            font-size: $fz14;
+            font-family: $assistant;
+            @include respond-to(little) {
+              padding: 0 14px;
+            }
+          }
+          .zinimart_navigation_search {
+            height: 40px;
+            @include inlineFlex;
+            background: $c737;
+            font-family: $assistant;
+            font-size: $fz14;
+            font-weight: $bold;
+            text-transform: uppercase;
+            border: none;
+            color: $cff;
+            padding: 0 30px;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+
+            @include respond-to(mdm) {
+              padding: 0 22px;
+              font-size: 10px;
+            }
+            @include respond-to(little) {
+              font-size: 10px;
+              padding: 0 10px;
+            }
+            i {
+              font-size: $fz18;
+              @include inlineFlex;
+              margin-right: 5px;
+              @include respond-to(little) {
+                font-size: 12px;
+              }
+            }
+            @include respond-to(larage) {
+              padding: 0 20px;
+            }
+          }
         }
-        .navbar-brand{
-            @include respond-to(mdm){
-                margin-left: auto;
-                margin-right: auto;
-                width: 100%;
-                text-align: center;
-                margin-bottom: 14px;
-            }
-            @include respond-to(allsmall){
-                margin-left: auto;
-                margin-right: auto;
-                width: 100%;
-                text-align: center;
-                margin-bottom: 14px;
-            }
+        .select2-container--default .select2-selection--single .select2-selection__rendered {
+          color: #444;
+          line-height: 40px;
         }
-        .zinimart_navigation__content_center{
-            @include respond-to(mdm){
-                margin-left: 0 !important;
-                width: 50%;
-                margin-right: 35px;
-            }
-            form{
-                @include inlineFlex;
-                
-                .input-group{
-                    border: 1px solid $c737;
-                    border-radius: 5px;
-                    .form-control{
-                        height: 40px !important;
-                        line-height: 40px;
-                        border: none;
-                        border-radius: 0;
-                        width: 350px;
-                        font-family: $assistant;
-                        font-size: $fz14;
-                        border-right: 1px solid $ce1e;
-                        border-top-left-radius: 5px;
-                        border-bottom-left-radius: 5px;
-                        &:focus{
-                            outline: none;
-                            box-shadow: none;
-                        }
-                        @include respond-to(larage) {
-                            width: 210px;
-                        }
-                        @include respond-to(mdm) {
-                            width: 200px;
-                        }
-                        @include respond-to(little){
-                            width: 240px;
-                            font-size: 14px;
-                        }
-                    }
-                    .zinimart_select{
-                        padding: 0 25px;
-                        line-height: 40px;
-                        border: none;
-                        color:$c252;
-                        font-size: $fz14;
-                        font-family: $assistant;
-                        @include respond-to(little){
-                            padding: 0 14px;
-                        }
-                    }
-                    .zinimart_navigation_search{
-                        height: 40px;
-                        @include inlineFlex;
-                        background: $c737;
-                        font-family: $assistant;
-                        font-size: $fz14;
-                        font-weight: $bold;
-                        text-transform: uppercase;
-                        border: none;
-                        color: $cff;
-                        padding: 0 30px;
-                        border-top-right-radius: 5px;
-                        border-bottom-right-radius: 5px;
-                       
-                        @include respond-to(mdm){
-                            padding: 0 22px;
-                            font-size: 10px;
-                        }
-                        @include respond-to (little){
-                            font-size: 10px;
-                            padding: 0 10px;
-                        }
-                        i{
-                            font-size: $fz18;
-                            @include inlineFlex;
-                            margin-right: 5px;
-                            @include respond-to (little){
-                                font-size: 12px;
-                            }
-                        }
-                        @include respond-to(larage) {
-                            padding: 0 20px;
-                        }
-                    }
-                }
-                .select2-container--default .select2-selection--single .select2-selection__rendered {
-                    color: #444;
-                    line-height: 40px;
-                }
-                .select2-selection__arrow{
-                    top: 8px;
-                }                
-            }
+        .select2-selection__arrow {
+          top: 8px;
         }
-        .zinimart_navigation__content_right{
-            @include flexDirection(row);
-            @include respond-to(mdm){
-                margin-left: 0 !important;
-            }
-            @include respond-to(allsmall){
-                margin-left: 0 !important;
-                width: 100%;
-                margin-top: 10px;
-            }
-            .input-group-prepend{
-                @extend .input-group-prepend;
-            }
-            .zinimart_navigation_login_signup{
-                @include flexDirection(row);
-                a{
-                    color: $cac;
-                    font-size: $fz14;
-                    font-family: $rubik;
-                    display: inline-flex;
-                    align-items: center;
-                    @include respond-to(little){
-                        font-size: 12px;
-                    }
-                    
-                    i{
-                        font-size: $fz24;
-                        color: $c36;
-                        @include respond-to(little){
-                            font-size: 18px;
-                        }
-                    }
-                    &.zinimart_navigation_signup{
-                        
-                    }
-                    &.zinimart_navigation_login{
-                        margin-right: 30px;
-                        i{
-                            font-size: $fz14;
-                            color: $c63;
-                        }
-                        @include respond-to(larage) {
-                            margin-right: 20px;
-                        }
-                        @include respond-to(mdm) {
-                            margin-right: 10px;
-                        }
-                    }
-                }
-            }
-            .zinimart_navigation_cart{
-                display: inline-flex;
-                align-items: center;
-                a{
-                    display: inline-flex;
-                    align-items: center;
-                    margin-left: 24px;
-                    @include respond-to(larage) {
-                        margin-left: 15px;
-                    }
-                    @include respond-to(mdm) {
-                        margin-left: 10px;
-                    }
-                    @include respond-to(little){
-                        margin-left: 10px;
-                    }
-                    i{
-                        font-size: $fz24;
-                        color: $c36;
-                        @include respond-to(little){
-                            font-size: 16px;
-                        }
-                    }
-                    &.zinimart_cart_compare{
-                        // margin-left: 25px;
-                        // margin-right: 25px;
-                    }
-                    &.zinimart_cart_wishlist{}
-                    &.zinimart_cart_container{
-                        font-family: $assistant;
-                        font-weight: $bold;
-                        color: $c36;
-                        font-size: $fz18;
-                        .zinimart_cart_container__item{
-                            height: 30px;
-                            width: 30px;
-                            border-radius: 50%;
-                            background: $cf1;
-                            font-size: $fz12;
-                            color: $cff;
-                            @include inlineFlex;
-                            margin-left: 10px;
-                            @include respond-to(little){
-                                height: 25px;
-                                width: 25px;
-                            }
-                        }
-                    }
-                }
-            }
-        }
+      }
     }
+    .zinimart_navigation__content_right {
+      @include flexDirection(row);
+      @include respond-to(mdm) {
+        margin-left: 0 !important;
+      }
+      @include respond-to(allsmall) {
+        margin-left: 0 !important;
+        width: 100%;
+        margin-top: 10px;
+      }
+      .input-group-prepend {
+        @extend .input-group-prepend;
+      }
+      .zinimart_navigation_login_signup {
+        @include flexDirection(row);
+        a {
+          color: $cac;
+          font-size: $fz14;
+          font-family: $rubik;
+          display: inline-flex;
+          align-items: center;
+          @include respond-to(little) {
+            font-size: 12px;
+          }
+
+          i {
+            font-size: $fz24;
+            color: $c36;
+            @include respond-to(little) {
+              font-size: 18px;
+            }
+          }
+          &.zinimart_navigation_signup {
+          }
+          &.zinimart_navigation_login {
+            margin-right: 30px;
+            i {
+              font-size: $fz14;
+              color: $c63;
+            }
+            @include respond-to(larage) {
+              margin-right: 20px;
+            }
+            @include respond-to(mdm) {
+              margin-right: 10px;
+            }
+          }
+        }
+      }
+      .zinimart_navigation_cart {
+        display: inline-flex;
+        align-items: center;
+        a {
+          display: inline-flex;
+          align-items: center;
+          margin-left: 24px;
+          @include respond-to(larage) {
+            margin-left: 15px;
+          }
+          @include respond-to(mdm) {
+            margin-left: 10px;
+          }
+          @include respond-to(little) {
+            margin-left: 10px;
+          }
+          i {
+            font-size: $fz24;
+            color: $c36;
+            @include respond-to(little) {
+              font-size: 16px;
+            }
+          }
+          &.zinimart_cart_compare {
+            // margin-left: 25px;
+            // margin-right: 25px;
+          }
+          &.zinimart_cart_wishlist {
+          }
+          &.zinimart_cart_container {
+            font-family: $assistant;
+            font-weight: $bold;
+            color: $c36;
+            font-size: $fz18;
+            .zinimart_cart_container__item {
+              height: 30px;
+              width: 30px;
+              border-radius: 50%;
+              background: $cf1;
+              font-size: $fz12;
+              color: $cff;
+              @include inlineFlex;
+              margin-left: 10px;
+              @include respond-to(little) {
+                height: 25px;
+                width: 25px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }

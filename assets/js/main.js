@@ -398,7 +398,7 @@
         }
 
         // Modal
-        //$('.bd-example-modal-lg').modal('show');
+        $('.bd-example-modal-lg').modal('show');
 
         // sticky Search
         $(window).on('scroll',function(){

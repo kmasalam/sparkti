@@ -37,6 +37,9 @@
         }
         &.zinimart_toolbar__hotline{
             .zinimart_toolbar__hotline_label{
+                @include respond-to(allsmall){
+                    font-size: 0px;
+                }
                 @extend .zinimart_select;
                 i{
                     font-size: $fz14;

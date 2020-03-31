@@ -39,7 +39,7 @@
         .today_deals_product_pricing{
             @extend .weekly_deals_product_pricing;
             span{
-                font-size: $fz20;
+                font-size: $fz18;
                 @include respond-to(larage) {
                     font-size: $fz14;
                 }
@@ -47,6 +47,7 @@
         }
         .product_vendors{
             @extend .product_vendors;
+            padding-top: 0;
         }
     }
     .zinimart_countdown_parent{
@@ -60,14 +61,14 @@
         }
         .kounty_countdown{
             >span{
-                height: 60px;
-                width: 60px;
+                height: 50px;
+                width: 50px;
                 border-radius: 5px;
                 background: $c737;
                 @include inlineFlex;
                 flex-flow: column;
                 font-family: $assistant;
-                font-size: $fz24;
+                font-size: $fz20;
                 font-weight: $bold;
                 color: $cff;
                 @include respond-to(larage) {
